@@ -1,3 +1,5 @@
+""" This script is used to test the fine-tuned Llama-3.2-3B model for ontology population from user text input files. """
+
 import torch
 import json
 import os
@@ -16,49 +18,44 @@ from transformers import (
 from trl import setup_chat_format
 from peft import PeftModel 
 
-print("CUDA disponible :", torch.cuda.is_available())
-print("Nombre de GPUs visibles :", torch.cuda.device_count())
+# print("CUDA disponible :", torch.cuda.is_available())
+# print("Nombre de GPUs visibles :", torch.cuda.device_count())
 
 
-for i in range(torch.cuda.device_count()):
-    print(f"GPU {i} -> {torch.cuda.get_device_name(i)}")
+# for i in range(torch.cuda.device_count()):
+#     print(f"GPU {i} -> {torch.cuda.get_device_name(i)}")
 
 
 # ==========================================================
-# Fonction lecture fichier texte
+# Function to read input text file
 # ==========================================================
 def read_text_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return file.read()
 
-# Dossiers de données
-folder_path = "/home2020/home/icube/fghazoua/TetraProject/summurized_gpt"
-output_folder = "/home2020/home/icube/fghazoua/TetraProject/outputs_summurize_text_llama3_2_gpt_LS40"
+# path to the folder containing input text files
+folder_path = "./.../test_data"
+
+# define path to the output folder
+output_folder = ".../outputs_results_llama3_2-3b"
 execution_time_file_path = os.path.join(output_folder, "execution_time.txt")
 
 os.makedirs(output_folder, exist_ok=True)
 
-max_chunk_size = 3000  # Maximum chunk size (en tokens)
+
 execution_times = {}
    
 
-# checkpoint_dir = "/home2020/home/icube/fghazoua/TetraProject/scripts/Qwen2.5-72B-Instruct-populate-ontology"
-checkpoint_dir = "/home2020/home/icube/fghazoua/TetraProject/scripts/Llama-3.2-3B-populate-ontology"
-
-#sd = load_file("/home2020/home/icube/fghazoua/TetraProject/scripts/llama-3-70b-populate-ontology/checkpoint-64/adapter_model.safetensors")
-#for key, val in sd.items():
-#    print(key, val.shape)
+# get the path were the fine-tuned model (Llama-3.2-3B-populate-ontology) is saved
+checkpoint_dir = "/{path to the saved fine-tuned model}/Llama-3.2-3B-populate-ontology"
 
 TUNED_MODEL_NAME = 'Llama-3.2-3B-populate-ontology' 
-TUNED_BASE_DIRECTORY = '/home2020/home/icube/fghazoua/TetraProject/scripts'
-
-# TUNED_MODEL_NAME = 'Qwen2.5-72B-Instruct-populate-ontology' 
-# TUNED_BASE_DIRECTORY = '/home2020/home/icube/fghazoua/TetraProject/scripts'
+TUNED_BASE_DIRECTORY = '{path to the fine-tuned model}'
 tuned_model_directory = f'{TUNED_BASE_DIRECTORY}/{TUNED_MODEL_NAME}'
 
-# MODEL_NAME = 'Qwen/Qwen2.5-72B-Instruct' #'meta-llama/Llama-3.3-70B-Instruct' #'meta-llama/Llama-3.2-3B-Instruct'
+# path to the base model (Llama-3.2-3B)
 MODEL_NAME = 'meta-llama/Llama-3.2-3B'
-BASE_DIRECTORY = '/home2020/home/icube/fghazoua/TetraProject/models'
+BASE_DIRECTORY = '{path to the base model (Llama-3.2-3B)}'
 base_model_directory = f'{BASE_DIRECTORY}/{MODEL_NAME}'
 
 # 
@@ -91,9 +88,6 @@ base_model_reload = AutoModelForCausalLM.from_pretrained(
     torch_dtype=torch.float16,
     device_map="auto",
     trust_remote_code=True
-    # quantization_config=bnb_config,
-    # device_map='auto',
-    # attn_implementation=attn_implementation
 )
 
 base_model_reload, tokenizer = setup_chat_format(base_model_reload, tokenizer)
@@ -103,36 +97,12 @@ model = PeftModel.from_pretrained(
 	base_model_reload, 
 	checkpoint_dir
 	# model_id=checkpoint_dir,
-	#peft_config=bnb_config,
+	peft_config=bnb_config,
 	#device_map='auto',
 	# attn_implementation=attn_implementation
 )
 
 model = model.merge_and_unload()
-
-# Load tokenizer
-# tokenizer = LlamaTokenizer.from_pretrained(checkpoint_dir)
-
-# Load tokenizer
-# tokenizer = AutoTokenizer.from_pretrained(model_directory)
-
-# if hasattr(tokenizer, "chat_template") and tokenizer.chat_template is not None:
-#     tokenizer.chat_template = None  # Reset the chat template
-
-# model, tokenizer = setup_chat_format(model, tokenizer)
-
-# testing the new model
-
-# messages = [
-#     {
-#         "role": "system",
-#         "content": "Translate the user text into an TTL graph based on the TetraOnto ontology."
-#     },
-#     {
-#        "role": "user",
-#        "content": """A restoration project in the Santa Ynez River Watershed, Central California, retrofitted a concrete and rock grade control apron downstream of the Highway 1 bridge with a step-pool fishway to improve steelhead passage at low flows. The 40 ft (12.2 m) apron previously blocked fish movement under 20 cfs (0.57 cms) flows. The project added three small step-pools and a 30 ft (9.1 m) concrete sidewall to direct low flows into the pools, improving passage conditions while preserving the structure’s function. Completed in January 2002 for $87,000, it was funded by the Cachuma Conservation and Release Board, Entrix, Inc., Allen and Robert Larson, and the California Coastal Conservancy."""
-#    }
-#]
 
 MODEL_NAME = 'Llama-3.2-3B'
 for file_name in os.listdir(folder_path):
@@ -154,66 +124,58 @@ for file_name in os.listdir(folder_path):
     inputs = tokenizer(prompt, return_tensors='pt', padding=True, 
                    truncation=True).to(model.device)#.to("cuda")
 
-    # Mesure du temps d'exécution
+    # Run time measurement
     start_time = time.time()
 
     try:
         outputs = model.generate(
             **inputs,
-            #max_length=8192,
-	    max_new_tokens=1280,
-	    do_sample=True,
-	    temperature=0.7,
-	    top_p=0.9,
-	    #eos_token_id=tokenizer.eos_token_id,
-            eos_token_id=tokenizer.eos_token_id,  # Stopper la génération ici
-    	    pad_token_id=tokenizer.eos_token_id,  # Évite les warnings de padding
-    	   repetition_penalty=1.2,               # Réduit les répétitions
+            max_new_tokens=1280,
+            do_sample=True,
+            temperature=0.7,
+            top_p=0.9,
+            eos_token_id=tokenizer.eos_token_id,  # Stop generation
+    	    pad_token_id=tokenizer.eos_token_id,  # Avoids padding warnings
+    	    repetition_penalty=1.2,               # Reduces repetition
             num_return_sequences=1
         )
     except Exception as e:
         print(f"Erreur pendant la génération pour le fichier {file_name} : {e}")
         raise
 
-    # outputs = model.generate(**inputs, max_length=8192, 
-    #                     num_return_sequences=1)
 
     text = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-    # Calcul du temps d'exécution
+    # Calculation of execution time
     end_time = time.time()
     execution_time = end_time - start_time
     minutes, seconds = divmod(execution_time, 60)
     formatted_time = f"{int(minutes)} minutes and {seconds:.2f} seconds"
-    print(f"Execution time: {formatted_time}")
 
-    # Sauvegarde du temps d'exécution
+    # save execution time to a file
     with open(execution_time_file_path, "a", encoding="utf-8") as time_file: 
         time_file.write(f"Execution time for model '{MODEL_NAME}' on file '{file_name}': {formatted_time}\n")
 
-    # Sauvegarde de la sortie TTL
-    output_file_name = f"{os.path.splitext(file_name)[0]}_{MODEL_NAME.replace('-', '_')}_{1280}_{torch.cuda.get_device_name(0)}.ttl"
+    # create output file for result
+    output_file_name = f"{os.path.splitext(file_name)[0]}_{MODEL_NAME.replace('-', '_')}_{torch.cuda.get_device_name(0)}.ttl"
     output_file_path = os.path.join(output_folder, output_file_name)
 
-    # Découper pour isoler la partie TTL après "assistant"
+    # Cut to isolate the TTL part after “assistant”
     if "assistant" in text:
         turtle_data = text.split("assistant", 1)[1]
     else:
         turtle_data = text
 
+    # save extracted TTL triplets
     with open(output_file_path, "w", encoding="utf-8") as output_file: 
         output_file.write(turtle_data)
 
     print(f"Résultat sauvegardé dans '{output_file_path}'.")
 
-    # print(text.split("assistant")[1])
+end_time = time.time()
+execution_time = end_time - start_time
+minutes, seconds = divmod(execution_time, 60)
+formatted_time = f"{int(minutes)} minutes and {seconds:.2f} seconds"
+print(f"Execution time for model '{MODEL_NAME}' is: {formatted_time}")
 
-model.save_pretrained("/home2020/home/icube/fghazoua/TetraProject/llama-3.2-3B-populate-ontology")
-tokenizer.save_pretrained("/home2020/home/icube/fghazoua/TetraProject/llama-3.2-3B-populate-ontology")
-
-# end_time = time.time()
-# execution_time = end_time - start_time
-# minutes, seconds = divmod(execution_time, 60)
-# formatted_time = f"{int(minutes)} minutes and {seconds:.2f} seconds"
-# print(f"Execution time for model '{MODEL_NAME}' is: {formatted_time}")
 print("\nProcessing complete for all files and models.")

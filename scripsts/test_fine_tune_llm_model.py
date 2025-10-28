@@ -1,3 +1,5 @@
+""" This script is used to test the fine-tuned larger LLMs models for ontology population from user text input files. """
+
 import torch
 import json
 import os
@@ -16,23 +18,17 @@ from transformers import (
 from trl import setup_chat_format
 from peft import PeftModel    
 
-# checkpoint_dir = "/home2020/home/icube/fghazoua/TetraProject/scripts/Qwen2.5-72B-Instruct-populate-ontology"
-checkpoint_dir = "/home2020/home/icube/fghazoua/TetraProject/scripts/llama-3-70b-populate-ontology"
+# get the path were the fine-tuned model is saved
+checkpoint_dir = "/.../llama-3-70b-populate-ontology"
 
-#sd = load_file("/home2020/home/icube/fghazoua/TetraProject/scripts/llama-3-70b-populate-ontology/checkpoint-64/adapter_model.safetensors")
-#for key, val in sd.items():
-#    print(key, val.shape)
 
 TUNED_MODEL_NAME = 'llama-3-70b-populate-ontology' 
-TUNED_BASE_DIRECTORY = '/home2020/home/icube/fghazoua/TetraProject/scripts'
-
-# TUNED_MODEL_NAME = 'Qwen2.5-72B-Instruct-populate-ontology' 
-# TUNED_BASE_DIRECTORY = '/home2020/home/icube/fghazoua/TetraProject/scripts'
+TUNED_BASE_DIRECTORY = '{path to the fine-tuned model}'
 tuned_model_directory = f'{TUNED_BASE_DIRECTORY}/{TUNED_MODEL_NAME}'
 
-# MODEL_NAME = 'Qwen/Qwen2.5-72B-Instruct' #'meta-llama/Llama-3.3-70B-Instruct' #'meta-llama/Llama-3.2-3B-Instruct'
+# path to the base model
 MODEL_NAME = 'meta-llama/Llama-3.3-70B-Instruct'
-BASE_DIRECTORY = '/home2020/home/icube/fghazoua/TetraProject/models'
+BASE_DIRECTORY = './{path to the base model}'
 base_model_directory = f'{BASE_DIRECTORY}/{MODEL_NAME}'
 
 # 
@@ -41,13 +37,6 @@ adapters_name = tuned_model_directory
 # attn_implementation = "eager" 
 attn_implementation = "flash_attention_2" 
 
-# QLoRA config
-#bnb_config = BitsAndBytesConfig(
-#    load_in_4bit=True,
-#    bnb_4bit_quant_type="nf4",
-#    bnb_4bit_compute_dtype=torch.float16,
-#    bnb_4bit_use_double_quant=True,
-#)
 
 print("Process started....")
 start_time = time.time()
@@ -65,9 +54,6 @@ base_model_reload = AutoModelForCausalLM.from_pretrained(
     torch_dtype=torch.float16,
     device_map="auto",
     trust_remote_code=True,
-    # quantization_config=bnb_config,
-    # device_map='auto',
-    # attn_implementation=attn_implementation
 )
 
 base_model_reload, tokenizer = setup_chat_format(base_model_reload, tokenizer)
@@ -76,27 +62,11 @@ base_model_reload, tokenizer = setup_chat_format(base_model_reload, tokenizer)
 model = PeftModel.from_pretrained(
 	base_model_reload, 
 	checkpoint_dir
-	# model_id=checkpoint_dir,
-	#peft_config=bnb_config,
-	#device_map='auto',
-	# attn_implementation=attn_implementation
 )
 
 model = model.merge_and_unload()
 
-# Load tokenizer
-# tokenizer = LlamaTokenizer.from_pretrained(checkpoint_dir)
-
-# Load tokenizer
-# tokenizer = AutoTokenizer.from_pretrained(model_directory)
-
-# if hasattr(tokenizer, "chat_template") and tokenizer.chat_template is not None:
-#     tokenizer.chat_template = None  # Reset the chat template
-
-# model, tokenizer = setup_chat_format(model, tokenizer)
-
-# testing the new model
-
+# an example of user text to be translated into TTL graph
 messages = [
     {
         "role": "system",
@@ -123,11 +93,11 @@ text = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
 print(text.split("assistant")[1])
 
-model.save_pretrained("/home2020/home/icube/fghazoua/TetraProject/llama-3-70b-populate-ontology_2")
-tokenizer.save_pretrained("/home2020/home/icube/fghazoua/TetraProject/llama-3-70b-populate-ontology_2")
+model.save_pretrained("./.../llama-3-70b-populate-ontology")
+tokenizer.save_pretrained("./.../llama-3-70b-populate-ontology")
 
 end_time = time.time()
 execution_time = end_time - start_time
 minutes, seconds = divmod(execution_time, 60)
 formatted_time = f"{int(minutes)} minutes and {seconds:.2f} seconds"
-print(f"Execution time for model '{MODEL_NAME}' is: {formatted_time}")
+# print(f"Execution time for model '{MODEL_NAME}' is: {formatted_time}")

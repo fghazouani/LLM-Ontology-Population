@@ -11,12 +11,13 @@ from transformers import (
 
 from trl import setup_chat_format
 
-print("CUDA disponible :", torch.cuda.is_available())
-print("Nom du GPU :", torch.cuda.get_device_name(0))
-print("Version CUDA détectée :", torch.version.cuda)
-print("Capacité de calcul (compute capability) :", torch.cuda.get_device_capability(0))
+# print("CUDA disponible :", torch.cuda.is_available())
+# print("Nom du GPU :", torch.cuda.get_device_name(0))
+# print("Version CUDA détectée :", torch.version.cuda)
+# print("Capacité de calcul (compute capability) :", torch.cuda.get_device_capability(0))
 
-MODEL_NAME = 'llama-3-70b-populate-ontology_2' #'llama-3-70b-populate-ontology' #'llama-3-70b-populate-ontology_2' #'llama-3-70b-populate-ontology (Qween)' #
+# path to the fine-tuned saved model
+MODEL_NAME = 'llama-3-70b-populate-ontology' #'llama-3-70b-populate-ontology_2' #'llama-3-70b-populate-ontology (Qween)'
 BASE_DIRECTORY = '/home2020/home/icube/fghazoua/TetraProject'
 
 model_directory = f'{BASE_DIRECTORY}/{MODEL_NAME}'
@@ -34,8 +35,6 @@ def load_model(model_directory=model_directory, torch_dtype=torch_dtype, attn_im
         bnb_4bit_use_double_quant=True,
     )
 
-    # print("Process started....")
-    # start_time = time.time()
     # Load model
     model = AutoModelForCausalLM.from_pretrained(
         model_directory,
@@ -61,18 +60,13 @@ def read_text_file(file_path):
         text = file.read()
     return text
 
-# Parameters
+# path to the folder containing text files to process
+folder_path = "./test_data"
 
-# folder_path = "/home2020/home/icube/fghazoua/TetraProject/base_test"  # Folder containing input text files
-# folder_path = "/home2020/home/icube/fghazoua/TetraProject/summurize_responses"
-folder_path = "/home2020/home/icube/fghazoua/TetraProject/summurized_gpt"
+# define output folder for triplets extraction
+output_folder = "./outputs_results_llama3_3-70b"
+execution_time_file_path = "./outputs_results_llama3_3-70b/execution_time.txt"
 
-max_chunk_size = 3000  # Maximum chunk size (in tokens)
-
-# output_folder = "/home2020/home/icube/fghazoua/TetraProject/output_responses_Qwen"  # Folder to save outputs
-# output_folder = "/home2020/home/icube/fghazoua/TetraProject/outputs_summurize_text_llama3_3"
-output_folder = "/home2020/home/icube/fghazoua/TetraProject/outputs_summurize_text_llama3_3_gpt_pop_Llama3_3_1024"
-execution_time_file_path = "/home2020/home/icube/fghazoua/TetraProject/outputs_summurize_text_llama3_3_gpt_pop_Llama3_3_1024/execution_time.txt"
 # Ensure the output folder exists
 os.makedirs(output_folder, exist_ok=True)
 
@@ -128,8 +122,6 @@ for file_name in os.listdir(folder_path):
 
     text = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-    # max_length=16200
-
     # Stop timing the execution
     end_time = time.time()
 
@@ -140,21 +132,19 @@ for file_name in os.listdir(folder_path):
     minutes, seconds = divmod(execution_time, 60)
     formatted_time = f"{int(minutes)} minutes and {seconds:.2f} seconds"
         
-    print(f"Execution time for model '{MODEL_NAME}' on file '{file_name}': {formatted_time}")
+    # print(f"Execution time for model '{MODEL_NAME}' on file '{file_name}': {formatted_time}")
 
     with open(execution_time_file_path, "a", encoding="utf-8") as time_file: 
         # time_file.write(f"Execution time for model '{model}' on file '{file_name}': {execution_time:.2f} seconds\n")
         time_file.write(f"Execution time for model '{MODEL_NAME}' on file '{file_name}': {formatted_time}\n")
 
 
-    output_file_name = f"{os.path.splitext(file_name)[0]}_{MODEL_NAME.replace('-', '_')}_1024.ttl"
+    output_file_name = f"{os.path.splitext(file_name)[0]}_{MODEL_NAME.replace('-', '_')}.ttl"
     output_file_path = os.path.join(output_folder, output_file_name)
 
     turtle_data = text.split("assistant")[1]
     with open(output_file_path, "w", encoding="utf-8") as output_file: 
         output_file.write(turtle_data)
-
-    # print(f"Saved responses to '{output_file_path}'.")
     
 
 print("Processing complete for all files and models.")

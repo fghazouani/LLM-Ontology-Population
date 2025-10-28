@@ -1,4 +1,4 @@
-# 🧠 LLM_Ontology_Population
+# 🧠 LLM-Ontology-Population
 
 ## 🏗️ Description du projet
 **LLM_Ontology_Population** est un projet de recherche visant à exploiter les **grands modèles de langage (LLMs)** pour le **peuplement automatique d’ontologies** à partir de textes non structurés.  
@@ -36,6 +36,7 @@ LLM-Ontology-Population/
 ├── .gitignore # Fichier .gitignore (voir recommandations)
 ├── README.md # Ce fichier
 └── LICENSE # Licence (MIT recommandé)
+
 
 
 ---

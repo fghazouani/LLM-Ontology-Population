@@ -23,9 +23,7 @@ from peft import (
 from trl import SFTTrainer, setup_chat_format, SFTConfig
 from datasets import Dataset, DatasetDict, load_from_disk
 
-
-
-
+# define a function to transform the dataset entries
 def format_chat_template(dataset, tokenizer):
     """
     Transforms each 'raw' entry in the dataset into a formatted chat template.
@@ -146,8 +144,7 @@ dataset = format_chat_template(dataset, tokenizer)
 
 dataset = dataset.train_test_split(test_size=0.1)
 
-# Complaining and training the model
-# new_model = "llama-3-70b-populate-ontology"
+# Fine-tuning the model
 new_model = "Llama-3.2-3B-populate-ontology"
 training_arguments = SFTConfig(
     output_dir=new_model,
@@ -157,7 +154,7 @@ training_arguments = SFTConfig(
     gradient_accumulation_steps=2,
     optim="paged_adamw_32bit",
     num_train_epochs=1,
-    eval_strategy="steps", #Use `eval_strategy` instead
+    eval_strategy="steps", 
     eval_steps=0.2,
     logging_steps=1,
     warmup_steps=10,
@@ -180,8 +177,8 @@ trainer = SFTTrainer(
     args=training_arguments,
 )
 
+# Start training
 trainer.train()
-
 
 # Model evaluation
 wandb.finish()
@@ -189,35 +186,35 @@ model.config.use_cache = True
 
 # testing the new model
 
-messages = [
-    {
-        "role": "system",
-        "content": "Translate the user text into an TTL graph based on the TetraOnto ontology."
-    },
-    {
-        "role": "user",
-        "content": "A restoration project is underway to create a series of pools in the Seine river in Paris, France. The project is managed by the Seine-Normandie Water Agency and the main contractor is Suez. The pools are designed to provide resting areas for migratory fish. The project started in 2018 and is expected to be completed by 2023, with a total cost of 250,000 €."
-    }
-]
+# messages = [
+#     {
+#         "role": "system",
+#         "content": "Translate the user text into an TTL graph based on the TetraOnto ontology."
+#     },
+#     {
+#         "role": "user",
+#         "content": "A restoration project is underway to create a series of pools in the Seine river in Paris, France. The project is managed by the Seine-Normandie Water Agency and the main contractor is Suez. The pools are designed to provide resting areas for migratory fish. The project started in 2018 and is expected to be completed by 2023, with a total cost of 250,000 €."
+#     }
+# ]
 
-prompt = tokenizer.apply_chat_template(messages, tokenize=False, 
-                                       add_generation_prompt=True)
+# prompt = tokenizer.apply_chat_template(messages, tokenize=False, 
+#                                        add_generation_prompt=True)
 
-inputs = tokenizer(prompt, return_tensors='pt', padding=True, 
-                   truncation=True).to("cuda")
+# inputs = tokenizer(prompt, return_tensors='pt', padding=True, 
+#                    truncation=True).to("cuda")
 
-outputs = model.generate(**inputs, max_length=8192, 
-                         num_return_sequences=1)
-# max_length=2048,
-text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+# outputs = model.generate(**inputs, max_length=8192, 
+#                          num_return_sequences=1)
 
-print(text.split("assistant")[1])
+# text = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-end_time = time.time()
-execution_time = end_time - start_time
-minutes, seconds = divmod(execution_time, 60)
-formatted_time = f"{int(minutes)} minutes and {seconds:.2f} seconds"
-print(f"Execution time for model '{MODEL_NAME}' is: {formatted_time}")
+# print(text.split("assistant")[1])
+
+# end_time = time.time()
+# execution_time = end_time - start_time
+# minutes, seconds = divmod(execution_time, 60)
+# formatted_time = f"{int(minutes)} minutes and {seconds:.2f} seconds"
+# # print(f"Execution time for model '{MODEL_NAME}' is: {formatted_time}")
 
 # Save the fine-tuned model
 trainer.model.save_pretrained(new_model)
