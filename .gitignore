@@ -24,7 +24,7 @@ __pycache__/
 .ipynb_checkpoints/
 
 # --- Large or irrelevant results ---
-# outputs_results_llama3_2-3b/
+outputs_results_llama3_2-3b/
 # outputs_results_llama3_3-70b_512/
 outputs_results_llama3_3-70b_1024/
 # 
