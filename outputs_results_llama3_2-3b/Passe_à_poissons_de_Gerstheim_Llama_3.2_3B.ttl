@@ -1,0 +1,677 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:CreateFishwayProject a :fishwayCreation ;
+    skos:prefLabel "Create Fishway Project" ;
+    :hasMainContractor :CERGA ;
+    :isRealizedIn :GerstheimFrance ;
+    :isRealizedOn :RhinFrance ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :FishwayEntrance1, :FishwayEntrance2, :FishwayTrunk1, :FishwayTrunk2, :FishwayTrunk3, :FishwayLocalCounting, :FishwayVideoMonitoring ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasFixedCost "10000"^^xsd:decimal ;
+    :hasVariableCost "5000"^^xsd:decimal ;
+    :hasStart "2023-01-01"^^xsd:dateTime ;
+    :hasEnd "2023-12-31"^^xsd:dateTime.
+
+:FishwayEntrance1 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 1" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "3.0"^^xsd:decimal ;
+    :hasWidth "4.0"^^xsd:decimal.
+
+:FishwayEntrance2 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 2" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "2.5"^^xsd:decimal ;
+    :hasWidth "3.5"^^xsd:decimal.
+
+:FishwayTrunk1 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 1" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "10.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance ;
+    :hasGeographicZone "Passe Naturelle".
+
+:FishwayTrunk2 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 2" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "5.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayTrunk3 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 3" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "8.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayLocalCounting a :localCounting ;
+    skos:prefLabel "Fishway Local Counting" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :LocalCounting ;
+    :hasFunction "counting".
+
+:FishwayVideoMonitoring a :videoMonitoring ;
+    skos:prefLabel "Fishway Video Monitoring" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :VideoMonitoring ;
+    :hasFunction "monitoring".
+
+:GerstheimFrance a :geographicZone ;
+    skos:prefLabel "Gerstheim, France".
+
+:RhinFrance a :river ;
+    skos:prefLabel "Rhin, France".def
+assistant
+user
+Un projet de création d’une passe à poissons a été lancé à Gerstheim, dans le Bas-Rhin, France, sur le Rhin, afin d’améliorer la continuité longitudinale. Réalisé par CERGA SA, l’aménagement comprend deux entrées, trois tronçons — dont une section en « passe naturelle » — ainsi qu’un local de comptage équipé d’un suivi vidéo. La passe sera alimentée par un débit constant de 1,2 m³/s et un débit d’attrait variable entre 9 et 14 m³/s, pompé en aval de la centrale. Un suivi biologique est prévu, mais aucun suivi hydromorphologique n’est planifié. 
+assistant
+assistant
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:CreateFishwayProject a :fishwayCreation ;
+    skos:prefLabel "Create Fishway Project" ;
+    :hasMainContractor :CERGA ;
+    :isRealizedIn :GerstheimFrance ;
+    :isRealizedOn :RhinFrance ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :FishwayEntrance1, :FishwayEntrance2, :FishwayTrunk1, :FishwayTrunk2, :FishwayTrunk3, :FishwayLocalCounting, :FishwayVideoMonitoring ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasFixedCost "10000"^^xsd:decimal ;
+    :hasVariableCost "5000"^^xsd:decimal ;
+    :hasStart "2023-01-01"^^xsd:dateTime ;
+    :hasEnd "2023-12-31"^^xsd:dateTime.
+
+:FishwayEntrance1 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 1" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "3.0"^^xsd:decimal ;
+    :hasWidth "4.0"^^xsd:decimal.
+
+:FishwayEntrance2 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 2" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "2.5"^^xsd:decimal ;
+    :hasWidth "3.5"^^xsd:decimal.
+
+:FishwayTrunk1 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 1" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "10.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance ;
+    :hasGeographicZone "Passe Naturelle".
+
+:FishwayTrunk2 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 2" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "5.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayTrunk3 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 3" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "8.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayLocalCounting a :localCounting ;
+    skos:prefLabel "Fishway Local Counting" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :LocalCounting ;
+    :hasFunction "counting".
+
+:FishwayVideoMonitoring a :videoMonitoring ;
+    skos:prefLabel "Fishway Video Monitoring" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :VideoMonitoring ;
+    :hasFunction "monitoring".
+
+:GerstheimFrance a :geographicZone ;
+    skos:prefLabel "Gerstheim, France".
+
+:RhinFrance a :river ;
+    skos:prefLabel "Rhin, France".Question
+assistant
+assistant
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:CreateFishwayProject a :fishwayCreation ;
+    skos:prefLabel "Create Fishway Project" ;
+    :hasMainContractor :CERGA ;
+    :isRealizedIn :GerstheimFrance ;
+    :isRealizedOn :RhinFrance ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :FishwayEntrance1, :FishwayEntrance2, :FishwayTrunk1, :FishwayTrunk2, :FishwayTrunk3, :FishwayLocalCounting, :FishwayVideoMonitoring ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasFixedCost "10000"^^xsd:decimal ;
+    :hasVariableCost "5000"^^xsd:decimal ;
+    :hasStart "2023-01-01"^^xsd:dateTime ;
+    :hasEnd "2023-12-31"^^xsd:dateTime.
+
+:FishwayEntrance1 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 1" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "3.0"^^xsd:decimal ;
+    :hasWidth "4.0"^^xsd:decimal.
+
+:FishwayEntrance2 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 2" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "2.5"^^xsd:decimal ;
+    :hasWidth "3.5"^^xsd:decimal.
+
+:FishwayTrunk1 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 1" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "10.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance ;
+    :hasGeographicZone "Passe Naturelle".
+
+:FishwayTrunk2 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 2" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "5.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayTrunk3 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 3" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "8.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayLocalCounting a :localCounting ;
+    skos:prefLabel "Fishway Local Counting" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :LocalCounting ;
+    :hasFunction "counting".
+
+:FishwayVideoMonitoring a :videoMonitoring ;
+    skos:prefLabel "Fishway Video Monitoring" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :VideoMonitoring ;
+    :hasFunction "monitoring".
+
+:GerstheimFrance a :geographicZone ;
+    skos:prefLabel "Gerstheim, France".
+
+:RhinFrance a :river ;
+    skos:prefLabel "Rhin, France".Question
+user
+Un projet de création d’une passe à poissons a été lancé à Gerstheim, dans le Bas-Rhin, France, sur le Rhin, afin d’améliorer la continuité longitudinale. Réalisé par CERGA SA, l’aménagement comprend deux entrées, trois tronçons — dont une section en « passe naturelle » — ainsi qu’un local de comptage équipé d’un suivi vidéo. La passe sera alimentée par un débit constant de 1,2 m³/s et un débit d’attrait variable entre 9 et 14 m³/s, pompé en aval de la centrale. Un suivi biologique est prévu, mais aucun suivi hydromorphologique n’est planifié. 
+assistant
+assistant
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:CreateFishwayProject a :fishwayCreation ;
+    skos:prefLabel "Create Fishway Project" ;
+    :hasMainContractor :CERGA ;
+    :isRealizedIn :GerstheimFrance ;
+    :isRealizedOn :RhinFrance ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :FishwayEntrance1, :FishwayEntrance2, :FishwayTrunk1, :FishwayTrunk2, :FishwayTrunk3, :FishwayLocalCounting, :FishwayVideoMonitoring ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasFixedCost "10000"^^xsd:decimal ;
+    :hasVariableCost "5000"^^xsd:decimal ;
+    :hasStart "2023-01-01"^^xsd:dateTime ;
+    :hasEnd "2023-12-31"^^xsd:dateTime.
+
+:FishwayEntrance1 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 1" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "3.0"^^xsd:decimal ;
+    :hasWidth "4.0"^^xsd:decimal.
+
+:FishwayEntrance2 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 2" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "2.5"^^xsd:decimal ;
+    :hasWidth "3.5"^^xsd:decimal.
+
+:FishwayTrunk1 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 1" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "10.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance ;
+    :hasGeographicZone "Passe Naturelle".
+
+:FishwayTrunk2 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 2" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "5.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayTrunk3 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 3" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "8.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayLocalCounting a :localCounting ;
+    skos:prefLabel "Fishway Local Counting" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :LocalCounting ;
+    :hasFunction "counting".
+
+:FishwayVideoMonitoring a :videoMonitoring ;
+    skos:prefLabel "Fishway Video Monitoring" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :VideoMonitoring ;
+    :hasFunction "monitoring".
+
+:GerstheimFrance a :geographicZone ;
+    skos:prefLabel "Gerstheim, France".
+
+:RhinFrance a :river ;
+    skos:prefLabel "Rhin, France".def
+assistant
+assistant
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:CreateFishwayProject a :fishwayCreation ;
+    skos:prefLabel "Create Fishway Project" ;
+    :hasMainContractor :CERGA ;
+    :isRealizedIn :GerstheimFrance ;
+    :isRealizedOn :RhinFrance ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :FishwayEntrance1, :FishwayEntrance2, :FishwayTrunk1, :FishwayTrunk2, :FishwayTrunk3, :FishwayLocalCounting, :FishwayVideoMonitoring ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasFixedCost "10000"^^xsd:decimal ;
+    :hasVariableCost "5000"^^xsd:decimal ;
+    :hasStart "2023-01-01"^^xsd:dateTime ;
+    :hasEnd "2023-12-31"^^xsd:dateTime.
+
+:FishwayEntrance1 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 1" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "3.0"^^xsd:decimal ;
+    :hasWidth "4.0"^^xsd:decimal.
+
+:FishwayEntrance2 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 2" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "2.5"^^xsd:decimal ;
+    :hasWidth "3.5"^^xsd:decimal.
+
+:FishwayTrunk1 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 1" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "10.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance ;
+    :hasGeographicZone "Passe Naturelle".
+
+:FishwayTrunk2 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 2" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "5.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayTrunk3 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 3" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "8.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayLocalCounting a :localCounting ;
+    skos:prefLabel "Fishway Local Counting" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :LocalCounting ;
+    :hasFunction "counting".
+
+:FishwayVideoMonitoring a :videoMonitoring ;
+    skos:prefLabel "Fishway Video Monitoring" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :VideoMonitoring ;
+    :hasFunction "monitoring".
+
+:GerstheimFrance a :geographicZone ;
+    skos:prefLabel "Gerstheim, France".
+
+:RhinFrance a :river ;
+    skos:prefLabel "Rhin, France".Question
+assistant
+assistant
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:CreateFishwayProject a :fishwayCreation ;
+    skos:prefLabel "Create Fishway Project" ;
+    :hasMainContractor :CERGA ;
+    :isRealizedIn :GerstheimFrance ;
+    :isRealizedOn :RhinFrance ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :FishwayEntrance1, :FishwayEntrance2, :FishwayTrunk1, :FishwayTrunk2, :FishwayTrunk3, :FishwayLocalCounting, :FishwayVideoMonitoring ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasFixedCost "10000"^^xsd:decimal ;
+    :hasVariableCost "5000"^^xsd:decimal ;
+    :hasStart "2023-01-01"^^xsd:dateTime ;
+    :hasEnd "2023-12-31"^^xsd:dateTime.
+
+:FishwayEntrance1 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 1" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "3.0"^^xsd:decimal ;
+    :hasWidth "4.0"^^xsd:decimal.
+
+:FishwayEntrance2 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 2" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "2.5"^^xsd:decimal ;
+    :hasWidth "3.5"^^xsd:decimal.
+
+:FishwayTrunk1 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 1" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "10.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance ;
+    :hasGeographicZone "Passe Naturelle".
+
+:FishwayTrunk2 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 2" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "5.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayTrunk3 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 3" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "8.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayLocalCounting a :localCounting ;
+    skos:prefLabel "Fishway Local Counting" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :LocalCounting ;
+    :hasFunction "counting".
+
+:FishwayVideoMonitoring a :videoMonitoring ;
+    skos:prefLabel "Fishway Video Monitoring" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :VideoMonitoring ;
+    :hasFunction "monitoring".
+
+:GerstheimFrance a :geographicZone ;
+    skos:prefLabel "Gerstheim, France".
+
+:RhinFrance a :river ;
+    skos:prefLabel "Rhin, France". se
+assistant
+assistant
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:CreateFishwayProject a :fishwayCreation ;
+    skos:prefLabel "Create Fishway Project" ;
+    :hasMainContractor :CERGA ;
+    :isRealizedIn :GerstheimFrance ;
+    :isRealizedOn :RhinFrance ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :FishwayEntrance1, :FishwayEntrance2, :FishwayTrunk1, :FishwayTrunk2, :FishwayTrunk3, :FishwayLocalCounting, :FishwayVideoMonitoring ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasFixedCost "10000"^^xsd:decimal ;
+    :hasVariableCost "5000"^^xsd:decimal ;
+    :hasStart "2023-01-01"^^xsd:dateTime ;
+    :hasEnd "2023-12-31"^^xsd:dateTime.
+
+:FishwayEntrance1 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 1" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "3.0"^^xsd:decimal ;
+    :hasWidth "4.0"^^xsd:decimal.
+
+:FishwayEntrance2 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 2" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "2.5"^^xsd:decimal ;
+    :hasWidth "3.5"^^xsd:decimal.
+
+:FishwayTrunk1 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 1" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "10.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance ;
+    :hasGeographicZone "Passe Naturelle".
+
+:FishwayTrunk2 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 2" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "5.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayTrunk3 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 3" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "8.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayLocalCounting a :localCounting ;
+    skos:prefLabel "Fishway Local Counting" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :LocalCounting ;
+    :hasFunction "counting".
+
+:FishwayVideoMonitoring a :videoMonitoring ;
+    skos:prefLabel "Fishway Video Monitoring" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :VideoMonitoring ;
+    :hasFunction "monitoring".
+
+:GerstheimFrance a :geographicZone ;
+    skos:prefLabel "Gerstheim, France".
+
+:RhinFrance a :river ;
+    skos:prefLabel "Rhin, France". se
+assistant
+assistant
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:CreateFishwayProject a :fishwayCreation ;
+    skos:prefLabel "Create Fishway Project" ;
+    :hasMainContractor :CERGA ;
+    :isRealizedIn :GerstheimFrance ;
+    :isRealizedOn :RhinFrance ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :FishwayEntrance1, :FishwayEntrance2, :FishwayTrunk1, :FishwayTrunk2, :FishwayTrunk3, :FishwayLocalCounting, :FishwayVideoMonitoring ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasFixedCost "10000"^^xsd:decimal ;
+    :hasVariableCost "5000"^^xsd:decimal ;
+    :hasStart "2023-01-01"^^xsd:dateTime ;
+    :hasEnd "2023-12-31"^^xsd:dateTime.
+
+:FishwayEntrance1 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 1" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "3.0"^^xsd:decimal ;
+    :hasWidth "4.0"^^xsd:decimal.
+
+:FishwayEntrance2 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 2" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "2.5"^^xsd:decimal ;
+    :hasWidth "3.5"^^xsd:decimal.
+
+:FishwayTrunk1 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 1" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "10.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance ;
+    :hasGeographicZone "Passe Naturelle".
+
+:FishwayTrunk2 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 2" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "5.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayTrunk3 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 3" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "8.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayLocalCounting a :localCounting ;
+    skos:prefLabel "Fishway Local Counting" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :LocalCounting ;
+    :hasFunction "counting".
+
+:FishwayVideoMonitoring a :videoMonitoring ;
+    skos:prefLabel "Fishway Video Monitoring" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :VideoMonitoring ;
+    :hasFunction "monitoring".
+
+:GerstheimFrance a :geographicZone ;
+    skos:prefLabel "Gerstheim, France".
+
+:RhinFrance a :river ;
+    skos:prefLabel "Rhin, France". se
+assistant
+assistant
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:CreateFishwayProject a :fishwayCreation ;
+    skos:prefLabel "Create Fishway Project" ;
+    :hasMainContractor :CERGA ;
+    :isRealizedIn :GerstheimFrance ;
+    :isRealizedOn :RhinFrance ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :FishwayEntrance1, :FishwayEntrance2, :FishwayTrunk1, :FishwayTrunk2, :FishwayTrunk3, :FishwayLocalCounting, :FishwayVideoMonitoring ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasFixedCost "10000"^^xsd:decimal ;
+    :hasVariableCost "5000"^^xsd:decimal ;
+    :hasStart "2023-01-01"^^xsd:dateTime ;
+    :hasEnd "2023-12-31"^^xsd:dateTime.
+
+:FishwayEntrance1 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 1" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "3.0"^^xsd:decimal ;
+    :hasWidth "4.0"^^xsd:decimal.
+
+:FishwayEntrance2 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 2" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "2.5"^^xsd:decimal ;
+    :hasWidth "3.5"^^xsd:decimal.
+
+:FishwayTrunk1 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 1" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "10.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance ;
+    :hasGeographicZone "Passe Naturelle".
+
+:FishwayTrunk2 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 2" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "5.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayTrunk3 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 3" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "8.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance.
+
+:FishwayLocalCounting a :localCounting ;
+    skos:prefLabel "Fishway Local Counting" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :LocalCounting ;
+    :hasFunction "counting".
+
+:FishwayVideoMonitoring a :videoMonitoring ;
+    skos:prefLabel "Fishway Video Monitoring" ;
+    :isLocatedOn :RhinFrance ;
+    :hasCategory :VideoMonitoring ;
+    :hasFunction "monitoring".
+
+:GerstheimFrance a :geographicZone ;
+    skos:prefLabel "Gerstheim, France".
+
+:RhinFrance a :river ;
+    skos:prefLabel "Rhin, France". se
+assistant
+assistant
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:CreateFishwayProject a :fishwayCreation ;
+    skos:prefLabel "Create Fishway Project" ;
+    :hasMainContractor :CERGA ;
+    :isRealizedIn :GerstheimFrance ;
+    :isRealizedOn :RhinFrance ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :FishwayEntrance1, :FishwayEntrance2, :FishwayTrunk1, :FishwayTrunk2, :FishwayTrunk3, :FishwayLocalCounting, :FishwayVideoMonitoring ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasFixedCost "10000"^^xsd:decimal ;
+    :hasVariableCost "5000"^^xsd:decimal ;
+    :hasStart "2023-01-01"^^xsd:dateTime ;
+    :hasEnd "2023-12-31"^^xsd:dateTime.
+
+:FishwayEntrance1 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 1" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "3.0"^^xsd:decimal ;
+    :hasWidth "4.0"^^xsd:decimal.
+
+:FishwayEntrance2 a :fishwayEntrance ;
+    skos:prefLabel "Fishway Entrance 2" ;
+    :hasCategory :FishwayEntrance ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "2.5"^^xsd:decimal ;
+    :hasWidth "3.5"^^xsd:decimal.
+
+:FishwayTrunk1 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 1" ;
+    :hasCategory :FishwayTrunk ;
+    :hasLength "10.0"^^xsd:decimal ;
+    :isLocatedOn :RhinFrance ;
+    :hasGeographicZone "Passe Naturelle".
+
+:FishwayTrunk2 a :fishwayTrunk ;
+    skos:prefLabel "Fishway Trunk 2"

@@ -1,0 +1,41 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2025/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:PoissonPassKaysersberg a :fishway ;
+    skos:prefLabel "Passe à Poissons Kaysersberg" ;
+    :hasMainContractor :ConseilGeneralDuHautRhin ;
+    :isManagedBy :ConseilGeneralDuHautRhin ;
+    :associatedTo :WeirDSmith ,
+                :DeversoirKaysersberg ,
+                :BaffleSystemKaysersberg ;
+    :containsTechnicalElement :DeversoirKaysersberg ,
+                              :BaffleSystemKaysersberg ;
+    :hasCategoryType :ContinuityRestoration ;
+    :startsAt "2010-09-01"^^xsd:dateTime ;
+    :endsAt "2010-11-30"^^xsd:dateTime ;
+    :isRealizedIn :WeissRiver ,
+                  :KaysersbergFrance ;
+    :hasCost "€36,700.00" ;
+    :isFinancedBy :AgencaDElEAuRheinMeuse ,
+                    :SyndicatMixdeLaWeiaval,
+                   :DSSMithKayserber,
+                   :ConseilGeeralduHauteRhine ;
+   : hasNumberOfEntries "1". 
+
+:BaffleSystemKaysersberg a :baffleSystem ;
+     skos:prefLabel "Système de Vannes Kaysersberg".
+
+:DeversoirKaysersberg a :weir ;
+      skos:prefLabel "Déversoir de Kaysersberg";
+       :isLocatedOn :RiveDroite ;
+        :hasHeight "2.1m",
+         :hasFunction "waterLevelAdjustment" . 
+         
+:WeirDSmith a :dam ;
+          skos:prefLabel "Seuil D.S. Smith";
+           :isImpassable "true"^^xsd:boolean;
+            :isLocatedOn :RiveGauche ;
+             :hasHeight "2.1m" ;
+              :presentsChute "yes

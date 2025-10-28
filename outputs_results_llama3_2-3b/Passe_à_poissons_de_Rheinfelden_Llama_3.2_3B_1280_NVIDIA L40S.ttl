@@ -1,0 +1,126 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:PasseAPoissonsRheinfelden a :projectPoisson ;
+    skos:prefLabel "Passe à Poissons Rheinfelden" ;
+    :hasMainContractor :SocieteFrancaiseDesPonts ;
+    :associatedTo :CentraleHydroelectriqueRheinfelden,
+        :ChenalArtificielRheinfelden ;
+    :realizedIn :RhineGermany,
+        :BadeWurttembergAllemagne ;
+    :isRealizationOf :PasseADeuxSensRheinfelden ;
+    :hasCategory :ContinuityLongitudinal,
+            :HydraulicManagement ;
+    :startsAt "1900-01-01"^^xsd:dateTime ;
+    :endsAt "2018-12-31"^^xsd:dateTime. 
+
+:SocieteFrancaiseDesPonts a :mainContractor ;
+    skos:prefLabel "Société française des Ponts". 
+    
+
+:CentraleHydroelectriqueRheinfelden a :dam ;
+    skos:prefLabel "Central Hydroelectric Rheinfelden".   
+    
+:ChenalArtificielRheinfelden a :channel ;
+    skos:prefLabel "Channel Artifical Rheinfelden".   
+
+:RhineGermany a :geographicZone ;
+    skos:prefLabel "Rhin Germany", :runsThrough :RhinFrance,
+                    :flowsInto :Danube Austria;
+    :hasCategory :InternationalWaterway ;  
+    :hasGeographyType :river, :longestRiver ;
+    :hasLength "1292.6"^^xsd:decimal ;       
+    :hasWidth "27.7"^^xsd:decimal.  
+
+:BadeWurttembergAllemagne a :geographicZone ;
+    skos:prefLabel "Baden Württemberg Germany",
+                :liesOn :GermanBorder ;
+    :hasCategory :RegionalGeographicZone ;
+
+:FrenchBorder a :geographicalBoundary ;
+    skos:prefLabel "French Border".
+
+:GermanBorder a :geographicalBoundary ;
+    skos:prefLabel "German Border".
+
+:DanubeAustria a :geographicZone ;
+    skos:prefLabel "The Danube in Austria";
+
+:DublinIreland a :geographicZone ;
+    skos:prefLabel "Dublin Ireland",
+
+:EnglishChannelUnitedKingdom a :geographicZone ;
+    skos:prefLabel "the English Channel United Kingdom".
+    
+
+:PasseADeuxSensRheinfelden a :passageFishWay ;
+    skos:prefLabel "Passing Fish Way at Rheinfelden".        
+
+:SalmonRheinfelden a :species ;
+    skos:prefLabel "salmon of Rheinfelden".        
+
+
+:WhitefishRheinfelden a :species ;
+    skos:prefLabel "white fish of rheinfelden".      Question
+:BluegillSunfishRheinfelden a :species ;
+    skos:prefLabel "blue gills sun fishes of rheinfelden".  
+
+
+:AtlanticSalmonRheinfelden a :species ;
+    skos:prefLabel "atlantic salmon of rheinfelden".     
+
+:BrownTroutRheinfelden a :species ;
+    skos:prefLabel "brown trout of rheinfelden".       
+
+:RainbowTroutRheinfelden a :species ;
+    skos:prefLabel "rainbow trout of rheinfelden".     
+
+:AmurCarpRheinfelden a :species ;
+    skos:prefLabel "amour carp of rheinfelden".         
+
+:CommonTenchRheinfelden a :species ;
+    skos:prefLabel "common tench of rheinfelden".          
+
+:CarpRheinfelden a :species ;
+    skos:prefLabel "carp of rheinfelden".                  
+
+:BlackSeaBreamRheinfelden a :species ;
+    skos:prefLabel "black sea bream of rheinfelden".            
+
+:GibelioRheinfelden a :species ;
+    skos:prefLabel "gielio of rheinfelden".                 
+
+:EuropeanEelRheinfelden a :species ;
+    skos:prefLabel "european eel of rheinfelden".              
+
+:MigratorySpeciesRheinfelden a :category ;
+    skos:prefLabel "migrating species at rheinfelden".             
+
+:NonMigratorySpeciesRheinfelden a :category ;
+    skos:prefLabel "non-migrating species at rheinfelden".            
+
+:ReconnectionRheinfelden a :reconnection ;
+    skos:prefLabel "reconnection project at rheinfelden".                
+
+:DamRheinfelden a :dam ;
+    skos:prefLabel "dam project at rheinfelden".                     
+
+:ChannelArtificialRheinfelden a :channel ;
+    skos:prefLabel "artificial channel project at rheinfelden".                    
+
+:ContinuityLongitudinalRheinfelden a :continuityLongitudinal ;
+    skos:prefLabel "continuty longitudinal project at rheinfelden".                      
+
+:HydromorphologicalImprovementsRheinfelden a :hydromorphologicImprovement ;
+    skos:prefLabel "hydromorphology improvement project at rheinfelden".                       
+
+:BiologicalMonitoringRheinfelden a :biologicalMonitoring ;
+    skos:prefLabel "biological monitoring project at rheinfelden".                        
+
+:NaturalRestorationRheinfelden a :naturalRestoration ;
+    skos:prefLabel "natural restoration project at rheinfelden".                          
+
+:SocialImpactAssessmentRheinfelden a :socialImpactAssessment ;
+    sk

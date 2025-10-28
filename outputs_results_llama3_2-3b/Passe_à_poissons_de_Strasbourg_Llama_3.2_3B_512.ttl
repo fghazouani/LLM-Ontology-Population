@@ -1,0 +1,38 @@
+
+@prefix : <http://www.semanticweb.org/fethi/onto/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:ProjectPasseAPoissonsStrasbourg a :projectPasseAPoissons ;
+    skos:prefLabel "Project Passe à Poissons Strasbourg" ;
+    :hasMainContractor :EDF ;
+    :isManagedBy :EDF ;
+    :hasCategory :LongitudinalContinuity ;
+    :isRealizedIn :StrasbourgFrance ;
+    :isRealizedOn :RhinFrance ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :includes :DoubleEntryRhinStrasbourg ;
+    :includes :BarrageRhinStrasbourg ;
+    :includes :BassinRhinStrasbourg ;
+    :includes :RivierePseudoNaturelleRhinStrasbourg ;
+    :includes :BassinRhinStrasbourg2 ;
+    :includes :LocalDeComptageAutomatiqueRhinStrasbourg ;
+    :includes :EspaceObservationPublicRhinStrasbourg ;
+    :hasCost "15,000,000€" ;
+    :hasNumberOfEntries "2"^^xsd:decimal ;
+    :hasNumberOfEntriesMain "1"^^xsd:decimal ;
+    :hasNumberOfEntriesLocal "1"^^xsd:decimal ;
+    :hasNumberOfEntriesOther "0"^^xsd:decimal ;
+    :hasNumberOfEntriesMainCategory "1"^^xsd:decimal ;
+    :hasNumberOfEntriesLocalCategory "1"^^xsd:decimal ;
+    :hasNumberOfEntriesOtherCategory "0"^^xsd:decimal ;
+    :hasMainCategory :LongitudinalContinuity ;
+    :hasLocalCategory :LongitudinalContinuity ;
+    :hasOtherCategory :LongitudinalContinuity ;
+    :startsAt "2012-01-01"^^xsd:dateTime ;
+    :endsAt "2015-12-31"^^xsd:dateTime ;
+    :isRealizedIn :StrasbourgFrance ;
+    :isRealizedOn :RhinFrance ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"

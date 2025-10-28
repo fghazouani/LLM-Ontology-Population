@@ -1,0 +1,36 @@
+
+@prefix : <http://www.semanticweb.org/fethi/onto/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:ProjetDeRestaurationEnvironnementaleKembs a :projetDeRestaurationEnvironnementale ;
+        skos:prefLabel "Projet de restauration environnementale à Kembs" ;
+        :affecteA :Rhin ;
+        :estRealiseA :KembsHautRhin ;
+        :estRealiseDans :France ;
+        :estRealisePar :EDF ;
+        :estConceuPar :CentreDIngénierieHydrauliqueEDF ;
+        :contient :RemplacementPasseAPoissonsKembs ;
+        :contient :PasseAPoissonsKembs ;
+        :contient :PasseACastorsKembs ;
+        :contient :PetiteCentraleKembs ;
+        :estRealiseAu :Rhin ;
+        :affecteA :GrandCanalDAlsace ;
+        :affecteA :ReserveNaturelleDeLaPCA ;
+        :estRealisePar :EDF ;
+        :estConceuPar :CentreDIngénierieHydrauliqueEDF ;
+        :contient :RemplacementPasseAPoissonsKembs ;
+        :contient :PasseAPoissonsKembs ;
+        :contient :PasseACastorsKembs ;
+        :contient :PetiteCentraleKembs ;
+        :estRealiseAu :Rhin ;
+        :affecteA :GrandCanalDAlsace ;
+        :affecteA :ReserveNaturelleDeLaPCA ;
+        :estRealisePar :EDF ;
+        :estConceuPar :CentreDIngénierieHydrauliqueEDF ;
+        :contient :RemplacementPasseAPoissonsKembs ;
+        :contient :PasseAPoissonsKembs ;
+        :contient :PasseACastorsKembs ;
+        :contient :PetiteCentraleKembs ;
+        :estRealiseAu :Rhin ;
+        :affecteA :GrandCanal

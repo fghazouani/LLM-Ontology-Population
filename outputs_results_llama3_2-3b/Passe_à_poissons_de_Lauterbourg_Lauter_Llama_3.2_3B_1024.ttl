@@ -1,0 +1,70 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:ProjetPasseAPoissonsLauterbourg a :passeAPoissons ;
+    skos:prefLabel "Projet de passe à poissons à Lauterbourg" ;
+    :estRealiseIn :Lauterbourg ;
+    :estRealiseOn :Lauter ;
+    :hasMainContractor :Jockgrim ;
+    :hasCategory :RestaurationContinuiteLongitudinale ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasCost "171682"^^xsd:decimal ;
+    :isFinancedBy :UnionEuropeenne ;
+    :hasStartDateTime "2005-01-01"^^xsd:dateTime ;
+    :hasEndDateTime "2005-12-31"^^xsd:dateTime.
+
+:Jockgrim a :mainContractor ;
+    skos:prefLabel "Jockgrim".
+
+:UnionEuropeenne a :financier ;
+    skos:prefLabel "Union européenne".
+
+:Lauter a :river ;
+    skos:prefLabel "Lauter".
+
+:Lauterbourg a :geographicZone ;
+    skos:prefLabel "Lauterbourg".2014-12-31T09:33:38.000+01:00
+assistant
+assistant
+assistant
+assistant
+assistant
+assistant
+assistant
+assistant
+assistant
+assistant
+assistant
+assistant
+assistant
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:ProjetPasseAPoissonsLauterbourg a :passeAPoissons ;
+    skos:prefLabel "Projet de passe à poissons à Lauterbourg" ;
+    :estRealiseIn :Lauterbourg ;
+    :estRealiseOn :Lauter ;
+    :hasMainContractor :Jockgrim ;
+    :hasCategory :RestaurationContinuiteLongitudinale ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasCost "171682"^^xsd:decimal ;
+    :isFinancedBy :UnionEuropeenne ;
+    :hasStartDateTime "2005-01-01"^^xsd:dateTime ;
+    :hasEndDateTime "2005-12-31"^^xsd:dateTime.
+
+:Jockgrim a :mainContractor ;
+    skos:prefLabel "Jockgrim".
+
+:UnionEuropeenne a :financier ;
+    skos:prefLabel "Union européenne".
+
+:Lauter a :river ;
+    skos:prefLabel "Lauter".
+
+:Lauterbourg a :geographicZone ;
+    skos:prefLabel "Lauterbourg".The user text is a project of a fish lift in Lauterbourg, France, realized in 2005. The project is managed by Jockgrim and is categorized as a restoration project. Biological monitoring is planned, while hydromorphological monitoring is not. The total cost is 171,682 €, and the project is financed by the European Union. The project starts on 2005-01-01 and ends on 2005-12-31. The geographic zone is Lauterbourg. The main contractor is Jockgrim. The river is Lauter. The project is realized on Lauter. The project is realized in Lauterbourg. The project is managed by Jockgrim. The project is categorized as a restoration project. Biological monitoring is planned, while hydromorphological monitoring is not. The project is financed by the European Union. The project starts on 2005-01-01 and ends on 2005-12-31. The cost is 171,682 €. The project has a main contractor, Jockgrim. The project has a financier, the European Union. The project is realized on a river, Lauter. The project is realized in a geographic zone, Lauterbourg. The project is managed by Jockgrim. The project is categorized as a restoration project. Biological monitoring is planned, while hydromorph

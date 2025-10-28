@@ -1,0 +1,42 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:SantYnezApronRetrofitFishPassageProject a :reconnection ;
+    skos:prefLabel "Sant Ynez Apron Retrofit Fish Passage Project" ;
+    isManagedBy :CachumaConservationAndReleaseBoard,
+                 :EntrixInc,
+                 :AllenRobertLarson,
+                 :CaliforniaCoastalConservancy ;
+    hasCategory :LongitudinalContinuityImprovement, 
+                  :HabitatRestoration ;
+    associatedTo :ConcreteRockGradeControlApronSantaYnezRiverWatershedCentralCalifonia ;
+    realizedIn :HighwayOneBridgeSantaYnezRiverWatershedCentralCalifonia ;
+    startsAt "January 1998-01-01^^xsd:dateTime";
+    endsAt   "December 2002-01-31^^xsd:dateTime" ; 
+    includes :StepPoolNumberOneOfTheSantaYnezApronRetroFitProject,
+               :StepPoolNumberTwoOfTheSantaYnezApronRetroFitProject,
+               :StepPoolNumberThreeOfTheSantaYnezApronRetroFitProject;
+    costs "$87000";
+
+:HighwayOneBridgeSantaYnezRiverWatershedCentralCalifonia a :bridge ;
+    skos:prefLabel "Highway One Bridge, Santa Ynez River Watershed, Central Califiornia" ;
+    spansOver :SantaYnezRiver ;
+
+:ConcreteRockGradeControlApronSantaYnezRiverWatershedCentralCalifonia a :gradeControlStructure ;
+    skos:prefLabel "Concret-Rock Grade Control Apron, Sant-Ynez river watershed, central calfiornia" ;
+    impassesFlowUnder "20cfs"^^xsd:decimal;
+
+:SantaYnezRiver a :river ;
+    skos:prefLabel "Saint Yenez River" ;
+
+:CachumaConservationAndReleaseBoard a :projectOwner ;
+    skos:prefLabel "Catchuma conservation et release board" ;
+
+:EntrixInc a :consultingEngineer ;
+    skos:prefLabel "Entrix inc." ;
+
+:AllenRobertLarson a :biologicalConsultant ;
+    skos:prefLabel "Allan & robert larson" ;
+
+:CaliforniaCo

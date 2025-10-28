@@ -1,0 +1,41 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:PeacockCreekFishwayProject a :concretePoolAndVortexWeir ;
+    skos:prefLabel "Peacock Creek Fishway Project" ;
+    :isManagedBy :DelNorteCounty , :CaliforniaDepartmentOfFishAndGame ,
+                 :CoastalConservancy ;
+    :associatedTo :HighPriorityRoadCrossingOnPeacockCreek ;
+    :realizes :JuvenilePassageEnhancementAtPeacockCreek ;
+    :hasCategory :LongitudinalContinuity ;
+    :isRealizedIn :SmithRiverBasin ;
+    :startsAt "2003-11-01"^^xsd:dateTime ;
+    :endsAt "2003-11-30"^^xsd:dateTime ;
+    :costs "$474,000" ;
+
+:HighPriorityRoadCrossingOnPeacockCreek a :roadCrossing ;
+    skos:altLabel "High Priority Road Crossing On Peacock Creek" ;
+    :blocksMigration "true"^^xsd:boolean ;
+    :isLocatedOn :PeacockCreek ;
+    :requiresStability "false"^^xsd:boolean ; # Assuming it does not require structural or hydromorphological stability
+
+:PeacockCreek a :river ;
+    skos:prefLabel "Peacock Creek" ;
+    
+:DelNorteCounty a :projectOwner ;
+    skos:prefLabel "Del Norte County" ;
+    
+:CaliforniaDepartmentOfFishAndGame a :projectOwner ;
+    skos:prefLabel "California Department Of Fish And Game" ;
+   
+:CoastalConservancy a :projectOwner ;
+    skos:prefLabel "Coastal Conservancy" ;
+
+:SmithRiverBasin a :geographicZone ;
+    skos:prefLabel "Smith River Basin" ;
+
+:ConcreteFishwayOnPeacockCreek a :fishway ;
+    skos:prefLabel "Concrete Pool And Vortex Weir System At High-Priority Road Crossing In Peacock Creek" ;
+    :includesPools "9"^^xsd:decimal ;

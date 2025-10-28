@@ -1,0 +1,16 @@
+Execution time for model 'llama-3-70b-populate-ontology' on file 'case5_en.txt': 0 minutes and 58.03 seconds
+Execution time for model 'llama-3-70b-populate-ontology' on file 'Passe_à_poissons_de_Gerstheim.txt': 0 minutes and 51.25 seconds
+Execution time for model 'llama-3-70b-populate-ontology' on file 'case7_en.txt': 0 minutes and 51.26 seconds
+Execution time for model 'llama-3-70b-populate-ontology' on file 'case3.txt': 0 minutes and 51.59 seconds
+Execution time for model 'llama-3-70b-populate-ontology' on file 'case8_en.txt': 0 minutes and 51.35 seconds
+Execution time for model 'llama-3-70b-populate-ontology' on file 'case2.txt': 0 minutes and 52.01 seconds
+Execution time for model 'llama-3-70b-populate-ontology' on file 'case6_en.txt': 0 minutes and 51.41 seconds
+Execution time for model 'llama-3-70b-populate-ontology' on file 'case1.txt': 0 minutes and 51.74 seconds
+Execution time for model 'llama-3-70b-populate-ontology' on file 'Passes_de_Kembs_poissons__castors.txt': 0 minutes and 51.52 seconds
+Execution time for model 'llama-3-70b-populate-ontology' on file 'Passe_à_poissons_de_Lauterbourg_Lauter.txt': 0 minutes and 51.11 seconds
+Execution time for model 'llama-3-70b-populate-ontology' on file 'case4_en.txt': 0 minutes and 51.30 seconds
+Execution time for model 'llama-3-70b-populate-ontology' on file 'Passe_à_poissons_de_Gambsheim.txt': 0 minutes and 51.57 seconds
+Execution time for model 'llama-3-70b-populate-ontology' on file 'Passe_à_poissons_de_Rheinfelden.txt': 0 minutes and 51.11 seconds
+Execution time for model 'llama-3-70b-populate-ontology' on file 'Passe_à_poissons_de_Brisach.txt': 0 minutes and 51.21 seconds
+Execution time for model 'llama-3-70b-populate-ontology' on file 'Passe_à_poissons_d_Iffezheim.txt': 0 minutes and 51.67 seconds
+Execution time for model 'llama-3-70b-populate-ontology' on file 'Passe_à_poissons_de_Strasbourg.txt': 0 minutes and 51.77 seconds

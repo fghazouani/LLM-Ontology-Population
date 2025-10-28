@@ -1,0 +1,686 @@
+
+@prefix : <http://www.semanticweb.org/fethi/onto/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:ProjetPasseAPoissons a :hasMainContractor :CERGA ;
+    :hasSecondaryContractor :AssociationPassage309 ;
+    :hasCategory :ProjetDePasseAPoissons ;
+    :isManagedBy :ONEMA ;
+    :isRealizedIn :GambsheimBasRhin ;
+    :isRealizedOn :Rhin ;
+    :includes :BarrageDeGambsheim ;
+    :includes :BassinDeRepartitionDeGambsheim ;
+    :includes :EntréeAPoissonsDeGambsheim ;
+    :includes :EntréeAPoissonsDeGambsheim ;
+    :includes :EntréeAPoissonsDeGambsheim ;
+    :includes :RiveLongeDeGambsheim ;
+    :hasNumberOfEntries 3 ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasCost "10,000,000€" ;
+    :isRealizedFrom "2018-01-01"^^xsd:dateTime ;
+    :isRealizedTo "2023-12-31"^^xsd:dateTime ;
+    :hasCategory :ProjetDePasseAPoissons ;
+    :hasMainContractor :CERGA ;
+    :hasSecondaryContractor :AssociationPassage309 ;
+    :hasCategory :ProjetDePasseAPoissons ;
+    :isManagedBy :ONEMA ;
+    :isRealizedIn :GambsheimBasRhin ;
+    :isRealizedOn :Rhin ;
+    :includes :BarrageDeGambsheim ;
+    :includes :BassinDeRepartitionDeGambsheim ;
+    :includes :EntréeAPoissonsDeGambsheim ;
+    :includes :EntréeAPoissonsDeGambsheim ;
+    :includes :EntréeAPoissonsDeGambsheim ;
+    :includes :RiveLongeDeGambsheim ;
+    :hasNumberOfEntries 3 ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasCost "10,000,000€" ;
+    :isRealizedFrom "2018-01-01"^^xsd:dateTime ;
+    :isRealizedTo "2023-12-31"^^xsd:dateTime.
+
+:BarrageDeGambsheim a :isLocatedOn :Rhin ;
+    :hasHeight "2.5"^^xsd:decimal ;
+    :isImpassable "true"^^xsd:boolean.
+
+:BassinDeRepartitionDeGambsheim a :isLocatedOn :Rhin ;
+    :hasLength "100.0"^^xsd:decimal ;
+    :hasWidth "10.0"^^xsd:decimal ;
+    :hasDepth "3.0"^^xsd:decimal ;
+    :hasFunction :BassinDeRepartition.
+
+:EntréeAPoissonsDeGambsheim a :isLocatedOn :Rhin ;
+    :hasFunction :EntréeAPoissons.
+
+:EntréeAPoissonsDeGambsheim a :isLocatedOn :Rhin ;
+    :hasFunction :EntréeAPoissons.
+
+:EntréeAPoissonsDeGambsheim a :isLocatedOn :Rhin ;
+    :hasFunction :EntréeAPoissons.
+
+:RiveLongeDeGambsheim a :isLocatedOn :Rhin ;
+    :hasFunction :RiveLonge.
+
+:GambsheimBasRhin a :isLocatedIn :BasRhin ;
+    :hasGeographicZone :ZoneDuRhin.
+
+:Rhin a :isLocatedOn :LeRhin ;
+    :hasGeographicZone :ZoneDuRhin.
+
+:LeRhin a :isLocatedOn :LeRhin ;
+    :hasGeographicZone :ZoneDuRhin.
+
+:BasRhin a :isLocatedIn :BasRhin ;
+    :hasGeographicZone :ZoneDuRhin.
+
+:ONEMA a :isManagedBy :ONEMA.
+
+:CERGA a :hasMainContractor :CERGA.
+
+:AssociationPassage309 a :hasSecondaryContractor :AssociationPassage309.
+
+:SaumonRhin a :hasCategory :SaumonRhin.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDePasseAPoissons a :hasCategory :ProjetDePasseAPoissons.
+
+:ProjetDe

@@ -1,0 +1,45 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:PoissonPassBrisach a :passeAPoissons ;
+    skos:prefLabel "Poisson Pass at Brisach" ;
+    dc:description "A fish pass project in Brisach to restore longitudinal continuity after the creation of a French-German small-scale hydroelectric power plant." ;
+    :hasMainContractor :CergaSA ;
+    isManagedBy :CergaSA ;
+    :isRealizedIn :HautRhin , :FranceGermanyBorder ;
+    :associatedTo :HydroElectricPlantBrisach ;
+    hasCategory :LongitudinalContinuityRestoration ;
+    includes :FishwayBrisach ,
+             :DescentDeviceOneBrisach,
+              :DescentDeviceTwoBrisach,
+               :TrappingSystemBrisach;
+     hasNumberOfEntries 4 ;
+      startsAt "2009-06-14"^^xsd:dateTime ;
+       endsAt "2009-12-25"^^xsd:DateTime.
+
+:Rhine a :river ;
+   skos:prefLabel "Rhein River" ;
+    dc:title "The Rhein river".
+
+:HautRhin a geogeo:geographicZone ;
+skos:prefLabel "Upper Rhine region";
+dc:title "The Upper Rhine geographic area". 
+
+:CergaSA a org:projectOwner ; 
+org:mainContractor; 
+dc:title "Société française gérante du contrat principal"; 
+skos:altlabel "Cerga Société Anonyme", "Cerga Limited Company". 
+
+:HydroElectricPlantBrisach a :microhydroelectricPowerplant ;
+           skos:PrefLabel "Micro Hydro Electric Plant at Brisach",
+            dc:title "Small-Scale Hydropower Facility at Bisrach",
+              HasHeight 5.7 ;
+                IsImpassable "true"^^Xsd:boolean.
+                
+:FishwayBrisach a :fishWay ;
+                 Skos:prefLabel "Standard Fish Way at Birsach",
+                  Dc:title "Conventional Pishing Passage at Brisach".
+                  
+:DescentDeviceOneBrisach a :descentDevice ;
+                         Skos:

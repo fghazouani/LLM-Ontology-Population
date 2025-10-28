@@ -1,0 +1,53 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:ProjetCreationPasseAPoissonsGerstheim a :creationDePasseAPoissons ;
+    skos:prefLabel "Projet de création d’une passe à poissons à Gerstheim" ;
+    :estRealisePar :CERGAS ;
+    :estRealiseDans :GerstheimBasRhinFrance ;
+    :estSurLe :Rhin ;
+    :a :aménagementDeContinuitéLongitudinale ;
+    :a :aménagementDePasseAPoissons ;
+    :a :aménagementDePasseNaturelle ;
+    :a :aménagementDeLocalDeComptage ;
+    :a :aménagementDeLocalDeComptageEquipeDeSuiviVideo ;
+    :a :aménagementDeLocalDeComptageAvecSuiviVideo ;
+    :a :aménagementDeLocalDeComptageAvecSuiviHydromorphologique ;
+    :a :aménagementDeLocalDeComptageAvecSuiviBiologique ;
+    :a :aménagementDeLocalDeComptageAvecSuiviMultiple ;
+    :a :aménagementDeLocalDeComptageAvecSuiviUnique ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie ;
+    :a :aménagementDeLocalDeComptageAvecSuiviNonPlanifie

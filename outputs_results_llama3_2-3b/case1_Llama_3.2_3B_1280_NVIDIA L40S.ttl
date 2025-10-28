@@ -1,0 +1,104 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:PasseAPoissonsBruche a :isRealizedIn :RiviereDeContournementAvolsheim ;
+                        :hasMainContractor :SOGREAHClients,
+                                :isManagedBy :CommunauteDesCommesDeLaRegionDeMolsheimMutzig ;
+                            :isCategory :PasseAPoissons ;
+                         :startsAt "2010-08-01"^^xsd:dateTime ;
+                          :endsAt "2010-12-31"^^xsd:dateTime;
+                           :includes :BassinDeContournementBruche,
+                                        :SeulEnRocheBruche,
+                                            :ChuteVerticaleBruche,
+                                                :BarrageABruche,
+                                                    :BarrageBBruche. 
+
+:BassinDeContournementBruche a :isLocatedOn :RiviereBruche ;
+                             :hasHeight "5.7"^^xsd:decimal ; 
+                              :hasLength "36.9"^^xsd:decimal ;
+                               :hasWidth "16.7"^^xsd:decimal. 
+
+
+:SeulEnRocheBruche a :isLocatedOn :BassinDeContournementBruche ;
+                  :hasFunction :seulEnRoche ;
+                   :hasHeight "14.1"^^xsd:decimal.  
+
+:ChuteVerticaleBruche a :isLocatedOn :BassinDeContournementBruche ;
+                     :hasFunction :chuteVerticale ;
+                      :hasHeight "13.8"^^xsd:decimal.   
+
+:BarrageABruche a :isLocatedOn :BassinDeContournementBruche ;
+               :hasFunction :barrageABas ;
+                :hasHeight "10.5"^^xsd:decimal.   
+                
+:BarrageBBruche a :isLocatedOn :BassinDeContournementBruche ;
+              :hasFunction :barrageBam ;
+               :hasHeight "11.6"^^xsd:decimal.      
+
+:RiviereBruche a :hasGeographicZone :BasRhin ;
+             :hasLongitudinalContinuity :false.        
+
+:RiviereDeContournementAvolsheim a :hasGeographicZone :BasRhin ;
+                                  :hasLongitudinalContinuity :true.    
+
+:CommunauteDesCommesDeLaRegionDeMolsheimMutzig a :isManagedBy :ConseilGeneralDuBasRhin, 
+                                                 :AgenceDeLAEuRhinMeuse ;
+
+                                 :isManagedFor :PortParlementaireDeStrasbourg. 
+
+:SOGREACHClients a :isMainContractor :SogreahConsultants.  
+                        
+:ConseilGeneralDuBasRhin a :isFundingProvider :ConseilGeneralDuBasRhin ; 
+                         :isFundedTo :ProjectPasseAPoissonsBruche. 
+ 
+:AgenceDeLAEuRhinMeuse a :isFundingProvider :AgenceDeLAEuRhinMeuse; 
+                       :isFundedTo :ProjectPasseAPoissonsBruche.  
+    
+:PortParlementaireDeStrasbourg a :isBeneficiaryOf :ProjectPasseAPoissonsBruche.  
+
+:SogreahConsultants a :isMainContractor :SogreahConsultants.  
+
+:AgenceDeLAEuRhinMeuse a :isFundingProvider :AgenceDeLAEuRhinMeuse; 
+                    :isFundedTo :ProjectPasseAPoissonsBruche. 
+    
+:ConseilGeneralDuBasRhin a :isFundingProvider :ConseilGeneralDuBasRhin; 
+                 :isFundedTo :ProjectPasseAPoissonsBruche.  
+
+
+assistant
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:ProjetPasseAPoissonsBruche a :hasCategory :PasseAPoissons ;
+            :hasMainContractor :SogreahConsultants ;
+         :isManagedBy :CommunauteDesCommesDeLaRegionDeMolsheimMutzig,
+                      :ConseilGeneralDuBasRhin,
+                      :AgenceDeLAEuRhinMeuse ;
+       :isRealizedIn :RiviereDeContournementAvolsheim ;
+          :includes :BassinDeContournementBruche,
+                      :SeulEnRocheBruche,
+                      :ChuteVerticaleBruche,
+                      :BarrageABruche,
+                      :BarrageBBruche ;
+        :startsAt "2010-08-01"^^xsd:dateTime ;
+         :endsAt "2010-12-31"^^xsd:dateTime;
+
+    :hasCost "231000"^^xsd:decimal.          
+
+:BassinDeContournementBruche a :isLocatedOn :RiviereBruche ;
+                             :hasHeight "5.7"^^xsd:decimal ;
+                              :hasLength "36.9"^^xsd:decimal ;
+                               :hasWidth "16.7"^^xsd:decimal. 
+
+:SeulEnRocheBruche a :isLocatedOn :BassinDeContournementBruche ;
+                  :hasFunction :seulEnRoche ;
+                   :hasHeight "14.1"^^xsd:decimal.     
+
+:ChuteVerticaleBruche a :isLocatedOn :BassinDeContournementBruche ;
+                     :hasFunction :chuteVerticale ;
+                      :hasHeight "13.8"^^xsd:decimal.       
+
+:BarrageABruche a :isLocatedOn :BassinDeContournementBruche ;
+               :hasFunction :barrageABas ;
+                :has

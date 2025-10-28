@@ -1,0 +1,71 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:ProjetDeRestaurationKembs a :reconnection ;
+    skos:prefLabel "Projet de restauration de Kembs" ;
+    :hasMainContractor :EDF ;
+    :isManagedBy :AgenceDeL'eauRhinMeuse ;
+    :isRealizedIn :KembsHautRhin ;
+    :isRealizedOn :Rhin ;
+    :hasCategory :EnvironmentalRestoration ;
+    :includes :PasseAPoissonsKembs,
+              :PasseAPoissonsKembs,
+              :PasseACastorsKembs,
+              :PetiteCentraleKembs ;
+    :hasNumberOfEntries 3 ;
+    :hasCost "750000€" ;
+    :hasBiologicalMonitoring "false"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :startsAt "2011-01-01"^^xsd:dateTime ;
+    :endsAt "2013-12-31"^^xsd:dateTime.
+
+:PasseAPoissonsKembs a :passFishway ;
+    skos:prefLabel "Passe à poissons de Kembs" ;
+    :isLocatedOn :GrandCanalDAlsace ;
+    :hasCategory :Fishway ;
+    :isImpassable "true"^^xsd:boolean.
+
+:PasseAPoissonsKembs a :passFishway ;
+    skos:prefLabel "Passe à poissons de Kembs" ;
+    :isLocatedOn :Rhin ;
+    :hasCategory :Fishway ;
+    :isImpassable "true"^^xsd:boolean.
+
+:PasseAPoissonsKembs a :passFishway ;
+    skos:prefLabel "Passe à poissons de Kembs" ;
+    :isLocatedOn :PCA ;
+    :hasCategory :Fishway ;
+    :isImpassable "true"^^xsd:boolean.
+
+:PetiteCentraleKembs a :smallDam ;
+    skos:prefLabel "Petite centrale de Kembs".
+
+:PetiteCentraleKembs a :smallDam ;
+    skos:prefLabel "Petite centrale de Kembs" ;
+    :isLocatedOn :Rhin ;
+    :hasCategory :Dam ;
+    :hasHeight "1.5"^^xsd:decimal ;
+    :isImpassable "true"^^xsd:boolean.
+
+:GrandCanalDAlsace a :longitudinalContinuity ;
+    skos:prefLabel "Grand canal d’Alsace".
+
+:PCA a :longitudinalContinuity ;
+    skos:prefLabel "Réserve naturelle de la PCA".
+
+:EDF a :mainContractor ;
+    skos:prefLabel "EDF".
+
+:AgenceDeL'eauRhinMeuse a :projectOwner ;
+    skos:prefLabel "Agence de l'eau Rhin-Meuse".
+
+:KembsHautRhin a :geographicZone ;
+    skos:prefLabel "Kembs, Haut-Rhin".
+
+:Rhin a :river ;
+    skos:prefLabel "Rhin".#def
+assistant
+user
+Un projet de restauration environnementale a été réalisé à Kembs, dans le Haut-Rhin, sur le Rhin, afin de favoriser la circulation des espèces aquatiques et la continuité écologique. Porté par EDF et conçu par le Centre d’Ingénierie Hydraulique d’EDF R\&D, le projet comprend trois aménagements : le remplacement de l’ancienne passe à poissons par une passe moderne inspirée de celle de Gambsheim, la création d’une passe à poissons reliant le Grand Canal d’Alsace à la Réserve Naturelle de la PCA, et la mise en place d’une passe à castors permettant aux mammifères aquatiques de franchir le barrage côté allemand. Une petite centrale a également été construite pour turbiner une partie du débit d’attrait. Les travaux ont débuté en 2011, avec la mise en eau de certaines installations en 2013. Le coût total de l’opération est de 750 000 €, financé par l’Agence de l’Eau Rhin-Meuse. Aucun suivi biologique ou hydromorphologique n’est prévu. Aucun suivi bi

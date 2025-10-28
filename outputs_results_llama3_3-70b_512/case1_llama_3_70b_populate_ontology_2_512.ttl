@@ -1,0 +1,44 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:PasseAPoissonsAvolsheim a :passeAPoissons ;
+    skos:prefLabel "Passe à poissons d'Avolsheim" ;
+    :hasMainContractor :SOGREAHConsultants,
+                         :CommunauteDeCommunesMolsheimmutzig;
+    :isManagedBy :BasRhinGeneralCouncil,
+                  :WaterAgencyRhineMeuse,
+                  :LocalPartners ;
+    :associatedTo :BarrageDavolsheim ;
+    :isRealizedIn :LaBruche,
+                   :AvolsheimFrance ;
+    :compensatesHeightOf :BarrageDavolsheim ;
+    :includes :SeuilEnRocheDAvolsheim,
+               :ChuteInterbassinDavolsheim ;
+    :reconnectionFunctionality true^^xsd:boolean ;
+    :servesAsHabitatFor :Salmonidae ;
+    :cost "€231,000" ;
+    :biologicalMonitoring "true"^^xsd:boolean ;
+    :hydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :startsAt "August 2010"^^xsd:string ;
+    :endsAt "December 2010"^^xsd:string. 
+
+:BarrageDavolsheim a :dam ;
+                     skos:prefLabel "Barrage D'Avolsheim" ; 
+                     :impounds :LaBruche, 
+                               :AvolsheimFrance;  
+                     :isLocatedOn :LaBruche, 
+                                   :AvolsheimFrance;  
+                     :height "3.2"^^xsd:decimal;   
+                     :length "15.5"^^xsd:decimal;     
+                     :isImpassable "true"^^xsd:boolean;    
+                     :isEquippedWithFishLift "false"^^xsd:boolean.  
+
+:SOGREAHConsultants a :projectOwner, 
+                      :mainContractor; 
+                       skos:prefLabel "SOGRÉAH Consultants".   
+
+:CommunauteDeCommunesMolsheimmutzig a :projectOwner; 
+                                        skos:prefLabel "Communauté de communes de Molsheim-Mutzig".
+
+:BasRhinGeneralCouncil a :projectOwner

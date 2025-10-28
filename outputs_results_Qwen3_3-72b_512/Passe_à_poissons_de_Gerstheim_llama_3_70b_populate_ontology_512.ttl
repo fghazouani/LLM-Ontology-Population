@@ -1,0 +1,37 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:PasseAPoissonsGerstheim a :fishPass ;
+    skos:prefLabel "Passe à Poissons de Gerstheim" ;
+    :hasMainContractor :CERGASA ;
+    :isManagedBy :BasRhinWaterResources ;
+    :associatedTo :CentraleElectriqueDeGerstheim ;
+    :isRealizedIn :Rhein ,
+                  :France ;
+    :containsCategory :LongitudinalContinuityImprovement ;
+    :includes :EntranceOneGerstheim ,
+              :TrancheTwoGerstheim ,
+              :NaturalSectionThreeGerstheim ,
+              :CountingRoomWithVideoMonitoringFourGerstheim,
+              CentraleElectriqueDeGerstheim;
+    :hasBiologicalMonitoring true^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring false^^xsd:boolean ;
+    :startsAt "2058-07-26T12:00:00Z"^^xsd:dateTime ;
+    :endsAt "2058-10-15T12:00:00Z"^^xsd:dateTime.
+
+:EntranceOneGerstheim a :entrance ;
+    skos:prefLabel "Entrée 1 de Passe à Poissons de Gerstheim" ;
+    :isLocatedOnLeftBankOf :Rhein ;
+    :servesAsEntryPointForFishway true^^xsd:boolean.
+
+:TrancheTwoGerstheim a :trough ;
+    skos:prefLabel "Tranche 2 de Passe à Poissons de Gerstheim" ;
+    :providesRestAreaForMigratorySpecies true^^xsd:boolean.
+
+:NaturalSectionThreeGerstheim a :naturalPool ;
+    skos:prefLabel "Secteur Naturel 3 de Passe à Poissons de Gerstheim".
+
+:CountingRoomWithVideoMonitoringFourGerstheim a :countingRoom ;
+    skos:prefLabel "Local Comptage avec Suivi Vidéo - Passe à Poissons de Ger

@@ -1,0 +1,34 @@
+
+@prefix : <http://www.semanticweb.org/fethi/onto/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:PassageAPoissonsBruche a :passeAPoissons ;
+                skos:prefLabel "Passage à poissons Bruche" ;
+                :isManagedBy :CommunauteDeCommunesDeLaRegionDeMolsheimMutzig ;
+                :isRealizedIn :Bruche ;
+                :hasCategory :RestaurationDeLaLongueurContinuete ;
+                :hasMainContractor :SOGREAHConsultants ;
+                :hasCategory :PasseAPoissons ;
+                :hasCategory :ContournementRiveGauche ;
+                :hasCategory :HabitatContinu ;
+                :hasCategory :HabitatDeLongueurContinuete ;
+                :hasCategory :HabitatDeHauteurContinuete ;
+                :hasCategory :HabitatDePenteContinuete ;
+                :hasCategory :HabitatDeBarrageContinuete ;
+                :hasCategory :HabitatDeRiveContinuete ;
+                :hasCategory :HabitatDeRiveGaucheContinuete ;
+                :hasCategory :HabitatDeRiveDroiteContinuete ;
+                :hasCategory :HabitatDeBarrageContinuete ;
+                :hasCategory :HabitatDePasseContinuete ;
+                :hasCategory :HabitatDeBarrageContinuete ;
+                :hasCategory :HabitatDeRiveContinuete ;
+                :hasCategory :HabitatDeRiveDroiteContinuete ;
+                :hasCategory :HabitatDeRiveGaucheContinuete ;
+                :hasCategory :HabitatDePasseContinuete ;
+                :hasCategory :HabitatDeRiveContinuete ;
+                :hasCategory :HabitatDeRiveDroiteContinuete ;
+                :hasCategory :HabitatDeRiveGaucheContinuete ;
+                :hasCategory :HabitatDePasseContinuete ;
+                :hasCategory :HabitatDeRiveContinuete ;
+                :hasCategory :Habitat

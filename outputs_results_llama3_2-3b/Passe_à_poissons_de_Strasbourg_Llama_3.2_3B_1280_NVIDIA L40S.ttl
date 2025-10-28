@@ -1,0 +1,119 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:PasseAPoissonsStrasbourg a :hasMainContractor :EDFRenovation ;
+    :isManagedBy :EDFRenovationCenter ;
+    :associatedTo :PontRougeStrasbourg,
+                  :BarragePasseAPoissonsStrasbourg ;
+
+:BarragePasseAPoissonsStrasbourg a :barrage ;
+    :startsAt :PontRougeStrasbourg ; 
+    :endsAt :BasRhineStrasbourg ;
+    :isLocatedOn :RhinFrance ;
+    :hasHeight "8"^^xsd:decimal ;
+    :isImpassable "true"^^xsd:boolean ;
+    :hasFunction :restorationLongitudinalContinuity,
+                 :increaseFishwayCapacity ;
+    :isRealizedIn :StrasbourgFrance,
+                :BasRHINFrance ;
+    :hasCategory :longDistanceMigration,
+               :localMigratorySpecies ;
+    :includes :DoubleEntrancePasseAPoissonsStrasbourg,
+              :RiverlikePoolPseudoNaturelStrasbourg;
+    :hasCost "1000000"^^xsd:decimal ;
+    :hasBiologicalMonitoring "false"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasFinancialManagement :AgencyOfWaterRhinMeuse,
+                           :DRALAlsace,
+                           :ONEMANationalWaterAgency ;
+    :hasNumberOfEntries "2"^^xsd:decimal ;
+    :hasDebitTotal "15"^^xsd:decimal. 
+
+:PontRougeStrasbourg a :bridge ;
+    :isLocatedOn :RhinFrance ;
+    :hasWidth "10"^^xsd:decimal ;
+    :hasLength "40"^^xsd:decimal ;
+    :hasHeight "6"^^xsd:decimal ;
+    :isImpassable "true"^^xsd:boolean ;
+    :hasCategory :riverBankProtection,
+                :roadBridge ;
+    :hasCost "60000"^^xsd:decimal.  
+
+:DoubleEntrancePasseAPoissonsStrasbourg a :doubleEntry ;
+    :hasNumberOne "A"^^xsd:string ;
+    :hasDirection "upstream"^^xsd:string ;
+    :hasHeight "7"^^xsd:decimal ;
+    :hasFunction :enableBigMigrantsPassingThrough,
+                 :allowLocalMigratorySpeciesGoingDownStream ;
+    :isLocatedOn :RhinFrance ;
+    :hasDebit "12.75"^^xsd:decimal.   
+
+:SingleEntryPasseAPoissonsStrasbourg a :singleEntry ;
+    :hasNumber "C"^^xsd:string ;
+    :hasDirection "downstream"^^xsd:string ;
+    :hasHeight "7"^^xsd:decimal ;
+    :hasFunction :enableBigMigrantsPassingThrough,
+                 :allowLocalMigratorySpeciesGoingUpStream ;
+    :isLocatedOn :RhinFrance ;
+    :hasDebit "2.25"^^xsd:decimal.    
+
+:RiverlikePoolPseudoNaturelStrasbourg a :poolLikeRiver ;
+    :hasLength "50"^^xsd:decimal ;
+    :hasWidth "55"^^xsd:decimal ;
+    :hasDepth "16"^^xsd:decimal ;
+    :hasFunction :createAChannelForMigratingSpecies,
+                 :improveHabitatQuality ;
+    :isLocatedOn :RhinFrance ;
+    :hasDebit "1.2"^^xsd:decimal.    
+
+:BasRhineStrasbourg a :basin ;
+    :isLocatedOn :RhinFrance.   
+
+:RhinFrance a :river ;
+    :hasName "Rhin"^^xsd:string.   
+
+:EDFRenovation a :mainContractor ;
+    :hasLegalForm "Société anonyme"^^xsd:string.   
+
+:EDFRenovationCenter a :projectOwner ;
+    :hasLegalForm "Centre national d’études spatiales"^^xsd:string.   
+
+:AgencyOfWaterRhinMeuse a :financialManager ;
+    :hasLegalForm "Agence de l'eau Rhin-Meuse"^^xsd:string.   
+
+:DRALAlsace a :regionalAuthority ;
+    :hasLegalForm "Direction régionale de l'environnement, de l'aménagement et du logement d'Alsace"^^xsd:string.   
+
+:ONEMANationalWaterAgency a :nationalAuthorities ;
+    :hasLegalForm "Office National des Mines et des Geothématiques"^^xsd:string.   
+
+:StrasbourgFrance a :geographicZone ;
+    :hasName "Strasbourg, France"^^xsd:string.   
+
+:BasRHINFrance a :geographicZone ;
+    :hasName "Bas-Rhine, France"^^xsd:string.   
+def
+assistant
+assistant
+user
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+ :LateralWeirProject has :mainContractor :EDFMaintenance ;
+     isManagedBy :EDFProjects ;
+     associatedTo :DamWithLowHeadNantes, :BackwaterAreaNantes ;
+     includes :LateralWeirNantes, :FishpassNantes ;
+     isRealizedIn :LoireFrance, :NantesFrance ;
+     hasCategory :dam,
+                :backwaterCreation,
+                :restoreHabitat ;
+     hasCost "30000"^^xsd:decimal ;
+     hasBiologicalMonitoring "true"^^xsd:boolean ;
+     hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+     hasFinancialManagement :RegionalCouncilOfTheLoireValley,
+                          :FrenchEnvironmentAgency,
+                          :EuropeanUnion,
+                          :PrivateInvestors ;
+     hasNumberOfEntries "1"^^xsd:decimal ;
+     hasDebitTotal "45"

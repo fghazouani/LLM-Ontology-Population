@@ -1,0 +1,42 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:PoissonPassAvolsheim a :passeAPoissons ;
+    skos:prefLabel "Poisson Pass at Avolsheim" ;
+    :hasMainContractor :CommunityOfCommunesMolsheimMutzig ;
+    :wasManagedBy :SOGEAHCMSudAlsace ;
+    :associatedTo :WeirBrucheAvolsheim ;
+    :isRealizedIn :LeBasRhinFrance ;
+    :isImpassable "false"^^xsd:boolean ;
+    :startsAt "2010-09-01"^^xsd:dateTime ;
+    :endsAt "2010-12-31"^^xsd:dateTime ;
+    :costs "231,000€" ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :BypassChannelBruche ,
+              :PoolSystemBruche ;
+
+:BypassChannelBruche a :bypassChannel ;
+    skos:prefLabel "Bypass Channel for Bruche River" ;
+    :connectsToUpstream :WeirBrucheAvolsheim ,
+                        :LeftBankBrucheRiver ;
+    :connectsToDownstream :RightBankBrucheRiver ;
+    :length "135m" ;
+    :width "N/A" ;
+    :depthMin "0.8m" ;
+    :slopeAverage "2.3%" ;
+    :operatesUnderDischarge "0.4 - 2.0 cubic meters per second" ;
+
+:PoolSystemBruche a :poolSystem ;
+    skos:prefLabel "Pool System in Bypass of Bruche River" ;
+    :consistsOf :PoolOneThroughSeventeen ;
+    
+:WeirBrucheAvolsheim a :weir ;
+    skos:prefLabel "Weir on the Bruche near Avolsheim" ;
+    :blocksMigration "true"^^xsd:boolean ;
+    :heightTotal "3.2m" ;
+    :spansFrom :LeftBankBrucheRiver 
+               to :RightBankBrucheRiver ; 
+
+:LeftBankBrucheRiver a :riverbank ;
+    skos:prefLabel "Left Bank of the Bruche River"

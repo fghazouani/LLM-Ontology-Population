@@ -1,0 +1,51 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:LFPFW a :hybridPoolAndWeirFishway ;
+    skos:prefLabel "Little French Pool-And-Weir Fishway" ;
+    :isRealizedIn :TrinityDam,
+                    :FrenchCreekBridge ;
+    :hasCategory :LongitudinalContinuity,
+                   :HydrologicalRegimeManagement ;
+    :includes :DenilLF,
+               :PoolsLFP,
+               :BafflesWFLF ;
+    :replaces :WoodenDenilLF ;
+    :isManagedBy :CalTrans, 
+                  :CaliforniaDepartmentOfFishAndGame,  
+                  :NationalMarineFisheriesService ;
+    :associatedTo :DikeLF ;
+    :cost "445,000€" ;
+    :biologicalMonitoring "true"^^xsd:boolean ;
+    :hydrodynamicMonitoring "false"^^xsd:boolean ;
+    :geometricMonitoring "true"^^xsd:boolean ;
+    :startsAt "1998-01-15"^^xsd:dateTime ;
+    :endsAt "2002-06-30"^^xsd:dateTime ;
+    :hasMainContractor :SocieteFrancaiseDesPonts ;
+    :realizes :ImprovementSalmonidPassage ;
+    :isImpassable "true"^^xsd:boolean.
+
+:TrinityRiver a :river ;
+                skos:prefLabel "Trinity River".
+
+:TrinityDam a :dam,
+              :weir ;
+              skos:prefLabel "Trinity Dam";
+              :locatedOn :TrinityRiver,
+                          :NorthernCalifornia ;
+              :impedes :salmonidMigration ;
+              :height "22m" ;
+              :length "100m" ;
+              :spillWayLength "10m" ;
+              :isImpassable "true"^^xsd:boolean.
+
+:DikeLF a :bankStabilization ; 
+          skos:prefLabel "Bank Stabilisation LF". 
+
+:FrenchCreek a :stream ; 
+             skos:prefLabel "French Creek".
+             
+:FrenchCreekBridge a :bridge ; 
+                     skos:prefLabel "French creek Bridge"; 

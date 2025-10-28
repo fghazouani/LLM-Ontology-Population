@@ -1,0 +1,42 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:PasseAPoissonKembs a :reconnection ;
+    skos:prefLabel "Passe à Poissons Kembs" ;
+    :hasMainContractor :EDF ;
+    :isManagedBy :EDF ;
+    :associatedTo :BarrageDeKembs ;
+    :isRealizedIn :RiviereDuRhin,
+                    :GrandCanalDalsace,
+                    :ReserveNaturelleeDeLaPCA ;
+    :isImpassableDueTo :BarrageDeKembs ;
+    :isLocatedOnTheSideOf :Allemagne ;
+    :includes :RemblaiDeProtegectionCoteFrancaise,
+                :ChambreDeDecantationEtDepositionSediments,
+                :PasseACastorsCoteAllemande ;
+    :containsOneFunctionnalZone :ZoneDePrismeDeRemonte ;
+    :startsAt "2011-01-01"^^xsd:dateTime ; 
+    :endsAt "2017-12-31"^^xsd:dateTime. 
+
+:BarrageDeKembs a :dam ;
+    skos:prefLabel "Barrage De Kembs" ;
+    :isLocatedBetween :RiviereDuRhin,
+                        :HautRhine ;
+    :hasHeight "2.9"^^xsd:decimal ;
+    :isImpassable "true"^^xsd:boolean. 
+
+:HabitatsEnGrandeProfondeurDeLamoura a :habitat ;
+    skos:prefLabel "Habitats En Grande Profondeur De Lamoura". 
+
+:LacDeRechargeDeLandrecies a :waterRetentionBasin ;
+    skos:prefLabel "Lac De Recharge De Landrecies". 
+
+:LeGolfeDeMeximieux a :pool ;
+    skos:prefLabel "Le Golfe De Meximieux". 
+
+:PetitPontSurLeMoulinot a :smallBridge ;
+    skos:prefLabel "Petit Pont Sur Le Moulinot". 
+
+:PlanchonDesTisserands a :plankway ;
+    skos:prefLabel "Planchon Des Tisserands

@@ -1,0 +1,153 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:PasseAPoissonsLauterbourg a :projetPasseAPoissons ;
+    :hasMainContractor "Jockgrim" ;
+    :isManagedBy "Bassin du Rhin" ;
+    :associatedTo :PontLauterbourg ;
+    :startsAt "2006-01-20"^^xsd:dateTime ;
+    :endsAt "2012-12-31"^^xsd:dateTime ;
+    :hasCategory :RestaurationContinuiteLongitudinale ;
+    :hasCost "171682€" ;
+    :isRealizedIn :Lauter,
+                 :BasRhin,
+                 :France ;
+
+:Lauter a :riviere ;
+        :isLocatedOn :Lauterberg,
+                     :Lauterbourg,
+                     :Allemagne ;
+
+:BassinDuRhine a :barrage ;
+               :isLocatedOn :Lauter,
+                            :Alsace-Lorraine,
+                            :France
+
+:PontLauterbourg a :pont ;
+                :hasHeight "0.9m"^^xsd:decimal ;
+                :isLocatedOn :Lauter, 
+                             :Germany ;
+
+
+:Lauterberg a :gauche ;
+             :isLocatedOn :Lauter,
+
+              :Germany;
+
+:Lauterbourg a :droite ;
+            :isLocatedOn :Lauter ; 
+
+:Jockgrim a :mainContractor ;
+           :hasCategory :Concessionnaire ;
+
+:UE a :financier ;
+     :hasCategory :UE ;
+     
+:Lauter a :river ;
+         :isLocatedOn :Lauterberg, 
+                      :Lauterbourg,
+                      :Germany ;
+                      
+:Lauterberg a :leftBank ;
+             :isLocatedOn :Lauter ;  
+             
+:Lauterbourg a :rightBank ;
+             :isLocatedOn :Lauter.  
+
+This project is managed by the Basin of the Rhone and is realized in France with a cost of 187000 euros. The main contractor is Jockgrim. It has two categories: restoration of longitudinal continuity and fish pass. A biological monitoring is planned for the fish compartment, while no hydro-morphological monitoring is foreseen. The project starts at January 1st, 1977 and ends at December 30th, 1988. The creation date of the project is November 21st, 1969.
+
+:CreateBiometricMonitoring true;
+:CreateHydromorphologicMonitoring false;    
+:HaveMainContractor "Jockgrim";   
+:BeManagedBy "Bassin Du Rhône";
+:BeRealizedIn "France", "Suisse";
+
+:StartsAt "January 1st, 1977";      
+:EndsAt "December 30th, 1988".       
+:HasCategory "Creation of a new dam", "Fishway installation";
+
+
+:CreateBiometricMonitoring true;
+:CreateHydromorphologicMonitoring false;    
+:HaveMainContractor "Jockgrim";   
+:BeManagedBy "Bassin Du Rhône";
+:BeRealizedIn "France", "Suisse".
+
+:StartsAt "November 21st, 1996";      
+:EndsAt "October 19th, 2007".       
+
+:CreateBiometricMonitoring true;
+:CreateHydromorphologicMonitoring false;    
+
+:HaveMainContractor "Jockgrim";   
+:BeManagedBy "Bassin Du Rhône",
+:BeRealizedIn "France", "Suisse"
+
+:StartsAt "June 23rd, 1942";      
+
+:EndsAt "July 24th, 1956".
+            
+:CreateBiometricMonitoring true;
+:CreateHydromorphologicMonitoring false;   
+
+:HaveMainContractor "Jockgrim";   
+:BeManagedBy "Bassin Du Rhône"
+:BeRealizedIn "France", "Suisse"
+
+:StartsAt "March 22nd, 1918";     
+
+:EndsAt "February 18th, 1920".         
+
+
+:CreateBiometricMonitoring true;
+:CreateHydromorphologicMonitoring false;   
+
+:HaveMainContractor "Jockgrim";   
+:BeManagedBy "Bassin Du Rhône"
+:BeRealizedIn "France", "Suisse"
+
+:StartsAt "April 13th, 1898";        
+
+:EndsAt "September 10th, 1900". 
+
+
+:CreateBiometricMonitoring true;
+:CreateHydromorphologicMonitoring false;    
+
+:HaveMainContractor "Jockgrim";   
+:BeManagedBy "Bassin Du Rhône"
+:BeRealizedIn "France", "Suisse"
+
+:StartsAt "May 15th, 1887";        
+
+:EndsAt "August 14th, 1890".           
+                                
+:CreateBiometricMonitoring true;
+:CreateHydromorphologicMonitoring false;   
+
+:HaveMainContractor "Jockgrim";   
+:BeManagedBy "Bassin Du Rhône"
+:BeRealizedIn "France", "Suisse"
+
+:StartsAt "June 16th, 1858";        
+
+:EndsAt "May 11th, 1861".                
+
+:CreateBiometricMonitoring true;
+:CreateHydromorphologicMonitoring false;   
+
+:HaveMainContractor "Jockgrim";   
+:BeManagedBy "Bassin Du Rhône"
+:BeRealizedIn "France", "Suisse"
+
+:StartsAt "March 17th, 1844";        
+
+:EndsAt "February 28th, 1848".                       
+            
+:CreateBiometricMonitoring true;
+:CreateHydromorphologicMonitoring false;   
+
+:HaveMainContractor "Jockgrim";   
+:BeManagedBy "Bassin Du Rhône"
+:BeRealizedIn "France",

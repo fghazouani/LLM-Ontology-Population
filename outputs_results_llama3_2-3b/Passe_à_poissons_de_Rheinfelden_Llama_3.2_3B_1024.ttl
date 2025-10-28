@@ -1,0 +1,68 @@
+
+@prefix : <http://www.semanticweb.org/fethi/onto/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:ProjetPasseAPoissonsRheinfelden a :projetPasseAPoissons ;
+    skos:prefLabel "Projet de passe à poissons à Rheinfelden" ;
+    :estRealiseA :NouvelleCentraleHydroelectriqueRheinfelden ;
+    :estRealiseA :BarrageRheinfelden ;
+    :estRealiseA :ChenalArtificielRheinfelden ;
+    :estRealiseA :Rhin ;
+    :estRealiseA :BadeWurtembergAllemagne ;
+    :estRealiseA :RheinfeldenBadeWurtembergAllemagne ;
+    :estRealiseA :2003 ;
+    :estRealiseA :1895 ;
+    :estRealiseA :BarrageRheinfelden ;
+    :estRealiseA :ChenalArtificielRheinfelden ;
+    :estRealiseA :RheinfeldenBadeWurtembergAllemagne ;
+    :estRealiseA :BadeWurtembergAllemagne ;
+    :estRealiseA :Rhin ;
+    :estRealiseA :Allemagne ;
+    :estRealiseA :BarrageRheinfelden ;
+    :estRealiseA :ChenalArtificielRheinfelden ;
+    :estRealiseA :RheinfeldenBadeWurtembergAllemagne ;
+    :estRealiseA :BadeWurtembergAllemagne ;
+    :estRealiseA :Rhin ;
+    :estRealiseA :Allemagne ;
+    :estRealiseA :RheinfeldenBadeWurtembergAllemagne ;
+    :estRealiseA :BadeWurtembergAllemagne ;
+    :estRealiseA :Rhin ;
+    :estRealiseA :Allemagne ;
+    :estRealiseA :RheinfeldenBadeWurtembergAllemagne ;
+    :estRealiseA :BadeWurtembergAllemagne ;
+    :estRealiseA :Rhin ;
+    :estRealiseA :Allemagne ;
+    :estRealiseA :RheinfeldenBadeWurtembergAllemagne ;
+    :estRealiseA :BadeWurtembergAllemagne ;
+    :estRealiseA :Rhin ;
+    :estRealiseA :Allemagne ;
+    :estRealiseA :RheinfeldenBadeWurtembergAllemagne ;
+    :estRealiseA :BadeWurtembergAllemagne ;
+    :estRealiseA :Rhin ;
+    :estRealiseA :Allemagne ;
+    :estRealiseA :RheinfeldenBadeWurtembergAllemagne ;
+    :estRealiseA :BadeWurtembergAllemagne ;
+    :estRealiseA :Rhin ;
+    :estRealiseA :Allemagne ;
+    :estRealiseA :RheinfeldenBadeWurtembergAllemagne ;
+    :estRealiseA :BadeWurtembergAllemagne ;
+    :estRealiseA :Rhin ;
+    :estRealiseA :Allemagne ;
+    :estRealiseA :RheinfeldenBadeWurtembergAllemagne ;
+    :estRealiseA :BadeWurtembergAllemagne ;
+    :estRealiseA :Rhin ;
+    :estRealiseA :Allemagne ;
+    :estRealiseA :RheinfeldenBadeWurtembergAllemagne ;
+    :estRealiseA :BadeWurtembergAllemagne ;
+    :estRealiseA :Rhin ;
+    :estRealiseA :Allemagne ;
+    :estRealiseA :RheinfeldenBadeWurtembergAllemagne ;
+    :estRealiseA :BadeWurtembergAllemagne ;
+    :estRealiseA :Rhin ;
+    :estRealiseA :Allemagne ;
+    :estRealiseA :RheinfeldenBadeWurtembergAllemagne ;
+    :estRealiseA :BadeWurtembergAllemagne ;
+    :estRealiseA :Rhin ;
+    :estRealiseA :Allemagne ;
+    :estRealiseA :RheinfeldenBadeWurtemberg

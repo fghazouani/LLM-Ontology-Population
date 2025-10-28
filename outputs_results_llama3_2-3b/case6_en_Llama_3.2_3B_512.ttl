@@ -1,0 +1,39 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:ConcretePoolVortexWeirFishway a :poolVortexWeirFishway ;
+    skos:prefLabel "Concrete Pool and Vortex Weir Fishway" ;
+    :hasMainContractor :DelNorteCounty ;
+    :isManagedBy :CaliforniaDepartmentOfFishAndGame ;
+    :isRealizedIn :PeacockCreek ;
+    :isRealizedIn :SmithRiverBasin ;
+    :hasCategory :Fishway ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasGeologicalMonitoring "false"^^xsd:boolean ;
+    :hasHydromorphologicalImprovements "true"^^xsd:boolean ;
+    :includes :VortexWeirs ;
+    :includes :ConcreteFishway ;
+    :hasCost "474000"^^xsd:decimal ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasGeologicalMonitoring "false"^^xsd:boolean ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalImprovements "true"^^xsd:boolean ;
+    :startsAt "2003-11-01"^^xsd:dateTime ;
+    :endsAt "2003-11-30"^^xsd:dateTime ;
+    :hasCategory :LongitudinalFishway ;
+    :hasMainContractor :DelNorteCounty ;
+    :isManagedBy :CaliforniaDepartmentOfFishAndGame ;
+    :isRealizedIn :PeacockCreek ;
+    :isRealizedIn :SmithRiverBasin ;
+    :includes :VortexWeirs ;
+    :includes :ConcreteFishway ;
+    :hasCost "474000"^^xsd:decimal ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasGeologicalMonitoring "false"^^xsd:boolean ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydrom

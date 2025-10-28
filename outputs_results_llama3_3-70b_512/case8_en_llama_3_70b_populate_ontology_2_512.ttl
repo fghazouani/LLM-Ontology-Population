@@ -1,0 +1,46 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:PoolAndWeirFishwayJalamaRoadBridge a :pool_and_weir_fishway ;
+    skos:prefLabel "Pool-And-Weir Fishway at Jalama Road Bridge" ;
+    :hasMainContractor :EntrixInc ;
+    :isRealizedIn :SantaYnezRiverWatershed,
+                    :CentralCalifornia ;
+    :associatedTo :ConcreteGradeControlStructureJalamaRoadBridge ;
+    :reducesImpassabilityOf :ConcreteGradeControlStructureJalamaRoadBridge ;
+    :improvesHabitatFor :AdultSteelheadRainbowTrout,
+                          :JuvenileSteelheadRainbowTrout ;
+    :includes :ReconnectionPoolJalamaRoadBridge,
+               :LadderSystemJalamaRoadBridge ;
+    :isManagedBy :CachumaConservationReleaseBoard ;
+    :costs "$87,510" ;
+    :startsAt "January 1st, 1995"^^xsd:dateTime ;
+    :endsAt "December 31th, 2003"^^xsd:dateTime. 
+
+:JalamaRoadBridge a :bridge ;
+                     skos:prefLabel "Jalama Road Bridge" ; 
+                     :spans :SantaYnezRiver, 
+                             :GaviotaTunnel ;
+                     :connects :NorthBankSantaYnezRiver,
+                                :SouthBankSantaYnezRiver ;
+                     :isLocatedOn :SantaYnezRiver ;
+                     :isBetween :SanJuanCapistranoDam,
+                                 :GuadalupeReservoir ;
+                     :heightensWaterLevelBy "8ft". 
+
+:SantaYnezRiver a :river ;
+                  skos:prefLabel "Santa Ynez River" ;
+                  :flowsThrough :SantaBarbaraCounty,
+                                  :VenturaCounty ;
+                  :length "89mi". 
+
+:CachumaConservationReleaseBoard a :project_owner ;
+                                   skos:prefLabel "Cachuma Conservation Release Board". 
+
+:EntrixInc a :main_contractor ;
+             skos:prefLabel "Entrix, Inc.". 
+
+:AllenRobertLarson a :funder ;
+                     

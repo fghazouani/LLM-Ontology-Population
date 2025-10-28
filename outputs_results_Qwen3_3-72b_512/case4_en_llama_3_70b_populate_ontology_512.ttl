@@ -1,0 +1,46 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:HybridPoolAndWeirFishwayLittleFrenchCreek a :poolandweir ;
+    skos:prefLabel "Hybrid Pool-and-Weir Fishway - Little French Creek" ;
+    :isManagedByProject :Caltrans ,
+                        :CaliforniaDepartmentOfFishAndGame,
+                        :NationalMarineFisherService;
+    :associatedTo :DamOnTrinityRiver ;
+    :hasCategoryType :LongitudinalContinuity ;
+    :replaces :DenilFishWayBeforeReconstruction ;
+    :includesFunction :FlowManagement ,
+                       :DebrisRemoval ,
+                       :BaffleInsertion ,
+                       :ImpassableElement ;
+    :containsPools :ConcretePoolsLFrenchCreek ;
+    :usesMaterial :Concrete , 
+                   :Wood ;
+    :isRealizedInGeographicZone :ConfluenceOfLFCwithTrinityR ,
+                                :NorthernCalifornia ;
+    :startsAt "November 2001"^^xsd:string ;
+    :endsAt "" ;
+    :hasNumberOfEntries "8"^^xsd:integer ;
+    :hasHeight "19.3"^^xsd:decimal ;
+    :hasWidth "97"^^xsd:decimal ;
+    :allowsPassageFor :AdultSalmonids ;
+    :requiresMaintenance "true"^^xsd:boolean ;
+    :cost "$445,000" ;
+    :projectOwner "Caltrans" ;
+    :followUpPlanting "true"^^xsd:boolean.
+
+:DamOnTrinityRiver a :dam ;
+                    skos:prefLabel "Dam On Trinity River" ;
+                    hasHeight "19.3"^^xsd:decimal ;
+                    isLocatedOn :TrinityRiver ;
+                    startsAt "unknown" ;
+                    endsAt "ongoing" ;
+                    preventsPassage "true"^^xsd:boolean .
+
+:DenilFishWayBeforeReconstruction a :denilfishway ;
+                                  skos:prefLabel "Denil Fish Way Before Reconstruction" ;
+                                  associatedTo :DamOnTrinityRiver ;
+                                  usesMaterial :wood ;
+                                  containsPools :RubbleM

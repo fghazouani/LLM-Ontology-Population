@@ -1,0 +1,44 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:PoissonPassLauterbourg a :fishway ;
+    skos:prefLabel "Passe à Poissons - Lauter" ;
+    rdfs:label "Passe à Poissons - Lauter" ;
+    dc:title "Poisson Pass in Lauter" ;
+    geogml:name "Fishway at Lauter" ;
+    dcterms:description "A fish pass project to restore longitudinal continuity of the river Laute." ;
+    core:hasMainContractor :Jockgrim ;
+    isRealizedIn :Laute ,
+        :BasRhinFrance ;
+    hasCategory :LongitudinalContinuityRestoration ;
+    hasBiologicalMonitoring true ;
+    hasHydromorphologicalMonitoring false ;
+    startsAt '2005-01-01'^^xsd:dateTime ;
+    endsAt '2005-12-31'^^xsd:dateTime ;
+    costOfOperation '171682' ;
+    financedBy :EuropeanUnion . 
+
+core:projectIdentifier "POISSION_PASS_LAUTERBOURG_2005",
+    skos:prefLabel "Project Identifier for Passe à Poissons (Lauter)" ;
+    rdfs:label "Projet Identifiant pour Passe à Poissons (Lauter)" ; 
+    geojsonLiteral:
+                "{ \"type\": \"Point\","
+                    + "\"coordinates\": [ 7.942 , 48.77 ] } "
+    ;
+
+:Laute a gfo:river ;
+            skos:prefLabel "River Laute" ;
+            rdfs:label "Die Laute" ;  
+
+:Jockgrim a foaf:organization ;
+             skos:prefLabel "Jockgrim Company" ;
+             rdfs:label "Société Jockrim" ;   
+
+:BasRhinFrance a geographml:geographicZone ;
+                 skos:prefLabel "Bas Rhine Area, France" ;
+                 rdfs:label "Bass-rhin, Frankreich"   ;
+
+
+:EuroeanUnion a organizationmanagement:mainFinancier ;
+              skos:prefflable

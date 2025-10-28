@@ -1,0 +1,42 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:PasseAPoissonsLauterbourg a :passeAMixtes ;
+                skos:prefLabel "Passe à Poissons Lauterbourg" ;
+                :estRealiseDansLeCadreDe :ProjetContinuiteLongitudinaleLauterourg ;
+                :aPourPrincipalContractant :Jockgrim ;
+                :seTrouveEn :LauterbourgBasRhinFrance,
+                             :LaLauter ;
+                :possedeDesBassinsSuccessifsOuiNon true ;
+                :leNombreDeBassinsEstDe 6 ;
+                :hauteurDuSaut 2.8 ;
+                :largeurDuChenal 18.0 ;
+                :profondeurDuChenal 2.7 ;
+                :typeDeDispositifDeSecours :EchelleASalmonids ;
+                :volumeDHydroelectriciteProduitParAn 12000000 ;
+                :emissionDegazCarbonneKgCO2PerYear 1005009 ;
+                :suivieBiologiqueOuiNon false,
+                              :SuiviBiologiqueCompartimentsIchtyologiques ;
+                :coefficientEffortReconnection 10.0. 
+
+:LauterbourgBasRhinFrance a :geographicZone ;
+                 skos:prefLabel "Lauterbourg (Bas Rhin), France". 
+
+:LaLauter a :river ;
+             skos:prefLabel "La Lauter". 
+
+:Jockgrim a :mainContractor ;
+              skos:prefLabel "Jockgrim". 
+
+:EchelleASalmonids a :fishwayType ;
+                    skos:prefLabel "Échelle à Salmonidés".
+
+:ProjetContinuiteLongitudinaleLauterourg a :project ;
+                                               skos:prefLabel "Projet Continuité Longitudinale Lauterbourg". 
+
+:PoolCreation a :poolCreation ;
+                  skos:prefLabel "Création d'un pool pour améliorer les habitats piscicoles". 
+                
+:SuiviBiologique

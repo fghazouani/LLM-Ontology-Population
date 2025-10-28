@@ -1,0 +1,101 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:PasseAPoissonsIffezheim a :isManagedBy EDF ;
+                            :hasMainContractor BADENWERK ;
+
+    :isRealizedIn IFFEZHEIM,
+                :BadeWurttemberg,
+                :Rhin ;
+    
+    :includes :
+        EntréePoissonRhineIFFEZHEIM,
+        BassinDeRepartitionPoissonsIFFEZHEIM,
+        SortiePoissonIFFEZHEIM,
+        VitrineObservationIFFEZHEIM,
+        CamereSubAquatiqeIFFEZHEIM,
+        SystèmePiégageIFFEZHEIM;
+        
+    :hasCategory :RestaurationContinuiteLongitudinale;
+
+    :contains :
+
+        EntréePoissonRhineIFFEZHEIM :isLocatedOn RIVE_DE_RHINE_IFFEZHEIM ; 
+                                :hasHeight "2"^^xsd:decimal; 
+
+        BassinDeRepartitionPoissonsIFFEZHEIM :isLocatedOn ASSISE_BARRAGE_IFFEZHEIM ; 
+                                            :hasWidth "6"^^xsd:decimal;  
+                                            :hasLength "12"^^xsd:decimal;   
+                                            :hasDepth "0.8"^^xsd:decimal;   
+
+        SortiePoissonIFFEZHEIM :isLocatedOn RHIN_IFFEZHEIM ; 
+                               :hasHeight "10"^^xsd:decimal;  
+
+        VitrineObservationIFFEZHEIM :isLocatedOn AVANT_DERNIER_BASSIN_IFFEZHEIM ; 
+                                    :hasSize "2.7"^^xsd:decimal;
+
+        CamereSubAquatiqeIFFEZHEIM :isLocatedOn AVANT_DERNIER_BASSIN_IFFEZHEIM ; 
+                                   :hasSize "5"^^xsd:decimal;
+
+        SystèmePiégageIFFEZHEIM :isLocatedOn AVANT_DERNIER_BASSIN_IFFEZHEIM ; 
+        
+    :startsAt "2015-01-01"^^xsd:dateTime ; 
+            :endsAt "2018-05-31"^^xsd:dateTime ; 
+            :hasCost "9000000"^^xsd:decimal ; 
+            :isFinancedBy :ParticipationEDF, :ParticipationBADENWERK ;
+
+    :associatedTo :BarrageIFetzheim ; 
+
+    :hasBiologicalMonitoring "true"^^xsd:boolean ; 
+                           :doesNotIncludeHydromorphologicalMonitoring "false"^^xsd:boolean.
+                        
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:BarrageIFetzheim a :dam ; 
+                   :isLocatedOn :RHIN_IFFEZHEIM ;
+                   :hasHeight "3.20"^^xsd:decimal.
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>. 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:EntréePoissonRhineIFFEZHEIM a :entrancePoint ; 
+                         :isLocatedOn :RIVE_DE_RHINE_IFFEZHEIM ; 
+                         :hasHeight "2"^^xsd:decimal.
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>. 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:BassinDeRepartitionPoissonsIFFEZHEIM a :basinOfReconnection ; 
+                                      :isLocatedOn :ASSISE_BARRAGE_IFFEZHEIM ; 
+                                      :hasWidth "6"^^xsd:decimal;  
+                                      :hasLength "12"^^xsd:decimal;   
+                                      :hasDepth "0.8"^^xsd:decimal.                                
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>. 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:SortiePoissonIFFEZHEIM a :exitPoint ; 
+                       :isLocatedOn :RHIN_IFFEZHEIM ; 
+                       :hasHeight "10"^^xsd:decimal.
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>. 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:VitrineObservationIFFEZHEIM a :vitrineObservation ; 
+                             :isLocatedOn :AVANT_DERNIER_BASSIN_IFFEZHEIM ; 
+                             :hasSize "2.7"^^xsd:decimal.
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>. 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:CamereSubAquatiqeIFFEZHEIM a :cameraSubAquatic ; 
+                          :isLocatedOn :AVANT_DERNIER_BASSIN_IFFEZHEIM ; 
+                          :hasSize "5"^^xsd:decimal.
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>. 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:SystèmePiégageIFFEZHEIM a :piègeSystem ; 
+                        :isLocatedOn :AVANT_DERNIER

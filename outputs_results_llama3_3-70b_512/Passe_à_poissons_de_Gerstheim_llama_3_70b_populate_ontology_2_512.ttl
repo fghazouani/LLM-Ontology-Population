@@ -1,0 +1,35 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:PasseAPoissonsGerstheim a :passeAPoissons ;
+    skos:prefLabel "Passe à Poissons de Gerstheim" ;
+    :estRealiseDansLeCadreDe :ProjetContinuiteLongitudinaleRheine ;
+    :aPourContractant :CergaSA ;
+    :estSituEauBasDuBarrage :BarrageGershteim ;
+    :possedeDesEntrees (:EntreePrincipalePasseAPoissonsGerstheim, :SecondeEntreePasseAPoissonsGerstheim) ;
+    :comprendDesTroncons ((:SectionEnChutePasseAPoissonsGerstheim),(:ZoneDAttentePasseAPoissonsGerstheim), (:SectionNaturellePasseAPoissonsGerstheim)) ; 
+    :localComptage :LocalComptagePasseAPoissonsGerstheim ;
+    :alimentePar :UsineHydroelectriqueGershteim ;
+    :dispositifAlimentation :VanneDerivation,
+                              :PompeAlimentaire ;
+    :capteurBiologie :SuiviVideoBiologiquePasseAPoissonsGerstheim. 
+
+:BarrageGershteim a :barrage ;
+                     skos:prefLabel "Barrage Gershteim" ;
+                     :seSitueSur :LeRhin ;
+                     :hauteurHorsTout :17.7m;
+                     :matiere :Betonne;  
+                     :type :BarrageFiltrable ;
+                     :aunDegreLiberte :Oui ;
+                     :impactSurLaLigneDEau :ImpassabiliteTotale.  
+
+:CergaSA a :contractor ;
+            skos:prefLabel "Cerag SA".  
+
+:ProjetContinuiteLongitudinaleRheine a :continuityProject ;
+                                         skos:prefLabel "Projet Continuité Longitudinale du Rhein".  
+
+:LeRhin a :river ;
+          

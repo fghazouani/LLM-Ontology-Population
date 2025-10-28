@@ -1,0 +1,43 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:PasseAPoissonBrisach a :passeAPoisson ;
+    skos:prefLabel "Passe à Poissons de Brisach" ;
+    :estRealiseDansLeCadreDe :MicrocentraleHydroelectriqueFrancoAllemande ;
+    :aPourBut :RestaurerLaContinuiteLongitudinaleDuRhin ;
+    :seComposeDe :EntreeEnSurface1,
+                   :EntreeEnProfondeur2,
+                   :PasseClassiqueMontaison,
+                   :DispositifDeDevalaisonContournementTurbin1,
+                   :SystemePiegeageSuiviScientifiqueDesPoissons ;
+    :possedeLesCaracteristiquesSpatiales :GeolocalisationPasseAPoissonBrisach ;
+    :sujetAUnSuiviBiologique :CompartimentIchtyologiquePasseAPoissonBrisach ;
+    :necessitePasDeSuiviHydromorphologique.
+
+:ChuteDuRhin a :chute ;
+                skos:prefLabel "Chute du Rhin" ;
+                :hauteur 5.7.
+
+:BarrageFranoAllemand a :barrage ;
+                        skos:prefLabel "Barrage Franco-Allemand" ;
+                        :impermeabiliseLeCoursDEau  ;
+                        :entoureLaZoneGeographique :HautRhin.
+
+:HautRhin a :zoneGeoGraphique ;
+             skos:prefLabel "Haut-Rhin".
+
+:CergasaSA a :porteurProjet ;
+              skos:prefLabel "CERGA S.A.".
+
+:Rhine a :fleuve ;
+          skos:prefLabel "Fleuve Rhin".
+
+:EntreeEnSurface1 a :entreeEnSurface ;
+                    skos:prefLabel "Entrée en Surface N° 1".
+
+:EntreeEnProfondeur2 a :entreeEnProfondeur ;
+                       skos:prefLabel "Entrée en Profondeur N° 2".
+
+:P

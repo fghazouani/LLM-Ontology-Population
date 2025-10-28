@@ -1,0 +1,86 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:PoolAndWeirFishwayProject a :poolAndWeirFishway ;
+    skos:prefLabel "Pool-and-Weir Fishway Project" ;
+    :isRealizedIn :SantaYnezRiverWatershed ;
+    :hasMainContractor :CachumaConservationReleaseBoard ;
+    :hasCategory :FishwayImprovement ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "true"^^xsd:boolean ;
+    :hasGeomorphicMonitoring "false"^^xsd:boolean ;
+    :startsAt "2003-01-01"^^xsd:dateTime ;
+    :endsAt "2003-12-31"^^xsd:dateTime ;
+    :hasNumberOfEntries "1"^^xsd:decimal ;
+    :hasNumberOfPasses "1"^^xsd:decimal ;
+    :hasCost "87,510"^^xsd:decimal ;
+    :isManagedBy :EntrixInc ;
+    :includes :JalamaRoadBridgeGradeControl ;
+    :isImpassable "true"^^xsd:boolean ;
+    :hasCategory :FishwayImprovement ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "true"^^xsd:boolean ;
+    :hasGeomorphicMonitoring "false"^^xsd:boolean ;
+    :hasPool "true"^^xsd:boolean ;
+    :hasWeir "false"^^xsd:boolean.
+
+:JalamaRoadBridgeGradeControl a :gradeControl ;
+    skos:prefLabel "Jalama Road Bridge Grade Control" ;
+    :isLocatedOn :SantaYnezRiver ;
+    :hasHeight "4.0"^^xsd:decimal ;
+    :hasFunction "streamflow control" ;
+    :hasCategory :GradeControl ;
+    :isManagedBy :EntrixInc ;
+    :hasCost "0.0"^^xsd:decimal.
+
+:CachumaConservationReleaseBoard a :mainContractor ;
+    skos:prefLabel "Cachuma Conservation Release Board".
+
+:EntrixInc a :mainContractor ;
+    skos:prefLabel "Entrix, Inc.".
+
+:CaliforniaDepartmentOfFishAndGame a :projectFunder ;
+    skos:prefLabel "California Department of Fish and Game".
+
+:CoastalConservancy a :projectFunder ;
+    skos:prefLabel "Coastal Conservancy".
+
+:SantaYnezRiver a :river ;
+    skos:prefLabel "Santa Ynez River".
+
+:CentralCalifornia a :geographicZone ;
+    skos:prefLabel "Central California".4
+
+assistant
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:PoolAndWeirFishwayProject a :poolAndWeirFishway ;
+    skos:prefLabel "Pool-and-Weir Fishway Project" ;
+    :isRealizedIn :SantaYnezRiverWatershed ;
+    :hasMainContractor :CachumaConservationReleaseBoard ;
+    :hasCategory :FishwayImprovement ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "true"^^xsd:boolean ;
+    :hasGeomorphicMonitoring "false"^^xsd:boolean ;
+    :startsAt "2003-01-01"^^xsd:dateTime ;
+    :endsAt "2003-12-31"^^xsd:dateTime ;
+    :hasNumberOfEntries "1"^^xsd:decimal ;
+    :hasNumberOfPasses "1"^^xsd:decimal ;
+    :hasCost "87,510"^^xsd:decimal ;
+    :isManagedBy :EntrixInc ;
+    :includes :JalamaRoadBridgeGradeControl ;
+    :isImpassable "true"^^xsd:boolean ;
+    :hasCategory :FishwayImprovement ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "true"^^xsd:boolean ;
+    :hasGeomorphicMonitoring "false"^^xsd:boolean ;
+    :hasPool "true"^^xsd:boolean ;
+    :hasWeir "false"^^xsd:boolean.
+
+:JalamaRoadBridgeGradeControl a :gradeControl ;
+    skos:prefLabel "Jalama Road Bridge Grade Control" ;
+    :isLocated

@@ -1,0 +1,200 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:PasseAPoissonsBrisach a :isRealizedIn :Brisach ;
+    :hasMainContractor :CERGASA ;
+    :includes :EntréePoissonsSuperficielA,
+                :EntréePoissonsSuperficielB,
+                :EntréePoiisonsProfondA,
+                :EntréePoissonsProfondB ;
+    :contains :PasseClassiqueMontaisonBrisach, 
+               :DévalaisonsTurbineBrisach,
+               :SystèmeDePiègeageBrisach ;
+    :hasCategory :ProjetDeRestaurationContinuiteLongitudinale ;
+    :associatedTo :MicroCentraleHydroElectriqueFrancoAllemandeBrisach. 
+
+:CERGASA a :isMainContractorOf :PasseAPoissonsBrisach. 
+
+:Brisach a :isLocatedOn :Rhin ; 
+            :hasGeographicZone :HautRhin ;
+
+:MicroCentraleHydroElectriqueFrancoAllemandeBrisach a :isImpassableOn :Rhin ; 
+                                                           :hasHeight "5.7"^^xsd:decimal ;
+                                                           :isRealizedBetween :2008-01-01 and :2012-12-31. 
+
+:EntréePoissonsSuperficielA a :isAnEntryPointForFish in :PasseAPoissonsBrisach ;
+                           :isLocatedAt :Brisach ;
+                           :hasType :EntréeEnSurface. 
+
+:EntréePoissonsSuperficielB a :isAnEntryPointForFish in :PasseAPoissonsBrisach ;
+                          :isLocatedAt :Brisach ;
+                          :hasType :EntréeEnSurface.  
+
+:EntréePoissonsProfondA a :isAnEntryPointForFish in :PasseAPoissonsBrisach ;
+                      :isLocatedAt :Brisach ;
+                      :hasType :EntréeEnProfondeur.   
+
+:EntréePoissonsProfondB a :isAnEntryPointForFish in :PasseAPoissonsBrisach ;
+                     :isLocatedAt :Brisach ;
+                     :hasType :EntréeEnProfondeur.                  
+
+:PasseClassiqueMontaisonBrisach a :isABypassingStructure in :PasseAPoissonsBrisach ;
+                                :isLocatedAt :Brisach. 
+
+:DévalaisonsTurbineBrisach a :areConnectedToTheTurbine in :PasseAPoissonsBrisach ;
+                         :haveFunction :ContournerLaTurbine ;
+                         :isLocatedAt :Brisach. 
+
+:SystèmeDePiègeageBrisach a :hasFunction :SuivipiegeageScientifiques ;
+                        :isLocatedAt :Brisach. 
+
+:Rhin a :isAWaterbody ;
+       :hasMainStream :Danube ;
+       :hasLength "1030"^^xsd:decimal ;
+       :hasWidth "10.6"^^xsd:decimal. 
+
+:HautRhin a :isAGeographicZone. 
+
+
+assistant
+user
+assistant
+assistant
+def
+translateUserToGraph(userText)
+    :projetPasseAPoissonsBrisach,
+     :mainContracteurCergasa,
+     :lieuBrisach,
+     :rhein,
+     :categorieProjetRestaurationContinuiteLongitudinal,
+     :microCentraleHydroElectriqueFrancalemanDBrisach,
+     :entréePoissonsSuperficieleA,
+     :entréePoissonsSuperficieleb,
+     :entréePoissonseprofundea,
+     :entréePoissonseprofildebb,
+     :passeClassiquemontaisonBrisach,
+     :devallaisonturbinedebrisch,
+     :systèmeDepiégabrisch,
+     :suiviBiologicodeBrisch,
+     :suviHydromorpologieodeBrisch
+assistant
+assistant
+user
+user
+assistant
+assistant
+restore
+assistant
+reconnect
+regenerate
+start
+end
+stop
+restart
+rollback
+undo
+redo
+save
+delete
+update
+insert
+replace
+merge
+add
+remove
+modify
+set
+get
+get
+get
+get
+get
+create
+destroy
+exists
+any
+some
+count
+distinct
+not
+and
+or
+xor
+equals
+lessThan
+greaterThan
+lesserThanOrEqual
+greaterThanOrEqual
+like
+isNil
+isNull
+hasValue
+doesNotHaveValue
+startsWith
+endsWith
+hasCategory
+isManagedBy
+isOwnedBy
+hasMainContractor
+hasOwner
+hasCategory
+isRealizedIn
+hasCostCenter
+hasNumberOfEntries
+hasLength
+hasWidth
+hasElevation
+hasHeight
+isPassable
+isImpassable
+isReachable
+isCrossed
+isSurrounded
+hasShape
+hasColor
+hasMaterial
+isVisible
+isHidden
+hasBiologicalMonitoring
+hasHydromorphologicalMonitoring
+hasGeographicZone
+isManagedBy
+isOwnedBy
+startsAt
+endsAt
+startsBefore
+endsAfter
+startsOn
+endsOn
+startsIn
+endsIn
+startsOutside
+endsOutside
+startsNorthwest
+endsNortheast
+startsSouthWest
+endsSoutheast
+startsEast
+endsWest
+startsAbove
+endsBelow
+startsNearby
+endsFarAway
+startsWithin
+endsBeyond
+startsAlong
+endsParallel
+startsOpposite
+endsAdjacent
+startsAcross
+endsOver
+startsUnder
+endsThrough
+startsPerpendicular
+endsOblique
+startsOrthogonal
+endsSkewed
+startsAsymmetrical
+endsSymmetric
+startsConcurrent

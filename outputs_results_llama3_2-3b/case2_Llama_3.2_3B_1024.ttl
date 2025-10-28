@@ -1,0 +1,63 @@
+
+@prefix : <http://www.semanticweb.org/fethi/onto/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:ProjetDeRestaurationPiscicoleGiessen a :isManagedBy :CommunauteDeCommunesDuCantonDeVille ;
+    :isRealizedIn :GiessenEnAvalDeVilleBasRhin ;
+    :hasCategory :RestaurationPiscicole ;
+    :hasMainContractor :Hydrotec ;
+    :hasSubcontractor :Hydrotec ;
+    :hasBiologicalMonitoring :Oui ;
+    :hasHydromorphologicalMonitoring :Oui ;
+    :includes :SeuilSenglerGiessen ;
+    :hasCost "65,000€"^^xsd:decimal ;
+    :hasFinancialManagement :AgenceDeL'eauRhinMeuse,
+                            :ConseilGeneralDuBasRhin,
+                            :CommunauteDeCommunesDuCantonDeVilleFDAPPMABasRhin ;
+    :hasBiologicalMonitoring "Oui"^^skos:prefLabel ;
+    :hasHydromorphologicalMonitoring "Oui"^^skos:prefLabel ;
+    :hasStart "2011-08-01"^^xsd:dateTime ;
+    :hasEnd "2011-09-30"^^xsd:dateTime.
+
+:SeuilSenglerGiessen a :isLocatedOn :GiessenEnAvalDeVilleBasRhin ;
+    :hasCategory :Seuil ;
+    :hasHeight "1,7"^^xsd:decimal ;
+    :hasWidth "50"^^xsd:decimal ;
+    :hasNumberOfChutes "3"^^xsd:decimal ;
+    :hasChuteHeight "20"^^xsd:decimal ;
+    :hasChuteWidth "0,5"^^xsd:decimal ;
+    :hasChuteLength "0,4"^^xsd:decimal ;
+    :hasMinimumWaterLevel "0,5"^^xsd:decimal ;
+    :hasMainContractor :Hydrotec ;
+    :hasSubcontractor :Hydrotec ;
+    :hasBiologicalMonitoring "Oui"^^skos:prefLabel ;
+    :hasHydromorphologicalMonitoring "Oui"^^skos:prefLabel ;
+    :hasFunction "RampeEnEnrochements"^^skos:prefLabel ;
+    :isRealizedIn :GiessenEnAvalDeVilleBasRhin ;
+    :isLocatedOn :GiessenEnAvalDeVilleBasRhin ;
+    :hasPole "RiveDroite"^^skos:prefLabel ;
+    :hasPole "RiveGauche"^^skos:prefLabel ;
+    :hasPole "BasseCours"^^skos:prefLabel ;
+    :hasPole "HauteCours"^^skos:prefLabel ;
+    :hasPole "RiveGauche"^^skos:prefLabel ;
+    :hasPole "RiveDroite"^^skos:prefLabel ;
+    :hasPole "BasseCours"^^skos:prefLabel ;
+    :hasPole "HauteCours"^^skos:prefLabel ;
+    :hasPole "RiveGauche"^^skos:prefLabel ;
+    :hasPole "RiveDroite"^^skos:prefLabel ;
+    :hasPole "BasseCours"^^skos:prefLabel ;
+    :hasPole "HauteCours"^^skos:prefLabel ;
+    :hasPole "RiveGauche"^^skos:prefLabel ;
+    :hasPole "RiveDroite"^^skos:prefLabel ;
+    :hasPole "BasseCours"^^skos:prefLabel ;
+    :hasPole "HauteCours"^^skos:prefLabel ;
+    :hasPole "RiveGauche"^^skos:prefLabel ;
+    :hasPole "RiveDroite"^^skos:prefLabel ;
+    :hasPole "BasseCours"^^skos:prefLabel ;
+    :hasPole "HauteCours"^^skos:prefLabel ;
+    :hasPole "RiveGauche"^^skos:prefLabel ;
+    :hasPole "RiveDroite"^^skos:prefLabel ;
+    :hasPole "BasseCours"^^skos:prefLabel ;
+    :hasPole "HauteCours"^^skos:prefLabel ;
+    :has

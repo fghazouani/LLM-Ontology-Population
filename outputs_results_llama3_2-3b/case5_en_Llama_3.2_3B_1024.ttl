@@ -1,0 +1,91 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:ConcreteFishwayProject a :concreteFishway ;
+    skos:prefLabel "Concrete Fishway Project" ;
+    :hasMainContractor :HumboldtCounty ;
+    :isManagedBy :CaliforniaDepartmentOfFishAndGame ;
+    :associatedTo :CulvertMadRiver ;
+    :isRealizedIn :MadRiverBasin ;
+    :hasCategory :Fishway ;
+    :includes :FishwayMadRiver ;
+    :hasCost "171000"^^xsd:decimal ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :startsAt "2002-11-01"^^xsd:dateTime ;
+    :endsAt "2002-11-30"^^xsd:dateTime ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean.
+
+:FishwayMadRiver a :fishway ;
+    skos:prefLabel "Fishway Mad River" ;
+    :hasFunction "allow juvenile salmonid passage" ;
+    :hasHeight "0.6"^^xsd:decimal ;
+    :isLocatedOn :MadRiver ;
+    :hasCategory "geographic" ;
+    :isLocatedOn :MadRiver ;
+    :hasCategory "geographic".
+
+:CulvertMadRiver a :culvert ;
+    skos:prefLabel "Culvert Mad River" ;
+    :hasFunction "total barrier to fish" ;
+    :isLocatedOn :MadRiver ;
+    :hasCategory "geographic".
+
+:MadRiver a :river ;
+    skos:prefLabel "Mad River".
+
+:HumboldtCounty a :mainContractor ;
+    skos:prefLabel "Humboldt County".
+
+:CaliforniaDepartmentOfFishAndGame a :projectOwner ;
+    skos:prefLabel "California Department of Fish and Game".
+def
+:MadRiverBasin a :geographicZone ;
+    skos:prefLabel "Mad River Basin".10
+def
+:3
+:def
+:BiologicalMonitoring a :biologicalMonitoring ;
+    skos:prefLabel "Biological Monitoring".
+
+:HydromorphologicalMonitoring a :hydromorphologicalMonitoring ;
+    skos:prefLabel "Hydromorphological Monitoring".def
+:ProjectOwner a :projectOwner ;
+    skos:prefLabel "Project Owner".1
+:MainContractor a :mainContractor ;
+    skos:prefLabel "Main Contractor".4
+:BiologicalMonitoring a :biologicalMonitoring ;
+    skos:prefLabel "Biological Monitoring". se
+:HydromorphologicalMonitoring a :hydromorphologicalMonitoring ;
+    skos:prefLabel "Hydromorphological Monitoring". se
+:ProjectOwner a :projectOwner ;
+    skos:prefLabel "Project Owner". se
+:MainContractor a :mainContractor ;
+    skos:prefLabel "Main Contractor". se
+:BiologicalMonitoring a :biologicalMonitoring ;
+    skos:prefLabel "Biological Monitoring". se
+:HydromorphologicalMonitoring a :hydromorphologicalMonitoring ;
+    skos:prefLabel "Hydromorphological Monitoring". se
+:ProjectOwner a :projectOwner ;
+    skos:prefLabel "Project Owner". se
+:MainContractor a :mainContractor ;
+    skos:prefLabel "Main Contractor". se
+:BiologicalMonitoring a :biologicalMonitoring ;
+    skos:prefLabel "Biological Monitoring". se
+:HydromorphologicalMonitoring a :hydromorphologicalMonitoring ;
+    skos:prefLabel "Hydromorphological Monitoring". se
+:ProjectOwner a :projectOwner ;
+    skos:prefLabel "Project Owner". se
+:MainContractor a :mainContractor ;
+    skos:prefLabel "Main Contractor". se
+:BiologicalMonitoring a :biologicalMonitoring ;
+    skos:prefLabel "Biological Monitoring". se
+:HydromorphologicalMonitoring a :hydromorphologicalMonitoring ;
+    skos:prefLabel "Hydromorphological Monitoring". se
+:ProjectOwner a :projectOwner ;
+    skos:prefLabel "Project Owner". se
+:MainContractor a :mainContractor ;
+    skos:prefLabel "Main Contractor". se
+:BiologicalMonitoring a

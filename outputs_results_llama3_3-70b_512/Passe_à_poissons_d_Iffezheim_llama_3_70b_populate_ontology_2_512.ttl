@@ -1,0 +1,50 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:PasseAPoissonIffezheim a :passePoissons ;
+    skos:prefLabel "Projet Passe à Poissons à Iffezheim" ;
+    isManagedBy :BarrageD'Iffezheim,
+                  :SocieteFrancaisedeProductionDElectricite,
+                  :Badenwerk ;
+
+:BarrageDIffezheim a :weir ;
+    hasHeight "2.00"^^xsd:decimal ;
+    isLocatedOn :LeRhin ;
+    isImpassable "true"^^xsd:boolean
+
+:LeRhin a :river ;
+    skos:prefLabel "Rhon"
+
+:SocietedElectricitedeFrance a :projectOwner ;
+    skos:prefLabel "Électricité De France"
+    
+:BADENWerk a :mainContractor ; 
+              skos:preflabel "EnBW - Badenwerke AG" 
+
+:Ill a :tributary ;
+      skos:prefLabel "L'ill" 
+
+:FishwayEntryPoint_11 a :fishwayEntryPoint, :entranceForMigratorySpecies;
+                         skos:prefLabel "Entrée point 11"
+                         
+:FishwayEntryPoint_12 a :fishwayEntryPoint, :entranceForNonMigratorySpecies;  
+                        skos:prefLabel "Entrée point 12"
+                        
+:DistributionPool a :distributionPool ;
+                    skos:prefLabel "Distribution Pool";
+                    distributesFlowTo :LongitudinalContinuitySlot_21,
+                                         :LongitudinalContinuitySlot_22,
+                                         :LongitudinalContinuitySlot_23,
+                                         :LongitudinalContinuitySlot_24,
+                                         :LongitudinalContinuitySlot_25,
+                                         :LongitudinalContinuitySlot_26,
+                                         :LongitudinalContinuitySlot_27,
+                                         :LongitudinalContinuitySlot_28,
+                                         :LongitudinalContinuitySlot_29,
+                                         :LongitudinalContinuitySlot_210,
+                                         :LongitudinalContinuitySlot_211,
+                                         :LongitudinalContinuitySlot_212,
+                                         :LongitudinalContinuitySlot_213,
+                                         :LongitudinalContinuitySlot_214,
+                                         :

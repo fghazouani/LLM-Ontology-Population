@@ -1,0 +1,37 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+ :ProjetDeRestaurationPiscicoleVille a :projetDeRestaurationPiscicole ;
+                skos:prefLabel "Projet de restauration piscicole à Ville" ; 
+                :estRealiseSur :LeGiessen ; 
+                :seSitueEnAvalDe :Ville ; 
+                :portePar :CommunauteDeCommunesDuCantonDeVille ; 
+                :concuPar :HYDRATEC ;
+                :debuteA "2011-08-01^^xsd:dateTime";
+                :finiA "2011-09-30^^xsd:dateTime";  
+                :faitFaceAUneHauteurTotaleDe "1.7"^^xsd:decimal; 
+                :comprendLaCreationDuneRappeEnEnrocementsDisposesEnRangeesPeriodiques ; 
+                :disposeDesSeuilsInfranchissablesDe "20cm"^^xsd:string;
+                :lesBlocsSontHautsDe "0.5m"^^xsd:string,
+                               "largesDe"^^xsd:string "0.5m",
+                                "espacesDe"^^xsd:string "0.4m";
+                 :fonctionnePourDesDebitsComprisEntre "0.2"^^xsd:decimal,
+                                                          "2.0"^^xsd:decimal, 
+                                 "avecUnePenteMoyenneDe"^^xsd:string "4%". 
+
+:             LeGiessen a :leGiessen ; 
+                skos:prefLabel "Le Giessen".  
+
+:              SeuilSengler a :unSeuilSengler ;
+                skos:prefLabel "Seuil Sengler" ;
+                  :hauteurDe "1.7"^^xsd:decimal. 
+
+
+:               VillageDeVille a :ville ; 
+                     skos:prefLabel "Villé". 
+
+
+:            CommunautéDeCommunesDuCantonDeVille a :communauteDeCommunesDuCantonDeVille ; 
+                      skos:prefLabel "Comm

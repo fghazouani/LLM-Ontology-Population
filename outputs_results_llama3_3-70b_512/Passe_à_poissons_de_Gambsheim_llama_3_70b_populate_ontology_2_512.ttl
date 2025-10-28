@@ -1,0 +1,50 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:PasseAPoissonsGambsheim a :reconnection ;
+    skos:prefLabel "Passe à Poissons de Gambsheim" ;
+    :hasMainContractor :CERGASA,
+                         :EtatFrancais,
+                         :EtatAllemand ;
+    :associatedTo :BarrageDeGambsheim ;
+    :locatedOn :LeRhin,
+                 :France ;
+    :hasCategory :LongitudinalContinuityRestoration ;
+    :includes :EntreeProcheAssisse1,
+               :EntreeProcheAssisse2,
+               :EntreeLevere ;
+    :collectsWaterFlow "1.2"^^xsd:decimal ;
+    :totalCost "10000000€" ;
+    :biologicalMonitoring "true"^^xsd:boolean ;
+    :hydromorphologicMonitoring "false"^^xsd:boolean. 
+
+:BarrageDeGambsheim a :dam ;
+    skos:prefLabel "Barrage de Gambsheim" ;
+    :height "6.0"^^xsd:decimal ;
+    :length "45.8"^^xsd:decimal ;
+    :width "9.7"^^xsd:decimal ;
+    :material "concrete" ;
+    :isImpassable "true"^^xsd:boolean ; 
+    :locatedOn :LeRhin, 
+                  :BasRhinenAllemagne ;  
+    :impedesTheWayOf :SaumonsDuRhin, 
+                        :TruiteFarioDuRhin ;   
+    :usedFor "flood control and navigation".  
+
+:CERGESA a :projectOwner; 
+             skos:prefLabel "CERGA Société Anonyme".
+
+:EtatFrançais a :governmentalAgency;
+                skos:prefLabel "Government of France".
+                
+:EtatAlllemand a :governmentalAgency;
+                    skos:prefLabel "Germany Government".   
+
+:Kinzing a :river;
+            skos:prefLabel "River Kinzig in Germany";
+            :flowsInto :Schutter.
+
+:Schutter a :river;
+              skos:

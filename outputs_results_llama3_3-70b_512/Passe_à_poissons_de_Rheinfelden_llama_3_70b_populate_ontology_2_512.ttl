@@ -1,0 +1,39 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:PasseAPoissonsRheinfelden a :passeAPoissons ;
+                skos:prefLabel "Passe à poissons de Rheinfelden" ;
+                :hasMainContractor :SocieteHydroelectriqueDeBadeWurtzbourg ;
+                :isManagedBy :OfficeNationalDesEauxDuBadeWurtzbourg ;
+                :associatedTo :CentraleHydroelectricqueDeRheinfelden ;
+                :locatedOn :LeRhin,
+                             :RheinfeldenAllemagne ;
+                :usedFor :AmeliorerLaContinuiteLongitudinale ;
+                :replaces :VieuxPontDeRhinefelden ;
+                :includes :ChenalArtificielDeRheinfeld ;
+                :length "300.0"^^xsd:decimal ;
+                :width "10.2"^^xsd:decimal. 
+
+:BarrageDeRheinfelden a :barrage ;
+                    skos:prefLabel "Barrage de Rheinfelden" ;
+                    :isLocatedOn :LeRhin, 
+                                    :RheinfeldenAllemagne ;  
+                    :impassesTheWaterway :LeRhin ;
+                    :height "7.8"^^xsd:decimal ;
+                    :length "80"^^xsd:decimal ;
+                    :type "Barrage mobile". 
+
+:LeRhin a :fleuve ;
+              skos:prefLabel "Le Rhin".  
+
+:SocieteHydroelectriqueDeBadeWurtzbourg a :mainContractor ;
+                                            skos:prefLabel "Société Hydro-Électricque du Bad Würtzburg".
+
+:OfficeNationalDesEauxDuBadeWurtzbourg a :projectOwner ;
+                                           skos:prefLabel "Office National des Eaux du Bad Würburg".   
+
+:CentalHydroElectriciteDeBadewurtzourg a :hydroElecticPlant ;
+                                          skos:prefLabel "Central Hydréo-Elecricité de Badwützurg";
+                                          :isSituatedIn :UsineDhydroEletricitieDe

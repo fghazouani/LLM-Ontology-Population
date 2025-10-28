@@ -1,0 +1,47 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+
+:PoissonPassageGambsheim a :fishway ;
+    skos:prefLabel "Passe à Poissons de Gambsheim" ;
+    geog:hasCategory :LongitudinalContinuityRestoration ;
+    isRealizedIn :Rhein ;
+    hasMainContractor :CergaSA ;
+    hasProjectOwner :AssociationPassage309 ;
+    includes :FishwayEntranceA ,
+             :BaffleFisherwayEntranceB ,
+             :BaffleFisherwayEntranceC ;
+    hasBiologicalMonitoring true^^xs:boolean ;
+    hasHydromorphologicalMonitoring false^^xs:boolean ;
+    startsAt "2016-07-08"^^xsd:dateTime ;
+    endsAt "2021-12-31"^^xsd:dateTime ;
+    costs "10,000,000€" ;
+    isFinancedBy :FrenchState , 
+                 :GermanState,
+                 :CergaSA.
+
+:BarrageDeGambsheim a dam:Dam ;
+    skos:altLabel "Le Barrage de Gambsheim" ;
+    isImpassable true^^xs:boolean;
+    hasHeight "6.5"^^decimal ;
+    isLocatedOn :Rhein ;
+    blocksTheFlowOf :Rhein ;
+    isManagedBy :CergaSA .
+
+:CergaSA a org:projectOwner ;
+        skos:prefLabel "Société Centrale d'Électricité de Rhen et Garonne (CERG)" . 
+
+:FishwayEntranceA a :baffleFisherWay ;
+            skos:prefLabel "Poisson Passe Entrée A";
+            connectsTo :BasinDistribution ;
+
+:BaffleFisherwayEntranceB a :baffleFisherWay ; 
+                    skos:prefLabel "Baffle Fisherway Entrance B";  
+                    providesAccessFor :MigratorySpeciesAndRhithrophilicSpecies ;
+
+
+:BaffleFisherwayEntranceC a :baffleFisherWay; 
+                skos:prefLabel "Baffle Fisherway Entrance C";
+
+:BasinDistribution a :basin ;
+         skos

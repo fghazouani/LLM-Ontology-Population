@@ -1,0 +1,48 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:PiscicultureGiessen a :pisciculture ;
+    skos:prefLabel "Pisciculture Giessen" ;
+    :hasMainContractor :CommunauteDeCommunesDuCantonDeVille ;
+    :isManagedBy :CommunauteDeCommunesDuCantonDeVille ;
+    :isRealizedIn :BasRhinFrance ;
+    :isImpassable true ;
+    :startsAt "2011-09-01"^^xsd:dateTime ;
+    :endsAt "2011-09-30"^^xsd:dateTime .
+
+:Sengler a :seuil ,
+            :obstacleHydromorphologique ;
+        skos:prefLabel "Sengler Seuils" ;
+        :isLocatedOn :Giessen ;
+        :isImpassableForSalmonids false ;
+        :includes :ChuteSenglerOne,
+                  :ChuteSenglerTwo,
+                  :ChuteSenglerThree;
+        :hasHeight "1.7"^^xsd:decimal ;
+        :isImpassable true.
+
+:Giessen a :river ;
+           skos:prefLabel "Giessen River".
+
+:HYDRATEC a :projectOwner ;
+          skos:prefLabel "HYDRATEC",
+                         "Project Owner Company";
+          :hasCategory :EngineeringCompany.
+
+:ChuteSenglerOne a :chute ;
+                 skos:prefLabel "Chute One of Sengler" ;
+                 :isLocatedOn :Giessen ;
+                 :isImpassable true ;
+                 :hasHeight "0.2"^^xsd:decimal.
+
+:ChuteSenglerTwo a :chute ;
+                 skos:prefLabel "Chute Two of Sengler" ;
+                 :isLocatedOn :Giessen ;
+                 :isImpassable true ;
+                 :hasHeight "0.2"^^xsd:decimal.
+
+:ChuteSenglerThree a :chute ;
+                   skos:prefLabel "Chute Three of Sengler" ;
+                  

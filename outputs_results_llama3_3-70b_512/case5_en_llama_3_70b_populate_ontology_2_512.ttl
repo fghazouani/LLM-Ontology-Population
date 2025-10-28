@@ -1,0 +1,54 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:MADFishWayProject a :concreteFishway ;
+    skos:prefLabel "MAD Fish Way Project" ;
+    hasMainContractor :HumboldtCounty,
+                        :CaliforniaDepartmentOfFishAndGame;
+    isManagedBy :HumboldtCounty, 
+                 :CaliforniaDepartmentOfFishAndGame; 
+    associatedTo :MadRiverCulvert ;  
+    realizedIn :NorthernCalifornia, 
+                :UnitedStates;   
+    startsAt "200-01-01"^^xsd:dateTime ;
+    endsAt "2015-12-31"^^xsd:dateTime. 
+
+:CulvertDeLaRiviereDuNord a :culvert ;
+     skos:prefLabel "Mad River Culvert";
+     locatedOn :MadRiverBasin,
+               :NorthernCalifornia, 
+              :UnitedStates;    
+     height "10"^^xsd:decimal ;
+     length "20"^^xsd:decimal ;
+     width "15"^^xsd:decimal ; 
+     material "Steel";     
+     hasCategory :LongitudinalContinuityObstacle,
+                  :TransversalContinuityObstacle;
+     impacts :BarrageDAMadRiver.  
+
+:BarrageDAMadRiver a :dam ;
+        skos:prefLabel "Dam MAD River ";
+       locatedOn :MadRiverBasin, 
+                   :NorthernCalifornia, 
+                   :UnitedStates;       
+       height "8"^^xsd:decimal ;
+       impassable "true"^^xsd:boolean ;
+      hasFunction :HydroelectricityProduction,
+                    :FloodplainManagement.  
+
+:WeirMADRiver a :weir ;
+          skos:prefLabel "Weir MAD River ";
+         locatedOn :MadRiverBasin,
+                     :NorthernCalifornia, 
+                     :UnitedStates;         
+         height "1.25"^^xsd:decimal.    
+
+:HabitatRestorationPoolMadrivers a :habitatRestorationZone ;
+             skos:prefLabel "Habitat Restoration Pool MAD Rivers ";      
+            isRealizedIn :MadRiverBasin, 
+                           :NorthernCalifornia, 
+                          :UnitedStates.   
+
+:LadderMADRivers a :fishLift ;
+           skos:prefLabel "Ladder MAD Rivers

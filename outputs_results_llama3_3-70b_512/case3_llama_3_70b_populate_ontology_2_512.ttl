@@ -1,0 +1,39 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:PasseAPoissonsDSmithKaysersberg a :passeAPoissons ;
+    skos:prefLabel "Passe à Poissons DS Smith à Kaysersberg" ;
+    isManagedBy :ConseilGeneralDuHautRhin, 
+                 :DSSmithKaysersberg ; 
+    associatedTo :SeuilDSSmithAval ;  
+    hasCategory :ReconnectionEcologique ;  
+    includes :BarrageDSSmithAval,
+               :ContourneurDeLaWeissADSKaysersberg,
+               :SystVannePourLeNiveauDEAU ;
+    realizedIn :TheWeissRiverAtKayserbnergFrance ;   
+    startsAt "September 01, 2010^^xsd:dateTime" ;    
+    endsAt "November 30, 2010^^xsd:dateTime". 
+
+:BarrageDSSmithAval a :dam ;
+    skos:prefLabel "Barrage DS Smith à Aval" ;
+    locatedOn :TheWeissRiverAtKayserbnergFrance ;
+    impassesWaterway "true"^^xsd:boolean;
+    hasHeight "2.10"^^xsd:decimal;       
+    isImpassable "true"^^xsd:boolean.
+
+:TheWeissRiverAtKayserbnergFrance a :river ;
+    skos:prefLabel "La Rivière La Weiss à Kayserbnerg France".
+
+:ContourneurDeLaWeissADSKaysersberg a :fishLadder ;
+     skos:prefLabel "Contourneur de la Weiss à DS Smith à Kaysersberg".  
+
+:SystVannePourLeNiveauDEAU a :verticalSlotFishPass ;
+      skos:prefLabel "System Vanner Pour le Niveau D'Eau";
+
+:ConseilGeneralDuHautRhin a :projectOwner ;
+         skos:prefLabel "Conseil General Du Haut-Rhin";
+          manages :ProjetRestaurationContinuiteEcologiqueduHautRhine ;
+
+:DSSmithKaysersberg a :mainContractor

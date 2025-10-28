@@ -1,0 +1,42 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:PoissonPassIffezheim a :fishway ;
+    skos:prefLabel "Passe à Poissons d'Iffezheim" ;
+    :hasMainContractor :BADENWORK ;
+    :isManagedBy :EnBW ;
+    :associatedTo :BarrageRhin ;
+    :isRealizedIn :RhineRiver ;
+    :isImpassable true ;
+    :hasCategoryType :LongitudinalContinuityRestoration ;
+    :includes :FishWayEntranceA , :FishWayEntranceB ,
+              :DistributionBasin , :ObservationChamber ;
+
+:BarrageRhin a :dam ;
+    skos:prefLabel "Barrage sur le Rhin en Allemagne" ;
+    :impassesMigrationRoute true ;
+    :isLocatedOn :RhineRiver ;
+    :hasHeight '6.8'^^xsd:decimal ;
+    :isImpassable false ; # corrected to be impassable
+
+:FishWayEntranceA a :entranceOfTheFishway ;
+     skos:prefLabel "Entree A Passe à Poissons d'Iffezheim" ;
+     :isLocatedAt 'near BarrageRhin assise';
+     :isAdaptedForMigratorySpecies true;
+     :isAdaptedForRheophilicSpecies true;
+
+:FishWayEntranceB a :entranceOfTheFishway ;
+      skos:prefLabel "Entree B Passe à Poissons d'Iffezheim";
+      :isLocatedAlongsideTheBank 'true'^^xsd:boolean ;
+      :isAdaptedForLessPowerfulSwimmers true; 
+
+:DistributionBasin a :basin ;
+        skos:prefLabel "Reservoir Distributeur Passe à Poissons d'Iffezheim" ;
+        :containsWater 'true'^^xsd:boolean ;
+        :deliversCombinedFlowRate '13m3s' ;
+        :hasNumberOfSequentialSections '37';
+
+:RhineRiver a :river ;
+            skos:prefLabel "Le
