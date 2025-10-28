@@ -1,37 +1,53 @@
-# --- Dossiers à exclure ---
+# ============================================
+# 🧠 LLM-Ontology-Population - .gitignore
+# ============================================
+
+# --- Python cache and temporary files ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.pdb
+*.tmp
+*.log
+*.out
+*.bak
+*.swp
+*.err
+
+# --- Some Folders ---
 slurm/
 tetra_env/
 __pycache__/
 *.egg-info/
 .ipynb_checkpoints/
 
-# --- Résultats volumineux ou non nécessaires ---
-outputs_results_llama3_2-3b/
-outputs_results_llama3_3-70b_512/
+# --- Large or irrelevant results ---
+# outputs_results_llama3_2-3b/
+# outputs_results_llama3_3-70b_512/
 outputs_results_llama3_3-70b_1024/
-outputs_results_Qwen3_3-72b_512/
+# 
 outputs_results_Qwen3_3-72b_1024/
 
-# --- Scripts à ignorer ---
-run_llama3.py
-test_script.py
-verify_loaded_model.py
+# --- Notebooks checkpoints ---
+.ipynb_checkpoints/
 
 # --- Données lourdes ou sensibles ---
-test_data/
+# test_data/
 dataset.json
 
-# --- Environnements virtuels ---
+# --- Virtual environment ---
 venv/
 env/
 .venv/
 tetra_env/
 
-# --- Fichiers système et IDE ---
+# --- System files and IDE ---
 .DS_Store
 .vscode/
 
-# --- Logs et caches ---
+# --- Logs and caches ---
 *.log
 *.tmp
 *.cache/
@@ -39,7 +55,7 @@ tetra_env/
 transformers_cache/
 ~/.cache/huggingface/
 
-# --- Checkpoints et poids de modèles ---
+# --- Checkpoints and models wights ---
 *.pt
 *.pth
 *.bin
@@ -50,8 +66,3 @@ transformers_cache/
 *.npz
 *.pkl
 
-# --- Fichiers temporaires ---
-*.bak
-*.swp
-*.out
-*.err
