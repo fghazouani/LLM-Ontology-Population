@@ -1,0 +1,2859 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="core" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="TetraOnto" IRI="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#"/>
+    <Declaration>
+        <Class IRI="#BypassSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrapSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#affluent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#amphibioticMigrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#anadromous"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#arm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#artificialObstacle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#artificialRiver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#baffleBrush"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#baffleFishway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#barrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#basinPasses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#biologicalMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#catadromous"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#channelCreation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#counterDrainageChannel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#de-silting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#distributionBasin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ecologicalMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#eelLadder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fishLift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fishLock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fishway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#floodRetention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#flowRestoration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#forestRestoration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#geographicZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gravelInsertion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#groyneModification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#habitatRestoration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#holobioticMigrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hydromorphologicalMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#inclinedWeir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#inclinedWeirWithRedanUpstream"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lateralContinuityRestoration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lavoirWeir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#longitudinalContinuityRestoration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#low-slopeRockfillWeir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mainContractor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#migratorySpecie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#millWeir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#naturalObstacle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#notch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#nozzle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#observationRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#otherActor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#otherElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pondDyke"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#poolCreation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#poolRestoration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pre-barrage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#profileDiversification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#projectOwner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#reconnection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#redynamization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#regularFlooding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#restoration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#restorationMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#restorationMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#restorationOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#restoringSpawningGrounds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#river"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#riverbankExcavation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#riverbankRestoration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#roadStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#routeModification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scientificMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sedimentRecharging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sedimentTransport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#speedBumpsPass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#steep-slopeRockfillWeir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#studSubstrate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#submergedOrifice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#technicalElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trapPass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#upstreamMigrationObstacle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#verticalSlot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#verticalSlotPassage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#verticalWeir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#viewingWindow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#waterBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#weir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#weirWaterBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#weirWithASuccessionOfRedans"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wetland"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#associatedMeas"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#associatedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsNotch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsOtherElements"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsPool"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCategory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMainContractor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocatedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isManagedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubjectTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#realizedIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#endsAt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAverageSlope"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBiologicalMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFonctionality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFunction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHeightBetweenBasins"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHydromorphologicalMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMaxLowWaterFlow"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMinLowWaterFlow"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMonitoringCost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMonitoringDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMonitoringEndDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMonitoringStartDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNotchHigh"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNotchWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNotches"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfBasins"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfEntries"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfInstallations"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfPools"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPoolLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPoolWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPurpose"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isImpassable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#startsAt"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="core:definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="core:note"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#BypassSystem"/>
+        <Class IRI="#fishway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lake"/>
+        <Class IRI="#waterBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrapSystem"/>
+        <Class IRI="#fishway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#affluent"/>
+        <Class IRI="#waterBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#amphibioticMigrant"/>
+        <Class IRI="#migratorySpecie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#anadromous"/>
+        <Class IRI="#amphibioticMigrant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#anadromous"/>
+        <Class IRI="#migratorySpecie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#arm"/>
+        <Class IRI="#waterBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#artificialObstacle"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#artificialRiver"/>
+        <Class IRI="#fishway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#artificialRiver"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedMeas"/>
+            <Class IRI="#restorationMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#artificialRiver"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#artificialRiver"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#artificialRiver"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#artificialRiver"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#baffleBrush"/>
+        <Class IRI="#eelLadder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#baffleBrush"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedMeas"/>
+            <Class IRI="#restorationMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#baffleBrush"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#baffleBrush"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#baffleBrush"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#baffleBrush"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#baffleFishway"/>
+        <Class IRI="#basinPasses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#baffleFishway"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedMeas"/>
+            <Class IRI="#restorationMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#baffleFishway"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#baffleFishway"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#baffleFishway"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#baffleFishway"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#basinPasses"/>
+        <Class IRI="#fishway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#basinPasses"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedMeas"/>
+            <Class IRI="#restorationMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#basinPasses"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#basinPasses"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#basinPasses"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#basinPasses"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#biologicalMonitoring"/>
+        <Class IRI="#restorationMonitoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#catadromous"/>
+        <Class IRI="#amphibioticMigrant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#catadromous"/>
+        <Class IRI="#migratorySpecie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#channelCreation"/>
+        <Class IRI="#restorationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#counterDrainageChannel"/>
+        <Class IRI="#waterBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dam"/>
+        <Class IRI="#structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#de-silting"/>
+        <Class IRI="#restorationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#distributionBasin"/>
+        <Class IRI="#fishway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ecologicalMonitoring"/>
+        <Class IRI="#restorationMonitoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eelLadder"/>
+        <Class IRI="#fishway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eelLadder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedMeas"/>
+            <Class IRI="#restorationMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eelLadder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eelLadder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eelLadder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eelLadder"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishLift"/>
+        <Class IRI="#eelLadder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishLift"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedMeas"/>
+            <Class IRI="#restorationMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishLift"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishLift"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishLift"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishLift"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishLock"/>
+        <Class IRI="#fishway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishLock"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedMeas"/>
+            <Class IRI="#restorationMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishLock"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishLock"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishLock"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishLock"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishway"/>
+        <Class IRI="#restorationOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishway"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedMeas"/>
+            <Class IRI="#restorationMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishway"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishway"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishway"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishway"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#floodRetention"/>
+        <Class IRI="#restorationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#flowRestoration"/>
+        <Class IRI="#restoration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#forestRestoration"/>
+        <Class IRI="#restorationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gate"/>
+        <Class IRI="#structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gravelInsertion"/>
+        <Class IRI="#sedimentTransport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gravelInsertion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gravelInsertion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gravelInsertion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gravelInsertion"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#groyneModification"/>
+        <Class IRI="#sedimentTransport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#groyneModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#groyneModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#groyneModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#groyneModification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#habitatRestoration"/>
+        <Class IRI="#restoration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#holobioticMigrant"/>
+        <Class IRI="#migratorySpecie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hydromorphologicalMonitoring"/>
+        <Class IRI="#restorationMonitoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#inclinedWeir"/>
+        <Class IRI="#weir"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#inclinedWeirWithRedanUpstream"/>
+        <Class IRI="#inclinedWeir"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lateralContinuityRestoration"/>
+        <Class IRI="#restoration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lavoirWeir"/>
+        <Class IRI="#weir"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#longitudinalContinuityRestoration"/>
+        <Class IRI="#restoration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#low-slopeRockfillWeir"/>
+        <Class IRI="#weir"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#millWeir"/>
+        <Class IRI="#weir"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#naturalObstacle"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#notch"/>
+        <Class IRI="#technicalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nozzle"/>
+        <Class IRI="#structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#observationRoom"/>
+        <Class IRI="#technicalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#otherElement"/>
+        <Class IRI="#technicalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pond"/>
+        <Class IRI="#waterBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pondDyke"/>
+        <Class IRI="#structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pool"/>
+        <Class IRI="#technicalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#poolCreation"/>
+        <Class IRI="#restorationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#poolRestoration"/>
+        <Class IRI="#restorationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pre-barrage"/>
+        <Class IRI="#fishway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pre-barrage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedMeas"/>
+            <Class IRI="#restorationMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pre-barrage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pre-barrage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pre-barrage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pre-barrage"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#profileDiversification"/>
+        <Class IRI="#restorationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#reconnection"/>
+        <Class IRI="#restorationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#redynamization"/>
+        <Class IRI="#restorationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#regularFlooding"/>
+        <Class IRI="#restorationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#restorationMeasure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#includes"/>
+            <Class IRI="#restorationOperation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#restorationMeasure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLocatedOn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#restorationOperation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#restoringSpawningGrounds"/>
+        <Class IRI="#restorationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#river"/>
+        <Class IRI="#waterBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#riverbankExcavation"/>
+        <Class IRI="#sedimentTransport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#riverbankExcavation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#riverbankExcavation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#riverbankExcavation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#riverbankExcavation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#riverbankRestoration"/>
+        <Class IRI="#restorationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#roadStructure"/>
+        <Class IRI="#structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#routeModification"/>
+        <Class IRI="#restorationMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#scientificMonitoring"/>
+        <Class IRI="#restorationMonitoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sedimentRecharging"/>
+        <Class IRI="#sedimentTransport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sedimentRecharging"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sedimentRecharging"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sedimentRecharging"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sedimentRecharging"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sedimentTransport"/>
+        <Class IRI="#restorationOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sedimentTransport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sedimentTransport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sedimentTransport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sedimentTransport"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#speedBumpsPass"/>
+        <Class IRI="#fishway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#speedBumpsPass"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedMeas"/>
+            <Class IRI="#restorationMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#speedBumpsPass"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#speedBumpsPass"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#speedBumpsPass"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#speedBumpsPass"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#steep-slopeRockfillWeir"/>
+        <Class IRI="#weir"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#structure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLocatedOn"/>
+            <Class IRI="#waterBody"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#studSubstrate"/>
+        <Class IRI="#eelLadder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#studSubstrate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedMeas"/>
+            <Class IRI="#restorationMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#studSubstrate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#studSubstrate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#studSubstrate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#studSubstrate"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#submergedOrifice"/>
+        <Class IRI="#technicalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trapPass"/>
+        <Class IRI="#eelLadder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trapPass"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedMeas"/>
+            <Class IRI="#restorationMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trapPass"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trapPass"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trapPass"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trapPass"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#upstreamMigrationObstacle"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#verticalSlot"/>
+        <Class IRI="#technicalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#verticalSlotPassage"/>
+        <Class IRI="#basinPasses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#verticalSlotPassage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedMeas"/>
+            <Class IRI="#restorationMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#verticalSlotPassage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedTo"/>
+            <Class IRI="#structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#verticalSlotPassage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubjectTo"/>
+            <Class IRI="#restorationMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#verticalSlotPassage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#realizedIn"/>
+            <Class IRI="#geographicZone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#verticalSlotPassage"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#verticalWeir"/>
+        <Class IRI="#weir"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#viewingWindow"/>
+        <Class IRI="#technicalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#weir"/>
+        <Class IRI="#technicalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#weirWaterBody"/>
+        <Class IRI="#technicalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#weirWithASuccessionOfRedans"/>
+        <Class IRI="#weir"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wetland"/>
+        <Class IRI="#waterBody"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#associatedMeas"/>
+        <Class IRI="#restorationOperation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#associatedTo"/>
+        <Class IRI="#restorationMeasure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containsNotch"/>
+        <Class IRI="#restorationOperation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containsOtherElements"/>
+        <Class IRI="#restorationOperation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containsPool"/>
+        <Class IRI="#restorationOperation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCategory"/>
+        <Class IRI="#restorationMeasure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMainContractor"/>
+        <Class IRI="#restorationMeasure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#restorationMeasure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLocatedOn"/>
+        <Class IRI="#restorationMeasure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLocatedOn"/>
+        <Class IRI="#structure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <Class IRI="#restorationMeasure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubjectTo"/>
+        <Class IRI="#restorationMeasure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#realizedIn"/>
+        <Class IRI="#restorationMeasure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#associatedMeas"/>
+        <Class IRI="#restorationMeasure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#associatedTo"/>
+        <Class IRI="#structure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsNotch"/>
+        <Class IRI="#notch"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsOtherElements"/>
+        <Class IRI="#otherElement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsPool"/>
+        <Class IRI="#pool"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCategory"/>
+        <Class IRI="#restoration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMainContractor"/>
+        <Class IRI="#mainContractor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#restorationOperation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLocatedOn"/>
+        <Class IRI="#geographicZone"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLocatedOn"/>
+        <Class IRI="#waterBody"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <Class IRI="#projectOwner"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubjectTo"/>
+        <Class IRI="#restorationMonitoring"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#realizedIn"/>
+        <Class IRI="#geographicZone"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasBiologicalMonitoring"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#endsAt"/>
+        <Class IRI="#restorationMeasure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#endsAt"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAverageSlope"/>
+        <Class IRI="#artificialRiver"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBiologicalMonitoring"/>
+        <Class IRI="#restorationMeasure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCost"/>
+        <Class IRI="#restorationMeasure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCost"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDescription"/>
+        <Class IRI="#restorationMeasure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDescription"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFonctionality"/>
+        <Class IRI="#restorationMeasure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFunction"/>
+        <Class IRI="#restorationOperation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHeight"/>
+        <Class IRI="#dam"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHeight"/>
+        <Class IRI="#structure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHydromorphologicalMonitoring"/>
+        <Class IRI="#restorationMeasure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLength"/>
+        <Class IRI="#artificialRiver"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMaxLowWaterFlow"/>
+        <Class IRI="#artificialRiver"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMinLowWaterFlow"/>
+        <Class IRI="#artificialRiver"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMonitoringCost"/>
+        <Class IRI="#restorationMonitoring"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMonitoringDescription"/>
+        <Class IRI="#restorationMonitoring"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMonitoringEndDate"/>
+        <Class IRI="#restorationMonitoring"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMonitoringStartDate"/>
+        <Class IRI="#restorationMonitoring"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNotchHigh"/>
+        <Class IRI="#notch"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNotchWidth"/>
+        <Class IRI="#notch"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumberOfBasins"/>
+        <Class IRI="#restorationOperation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumberOfEntries"/>
+        <Class IRI="#restorationMeasure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumberOfInstallations"/>
+        <Class IRI="#restorationOperation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumberOfPools"/>
+        <Class IRI="#restorationOperation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPoolLength"/>
+        <Class IRI="#pool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPoolWidth"/>
+        <Class IRI="#pool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPurpose"/>
+        <Class IRI="#restorationMeasure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPurpose"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCost"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWidth"/>
+        <Class IRI="#artificialRiver"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isImpassable"/>
+        <Class IRI="#structure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#startsAt"/>
+        <Class IRI="#restorationMeasure"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#endsAt"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAverageSlope"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBiologicalMonitoring"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCost"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFonctionality"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFunction"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHeight"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHydromorphologicalMonitoring"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLength"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMaxLowWaterFlow"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMinLowWaterFlow"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMonitoringCost"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMonitoringDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMonitoringEndDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMonitoringStartDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNotchHigh"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNotchWidth"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumberOfBasins"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumberOfEntries"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumberOfInstallations"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumberOfPools"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPoolLength"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPoolWidth"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPurpose"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWidth"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isImpassable"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#startsAt"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#BypassSystem</IRI>
+        <Literal xml:lang="en">Bypass System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#Lake</IRI>
+        <Literal xml:lang="fr">lac</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#Lake</IRI>
+        <Literal xml:lang="en">Lake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#TrapSystem</IRI>
+        <Literal xml:lang="en">Trap System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#affluent</IRI>
+        <Literal xml:lang="fr">affluent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#affluent</IRI>
+        <Literal xml:lang="en">affluent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#amphibioticMigrant</IRI>
+        <Literal xml:lang="en">diadromous</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#amphibioticMigrant</IRI>
+        <Literal xml:lang="en">amphibiotic migrant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#anadromous</IRI>
+        <Literal xml:lang="fr">anadrome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#anadromous</IRI>
+        <Literal xml:lang="en">anadromous</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#arm</IRI>
+        <Literal xml:lang="fr">bras</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#arm</IRI>
+        <Literal xml:lang="en">arm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#artificialObstacle</IRI>
+        <Literal xml:lang="en">artificial obstacle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#artificialRiver</IRI>
+        <Literal xml:lang="fr">rivière artificielle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#artificialRiver</IRI>
+        <Literal xml:lang="en">artificial river</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#associatedMeas</IRI>
+        <Literal xml:lang="en">associatedMeas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#associatedTo</IRI>
+        <Literal xml:lang="en">associatedTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#baffleBrush</IRI>
+        <Literal xml:lang="fr">tapis brosse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#baffleBrush</IRI>
+        <Literal xml:lang="en">baffle brush</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#baffleFishway</IRI>
+        <Literal xml:lang="fr">passe à chicanes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#baffleFishway</IRI>
+        <Literal xml:lang="en">baffle fishway</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#barrier</IRI>
+        <Literal xml:lang="fr">barrière</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#barrier</IRI>
+        <Literal xml:lang="en">obstacle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#barrier</IRI>
+        <Literal xml:lang="fr">obstacle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#barrier</IRI>
+        <Literal xml:lang="en">barrier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#basinPasses</IRI>
+        <Literal xml:lang="fr">passes à bassins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#basinPasses</IRI>
+        <Literal xml:lang="en">basin passes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#biologicalMonitoring</IRI>
+        <Literal xml:lang="fr">suivi biologique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#biologicalMonitoring</IRI>
+        <Literal xml:lang="en">biological monitoring</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#catadromous</IRI>
+        <Literal xml:lang="fr">catadrome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#catadromous</IRI>
+        <Literal xml:lang="en">catadromous</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#channelCreation</IRI>
+        <Literal xml:lang="fr">création d’un chenal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#channelCreation</IRI>
+        <Literal xml:lang="en">channel creation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#containsNotch</IRI>
+        <Literal xml:lang="en">containsNotch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#containsOtherElements</IRI>
+        <Literal xml:lang="en">containsOtherElements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#containsPool</IRI>
+        <Literal xml:lang="en">containsPool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#counterDrainageChannel</IRI>
+        <Literal xml:lang="fr">contre-canal de drainage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#counterDrainageChannel</IRI>
+        <Literal xml:lang="en">counter drainage channel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#country</IRI>
+        <Literal xml:lang="fr">pays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#country</IRI>
+        <Literal xml:lang="en">country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#dam</IRI>
+        <Literal xml:lang="en">barrage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#dam</IRI>
+        <Literal xml:lang="fr">barrage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#dam</IRI>
+        <Literal xml:lang="en">dam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#de-silting</IRI>
+        <Literal xml:lang="fr">désenvasement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#de-silting</IRI>
+        <Literal xml:lang="en">de-silting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#distributionBasin</IRI>
+        <Literal xml:lang="fr">bassin de répartition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#distributionBasin</IRI>
+        <Literal xml:lang="en">distribution basin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#ecologicalMonitoring</IRI>
+        <Literal xml:lang="fr">suivi écologique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#ecologicalMonitoring</IRI>
+        <Literal xml:lang="en">ecological monitoring</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#eelLadder</IRI>
+        <Literal xml:lang="fr">passe à anguilles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#eelLadder</IRI>
+        <Literal xml:lang="en">eel ladder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#endsAt</IRI>
+        <Literal xml:lang="en">endsAt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#fishLift</IRI>
+        <Literal xml:lang="fr">ascenseur à poissons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#fishLift</IRI>
+        <Literal xml:lang="en">fish lift</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#fishLock</IRI>
+        <Literal xml:lang="fr">écluse à poissons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#fishLock</IRI>
+        <Literal xml:lang="en">fish lock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#fishway</IRI>
+        <Literal xml:lang="fr">passe à poissons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#fishway</IRI>
+        <Literal xml:lang="en">fishway</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#floodRetention</IRI>
+        <Literal xml:lang="fr">rétention de crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#floodRetention</IRI>
+        <Literal xml:lang="en">flood retention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#flowRestoration</IRI>
+        <Literal xml:lang="fr">restauration de cours d&apos;eau</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#flowRestoration</IRI>
+        <Literal xml:lang="en">flow restoration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#forestRestoration</IRI>
+        <Literal xml:lang="fr">restauration de forêts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#forestRestoration</IRI>
+        <Literal xml:lang="en">forest restoration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#gate</IRI>
+        <Literal xml:lang="fr">vanne</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#gate</IRI>
+        <Literal xml:lang="en">gate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#geographicZone</IRI>
+        <Literal xml:lang="en">geographic zone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#gravelInsertion</IRI>
+        <Literal xml:lang="fr">engravement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#gravelInsertion</IRI>
+        <Literal xml:lang="en">gravel insertion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#groyneModification</IRI>
+        <Literal xml:lang="fr">modification de l&apos;épi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#groyneModification</IRI>
+        <Literal xml:lang="en">groyne modification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#habitatRestoration</IRI>
+        <Literal xml:lang="fr">restauration des habitats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#habitatRestoration</IRI>
+        <Literal xml:lang="en">habitat restoration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasAverageSlope</IRI>
+        <Literal xml:lang="en">hasAverageSlope</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasBiologicalMonitoring</IRI>
+        <Literal xml:lang="en">hasBiologicalMonitoring</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasCategory</IRI>
+        <Literal xml:lang="en">hasCategory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasCost</IRI>
+        <Literal xml:lang="en">hasCost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasDescription</IRI>
+        <Literal xml:lang="en">hasDescription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasFonctionality</IRI>
+        <Literal xml:lang="en">hasFonctionality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasHeight</IRI>
+        <Literal xml:lang="en">hasHeight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasHeightBetweenBasins</IRI>
+        <Literal xml:lang="en">hasHeightBetweenBasins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasHydromorphologicalMonitoring</IRI>
+        <Literal xml:lang="en">hasHydromorphologicalMonitoring</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasLength</IRI>
+        <Literal xml:lang="en">hasLength</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasMainContractor</IRI>
+        <Literal xml:lang="en">hasMainContractor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasMaxLowWaterFlow</IRI>
+        <Literal xml:lang="en">hasMaxLowWaterFlow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasMinLowWaterFlow</IRI>
+        <Literal xml:lang="en">hasMinLowWaterFlow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasMonitoringCost</IRI>
+        <Literal xml:lang="en">hasMonitoringCost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasMonitoringDescription</IRI>
+        <Literal xml:lang="en">hasMonitoringDescription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasMonitoringEndDate</IRI>
+        <Literal xml:lang="en">hasMonitoringEndDate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasMonitoringStartDate</IRI>
+        <Literal xml:lang="en">hasMonitoringStartDate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasNotchHigh</IRI>
+        <Literal xml:lang="en">hasNotchHigh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasNotchWidth</IRI>
+        <Literal xml:lang="en">hasNotchWidth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasNotches</IRI>
+        <Literal xml:lang="en">hasNotches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasNumberOfBasins</IRI>
+        <Literal xml:lang="en">hasNumberOfBasins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasNumberOfEntries</IRI>
+        <Literal xml:lang="en">hasNumberOfEntries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasNumberOfInstallations</IRI>
+        <Literal xml:lang="en">hasNumberOfInstallations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasNumberOfPools</IRI>
+        <Literal xml:lang="en">hasNumberOfPools</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasPoolLength</IRI>
+        <Literal xml:lang="en">hasPoolLength</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasPoolWidth</IRI>
+        <Literal xml:lang="en">hasPoolWidth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasPurpose</IRI>
+        <Literal xml:lang="en">hasPurpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hasWidth</IRI>
+        <Literal xml:lang="en">hasWidth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#holobioticMigrant</IRI>
+        <Literal xml:lang="fr">migrateur amphibiotique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#holobioticMigrant</IRI>
+        <Literal xml:lang="en">holobiotic migrant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#hydromorphologicalMonitoring</IRI>
+        <Literal xml:lang="fr">suivi hydromorphologique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#hydromorphologicalMonitoring</IRI>
+        <Literal xml:lang="en">hydromorphological monitoring</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#inclinedWeir</IRI>
+        <Literal xml:lang="fr">seuil incliné</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#inclinedWeir</IRI>
+        <Literal xml:lang="en">inclined weir</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#inclinedWeirWithRedanUpstream</IRI>
+        <Literal xml:lang="fr">seuil incliné présentant un redan en amont</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#inclinedWeirWithRedanUpstream</IRI>
+        <Literal xml:lang="en">inclined weir with redan upstream</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#includes</IRI>
+        <Literal xml:lang="en">includes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#isImpassable</IRI>
+        <Literal xml:lang="en">isImpassable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#isLocatedIn</IRI>
+        <Literal xml:lang="en">isLocatedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#isLocatedOn</IRI>
+        <Literal xml:lang="en">isLocatedOn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#isManagedBy</IRI>
+        <Literal xml:lang="en">isManagedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#isSubjectTo</IRI>
+        <Literal xml:lang="en">isSubjectTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#lateralContinuityRestoration</IRI>
+        <Literal xml:lang="fr">restauration de continuité latérale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#lateralContinuityRestoration</IRI>
+        <Literal xml:lang="en">lateral continuity restoration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#lavoirWeir</IRI>
+        <Literal xml:lang="fr">seuil de lavoir</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#lavoirWeir</IRI>
+        <Literal xml:lang="en">lavoir weir</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#longitudinalContinuityRestoration</IRI>
+        <Literal xml:lang="fr">restauration de la continuité longitudinale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#longitudinalContinuityRestoration</IRI>
+        <Literal xml:lang="en">longitudinal continuity restoration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#low-slopeRockfillWeir</IRI>
+        <Literal xml:lang="fr">seuil en enrochements à faible pente</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#low-slopeRockfillWeir</IRI>
+        <Literal xml:lang="en">low-slope rockfill weir</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#mainContractor</IRI>
+        <Literal xml:lang="fr">maître d&apos;œuvre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#mainContractor</IRI>
+        <Literal xml:lang="en">main contractor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#migratorySpecie</IRI>
+        <Literal xml:lang="fr">espèce migrateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#migratorySpecie</IRI>
+        <Literal xml:lang="en">migratory specie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#millWeir</IRI>
+        <Literal xml:lang="fr">seuil de moulin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#millWeir</IRI>
+        <Literal xml:lang="en">mill weir</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#naturalObstacle</IRI>
+        <Literal xml:lang="en">natural obstacle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#notch</IRI>
+        <Literal xml:lang="fr">échancrure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#notch</IRI>
+        <Literal xml:lang="en">notch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#nozzle</IRI>
+        <Literal xml:lang="fr">buse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#nozzle</IRI>
+        <Literal xml:lang="en">nozzle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#observationRoom</IRI>
+        <Literal xml:lang="fr">Local d&apos;observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#observationRoom</IRI>
+        <Literal xml:lang="en">Observation room</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#otherActor</IRI>
+        <Literal xml:lang="fr">autre acteur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#otherActor</IRI>
+        <Literal xml:lang="en">other actor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#otherElement</IRI>
+        <Literal xml:lang="en">other element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#pond</IRI>
+        <Literal xml:lang="fr">étang</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#pond</IRI>
+        <Literal xml:lang="en">pond</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#pondDyke</IRI>
+        <Literal xml:lang="fr">digue d’étang</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#pondDyke</IRI>
+        <Literal xml:lang="en">pond dyke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#pool</IRI>
+        <Literal xml:lang="fr">basin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#pool</IRI>
+        <Literal xml:lang="en">pool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#poolCreation</IRI>
+        <Literal xml:lang="fr">création de mares</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#poolCreation</IRI>
+        <Literal xml:lang="en">pool creation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#poolRestoration</IRI>
+        <Literal xml:lang="fr">restauration de mares</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#poolRestoration</IRI>
+        <Literal xml:lang="en">pool restoration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#pre-barrage</IRI>
+        <Literal xml:lang="en">pre-dam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#pre-barrage</IRI>
+        <Literal xml:lang="fr">prébarrage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#pre-barrage</IRI>
+        <Literal xml:lang="en">pre-barrage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#profileDiversification</IRI>
+        <Literal xml:lang="fr">diversification des profils</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#profileDiversification</IRI>
+        <Literal xml:lang="en">profile diversification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#projectOwner</IRI>
+        <Literal xml:lang="fr">maîre d&apos;ouvrage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#projectOwner</IRI>
+        <Literal xml:lang="en">project owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#realizedIn</IRI>
+        <Literal xml:lang="en">realizedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#reconnection</IRI>
+        <Literal xml:lang="fr">reconnexion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#reconnection</IRI>
+        <Literal xml:lang="en">reconnection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#redynamization</IRI>
+        <Literal xml:lang="fr">redynamisation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#redynamization</IRI>
+        <Literal xml:lang="en">redynamization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#regularFlooding</IRI>
+        <Literal xml:lang="fr">inondations régulières</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#regularFlooding</IRI>
+        <Literal xml:lang="en">regular flooding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#restoration</IRI>
+        <Literal xml:lang="fr">restauration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#restoration</IRI>
+        <Literal xml:lang="en">restoration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#restorationMeasure</IRI>
+        <Literal xml:lang="fr">mesure de restauration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#restorationMeasure</IRI>
+        <Literal xml:lang="en">restoration measure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#restorationMonitoring</IRI>
+        <Literal xml:lang="fr">suivi de la restauration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#restorationMonitoring</IRI>
+        <Literal xml:lang="en">restoration monitoring</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#restorationOperation</IRI>
+        <Literal xml:lang="en">restoration operation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#restoringSpawningGrounds</IRI>
+        <Literal xml:lang="fr">restauration de frayères</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#restoringSpawningGrounds</IRI>
+        <Literal xml:lang="en">restoring spawning grounds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#river</IRI>
+        <Literal xml:lang="fr">rivière</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#river</IRI>
+        <Literal xml:lang="en">river</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#riverbankExcavation</IRI>
+        <Literal xml:lang="fr">déroctage de berge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#riverbankExcavation</IRI>
+        <Literal xml:lang="en">riverbank excavation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#riverbankRestoration</IRI>
+        <Literal xml:lang="fr">restauration de berges</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#riverbankRestoration</IRI>
+        <Literal xml:lang="en">riverbank restoration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#roadStructure</IRI>
+        <Literal xml:lang="fr">ouvrage routier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#roadStructure</IRI>
+        <Literal xml:lang="en">road structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#routeModification</IRI>
+        <Literal xml:lang="fr">modification du tracé</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#routeModification</IRI>
+        <Literal xml:lang="en">route modification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#scientificMonitoring</IRI>
+        <Literal xml:lang="fr">suivi scientifique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#scientificMonitoring</IRI>
+        <Literal xml:lang="en">scientific monitoring</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#sedimentRecharging</IRI>
+        <Literal xml:lang="fr">recharge sédimentaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#sedimentRecharging</IRI>
+        <Literal xml:lang="en">sediment recharging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#sedimentTransport</IRI>
+        <Literal xml:lang="fr">transport sédimentaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#sedimentTransport</IRI>
+        <Literal xml:lang="en">sediment transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#speedBumpsPass</IRI>
+        <Literal xml:lang="fr">passe à ralentisseurs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#speedBumpsPass</IRI>
+        <Literal xml:lang="en">speed bumps pass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#startsAt</IRI>
+        <Literal xml:lang="en">startsAt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#steep-slopeRockfillWeir</IRI>
+        <Literal xml:lang="fr">seuil en enrochement à forte pente</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#steep-slopeRockfillWeir</IRI>
+        <Literal xml:lang="en">steep-slope rockfill weir</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#structure</IRI>
+        <Literal xml:lang="fr">ouvrage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#structure</IRI>
+        <Literal xml:lang="en">structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#studSubstrate</IRI>
+        <Literal xml:lang="fr">substrat rugueux</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#studSubstrate</IRI>
+        <Literal xml:lang="en">stud substrate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#submergedOrifice</IRI>
+        <Literal xml:lang="fr">orifice immergé</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#submergedOrifice</IRI>
+        <Literal xml:lang="en">submerged orifice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#technicalElement</IRI>
+        <Literal xml:lang="en">technical element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#trapPass</IRI>
+        <Literal xml:lang="fr">passe piège</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#trapPass</IRI>
+        <Literal xml:lang="en">trap pass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#upstreamMigrationObstacle</IRI>
+        <Literal xml:lang="fr">obstacle à la migration en amont</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#upstreamMigrationObstacle</IRI>
+        <Literal xml:lang="en">upstream migration obstacle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#verticalSlot</IRI>
+        <Literal xml:lang="fr">fente verticale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#verticalSlot</IRI>
+        <Literal xml:lang="en">vertical slot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#verticalSlotPassage</IRI>
+        <Literal xml:lang="fr">passage à fente verticale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#verticalSlotPassage</IRI>
+        <Literal xml:lang="en">vertical slot passage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#verticalWeir</IRI>
+        <Literal xml:lang="fr">seuil vertical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#verticalWeir</IRI>
+        <Literal xml:lang="en">vertical weir</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#viewingWindow</IRI>
+        <Literal xml:lang="fr">vitre d’observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#viewingWindow</IRI>
+        <Literal xml:lang="en">viewing Window</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#waterBody</IRI>
+        <Literal xml:lang="fr">cours d&apos;eau</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#waterBody</IRI>
+        <Literal xml:lang="en">water body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#weir</IRI>
+        <Literal xml:lang="fr">seuil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#weir</IRI>
+        <Literal xml:lang="en">weir</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#weirWaterBody</IRI>
+        <Literal xml:lang="fr">seuil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#weirWaterBody</IRI>
+        <Literal xml:lang="en">weir water body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#weirWithASuccessionOfRedans</IRI>
+        <Literal xml:lang="fr">seuil présentant une succession de redans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#weirWithASuccessionOfRedans</IRI>
+        <Literal xml:lang="en">weir with a succession of redans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:altLabel"/>
+        <IRI>#wetland</IRI>
+        <Literal xml:lang="fr">zone humide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="core:prefLabel"/>
+        <IRI>#wetland</IRI>
+        <Literal xml:lang="en">wetland</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
