@@ -12,7 +12,7 @@ This project explores multiple approaches:
 ---
 
 ## 🎯 Objectives
-1. Automate the transformation of raw textual data into RDF graphs aligned with **TetraOnto**.  
+1. Automate the transformation of raw textual data into TTL graphs aligned with **TetraOnto**.  
 2. Compare multiple fine-tuned LLMs on ontology population tasks.  
 3. Develop a **reproducible pipeline** for training, inference, and evaluation.  
 4. Evaluate the quality of extracted triples using both **automatic** and **LLM-based evaluation** methods.
@@ -20,6 +20,7 @@ This project explores multiple approaches:
 ---
 
 ## 🧩 Project Structure
+```
 LLM_Ontology_Population/
 │
 ├── ontology/ # Contains the TetraOnto ontology schema (.owl)
@@ -40,6 +41,7 @@ LLM_Ontology_Population/
 ├── README.md # Project documentation (this file)
 │
 └── .gitignore # Files and directories excluded from Git
+```
 
 
 ---
@@ -47,23 +49,33 @@ LLM_Ontology_Population/
 ## 🚀 How to Run
 
 ### 1. Clone the Repository
+```bash
 git clone https://github.com/fghazouani/LLM-Ontology-Population.git
 cd LLM-Ontology-Population
+```
 
 ### 2. Create and Activate a Virtual Environment
+```bash
 python3 -m venv tetra_env
 source tetra_env/bin/activate   # (Linux/Mac)
 tetra_env\Scripts\activate      # (Windows)
+```
 
 ### 3. Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ### 4. Fine-tune a Model
 Example using LLaMA 3 with QLoRA:
+```bash
 python scripts/fine_tune_llm.py --base_model llama3 --dataset dataset.json --output_dir outputs_results_llama3
+```
 
 ### 5. Extract Triples and Populate the Ontology
+```bash
 python scripts/inference_extract_triples.py --input test_data/ --model outputs_results_llama3/
+```
 
 # 🧠 Ontology Reference
 
@@ -72,7 +84,7 @@ TetraOnto defines the conceptual structure of hydro-ecological restoration opera
 Classes: geographic zone, restoration measure, restoration operation, structure, migratory species, project owner, main contractor
 
 Properties:
-
+```
 isManagedBy → (operation → project owner)
 
 isLocatedOn → (structure → water body)
@@ -82,6 +94,7 @@ includes → (restoration measure → restoration operation)
 hasHeight → (structure → xsd:decimal)
 
 Each extracted text is converted into TTL triples following this schema.
+```
 
 ---
 
