@@ -109,10 +109,10 @@ Designed for both research and academic reproducibility.
 ---
 
 # 📫 Contact
-
+```
 Author: Fethi Ghazouani
 Email: ghazouanifethi@gmail.com, fghazoua@unistra.fr
 Affiliation: Université de Strasbourg – ICube Laboratory, SDC
-
+```
 ⭐ If you find this project useful, please consider giving it a star on GitHub!
 
