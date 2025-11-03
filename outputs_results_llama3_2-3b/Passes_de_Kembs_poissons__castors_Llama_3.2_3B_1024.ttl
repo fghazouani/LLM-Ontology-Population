@@ -66,6 +66,3 @@
 
 :Rhin a :river ;
     skos:prefLabel "Rhin".#def
-assistant
-user
-Un projet de restauration environnementale a été réalisé à Kembs, dans le Haut-Rhin, sur le Rhin, afin de favoriser la circulation des espèces aquatiques et la continuité écologique. Porté par EDF et conçu par le Centre d’Ingénierie Hydraulique d’EDF R\&D, le projet comprend trois aménagements : le remplacement de l’ancienne passe à poissons par une passe moderne inspirée de celle de Gambsheim, la création d’une passe à poissons reliant le Grand Canal d’Alsace à la Réserve Naturelle de la PCA, et la mise en place d’une passe à castors permettant aux mammifères aquatiques de franchir le barrage côté allemand. Une petite centrale a également été construite pour turbiner une partie du débit d’attrait. Les travaux ont débuté en 2011, avec la mise en eau de certaines installations en 2013. Le coût total de l’opération est de 750 000 €, financé par l’Agence de l’Eau Rhin-Meuse. Aucun suivi biologique ou hydromorphologique n’est prévu. Aucun suivi bi

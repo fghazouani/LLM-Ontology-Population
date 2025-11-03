@@ -1,0 +1,56 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:FishPassGerstheim a :fishPass ;
+    skos:prefLabel "Passe à poissons de Gerstheim" ;
+    :isManagedBy :CERGASA ;
+    :isRealizedIn :Rhein ;
+    :isRealizedIn :France ;
+    :isRealizedIn :BasRhin ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :FishPassGerstheimEntrance1 ;
+    :includes :FishPassGerstheimEntrance2 ;
+    :includes :FishPassGerstheimSection1 ;
+    :includes :FishPassGerstheimSection2 ;
+    :includes :FishPassGerstheimSection3 ;
+    :includes :CountingRoomGerstheim ;
+    :hasConstantFlow "1.2"^^xsd:decimal ;
+    :hasAttractantFlow "9-14" ;
+    :isImpassable "true"^^xsd:boolean ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :startsAt "2021-01-01"^^xsd:dateTime ;
+    :endsAt "2021-12-31"^^xsd:dateTime .
+
+:Rhein a :river ;
+    skos:prefLabel "Rhin" .
+
+:France a :geographicZone ;
+    skos:prefLabel "France" .
+
+:BasRhin a :geographicZone ;
+    skos:prefLabel "Bas-Rhin" .
+
+:CERGASA a :projectOwner ;
+    skos:prefLabel "CERGA SA" .
+
+:FishPassGerstheimEntrance1 a :entrance ;
+    skos:prefLabel "Entrée 1 de la passe à poissons de Gerstheim" .
+
+:FishPassGerstheimEntrance2 a :entrance ;
+    skos:prefLabel "Entrée 2 de la passe à poissons de Gerstheim" .
+
+:FishPassGerstheimSection1 a :section ;
+    skos:prefLabel "Section 1 de la passe à poissons de Gerstheim" .
+
+:FishPassGerstheimSection2 a :section ;
+    skos:prefLabel "Section 2 de la passe à poissons de Gerstheim" .
+
+:FishPassGerstheimSection3 a :naturalPool ;
+    skos:prefLabel "Passe naturelle de la passe à poissons de Gerstheim" .
+
+:CountingRoomGerstheim a :countingRoom ;
+    skos:prefLabel "Local de comptage de la passe à poissons de Gerstheim" ;
+    :hasVideoMonitoring "true"^^xsd:boolean .

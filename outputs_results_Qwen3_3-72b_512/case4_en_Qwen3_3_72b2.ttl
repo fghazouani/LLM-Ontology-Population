@@ -1,0 +1,64 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:HybridPoolAndWeirFishwayLittleFrenchCreek a :hybridpoolandweir ;
+    skos:prefLabel "Hybrid Pool-and-Weir Fishway - Little French Creek" ;
+    :isManagedBy :Caltrans ;
+    :hasMainContractor :Caltrans ;
+    :associatedTo :DamOnTrinityRiver ;
+    :isRealizedIn :NorthernCalifornia ;
+    :isImpassable "true"^^xsd:boolean ;
+    :canBeUsedForFloodControl "false"^^xsd:boolean ;
+    :improvesHabitatContinuity "true"^^xsd:boolean ;
+    :includes :ConcretePools ,
+              :RemovableWoodBaffles ;
+    hasCategory :FlowManagement ,
+                :DebrisRemoval ,
+                :FishPassage ;
+    isSubjectOfMonitoring "true"^^xsd:boolean ;
+    startsAt "2001-11-01"^^xsd:dateTime ;
+    endsAt   "2001-11-30"^^xsd:dateTime ;
+    hasCost "445000"^^xsd:decimal . 
+
+: DamOnTrinityRiver a :dam ;
+    skos:prefLabel "Dam on Trinity River" ;
+    hasHeight "8.32"^^xsd:decimal ;
+    isLocatedOn :ConfluenceOfLFCandTR ;
+    canBeClosed "false"^^xsd:boolean ;
+
+: ConfluenceOfLFCandTR a geog:geographicZone ;
+    skos:prefLabel "Confluence of Litttle French Creek and Trinity River" ; 
+   
+: ConcretePools a :concretepools ;
+    skos:prefLabel "Concrete Pools" ;
+    
+: RemovableWoodBaffles a :removablewoodbaffes;
+    skos:prefLabel "Removable Wood Baffles";
+
+: Caltrans a foaf:organization ;
+    skos:prefLabel "CALTRANS" ;
+    
+: NorthernCalifornia a geo:geographiczone ;
+    skos:prefLabel "NORTHERN CALIFORNIA" ;
+     
+: CaliforniaDepartmentofFishandGame a foaf:organization ;
+     skos:Preflabel "California department of fish and game";
+       
+:NationalMarineFisheriesService a foaf:organisation;
+      Skos:preflabel "national marine fisheries service".  
+      
+:LittleFrenchCreek a ex:Creek; 
+         skos:prefLabel "little french creek";  
+
+        Ex:creek a daml:class;
+          rdfs:subClassOf Geo:watersystemelement ;
+             skos:prefLabel"CREEK".
+            
+:Trinityriver a ex:river ;
+            skos:prefLabel"trinity river ". 
+
+Ex:river a daml:class ;
+       Rdfs:subclassgeo:watersystemelement;
+           Skos:preflabel "RIVER".

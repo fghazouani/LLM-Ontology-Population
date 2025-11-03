@@ -1,0 +1,79 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:FishPassageGambsheim a :fishway ;
+    skos:prefLabel "Passe à poissons de Gambsheim" ;
+    :hasMainContractor :CERGASA ;
+    :isManagedBy :CERGASA ;
+    :isRealizedIn :Rhein ;
+    :isRealizedIn :France ;
+    :isRealizedIn :Germany ;
+    :isRealizedIn :BasRhin ;
+    :isRealizedIn :Gambsheim ;
+    :isImpassable "true"^^xsd:boolean ;
+    :hasCategory :LongitudinalContinuity ;
+    :isImpassable "true"^^xsd:boolean ;
+    :hasNumberOfEntries 3 ;
+    :includes :Entry1 ,
+              :Entry2 ,
+              :Entry3 ;
+    :hasDistributionBasin :DistributionBasinGambsheim ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :hasCost "10,000,000€" ;
+    :isFinancedBy :FrenchState ,
+                  :GermanState ,
+                  :CERGASA ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :startsAt "2010-01-01"^^xsd:dateTime ;
+    :endsAt "2015-12-31"^^xsd:dateTime .
+
+:Rhein a :river ;
+    skos:prefLabel "Rhin" .
+
+:FrenchState a :projectOwner ;
+    skos:prefLabel "État français" .
+
+:GermanState a :projectOwner ;
+    skos:prefLabel "État allemand" .
+
+:CERGASA a :projectOwner ;
+    skos:prefLabel "CERGA SA" .
+
+:AssociationPassage309 a :projectOwner ;
+    skos:prefLabel "Association Passage 309" .
+
+:ONEMA a :projectOwner ;
+    skos:prefLabel "ONEMA" .
+
+:SaumonRhin a :projectOwner ;
+    skos:prefLabel "Saumon-Rhin" .
+
+:Kinzing a :river ;
+    skos:prefLabel "Kinzing" .
+
+:Schutter a :river ;
+    skos:prefLabel "Schutter" .
+
+:Entry1 a :entry ;
+    skos:prefLabel "Entrée 1" ;
+    :isLocatedOn "assise du barrage" ;
+    :isUsedFor "migratory species" .
+
+:Entry2 a :entry ;
+    skos:prefLabel "Entrée 2" ;
+    :isLocatedOn "assise du barrage" ;
+    :isUsedFor "rheophilic species" .
+
+:Entry3 a :entry ;
+    skos:prefLabel "Entrée 3" ;
+    :isLocatedOn "riverbank" ;
+    :isUsedFor "less powerful fish" .
+
+:DistributionBasinGambsheim a :distributionBasin ;
+    skos:prefLabel "Bassin de répartition de Gambsheim" ;
+    :collectsFlow "1.2 m³/s" ;
+    :hasAttractantFlow "15 m³/s" .

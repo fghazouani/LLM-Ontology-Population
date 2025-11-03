@@ -1,0 +1,60 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2025/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:FishPassKaysersberg a :fishway ;
+    skos:prefLabel "Passe à Poissons de Kaysersberg" ;
+    :hasMainContractor :ConseilGeneralDuHautRhin ;
+    :isManagedBy :ConseilGeneralDuHautRhin ;
+    :associatedTo :DSsmithKayserbergeWeir ;
+    :isRealizedIn :RiverWeiss ,
+                :France ,
+                :Europe ;
+    :startsAt "2010-09-01"^^xsd:dateTime ;
+    :endsAt "2010-11-30"^^xsd:dateTime ;
+    :includes :BaffleWeirsKaysersberg,
+              :ThickCrestedSpillwayKaysersberg,
+              :WaterLevelAdjustmentSystemKaysersberg;
+    :hasCategory :LongitudinalContinuityRestoration ;
+    :hasCost "€36,700.00" ;
+
+:BaffleWeirsKayserson a :baffleWeirs ;
+    skos:prefLabel "Seuils Enrochement Maçonné Kayserberge" ;
+    :isLocatedOn :RightBankOfTheWeiss ;
+    :hasHeight "0.5"^^decimal ;
+    :consistsOf :EnrocementsMaconnes ;
+    
+:EnrocementsMaconnes a :enrockmentsMasonry ;
+     skos:prefLabel "Enrochements Maçonnés" ; 
+
+:ThickCrestedSpillwayKaysersberg a :thickCrestedSpillway ;
+   skos:prefLabel "Déversoir à Crête Épaisse de Kayserberge" ;
+   
+:WaterLevelAdjustmentSystemKaysersberg a :waterleveladjustment ;
+skos:prefLabel "Système de Vannage de Kayserberge" ;
+
+
+:DSsmithKayserbergeWeir a :weir ;
+      skos:prefLabel "Barrage DS Smith Kayserberge" ;
+       :isImpassable "true"^^boolean ;
+        :isLocatedOn :LeftBankOftheWeiss ;
+         :hasFunction "industrial_use" ;
+          hasHeight "2.1m";
+           hasLength "unknown";
+
+:riverWeiss a :river ;
+             skos:prefLabel "La Weiss" ;
+
+:conseilGeneralduhautRhine a :projectOwner ;
+                          skos:preflabel "Conseil général du haut rhin" ;
+
+:rightbankoftheweisssk a os:preferredLabel "right bank of the weiss" ;
+
+:leftbankoftheweissska os:preferredLabel "left bank of the weiss" ;
+
+:agencederhindeMeus a :funder ;
+                     skos:prefLabel "rhin meuse water agency" ;
+
+:syndicatmixtedelaWeissaaval a:funder ;
+                             skos:prefferredLabel "syndicate mixteweiß aval" .

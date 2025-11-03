@@ -1,0 +1,107 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:PasseAPoissonsKemms a :environmentalRestoration ;
+    skos:prefLabel "Passe à Poissons Kemms" ;
+    :hasMainContractor :EDF ;
+    :isManagedBy :HydraulicEngineeringCenterOfEDFRnD ;
+    :associatedTo :BarrageDeKemms ;
+    :isRealizedIn :Rhein ,
+                  :HautRhin,
+                  :France ;
+    :includes :FishwayReplacementKemms , 
+              :FishPassConnectionGrandCanalPCA,
+              :BeaverWayForMammalsKemms;
+    :hasCategory :ContinuityImprovement ;
+    :hasBiologicalMonitoring false ;  
+    :hasHydromorphologicalMonitoring false ;
+    :startsAt "2011-01-01"^^xsd:dateTime ;
+    :endsAt "2016-12-31"^^xsd:dateTime ;
+    :hasCost "€750,000" ;
+    :isFinancedBy :RhineMeuseWaterAgency.
+
+:BarrageDeKemms a :dam ;
+     skos:prefLabel "Barrage De Kemms" ;
+     :impassable true ;
+
+:Gambsheim a :fishway ;
+   skos:prefLabel "Passe à poisons Gambsheim";
+   
+:FishwayReplacementKemms a :reconnection ;
+        skos:prefLabel "Remplacement Passe à poissons ancienne";
+
+:BeaverWayForMammalsKemms a :beaverway ;
+          skos:prefLabel "Passe Castors Kemms",
+            rdfs:label "Beaver way at Kemms" ;
+          
+
+:LeGrandCanalDAlsace a :riverbank ;
+             skos:prefLabel "Grande canal D'alsace",
+
+:ReserveNaturelleDuPCA a :geographicZone ;
+                 skos:prefLabel "Réserve naturelle Du PCA", 
+
+:CENuclearPowerPlant a :centraleNucleaire ;
+                skos:prefLabel "Centrale Nucléaire CERN". 
+
+:HydraulicEngineeringCenterOfEDFRnD a :projectOwner ;
+                         skos:prefLabel "Centre d'ingénierie hydraulique d'EDF R&D".
+
+:RhineMeuseWaterAgency a :projectOwner ;
+                       skos:prefLabel "Agence de l'eau Rhin Meuse". 
+
+:HautRhin a :geographicZone ;
+         skos:prefLabel "Haute rhin". 
+
+:France a :country ;
+       skos:prefLabel "Francia". 
+
+:Rhein a :mainRiver ;
+      skos:prefLabel "Rio Rin". 
+
+:EDF a :projectOwner ;
+skos:prefLabel "Electricité de France". 
+
+:Allemagne a :country ;
+                    skos:prefLabel "Alemania". 
+
+:CentralElectronicaPequeña a :smallPowerplant ;
+                          skos:prefLabel "Pequena central electronica". 
+
+:SmallPowerplant a :hydropowerProduction ;
+                   skos:prefLabel "pequena central electrica"; 
+
+:TurbinatesPartOfTheAttractionFlow a :function ;
+                                   skos:prefLabel "turbinar parte del caudal de atracción". 
+
+:FunctionImpassability a :function ;
+                      skos:prefLabel "impassabilité".  
+
+:FunctionReconnection a :function ;
+                     skos:prefLabel "reconnexion".   
+
+:FunctionCreateAChannel a :function ;
+                        skos:prefLabel "création d'un chenal". 
+
+:Height a :height ;
+        skos:prefLabel "altura". 
+
+:Length a :length ;
+        skos:prefLabel "longitud". 
+
+:Width a :width ;
+       skos:prefLabel "ancho". 
+
+:EntrancePosition a :entrancePosition ;
+                  skos:prefLabel "posición de entrada". 
+
+:ExitPosition a :exitPosition ;
+              skos:prefLabel "posicion de salida". 
+
+:HasWeir a :weir ;
+          skos:prefLabel "trepador de peces". 
+
+:IsOperational a :isFunctional ;
+               skos:prefLabel "está operativo". .

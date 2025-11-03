@@ -1,0 +1,52 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:FishPassRheinfelden a :fishPass ;
+    skos:prefLabel "Passe à poissons de Rheinfelden" ;
+    :isManagedBy :BadeWurtemberg ;
+    :isRealizedIn :Rheinfelden ;
+    :isRealizedIn :Germany ;
+    :isRealizedOn :Rhein ;
+    :hasCategory :LongitudinalContinuity ;
+    :isImpassable "true"^^xsd:boolean ;
+    :hasLength "300"^^xsd:decimal ;
+    :hasNumberOfEntries "1" ;
+    :hasBiologicalMonitoring "false"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :startsAt "2003-01-01"^^xsd:dateTime ;
+    :endsAt "2003-12-31"^^xsd:dateTime .
+
+:HydropowerPlantRheinfelden a :hydropowerPlant ;
+    skos:prefLabel "Centrale hydroélectrique de Rheinfelden" ;
+    :isManagedBy :BadeWurtemberg ;
+    :isRealizedIn :Rheinfelden ;
+    :isRealizedIn :Germany ;
+    :isRealizedOn :Rhein ;
+    :hasHeight "6.5"^^xsd:decimal ;
+    :isImpassable "true"^^xsd:boolean ;
+    :startsAt "2003-01-01"^^xsd:dateTime ;
+    :endsAt "2003-12-31"^^xsd:dateTime .
+
+:Rhein a :river ;
+    skos:prefLabel "Rhin" .
+
+:BadeWurtemberg a :projectOwner ;
+    skos:prefLabel "Bade-Wurtemberg" .
+
+:Rheinfelden a :geographicZone ;
+    skos:prefLabel "Rheinfelden" .
+
+:Germany a :geographicZone ;
+    skos:prefLabel "Allemagne" .
+
+:ArtificialChannelRheinfelden a :artificialChannel ;
+    skos:prefLabel "Chenal artificiel de Rheinfelden" ;
+    :isManagedBy :BadeWurtemberg ;
+    :isRealizedIn :Rheinfelden ;
+    :isRealizedIn :Germany ;
+    :isRealizedOn :Rhein ;
+    :hasLength "800"^^xsd:decimal ;
+    :startsAt "2003-01-01"^^xsd:dateTime ;
+    :endsAt "2003-12-31"^^xsd:dateTime .

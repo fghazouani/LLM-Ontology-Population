@@ -1,0 +1,57 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:FloodplainRestorationProjectVille a :floodplainRestoration ;
+    skos:prefLabel "Projet de Restauration Piscicole à Villé" ; 
+    :hasMainContractor :CommunautéDeCommunesDuCantonDeVillé ;
+    :isManagedBy :CommunautéDeCommunesDuCantonDeVillé, :HYDRATEC ;
+    :associatedTo :SeuilSengler ;
+    :locatedOn :LeGiessen,
+                 :BasRhinFrance ;
+    :category :LongitudinalContinuity ;
+    :cost "65000€" ;
+    :includes :FishwayRampeEnEnrocmentsDroiteBancSeuilSengler. 
+
+:             LeGiessen a :river ; 
+                skos:prefLabel "La rivière Giessen".  
+
+:              SeuilSengler a :dam ; 
+                  skos:prefLabel "Le barrage Sengler";  
+                  :height "1.70m", 
+                   :function "Hydroelectricity production",
+                    :length "50m";
+                  :impervious ;
+                  :isLocatedOn :LeGiessen,
+                               :AvalDeVillé;
+                  :isImpassable ;
+                  :geographicZone :Europe; 
+                  :hasCategory :FishingObstacle.
+
+:               FishwayRampeEnEnrocmentsDroiteBancSeuilSengler a :fishPass ;
+                     skos:prefLabel "Passe-poissons - Rampe en Enrochement Droit Banc du Barrage Sengler".
+
+:              AvalDeVillé a :geographicalZone ;
+                       skos:prefLabel "L'aval de Villé";
+
+:            Europe a :geographicalZone ; 
+          skos:prefLabel "Continent Européen".
+    
+:           France a :country ; 
+         skos:prefLabel "République Française".
+        
+:        AgenceDEauRhineMeuse a :projectOwner ; 
+                skos:prefLabel "Agence De l'Eau Rhine Meuse".
+                
+:      BasRhinFrance a :departmentalGeologicalSection ; 
+             skos:prefLabel "Département géologique du Bas-Rhin, France ".
+             
+:   HydroTec a :consultingEngineer ;
+       skos:prefLabel "Société Hydro-Tech ". 
+    
+:     CommunautéDeCommunesDuCantonDeVillé a :localGovernment ; 
+                      skos:prefLabel "Municipalité communautaire du canton de Villé, FDA APP-MA Bas-Rhin". 
+
+:CouncilGeneralDuBasRhin a :regionalCouncil ; 
+                 skos:prefLabel "Conseil général du Bas-Rhin".

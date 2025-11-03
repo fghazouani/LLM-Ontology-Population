@@ -1,0 +1,56 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:FishPassBrisach a :fishPass ;
+    skos:prefLabel "Passe à poissons de Brisach" ;
+    :hasMainContractor :CERGASA ;
+    :isManagedBy :CERGASA ;
+    :associatedTo :MicroHydroelectricPlantBrisach ;
+    :isRealizedIn :Rhin ;
+    :isRealizedIn :HautRhin ;
+    :isRealizedIn :Brisach ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :FishwayBrisach ;
+    :includes :BaffleFishwayBrisach ;
+    :includes :TrapBrisach ;
+    :hasNumberOfEntries 4 ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :startsAt "2008-01-01"^^xsd:dateTime ;
+    :endsAt "2008-12-31"^^xsd:dateTime .
+
+:MicroHydroelectricPlantBrisach a :microHydroelectricPlant ;
+    skos:prefLabel "Microcentrale hydroélectrique de Brisach" ;
+    :isLocatedOn :Rhin ;
+    :isLocatedOn :HautRhin ;
+    :isLocatedOn :Brisach ;
+    :isImpassable "true"^^xsd:boolean ;
+    :isImpassableForAllSpecies "true"^^xsd:boolean ;
+    :hasHeightOfFall "5.7"^^xsd:decimal ;
+    :isImpassableForAllSpecies "true"^^xsd:boolean ;
+    :isImpassable "true"^^xsd:boolean ;
+    :startsAt "2008-01-01"^^xsd:dateTime ;
+    :endsAt "2008-12-31"^^xsd:dateTime .
+
+:Rhin a :river ;
+    skos:prefLabel "Rhin" .
+
+:HautRhin a :geographicZone ;
+    skos:prefLabel "Haut-Rhin" .
+
+:Brisach a :geographicZone ;
+    skos:prefLabel "Brisach" .
+
+:CERGASA a :projectOwner ;
+    skos:prefLabel "CERGA SA" .
+
+:FishwayBrisach a :fishway ;
+    skos:prefLabel "Passe classique de Brisach" .
+
+:BaffleFishwayBrisach a :baffleFishway ;
+    skos:prefLabel "Passe à baffle de Brisach" .
+
+:TrapBrisach a :trap ;
+    skos:prefLabel "Système de piégeage de Brisach" .

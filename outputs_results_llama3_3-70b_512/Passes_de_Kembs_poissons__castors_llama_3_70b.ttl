@@ -1,0 +1,48 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:PasseAPoissonKembs a :reconnection ;
+    skos:prefLabel "Passe à Poissons Kembs" ;
+    :hasMainContractor :EDF ;
+    :isManagedBy :EDF ;
+    :associatedTo :BarrageKembs ;
+    :isRealizedIn :Rhin,
+                     :KembsFrance ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :PasseAPoissonsKembs,
+                :PasseACastorsKembs,
+                :PetiteCentraleKembs ;
+    :hasCost "750,000€" ;
+    :hasBiologicalMonitoring "false"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :startsAt "2011-01-01"^^xsd:dateTime ;
+    :endsAt "2013-12-31"^^xsd:dateTime.
+
+:BarrageKembs a :dam ;
+    skos:prefLabel "Barrage de Kembs" ;
+    :isLocatedOn :Rhin,
+                    :KembsFrance ;
+    :hasHeight "3.5"^^xsd:decimal ;
+    :isImpassable "true"^^xsd:boolean.
+
+:Rhin a :river ;
+    skos:prefLabel "Rhin".
+
+:KembsFrance a :geographicZone ;
+    skos:prefLabel "Kembs, France".
+
+:EDF a :projectOwner,
+         :mainContractor,
+         :projectManager ;
+    skos:prefLabel "EDF".
+
+:PasseAPoissonsKembs a :fishway ;
+    skos:prefLabel "Passe à poissons de Kembs".
+
+:PasseACastorsKembs a :beaverPass ;
+    skos:prefLabel "Passe à castors de Kembs".
+
+:PetiteCentraleKembs a :smallPowerPlant ;
+    skos:prefLabel "Petite centrale de Kembs".

@@ -1,0 +1,44 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:FishwayMadRiver a :concreteFishway ;
+    skos:prefLabel "Fishway Mad River" ;
+    :hasMainContractor :HumboldtCounty ;
+    :isManagedBy :CaliforniaDepartmentOfFishAndGame ;
+    :isRealizedIn :MadRiverBasin ;
+    :isRealizedIn :NorthernCalifornia ;
+    :hasCategory :Fishway ;
+    :includes :FishwayMadRiverWeirs ;
+    :includes :RockGradeControlMadRiver ;
+    :hasNumberOfEntries 1 ;
+    :hasCost "171,000" ;
+    :startsAt "2002-11-01"^^xsd:dateTime ;
+    :endsAt "2002-11-30"^^xsd:dateTime .
+
+:MadRiverBasin a :geographicZone ;
+    skos:prefLabel "Mad River Basin" .
+
+:NorthernCalifornia a :geographicZone ;
+    skos:prefLabel "Northern California" .
+
+:HumboldtCounty a :projectOwner ;
+    skos:prefLabel "Humboldt County" .
+
+:CaliforniaDepartmentOfFishAndGame a :projectOwner ;
+    skos:prefLabel "California Department of Fish and Game" .
+
+:FishwayMadRiverWeirs a :weir ;
+    skos:prefLabel "Weirs Mad River" ;
+    :isLocatedOn :MadRiverBasin ;
+    :isLocatedOn :NorthernCalifornia ;
+    :hasHeight "0.17"^^xsd:decimal ;
+    :isImpassable "true"^^xsd:boolean .
+
+:RockGradeControlMadRiver a :rockGradeControl ;
+    skos:prefLabel "Rock Grade Control Mad River" ;
+    :isLocatedOn :MadRiverBasin ;
+    :isLocatedOn :NorthernCalifornia ;
+    :hasHeight "2.7"^^xsd:decimal ;
+    :isImpassable "false"^^xsd:boolean .

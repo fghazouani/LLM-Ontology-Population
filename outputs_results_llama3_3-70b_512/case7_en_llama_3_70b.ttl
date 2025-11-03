@@ -1,0 +1,50 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+:StepPoolFishwaySantaYnez a :stepPoolFishway ;
+    skos:prefLabel "Step-Pool Fishway in Santa Ynez" ;
+    :isRealizedIn :SantaYnezRiverWatershed ;
+    :isManagedBy :CachumaConservationAndReleaseBoard, :EntrixInc, :AllenAndRobertLarson, :CaliforniaCoastalConservancy ;
+    :isRealizedIn :Highway1Bridge ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :ConcreteAndRockGradeControlApronSantaYnez, :StepPool1SantaYnez, :StepPool2SantaYnez, :StepPool3SantaYnez, :ConcreteSidewallSantaYnez ;
+    :hasCost "87,000" ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :startsAt "2001-01-01"^^xsd:dateTime ;
+    :endsAt "2002-01-31"^^xsd:dateTime.
+
+:SantaYnezRiverWatershed a :geographicZone ;
+    skos:prefLabel "Santa Ynez River Watershed".
+
+:Highway1Bridge a :bridge ;
+    skos:prefLabel "Highway 1 Bridge".
+
+:ConcreteAndRockGradeControlApronSantaYnez a :gradeControlApron ;
+    skos:prefLabel "Concrete and Rock Grade Control Apron in Santa Ynez".
+
+:StepPool1SantaYnez a :stepPool ;
+    skos:prefLabel "Step Pool 1 in Santa Ynez".
+
+:StepPool2SantaYnez a :stepPool ;
+    skos:prefLabel "Step Pool 2 in Santa Ynez".
+
+:StepPool3SantaYnez a :stepPool ;
+    skos:prefLabel "Step Pool 3 in Santa Ynez".
+
+:ConcreteSidewallSantaYnez a :sidewall ;
+    skos:prefLabel "Concrete Sidewall in Santa Ynez".
+
+:CachumaConservationAndReleaseBoard a :projectOwner ;
+    skos:prefLabel "Cachuma Conservation and Release Board".
+
+:EntrixInc a :projectOwner ;
+    skos:prefLabel "Entrix, Inc.".
+
+:AllenAndRobertLarson a :projectOwner ;
+    skos:prefLabel "Allen and Robert Larson".
+
+:CaliforniaCoastalConservancy a :projectOwner ;
+    skos:prefLabel "California Coastal Conservancy".

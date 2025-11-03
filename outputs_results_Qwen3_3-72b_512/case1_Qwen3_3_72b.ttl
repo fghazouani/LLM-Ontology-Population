@@ -1,0 +1,78 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:PoissonPassAvolsheim a :fishway ;
+    skos:prefLabel "Passe à Poissons d'Avolsheim" ;
+    :hasMainContractor :CommunauteDeCommunesMolsheimMutzig ;
+    :isManagedBy :SOGEHConsultants ;
+    :associatedTo :BrucheDam ;
+    :isRealizedIn :Bruche ,
+                 :AvolsheimFrance ;
+    :servesForFunction :RestoreFishMigration ;
+    :containsCategoryOfObjects :BafflePoolSystem ;
+    :includes :RiviereContournement ,
+              :Enrochements,
+              :VerticalSlots ;
+    :hasNumberOfEntriesAndExits 17 ;
+    :hasLength 135 ;
+    :worksAtDischargeMin 0.4 ;
+    :worksAtDischargeMax 2.0 ;
+    :hasSlopePercentage 2.3 ;
+    :costHT 231000€ ;
+    :startsAt '2010-09-01'^^xsd:dateTime ;
+    :endsAt '2010-12-31'^^xsd:DateTime.
+
+Bruche Dam a :dam ;
+    skos:prefLabel "Chaussée de la Bruche à Avolsheim" ;
+    :isLocatedOn :Bruche ,
+                  :AvolsheimFrance ;
+    :hasHeight 3.2 ;
+    :isImpassable true ;
+    :wasImpassableBeforeProjectStart false.
+
+Bruche a :river ;
+     skos:altLabel "La Bruche".
+
+Communauté de communes de la région de Molsheim-Mutzig a :mainContractor ;
+   skos:prefLabel "Communauté de Communes Molsheim-Mutzig".
+   
+SOGEH Consultants a :projectOwner ;
+      skos:prefLabel "SOGEH Consultants".
+
+Rivière de Contournement a :bypassChannel ;
+       skos:prefLabel "Rivière de contournement",
+                      @fr "Rivière de contournement";
+        hasPosition leftBank.
+
+Enrochements a :weir ;
+         skos:prefLabel "Seuils en Enrochements".
+
+Vertical Slots a :verticalSlot ;
+            skos:prefLabel "Échancrures Verticales". 
+
+Conseil général du Bas-Rhin a :projectFunder ;
+             skos:prefLabel "CG Bas-Rhin",
+                            @fr "Conseil Général du Bas-Rhin";
+              providesFinancialSupport true;
+               contributesWith 40%.
+
+Agence de L'Eau Rhine Meuse a :projectFunder ;
+                     skos:prefLabel "AELRM",
+                                @fr "L'agence de l'eau Rhin-Meuse";
+                       providesTechnicalAssistance true; 
+                        providesScientificAdvice false ; 
+                         isTheLead funder false;
+                          participatesAsPartner true; 
+                           contributeswith 40% . 
+
+Partenaires Locaux a :projectFunder ;  
+                skos:Preflabel “Local Partners” , 
+                               @fr ”Les Partenaires Locaux”; 
+                 providefinancialsupporttrue; 
+                  providestechnicalassistancetrue; 
+                   providesscientificadvicefalse; 
+                    istheleadfunderfalse; 
+                     participatesaspartnertrue; 
+                      contributewith 20%. 

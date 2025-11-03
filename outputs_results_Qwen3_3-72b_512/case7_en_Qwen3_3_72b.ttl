@@ -1,0 +1,58 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:SantaYnezRiverFishwayProject a :reconnection ;
+    skos:prefLabel "Santa Ynez River Fishway Project" ;
+    :hasMainContractor :CachumaConservationAndReleaseBoard ;
+    :isManagedBy :CachumaConservationAndReleaseBoard ;
+    :isRealizedIn :SantaYnezRiverWatershed ;
+    :isRealizedIn :CentralCalifornia ;
+    :hasCategory :LongitudinalContinuity ;
+    :includes :StepPoolFishwaySantaYnez ;
+    :hasNumberOfEntries 1 ;
+    :hasCost "87,000€" ;
+    :isFundedBy :CachumaConservationAndReleaseBoard, :EntrixInc, 
+                :AllenAndRobertLarson, :CaliforniaCoastalConservancy ;
+    :startsAt "2002-01-01"^^xsd:dateTime ;
+    :endsAt "2002-01-31"^^xsd:dateTime .
+
+:SantaYnezRiverWatershed a :geographicZone ;
+    skos:prefLabel "Santa Ynez River Watershed" .
+
+:CentralCalifornia a :geographicZone ;
+    skos:prefLabel "Central California" .
+
+:Highway1Bridge a :bridge ;
+    skos:prefLabel "Highway 1 Bridge" .
+
+:ConcreteAndRockGradeControlApron a :gradeControl ;
+    skos:prefLabel "Concrete and Rock Grade Control Apron" ;
+    :isLocatedOn :SantaYnezRiverWatershed, :CentralCalifornia ;
+    :isImpassable "true"^^xsd:boolean ;
+    :hasHeight "12.2"^^xsd:decimal ;
+    :isImpassableUnder "0.57 cms" .
+
+:StepPoolFishwaySantaYnez a :stepPoolFishway ;
+    skos:prefLabel "Step-Pool Fishway on Santa Ynez" ;
+    :hasNumberOfEntries 3 ;
+    :isLocatedOn :SantaYnezRiverWatershed, :CentralCalifornia .
+
+:ConcreteSidewall a :concreteSidewall ;
+    skos:prefLabel "Concrete Sidewall" ;
+    :isLocatedOn :SantaYnezRiverWatershed, :CentralCalifornia ;
+    :hasHeight "9.1"^^xsd:decimal ;
+    :hasWidth "30"^^xsd:decimal .
+
+:CachumaConservationAndReleaseBoard a :projectOwner ;
+    skos:prefLabel "Cachuma Conservation and Release Board" .
+
+:EntrixInc a :projectOwner ;
+    skos:prefLabel "Entrix, Inc." .
+
+:AllenAndRobertLarson a :projectOwner ;
+    skos:prefLabel "Allen and Robert Larson" .
+
+:CaliforniaCoastalConservancy a :projectOwner ;
+    skos:prefLabel "California Coastal Conservancy" .

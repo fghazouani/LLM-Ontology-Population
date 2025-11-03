@@ -1,0 +1,51 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:PoolWeirFishwaySantaYnez a :poolAndWeir ;
+    skos:prefLabel "Pool-Weir Fishway at Santa Ynez" ;
+    rdfs:label "Pool-Weir Fishway at Santa Ynez" ;
+    :isManagedBy :CachumaConservationReleaseBoard ,
+                 :EntrixInc , 
+                 :AllenRobertLarson ,  
+                 :CaliforniaDepartmentOfFishandGame , 
+                 :CoastalConservancy ;
+    hasCategory :DebrisManagement ;
+    isRealizedIn :SantaYnezRiverWatershedCentralCA ;
+    startsAt "2003-01-01"^^xsd:dateTime ;
+    endsAt   "2003-06-30"^^xsd:DateTime ; 
+    costs "87510"^^xsd:decimal . 
+
+:SJGradeControlStructure a :gradecontrolstructure;
+     skos:prefLabel "SJ Grade Control Structure";
+     rdfs:comment "The SJ Grade Control Structure serves both as a stream flow regulator and provides protection against erosion." ;
+     isLocatedOn :SantaYnezRiverWatershedCentralCA ;
+     height "1.2"^^xsd:decimal ;
+     width "7.62"^^xsd:decimal.
+
+:SantaYnezBridge a :roadbridge; 
+      skos:prefLabel "Santa Ynez Bridge"; 
+      rdfs:comment "This bridge crosses over the Santa Ynez river and its stability is critical for local infrastructure." ;
+      spansOver :SantaYnezRiverWatershedCentralCA.
+      
+:CachumaConservationReleaseBoard a :projectowner,
+       :stakeholder ;
+        skos:altLabel "CCRB",
+                  "Project Owner - Pool Weir Fishway Project". 
+        
+:EntrixInc a :projectowner,
+           :stakeholder ;
+
+:AllenRobertLarson a :projectowner,
+                    :stakeholder;
+
+:CaliforniaDepartmentoffishandgame a :projectowner,
+                                    :permitissuer,
+                                     stakeholder;
+
+:coastalconservancy a :projectowner,
+                     :stakeholder ;
+
+
+:SantaYnezRiverWatershedcentralca a :river
