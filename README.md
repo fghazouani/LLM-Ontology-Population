@@ -4,10 +4,9 @@
 **LLM_Ontology_Population** is a research project aiming to leverage **Large Language Models (LLMs)** for the **automatic population of ontologies** from unstructured text.  
 The primary goal is to convert textual descriptions of **hydro-ecological restoration operations** into structured RDF/Turtle graphs compliant with the **TetraOnto** ontology.
 
-This project explores multiple approaches:
+This project explores two approaches:
 - **Prompt-based extraction** — using LLM prompts to extract ontology triples.
 - **Fine-tuning (QLoRA / LoRA)** of LLMs such as *LLaMA 3* and *Qwen 3*.
-- **LLM-as-a-Judge** evaluation for assessing the semantic accuracy of generated triples.
 
 ---
 
@@ -90,6 +89,8 @@ isManagedBy → (operation → project owner)
 isLocatedOn → (structure → water body)
 
 includes → (restoration measure → restoration operation)
+
+associateTo → (restoration measure → structure)
 
 hasHeight → (structure → xsd:decimal)
 
