@@ -3,7 +3,6 @@
 import torch
 import json
 import os
-import time
 
 from safetensors.torch import load_file
 
@@ -11,9 +10,6 @@ from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
     pipeline
-    # LlamaForCausalLM,
-    # BitsAndBytesConfig,
-    # LlamaTokenizer
 )
 from trl import setup_chat_format
 from peft import PeftModel    
@@ -37,9 +33,6 @@ adapters_name = tuned_model_directory
 # attn_implementation = "eager" 
 attn_implementation = "flash_attention_2" 
 
-
-print("Process started....")
-start_time = time.time()
 
 print(f"Starting to load the model {TUNED_MODEL_NAME} into memory")
 
@@ -93,11 +86,3 @@ text = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
 print(text.split("assistant")[1])
 
-model.save_pretrained("./.../llama-3-70b-populate-ontology")
-tokenizer.save_pretrained("./.../llama-3-70b-populate-ontology")
-
-end_time = time.time()
-execution_time = end_time - start_time
-minutes, seconds = divmod(execution_time, 60)
-formatted_time = f"{int(minutes)} minutes and {seconds:.2f} seconds"
-# print(f"Execution time for model '{MODEL_NAME}' is: {formatted_time}")

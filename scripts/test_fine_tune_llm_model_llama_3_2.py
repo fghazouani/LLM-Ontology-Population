@@ -3,7 +3,6 @@
 import torch
 import json
 import os
-import time
 
 from safetensors.torch import load_file
 
@@ -11,24 +10,12 @@ from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
     pipeline,
-    # LlamaForCausalLM,
     BitsAndBytesConfig
-    # LlamaTokenizer
 )
 from trl import setup_chat_format
 from peft import PeftModel 
 
-# print("CUDA disponible :", torch.cuda.is_available())
-# print("Nombre de GPUs visibles :", torch.cuda.device_count())
 
-
-# for i in range(torch.cuda.device_count()):
-#     print(f"GPU {i} -> {torch.cuda.get_device_name(i)}")
-
-
-# ==========================================================
-# Function to read input text file
-# ==========================================================
 def read_text_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return file.read()
@@ -38,13 +25,7 @@ folder_path = "./.../test_data"
 
 # define path to the output folder
 output_folder = ".../outputs_results_llama3_2-3b"
-execution_time_file_path = os.path.join(output_folder, "execution_time.txt")
-
 os.makedirs(output_folder, exist_ok=True)
-
-
-execution_times = {}
-   
 
 # get the path were the fine-tuned model (Llama-3.2-3B-populate-ontology) is saved
 checkpoint_dir = "/{path to the saved fine-tuned model}/Llama-3.2-3B-populate-ontology"
@@ -61,7 +42,6 @@ base_model_directory = f'{BASE_DIRECTORY}/{MODEL_NAME}'
 # 
 adapters_name = tuned_model_directory
 
-# attn_implementation = "eager" 
 attn_implementation = "flash_attention_2" 
 
 # QLoRA config
@@ -71,11 +51,6 @@ bnb_config = BitsAndBytesConfig(
     bnb_4bit_compute_dtype=torch.float16,
     bnb_4bit_use_double_quant=True,
 )
-
-print("Process started....")
-start_time = time.time()
-
-print(f"Starting to load the model {TUNED_MODEL_NAME} into memory")
 
 
 # Reload tokenizer and model
@@ -96,10 +71,7 @@ base_model_reload, tokenizer = setup_chat_format(base_model_reload, tokenizer)
 model = PeftModel.from_pretrained(
 	base_model_reload, 
 	checkpoint_dir
-	# model_id=checkpoint_dir,
 	peft_config=bnb_config,
-	#device_map='auto',
-	# attn_implementation=attn_implementation
 )
 
 model = model.merge_and_unload()
@@ -109,10 +81,9 @@ for file_name in os.listdir(folder_path):
     file_path = os.path.join(folder_path, file_name)
 
     if not file_name.endswith(".txt"):
-        continue  # Skip fichiers non-texte
+        continue  
 
     user_text = read_text_file(file_path)
-    print(f"\n=== Traitement du fichier '{file_name}' avec le modèle '{MODEL_NAME}' ===")
 
     messages = [
         {"role": "system", "content": "Translate the user text into an TTL graph based on the TetraOnto ontology."},
@@ -134,27 +105,17 @@ for file_name in os.listdir(folder_path):
             do_sample=True,
             temperature=0.7,
             top_p=0.9,
-            eos_token_id=tokenizer.eos_token_id,  # Stop generation
-    	    pad_token_id=tokenizer.eos_token_id,  # Avoids padding warnings
-    	    repetition_penalty=1.2,               # Reduces repetition
+            eos_token_id=tokenizer.eos_token_id,  
+    	    pad_token_id=tokenizer.eos_token_id,  
+    	    repetition_penalty=1.2,              
             num_return_sequences=1
         )
     except Exception as e:
-        print(f"Erreur pendant la génération pour le fichier {file_name} : {e}")
+        print(f"Erreur generation for the file: {file_name} : {e}")
         raise
 
 
     text = tokenizer.decode(outputs[0], skip_special_tokens=True)
-
-    # Calculation of execution time
-    end_time = time.time()
-    execution_time = end_time - start_time
-    minutes, seconds = divmod(execution_time, 60)
-    formatted_time = f"{int(minutes)} minutes and {seconds:.2f} seconds"
-
-    # save execution time to a file
-    with open(execution_time_file_path, "a", encoding="utf-8") as time_file: 
-        time_file.write(f"Execution time for model '{MODEL_NAME}' on file '{file_name}': {formatted_time}\n")
 
     # create output file for result
     output_file_name = f"{os.path.splitext(file_name)[0]}_{MODEL_NAME.replace('-', '_')}_{torch.cuda.get_device_name(0)}.ttl"
@@ -169,13 +130,5 @@ for file_name in os.listdir(folder_path):
     # save extracted TTL triplets
     with open(output_file_path, "w", encoding="utf-8") as output_file: 
         output_file.write(turtle_data)
-
-    print(f"Résultat sauvegardé dans '{output_file_path}'.")
-
-end_time = time.time()
-execution_time = end_time - start_time
-minutes, seconds = divmod(execution_time, 60)
-formatted_time = f"{int(minutes)} minutes and {seconds:.2f} seconds"
-print(f"Execution time for model '{MODEL_NAME}' is: {formatted_time}")
 
 print("\nProcessing complete for all files and models.")

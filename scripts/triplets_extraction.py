@@ -11,19 +11,14 @@ from transformers import (
 
 from trl import setup_chat_format
 
-# print("CUDA disponible :", torch.cuda.is_available())
-# print("Nom du GPU :", torch.cuda.get_device_name(0))
-# print("Version CUDA détectée :", torch.version.cuda)
-# print("Capacité de calcul (compute capability) :", torch.cuda.get_device_capability(0))
 
 # path to the fine-tuned saved model
-MODEL_NAME = 'llama-3-70b-populate-ontology' #'llama-3-70b-populate-ontology_2' #'llama-3-70b-populate-ontology (Qween)'
+MODEL_NAME = 'llama-3-70b-populate-ontology' 
 BASE_DIRECTORY = '/home2020/home/icube/fghazoua/TetraProject'
 
 model_directory = f'{BASE_DIRECTORY}/{MODEL_NAME}'
 
 torch_dtype = torch.float16
-# attn_implementation = "eager" 
 attn_implementation = "flash_attention_2"
 
 def load_model(model_directory=model_directory, torch_dtype=torch_dtype, attn_implementation=attn_implementation):
@@ -48,7 +43,7 @@ def load_model(model_directory=model_directory, torch_dtype=torch_dtype, attn_im
     tokenizer = AutoTokenizer.from_pretrained(model_directory)
 
     if hasattr(tokenizer, "chat_template") and tokenizer.chat_template is not None:
-        tokenizer.chat_template = None  # Reset the chat template
+        tokenizer.chat_template = None 
 
     model, tokenizer = setup_chat_format(model, tokenizer)
 
@@ -70,7 +65,7 @@ execution_time_file_path = "./outputs_results_llama3_3-70b/execution_time.txt"
 # Ensure the output folder exists
 os.makedirs(output_folder, exist_ok=True)
 
-execution_times = {}  # Dictionary to store execution times 
+execution_times = {}  
 
 model, tokenizer = load_model(model_directory, torch_dtype, attn_implementation)
 
@@ -108,16 +103,14 @@ for file_name in os.listdir(folder_path):
     # Start timing the execution
     start_time = time.time()
 
-    outputs = model.generate(**inputs, #max_length=1024, 
-                            #num_return_sequences=1,
-			    max_new_tokens=1024, #1280,
+    outputs = model.generate(**inputs, 
+			    max_new_tokens=1024, 
 			    do_sample=True,
 			    temperature=0.7,
 			    top_p=0.9,
-			    #eos_token_id=tokenizer.eos_token_id,
-			    eos_token_id=tokenizer.eos_token_id,  # Stopper la génération ici
-		    	    pad_token_id=tokenizer.eos_token_id,  # Évite les warnings de padding
-		    	    repetition_penalty=1.2,               # Réduit les répétitions
+			    eos_token_id=tokenizer.eos_token_id,  
+		    	    pad_token_id=tokenizer.eos_token_id, 
+		    	    repetition_penalty=1.2,               
 			    num_return_sequences=1)
 
     text = tokenizer.decode(outputs[0], skip_special_tokens=True)
@@ -127,15 +120,12 @@ for file_name in os.listdir(folder_path):
 
     # Calculate execution time
     execution_time = end_time - start_time
-    # execution_times[(file_name, model)] = execution_time
 
     minutes, seconds = divmod(execution_time, 60)
     formatted_time = f"{int(minutes)} minutes and {seconds:.2f} seconds"
         
-    # print(f"Execution time for model '{MODEL_NAME}' on file '{file_name}': {formatted_time}")
 
     with open(execution_time_file_path, "a", encoding="utf-8") as time_file: 
-        # time_file.write(f"Execution time for model '{model}' on file '{file_name}': {execution_time:.2f} seconds\n")
         time_file.write(f"Execution time for model '{MODEL_NAME}' on file '{file_name}': {formatted_time}\n")
 
 
