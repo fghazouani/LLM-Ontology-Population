@@ -26,7 +26,9 @@ LLM_Ontology_Population/
 │
 ├── test_data/ # Test datasets (raw and semi-structured texts)
 │
-├── outputs_results_* / # Model output folders (triplets, metrics, logs)
+├── fine_tuning_approach_results / # Fine-tuned LLMs output folders (triplets)
+│
+├── prompting_approach_results / # Prompting LLMs output folders (triplets)
 │
 ├── scripts/ # Core scripts for fine-tuning and inference
 │ ├── fine_tune_llm.py # LoRA/QLoRA fine-tuning pipeline
@@ -34,6 +36,12 @@ LLM_Ontology_Population/
 │ ├── evaluate_llm_as_judge.py # Automated evaluation using LLM-as-a-Judge
 │ ├── data_preprocessing.py # Dataset preprocessing and cleaning
 │ ├── utils/ # Helper scripts and configuration modules
+│
+├── prompting_approach.ipynb # Scripts for prompting approach
+│
+├── one_shot_example.txt # Example used for one-shot prompting
+│
+├── template.txt # Template used for zero-shot prompting
 │
 ├── dataset.json # Fine-tuning dataset in JSON format
 │
