@@ -1,0 +1,37 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:PasseAPoissonsDeGerstheim a :successivesBasinsPass ;
+    :associatedTo CentraleGerstheim ;
+    :isManagedBy CERGASA ;
+    :hasMainContractor CERGA_SAGerstheim ;
+    :numberOfBasins "3"^^xsd:integer ;
+    :numberOfPools "2"^^xsd:integer ;
+    :hasPoolLength "40m"^^xsd:string ;
+    :hasPoolWidth "20cm"^^xsd:string ;
+    :hasMixLowWaterFlow "1.2 m^3/s"^^xsd:string ;
+    :hasMaxLowWaterFlow "14 m^3/s"^^xsd:string ;
+    :startsAt "no value specified";
+    :endsAt "no value specified";
+    :hasCost "no value specified";
+    :hasBiologicalMonitoring "true"^^xsd:boolean;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean;
+    :concerns :LongitudinalContinuity .
+
+:CentraleGerstheim a :dam ;
+    skos:prefLabel "Centrale de Gerstheim";
+    :isLocatedOn BasRhinGerstheimFrance ;
+    :isLocatedOn LeRhin ;
+    owl:differentFrom (a :dam ; :hasImpassable "no value specified") ;
+    :isImpassable "no value specified" .
+
+:CERGASA a :mainContractor ;
+    skos:prefLabel "CERGA SA" ;
+
+:LeRhin a :river ;
+    skos:prefLabel "Le Rhin";
+    :isLocatedOn DépartementduBasRhin;
+
+:Gerstheim a :geographicZone;
+    skos:prefLabel "Gerstheim, France";

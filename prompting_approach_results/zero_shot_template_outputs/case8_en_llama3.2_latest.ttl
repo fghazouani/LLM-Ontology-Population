@@ -1,0 +1,33 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Here are the instances extracted from the text based on the ontology description:
+
+<:RestorationMeasureInstance> a ::PoolAndWeirFishLadder ;
+                    :associatedTo :<:StructureInstance> ;
+                    :isManagedBy :<:ProjectOwnerInstance> ;
+                    :hasMainContractor :<:MainContractorInstance> ;
+                    :startsAt "2003-01"^^xsd:dateTime;
+                    :endsAt ""^^xsd:string ;
+                    :hasMaxLowWaterFlow "0.5"^^xsd:float ;
+                    :hasMinLowWaterFlow "1.2"^^xsd:float> ;
+
+<:StructureInstance> a ::dam ;
+                          :isLocatedOn <:GeographicZoneInstance> ;
+                          :hasHeight "21.0"^^xsd:decimal ;
+                          :isImpassable true ;
+
+<:GeographicZoneInstance> a ::geographicZone ;
+                          skos:prefLabel "Santa Ynez River Watershed, Central California, USA" .
+
+<:ProjectOwnerInstance> a ::projectOwner ;
+                        skos:prefLabel "Cachuma Conservation Release Board Entrix, Inc. Allen and Robert Larson" ;
+
+<:MainContractorInstance> a ::mainContractor ;
+                          skos:prefLabel "Entrix, Inc." ;
+
+<:TechnicalElementInstance> a ::TechnicalElement ;
+                            skos:prefLabel "Concrete grade control structure" ;
+                            :containsTechnicalElement <:PondDyke> ;

@@ -1,0 +1,49 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+:geographicZone "Haut-Rhin"@fr ;
+        :isLocatedOn "Le Rhin"@fr .
+        
+:mainContractor "Centre d'Ingénierie Hydraulique d'EDF, EDF R&D"@fr ;
+        :hasMainContractor .
+
+:projectOwner "Electricité De France (EDF) Unité de production est"@fr ;
+        :isManagedBy .
+
+:otherActor "Agence de l'eau Rhin-Meuse, Reserve Naturelle de la PCA, ONEMA"@fr ;
+        :isManagedBy .
+
+:Migratory species classes "amphibioticMigrant"@fr .
+        
+:fishway types "basinPasses"@fr .
+        
+:Structure types "dam"@fr ; 
+        :hasHeight "1.0m"@fr ;
+        :isImpassable .
+
+:Water body types "river"@fr ;
+        :hasMaxLowWaterFlow "medium"@fr ;
+        :hasMixLowWaterFlow "medium"@fr ;
+        
+:Restoration measure types "reconnection"@fr ;
+        :relizedIn "Haut-Rhin"@fr ;
+        :startsAt "2011"@xsd:dateTime ;
+        :endssAt "null"@xsd:dateTime ;
+        :hasCost "750000.0"@xsd:decimal .
+
+:containsTechnicalElement "Passes de Kembs (poissons _castors)"@fr ;
+        :concerns "Continuité longitudinale"@fr ; 
+
+:hasNotchHight "null"@xsd:decimal ;
+:hasNotchWidth "null"@xsd:decimal ;
+
+:numberOfPools "null"@xsd:integer ;
+:numberOfBasins "null"@xsd:integer ; 
+:averageSlope "null"@xsd:decimal ; 
+
+:hasBiologicalMonitoring "false"@xsd:boolean ;
+:hasHydromorphologicaMonitoring "false"@xsd:boolean ;

@@ -1,0 +1,33 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The restoration measure:
+:ConcreteFishwayMadRiverBasin a :reconnection ;
+                               skos:prefLabel "Concrete Fishway Mad River Basin" ;
+                               :relizedIn :MadRiverBasinNorthernCalifornia ;
+                               :includes :ConcreteFishWayChannel ;
+                               :isManagedBy :CaliforniaDeptFishAndGame ;
+                               :hasMainContractor :HumboldtCounty ;
+                               :startsAt "2002-11"^^xsd:dateTime;
+                               :endsAt "2002-11"^^xsd:dateTime ;
+                               :hasCost "171000.0"^^xsd:decimal .
+
+# The geographic zone:
+:MadRiverBasinNorthernCalifornia a :geographicZone ;
+                                  skos:prefLabel "Mad River Basin, Northern California" .
+
+# The technical element:
+:ConcreteFishWayChannel a :successivesBasinsPass ;
+                         skos:prefLabel "Concrete Fish Way Channel" ;
+                         :numberOfBasins "9"^^xsd:decimal ;
+                         :totalHeadloss "4 ft (2.1 m)"^^xsd:decimal ;
+                         :poolSpacing "10 ft (3.0 m)"^^xsd:decimal .
+
+# The main contractor:
+:HumboldtCounty a :mainContractor ;
+                skos:prefLabel "Humboldt County" .
+
+# The project owner:
+:CaliforniaDeptFishAndGame a :projectOwner ;
+                           skos:prefLabel "California Dept. Fish and Game" .

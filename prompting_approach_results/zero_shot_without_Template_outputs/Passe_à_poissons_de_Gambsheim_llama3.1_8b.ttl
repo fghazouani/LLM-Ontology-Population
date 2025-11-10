@@ -1,0 +1,48 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<http://example.com/restorationMeasure/Passe_a_poissons_de_Gambsheim>
+    a :restorationMeasure ;
+    :relizedIn <http://example.com/geographicZone/Rhin> ;
+    :associatedTo <http://example.com/structure/Passe_a_poissons> ;
+    :hasMainContractor <http://example.com/mainContractor/Association_Passage_309> ;
+    :isManagedBy <http://example.com/projectOwner/CERGA_SA>, <http://example.com/otherActor/ONEMA>, <http://example.com/otherActor/Saumon-Rhin> ;
+    :concerns <http://example.com/restorationMeasureType/Continuité_longitudinale> ;
+    :startsAt "1970"^^xsd:gYear ;
+    :endssAt "38078"^^xsd:gYear ;
+    :hasCost 10000000.0 ;
+    :hasBiologicalMonitoring true .
+
+<http://example.com/geographicZone/Rhin>
+    a :geographicZone ;
+    :name "Le Rhin" ;
+    :countries <http://example.com/country/France> ;
+    :departmentLand <http://example.com/departmentLand/Bas-Rhin> ;
+    :municipality <http://example.com/municipality/Gambsheim> .
+
+<http://example.com/structure/Passe_a_poissons>
+    a :dam ;
+    :name "Passe à poissons de Gambsheim" ;
+    :hasHeight 1.2^^xsd:decimal ;
+    :isImpassable false ;
+    :numberOfBasins 3 .
+
+<http://example.com/mainContractor/Association_Passage_309>
+    a :mainContractor ;
+    :name "Association Passage 309" .
+
+<http://example.com/projectOwner/CERGA_SA>
+    a :projectOwner ;
+    :name "CERGA SA" .
+
+<http://example.com/otherActor/ONEMA>
+    a :otherActor ;
+    :name "ONEMA" .
+
+<http://example.com/otherActor/Saumon-Rhin>
+    a :otherActor ;
+    :name "Saumon-Rhin" .

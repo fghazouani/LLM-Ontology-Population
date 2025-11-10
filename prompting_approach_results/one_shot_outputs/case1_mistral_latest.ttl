@@ -1,0 +1,32 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# The fish passage facility:
+:SeuilDSMithKaysersbergFishPassage a :artificialRiver ;
+                                skos:prefLabel "Seuil DS Smith Kaysersberg Fish Passage" ;
+                                :associatedTo :SeuilDSSmithKaysersberg ;
+                                :isManagedBy :SOGREAHConsultants ;
+                                :hasMainContractor :SOGREAHConsultants ;
+                                :startsAt "2010-08"^^xsd:dateTime;
+                                :endsAt "2010-12"^^xsd:dateTime;
+                                :funding (:ConseilGeneralDuHautRhin, :AgenceDeLeauRhinMeuse, :FDAAPPMABasRhin, :AssociationSaumonRhin, :ComiteGestionBassinBrucheMossig) ;
+                                :numberOfPools 17 ;
+                                :interPoolDrop approximately 18 cm ;
+                                :poolDimensions about (6 m 4 m) ;
+                                :minWaterDepth 80 cm ;
+                                :slotDimensions (40 cm 80 cm) ;
+                                :operatingRange fromLowFlow toThreeTimesTheModule withFlowRateBetween (0.4 2.0) cubicMetersPerSecond ;
+                                :averageSlope 2.3% ;
+                                :additionalFeatures (:isolatedBlocks, :uprightWillowPoles) .
+
+# The weir:
+:SeuilDSSmithKaysersberg a :artificialObstacle ;
+                             skos:prefLabel "Seuil DS Smith Kaysersberg Weir" ;
+                             :height 2.1 m ;
+                             :passability partially .
+
+# The river:
+:HautRhin a :naturalWaterCourse ;
+                skos:prefLabel "Haut-Rhin River" .

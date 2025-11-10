@@ -1,0 +1,34 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:<RestorationMeasureInstance> a :reconnection ;
+			:associatedTo :barrage d’Avolsheim ;
+			:isManagedBy :Commauté de Communes de la région de MOLSHEIM-MUTZIG ;
+			:hasMainContractor :SOGREAH Consultants ;
+			:startsAt "2010-08"^^xsd:dateTime;
+			:endsAt "2010-12"^^xsd:dateTime ;
+			:hasMaxLowWaterFlow 3.2;
+			:includes :ensemble de petits seuils en enrochements ;
+			numberofPools 17 ;
+			:numberOfBasins 18 ;
+			:averageSlope 2.3 ;
+            hasBiologicalMonitoring true ;
+			skos:prefLabel "Réintroduction et restauration de la circulation piscicole sur la Bruche";
+
+:<BarrageAvolsheim> a :geographicZone;
+                       skos:prefLabel "Barrage d'Avolsheim";
+
+:<ProjectOwnerInstance> a :projectOwner ;
+                        skos:prefLabel "Commauté de Communes de la région de MOLSHEIM-MUTZIG";
+
+:<MainContractorInstance> a :mainContractor ;
+                          skos:prefLabel "SOGREAH Consultants";
+
+:<TechnicalElementInstancet> a :TechnicalElement ;
+                            skos:prefLabel "Ensemble de petits seuils en enrochements";
+                           dimensions of basins ~6m long for ~4m wide with minimum water depth of 80cm;
+                           width of chinks is 40cm, height is 80cm; 
+
+Note : remove '<' and '>' when defining each element.

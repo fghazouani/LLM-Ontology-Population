@@ -1,0 +1,49 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Below are the instances extracted from the text based on the provided ontology description:
+
+
+<RestorationMeasureInstance> a :ConcreteFishway .
+                    :associatedTo :RockGradeControl ;
+                    :isManagedBy :HumboldtCounty, CaliforniaDept.FishAndGame ;
+                    :hasMainContractor :HumboldtCounty ;
+                    :startsAt <"November 2002">^^xsd:dateTime;
+                    :endsAt <"unknown">^^xsd:dateTime ;
+                    :hasMaxLowWaterFlow <420.0>^^xsd:float ;
+                    :hasMinLowWaterFlow <11.9>^^xsd:float ;
+                    :includes :RockGradeControl ;
+                    :numberOfPools 10 ;
+                    :numberOfBasins unknown ;
+                    :averageSlope unknown ;
+                    skos:prefLabel "Concrete Fishway and Rock Grade Control".
+.
+
+
+<StructureInstance> a :dam .
+                    :isLocatedOn :MadRiverBasin, NorthernCalifornia ;
+                    :hasHeight <heightOfTheStructure> ;
+                    :isImpassable true ;
+                    skos:prefLabel "Fishway Instance name".
+
+
+
+<GeographicZoneInstance> a :geographicZone .
+                          skos:prefLabel "Restoration Measure Instance name".
+
+
+
+<ProjectOwnerInstance> a :projectOwner .
+                        skos:prefLabel "ProjectOwner Instance name".
+
+
+
+<MainContractorInstance> a :mainContractor .
+                          skos:prefLabel "Main Contractor Instance name".
+
+
+
+<TechnicalElementInstance> a :weir .
+                            skos:prefLabel "Weir technical Element name".

@@ -1,0 +1,40 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# Évaluation du projet de restauration
+:PasseAPoissons a :project ;
+                skos:prefLabel "Passe AP Poisson" ;
+                :associatedTo :SeuilDSSmithKaysersberg,
+                              :AgenceDeL'eauRhinMeuse,
+                              :ONEMA, 
+                              :ConseilGeneralDuHautRhin ;
+
+:AgenceDeL'eauRhinMeuse a :entity ;
+                 skos:prefLabel "Agence de l'eau Rhin-Meuse" .
+
+# Mise en place des ouvrages
+:SeuilDSSmithKaysersberg a :structure ;
+                    skos:prefLabel "Seuil DS Smith Kaysersberg" ;
+
+:ONEMA a :actor ;
+           skos:prefLabel "ONEMA" .
+
+:ConseilGeneralDuHautRhin a :entity ;
+                         skos:prefLabel "Conseil General Du Haut-Rhin" .
+
+
+:HautRhin a :geographicZone;
+             skos:prefLabel "Haut-Rhin" .
+
+
+
+:ReserveNaturelleDeLaPCA a :protectedArea ;
+                           skos:prefLabel "Reserve Naturelle de la PCA" .
+
+# Évaluation du projet 
+:EDFRandD a :project ;
+               skos:prefLabel "EDF R&D" .
+:GrandCanalDAlsace a :geographicZone;
+                    skos:prefLabel "Grand Canal d'Alsace" .

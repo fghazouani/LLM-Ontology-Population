@@ -1,0 +1,53 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+```
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> :RheinfeldenPoissonPass>
+  a :geographicZone ;
+  rdfs:label "Passe à poissons de Rheinfelden"@fr;
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> :RheinRhineRiver;
+  a :waterBody ;
+  rdfs:label "Le Rhin"@fr ;
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> :BadeWurtembergDepartment;
+  a :geographicZone ;
+  rdfs:label "Bade-Wurtemberg"@fr ;
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> :RheinfeldenMunicipality;
+  a :geographicZone ;
+  rdfs:label "Rheinfelden"@fr ;
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> :CentraleDeRheinfeldenPowerPlant;
+  a :geographicZone ;
+  rdfs:label "La nouvelle centrale de Rheinfelden"@fr ;
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> :PasseDe300MetrePass;
+  a :fishway ;
+  rdfs:label "Passe à poissons de Rheinfelden"@fr ;
+  :relizedIn [
+    :associatedWith [ :CentraleDeRheinfeldenPowerPlant ] ;
+    :isLocatedOn [ :RheinRhineRiver ] ;
+  ];
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> :ChenalArtificiel800MetrePass;
+  a :fishway ;
+  rdfs:label "Mise en place d'un chenal artificiel de 800 m de long."@fr ;
+  :relizedIn [
+    :associatedWith [ :CentraleDeRheinfeldenPowerPlant ] ;
+    :isLocatedOn [ :RheinRhineRiver ] ;
+  ];
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> :NonBiologicalMonitoring;
+  a :restorationMeasure ;
+  rdfs:label "Suivi biologique: non"@fr ;
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> :NonHydromorphologicMonitoring;
+  a :restorationMeasure ;
+  rdfs:label "Suivi hydromorphologique: non"@fr ;
+
+```

@@ -1,0 +1,30 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:PasseAPoissonsDeGerstheim a :successivesBasinsPass ;
+                            skos:prefLabel "Passe à poissons de Gerstheim" ;
+                            :associatedTo :BarrageCentraleGerstheim ;
+                            :isManagedBy :CERGASA ;
+                            :numberOfBasins "2"^^xsd:integer ;
+                            :startsAt "2012-01-01"^^xsd:date ;
+                            :endssAt "2015-12-31"^^xsd:date ;
+                            :hasBiologicalMonitoring "true"^^xsd:boolean ;
+                            :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+                            :concerns :LongitudinalContinuity .
+
+:BarrageCentraleGerstheim a :dam ;
+                           skos:prefLabel "Barrage Centrale Gerstheim" ;
+                           :isLocatedOn :GerstheimFrance ;
+                           :isLocatedOn :LeRhin ;
+                           :isImpassable "true"^^xsd:boolean .
+
+:CERGASA a :mainContractor ;
+         skos:prefLabel "CERGA SA" .
+
+:LeRhin a :river ;
+        skos:prefLabel "Le Rhin" ;
+        :isLocatedOn :DépartementduBasRhin .
+
+:GerstheimFrance a :geographicZone ;
+                 skos:prefLabel "Gerstheim, France" .

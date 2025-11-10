@@ -1,0 +1,41 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+:PoolAndWeirFishLadder a :restorationMeasure ; 
+  :concerns :poolCreation ;
+  :isManagedBy :projectOwner , "Allen and Robert Larson" ;
+  :hasCost "87,510"^^xsd:integer ;
+  :startsAt "2003-01-01"^^xsd:date ;
+  :endssAt "2003-12-31"^^xsd:date ;
+  :relizedIn :SantaYnezRiverWatershed .
+
+:SantaYnezRiver a :waterBody ; 
+  :hasPoolLength "70"^^xsd:integer ;
+  :isLocatedOn :CentralCalifornia .
+
+:FishLadder a :fishlistwayType ; 
+  :associatedTo :BridgeStructure ;
+  :containsTechnicalElement :ConcreteGradeControlStructure .
+
+:BridgeStructure a :structureType ; 
+  :isLocatedOn :SantaYnezRiverWatershed ;
+  :hasHeight "21"^^xsd:decimal .
+
+:CachumaConservationReleaseBoard a :mainContractor ; 
+  :isManagedBy :projectOwner ;
+  :hasMainContractor :EntrixInc .
+
+:EntrixInc a :mainContractor ; 
+  :isManagedBy :projectOwner ;
+  :hasMainContractor :AllenAndRobertLarson .
+
+:CaliforniaDeptOfFishAndGame a :mainContractor ; 
+  :isManagedBy :projectOwner ;
+  :hasMainContractor :CoastalConservancy .
+
+:CoastalConservancy a :mainContractor ; 
+  :isManagedBy :projectOwner ;
+  :hasMainContractor :AllenAndRobertLarson .

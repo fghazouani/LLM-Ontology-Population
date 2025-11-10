@@ -1,0 +1,64 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+```
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+
+<http://example.org/passe-apoissons-gambsheim> a 
+    :GeographicZone .
+    :mainContractor  "Association Passage 309" .
+    :projectOwner  "CERGA SA" .
+    :otherActor  "ONEMA" .
+    :MigratorySpecies  "amphibioticMigrant" .
+
+<http://example.org/rhin> a 
+    :WaterBody .
+    :hasName  "Rhin" .
+
+<http://example.org/region-france> a 
+    :GeographicZone .
+    :mainContractor  "Association Passage 309" .
+    :projectOwner  "CERGA SA" .
+    :otherActor  "ONEMA" .
+
+<http://example.org/passe-apoissons-gambsheim> :isLocatedOn 
+    :GeographicZone  "France" .
+    :WaterBody  "Rhin" .
+
+<http://example.org/region-bas-rhin> a 
+    :GeographicZone .
+    :mainContractor  "Association Passage 309" .
+    :projectOwner  "CERGA SA" .
+    :otherActor  "ONEMA" .
+
+<http://example.org/region-bas-rhin> :isLocatedOn 
+    :GeographicZone  "France" .
+    :WaterBody  "Rhin" .
+
+<http://example.org/gambsheim> a 
+    :GeographicZone .
+    :mainContractor  "Association Passage 309" .
+    :projectOwner  "CERGA SA" .
+    :otherActor  "ONEMA" .
+
+<http://example.org/gambsheim> :isLocatedOn 
+    :GeographicZone  "France" .
+    :WaterBody  "Rhin" .
+
+<http://example.org/passe-apoissons-gambsheim> :containsTechnicalElement 
+    :Dam  "barrage de la centrale hydroélectrique" .
+    :BaffleBrush  "" .
+    :EelLadder  "" .
+
+<http://example.org/passe-apoissons-gambsheim> :isManagedBy 
+    :Project  "Association Passage 309" .
+    :Project  "CERGA SA" .
+    :Project  "ONEMA" .
+    :Project  "Saumon-Rhin" .
+
+<http://example.org/passe-apoissons-gambsheim> :hasCost  10000000.0 .
+
+<http://example.org/passe-apoissons-gambsheim> :startsAt  "38078" .
+```

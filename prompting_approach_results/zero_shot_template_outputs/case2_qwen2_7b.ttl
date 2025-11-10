@@ -1,0 +1,36 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:<RestorationMeasureInstance> a :reconnection ;
+			:associatedTo :dam ;
+			:isManagedBy :Communauté de Communes du Canton de Villé ;
+			:hasMainContractor :HYDRATEC ;
+			:startsAt "2011-08"^^xsd:dateTime;
+			:endsAt "2011-09"^^xsd:dateTime ;
+			:hasMaxLowWaterFlow 3.5^^xsd:float ;
+			:hasMinLowWaterFlow 1.0^^xsd:float> ;
+			:includes :baffleBrush ;
+			:numberOfPools 2 ;
+			:numberOfBasins 8 ;
+			:averageSlope ~4 % ;
+            skos:prefLabel "Reconnection of the Giessen River";
+
+:<StructureInstance> a :dam ;
+                    :isLocatedOn :affluent ;
+                    :hasHeight 50 m ;
+                    :isImpassable true ;
+                    skos:prefLabel "Seuil Sengler";
+
+:<GeographicZoneInstance> a :geographicZone ;
+                          skos:prefLabel "Canton de Villé";
+
+:<ProjectOwnerInstance> a :projectOwner ;
+                        skos:prefLabel "Communauté de Communes du Canton de Villé";
+
+:<MainContractorInstance> a :mainContractor ;
+                          skos:prefLabel "HYDRATEC";
+
+:<TechnicalElementInstancet> a :baffleBrush ;
+                            skos:prefLabel "Baffle Brush Disposition";

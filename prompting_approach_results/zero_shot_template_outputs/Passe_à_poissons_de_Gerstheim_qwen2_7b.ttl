@@ -1,0 +1,43 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:<RestorationMeasureInstance> a :reconnection ; 
+                    :associatedTo "Passe à poissons de Gerstheim" ; 
+                    :isManagedBy "CERGA SA" ; 
+                    :hasMainContractor "not specified" ; 
+                    :startsAt <StartDateTime>^^xsd:dateTime ;
+                    :endsAt <EndDateTime>^^xsd:dateTime ;
+                    :hasMaxLowWaterFlow 1.2 ;
+                    :hasMinLowWaterFlow variable ;
+                    :includes "bac à poissons naturel", "bassin de répartition" , "bassin de transition" ;
+                    :numberOfPools 3 ;
+                    :numberOfBasins not specified ;
+                    :averageSlope <AverageSlope> ;
+                    :hasBiologicalMonitoring yes ;
+                    :hasHydromorphologicaMonitoring no ;
+                    skos:prefLabel "Mesure de restauration : Passe à poissons de Gerstheim".
+
+
+:<StructureInstance> a :basinPasses ; 
+                    :isLocatedOn "Le Rhin" ;
+                    :hasHeight <heightOfTheStructure> ;
+                    :isImpassable false ;
+                    skos:prefLabel "Passe naturelle".
+
+
+:<GeographicZoneInstance> a :geographicZone ;
+                          skos:prefLabel "Restoration Measure Instance name" (This should be the same as the label of :RestorationMeasureInstance, so it's already covered in "<:RestorationMeasureInstance> skos:prefLabel" ).
+
+
+:<ProjectOwnerInstance> a :projectOwner ;
+                        skos:prefLabel "CERGA SA".
+
+
+:<MainContractorInstance> a :mainContractor ;
+                          skos:prefLabel "not specified" (as it is not provided in the text input).
+
+
+:<TechnicalElementInstancet> a :basinPasses ;
+                            skos:prefLabel "bac à poissons naturel", "bassin de répartition" , "bassin de transition".

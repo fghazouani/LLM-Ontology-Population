@@ -1,0 +1,28 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The restoration measure:
+:PoolAndWeirFishLadderLocationSantaYnezRiverWatershed a :fishway ;
+                    skos:prefLabel "pool-and-weir fish ladder" ;
+                    :associatedTo :JalamaRoadBridge ;
+                    :isLocatedOn :SantaYnezRiverWatershed_CentralCalifornia_USA ;
+                    :fundedBy :CDFGCaliforniaDeptOfFishAndGame, :CoastalConservancy ;
+                    skos:prefLabel "Pool And Weir Fish Ladder Location: Santa Ynez River Watershed" .
+
+# The structure:
+:JalamaRoadBridge a :structure ;
+                skos:prefLabel "Jalama Road Bridge" ;
+                :isLocatedOn :SantaYnezRiverWatershed_CentralCalifornia_USA .
+
+# The geographic zone:
+:SantaYnezRiverWatershedCentralCaliforniaUSA a :waterbody ;
+                        skos:prefLabel "Santa Ynez River Watershed, Central California, USA" .
+
+# The project owner:
+:CDFGCaliforniaDeptOfFishAndGame, :CoastalConservancy a :projectOwner ;
+                :contributesTo :PoolAndWeirFishLadderLocationSantaYnezRiverWatershed .
+
+# The main contractor:
+:CaliforniaDeptOfFishAndGame_CDFG a :mainContractor ;
+                skos:prefLabel "California Dept. of Fish and Game (CDFG)" .

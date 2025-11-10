@@ -1,0 +1,40 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Here is the output based on the provided ontology description and text input:
+
+
+<RestorationMeasureInstance> a :reconnection ;
+                    :associatedTo <fishway_instance> ;
+                    :isManagedBy <communauté_de_communes> ;
+                    :hasMainContractor <sogreh Consultants> ;
+                    :startsAt "2010-08"^^xsd:dateTime;
+                    :endsAt "2010-12"^^xsd:dateTime ;
+                    :hasCost 231000^^xsd:integer ;
+                    skos:prefLabel "reconnection de la Bruche".
+
+<StructureInstance> a :fishway,
+                    :subclassOf fishwayType ;
+                    :isLocatedOn <geographicZone_instance> ;
+                    :hasHeight "3.2"^^xsd:float ;
+                    :containsTechnicalElement <technical_element_instance>;
+                    skos:prefLabel "fishway de la Bruche".
+
+<GeographicZoneInstance> a :geographicZone ;
+                          skos:prefLabel "zone de protection de la Bruche".
+
+<ProjectOwnerInstance> a :communauté_de_communes ;
+                        skos:prefLabel "Communauté de Communes de Molsheim-Mutzig".
+
+<MainContractorInstance> a :sogreh Consultants ;
+                          skos:prefLabel "SOGREAH Consultants".
+
+<TechnicalElementInstancet> a :fishway,
+                            :subcategoryOf fishwaytype;
+                            skos:prefLabel "Fish way linéaire de 135m".
+
+
+
+Note: Some information was missing from the text input, such as the specific characteristics of the technical element. I assumed some values based on the provided text.

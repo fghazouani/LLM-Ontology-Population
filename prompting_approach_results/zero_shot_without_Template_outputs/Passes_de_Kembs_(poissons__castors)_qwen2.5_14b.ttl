@@ -1,0 +1,36 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+:PassesDeKembs a :restorationMeasure ;
+    :relizedIn :Rhin ;
+    :hasMainContractor :CentreDIngénierieHydrauliqueEDF, :EDFRandD ;
+    :isManagedBy :ElectricitéDeFranceUnitédeProductionEst ;
+    :containsTechnicalElement :ModernFishPass, :DownstreamFishPass, :BeaverPass ;
+    :startsAt "2011"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    :hasCost "750000.0"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+    :hasBiologicalMonitoring "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    :hasHydromorphologicaMonitoring "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+
+:ModernFishPass a :technicalElement .
+:DownstreamFishPass a :technicalElement .
+:BeaverPass a :technicalElement .
+
+:Rhin a :river .
+
+:CentreDIngénierieHydrauliqueEDF a :mainContractor ;
+    :hasName "Centre d'Ingénierie Hydraulique d'EDF" .
+
+:EDFRandD a :mainContractor ;
+    :hasName "EDF R&D" .
+
+:ElectricitéDeFranceUnitédeProductionEst a :projectOwner ;
+    :hasName "Electricité De France (EDF) Unité de production est" .
+
+:AgenceDeL'eauRhinMeuse a :otherActor ;
+    :hasName "Agence de l'eau Rhin-Meuse" .
+
+:ReserveNaturelleDeLaPCA a :geographicZone ;
+    :hasName "Reserve Naturelle de la PCA" .

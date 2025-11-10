@@ -1,0 +1,50 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Voici les individus extraits du texte input en format Turtle :
+
+```turtle
+
+?zona rdf:type :geographicZone .
+?zona :name "Kembs" .
+
+?contractor rdf:type :mainContractor .
+?contractor :name "Centre d'Ingénierie Hydraulique d'EDF, EDF R&D" .
+
+?projectOwner rdf:type :projectOwner .
+?projectOwner :name "Electricité De France (EDF) Unité de production est" .
+
+?otherActor rdf:type :otherActor .
+?otherActor :name "Agence de l'eau Rhin-Meuse, Reserve Naturelle de la PCA, ONEMA" .
+
+?tSpecies rdf:type :MigratorySpecies .
+?tSpecies :name "castors" .
+
+?fishway rdf:type :Fishway .
+?fishway :name "Passes de Kembs" .
+
+?zone rdf:type :geographicZone .
+?zone :isLocatedOn :waterBody .
+?zone :hasMainContractor ?contractor .
+?zone :relizedIn :restorationMeasure .
+?tRestoration rdf:type :RestorationMeasure .
+?tRestoration :name "Passes de Kembs" .
+?tRestoration :concerns :typeOfRestoration .
+?tRestoration :isAssociatedTo :structure .
+?zone :hasPoolLength 100.0 .
+?zone :hasPoolWidth 20.0 .
+
+?tBasin rdf:type :Fishway .
+?tBasin :name "successivesBasinsPass" .
+?tBasin :isLocatedOn :waterBody .
+?zone :containsTechnicalElement ?tBasin .
+
+?tEelLadder rdf:type :Fishway .
+?tEelLadder :name "eelLadder" .
+?tEelLadder :isAssociatedTo :structure .
+?zone :isManagedBy :projectOwner .
+```
+
+Notez que les individus ont été créés en fonction de l'ontologie décrite, et que certaines propriétés n'étaient pas pertinentes pour l'extraction.

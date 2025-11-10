@@ -1,0 +1,21 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+:PasseAPoissonsRheinfelden  a :restorationMeasure , :basinPasses ;
+    :hasCost "300000"^^xsd:decimal ;
+    :relizedIn :Le_Rhin ;
+    :concerns :continuityLongitudinal ;
+    :isLocatedOn :Rheinfelden ;
+    :includes :passeAPoissons ;
+    :hasLength 300 .
+    
+:Le_Rhin a :river , :geographicZone ;
+    :hasMaxLowWaterFlow "1000"^^xsd:decimal ;
+    :isLocatedOn :BadeWurtemberg .
+    
+:Rheinfelden a :commune , :geographicZone ;
+    :hasPoolLength 800;
+    :associatedTo :passeAPoissonsRheinfelden .

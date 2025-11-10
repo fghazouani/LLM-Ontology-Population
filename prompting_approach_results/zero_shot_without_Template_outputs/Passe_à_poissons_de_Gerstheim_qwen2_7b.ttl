@@ -1,0 +1,54 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<:measureOfRestoration_1>
+    a :MeasureOfRestoration ;
+    :concerns "Continuity along the length" ;
+    :relizedIn <http://data/example/ontologies/TetraOnto/france/bas-rhin/gerstheim> ;
+    :associatedTo [
+        a :Structure ;
+        :isLocatedOn "Le Rhin" .
+    ] ;
+    :isManagedBy <http://data/example/ontologies/TetraOnto/CERGA-SA> ;
+    :hasMainContractor <http://data/example/ontologies/TetraOnto/CERGA-SA> ;
+    :containsTechnicalElement [
+        a :Pump ;
+    ] .
+    
+<:structure_1>
+    a :Structure ;
+    :isLocatedOn "Le Rhin" ;
+    :hasHeight 0.82 ;
+    :isImpassable false ;
+    :containsTechnicalElement [
+        a :BaffleBrush ;
+        :hasNotchHight 1.5 ;
+        :hasNotchWidth 0.3 ;
+        :numberOfBasins 4 ;
+        :averageSlope 2 ;
+    ] ;
+    :containsTechnicalElement [
+        a :BaffleFishway ;
+        :hasMaxLowWaterFlow "60 m3/s"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        :hasMixLowWaterFlow 15 ;
+        :numberOfPools 3 ;
+    ] .
+    
+<:migrationSpecies_1>
+    a :MigratorySpecies ;
+    :amphibioticMigrant false ;
+    :fishwayType [
+        a :FishLift ;
+        :isManagedBy <http://data/example/ontologies/TetraOnto/CERGA-SA> ;
+    ] .
+    
+<:restorationMeasure_1>
+    a :RestorationMeasure ;
+    :startAt "2023-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :endssAt "2024-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :hasBiologicalMonitoring true ;
+    :hasHydromorphologicaMonitoring false .

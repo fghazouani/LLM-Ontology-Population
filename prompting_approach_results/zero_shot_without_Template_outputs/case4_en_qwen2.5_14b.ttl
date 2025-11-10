@@ -1,0 +1,39 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+:Hybrid_Pool_and_Weir_Fishway_Trinity_River a :restorationMeasure ;
+    :relizedIn :Trinity_River_Basin ;
+    :startsAt "2001-01-01"^^xsd:date ;
+    :endssAt "2001-11-30"^^xsd:date ;
+    :hasCost "445000.00"^^xsd:decimal .
+
+:Trinity_River_Basin a :geographicZone .
+
+:Concrete_Pools a :technicalElement ;
+    :containsTechnicalElement :Hybrid_Pool_and_Weir_Fishway_Trinity_River .
+
+:Removable_Wood_Baffles a :technicalElement ;
+    :containsTechnicalElement :Hybrid_Pool_and_Weir_Fishway_Trinity_River .
+
+:Trinity_River a :river .
+
+:Little_French_Creek a :affluent ;
+    :isLocatedOn :Trinity_River .
+
+:Culvert_Little_French_Creek a :nozzle ;
+    :hasMaxLowWaterFlow "1.5"^^xsd:decimal ;
+    :hasMinLowWaterFlow "0.2"^^xsd:decimal ;
+    :isLocatedOn :Little_French_Creek ;
+    :containsTechnicalElement :Hybrid_Pool_and_Weir_Fishway_Trinity_River .
+
+:Pool_and_weir_fishway a :technicalElement ;
+    :hasLength "29.6"^^xsd:decimal ;
+    :hasTotalHeadLoss "5.9"^^xsd:decimal ;
+    :numberOfPools "20"^^xsd:integer .
+
+:Culvert_Little_French_Creek_has_biological_monitoring "true"^^xsd:boolean .
+:Culvert_Little_French_Creek_hasHydromorphologicaMonitoring "false"^^xsd:boolean .

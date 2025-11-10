@@ -1,0 +1,27 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+:height 1.5m xsd:decimal ;
+:maxLowWaterFlow 20cfs xsd:decimal ;
+:minLowWaterFlow 0.57cms xsd:decimal ;
+:numberOfPools 3 xsd:int ;
+:lengthPools 30ft xsd:string .
+:isLocatedOn :CachumaLake .
+:mainContractor EntrixInc an :mainContractor ;
+:hasCost 87000USD xsd:double .
+:fundingBody CachumaConservationAndReleaseBoard an :fundingBody ;
+:fundingBody AllenRobertLarson an :fundingBody ;
+:fundingBody CaliforniaCoastalConservancy an :fundingBody ;
+:startDateTime 2002-01 a xsd:dateTime ;
+:endDateTime 2002-01 a xsd:dateTime .
+
+:geographicZone SantaYnezRiverWatershed a :geographicZone ;
+
+:CachumaConservationAndReleaseBoard a :projectOwner ;
+EntrixInc a :otherActor .
+
+:typeOfRestorationTreat :fishwayRetrofit a :typeOfRestoration .
+ 

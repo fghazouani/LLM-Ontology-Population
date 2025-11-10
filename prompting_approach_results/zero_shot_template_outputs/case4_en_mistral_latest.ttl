@@ -1,0 +1,35 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ :HybridPoolAndWeirFishway a :restorationMeasure ;
+			:associatedTo :StructureInstance1 ;
+			:isManagedBy :ProjectOwnerInstance1 ;
+			:hasMainContractor :MainContractorInstance1 ;
+			:startsAt "2001-11-01T00:00:00"^^xsd:dateTime;
+			:endsAt "2001-11-30T23:59:59"^^xsd:dateTime ;
+			:hasMaxLowWaterFlowHeight 9.7 ;
+			:includes TechnicalElementInstance1 ;
+			:numberOfPools 20 ;
+			:averageSlope <AverageSlope_value> ;
+            skos:prefLabel "Hybrid Pool and Weir Fishway Restoration Measure".
+
+:StructureInstance1 a :weir, :SubClassOfStructureToBelong_TrinityRiverBasin ;
+                    :isLocatedOn :GeographicZoneInstance_TrinityRiverBasin ;
+                    :hasHeight 3 ;
+                    :isImpassable false ;
+                    skos:prefLabel "Hybrid Pool and Weir Fishway Structure".
+
+:GeographicZoneInstance_TrinityRiverBasin a :geographicZone ;
+                          skos:prefLabel "Trinity River Basin Geographic Zone".
+
+:ProjectOwnerInstance1 a :projectOwner ;
+                        skos:prefLabel "California Dept. of Transportation Project Owner".
+
+:MainContractorInstance1 a :mainContractor ;
+                          skos:prefLabel "California Conservation Corps Main Contractor".
+
+:TechnicalElementInstance1 a :TechnicalElement ;
+					skos:prefLabel "Removable Wood Baffles" ;
+                :description "Used to facilitate removal of accumulated debris."

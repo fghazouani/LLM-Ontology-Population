@@ -1,0 +1,36 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ :RestorationMeasureInstance1 a :restorationMeasure ;
+			:associatedTo :StructureInstance_RheinfeldenPass ;
+			:isManagedBy :ProjectOwnerInstance_ElectricityCompany ;
+			:hasMainContractor :MainContractorInstance_ConstructionCompany2003 ;
+			:startsAt "2003-01-01"^^xsd:dateTime;
+			:endsAt "2003-12-31"^^xsd:dateTime ;
+            skos:prefLabel "Rheinfelden Fishway Restoration Measure".
+
+:StructureInstance_RheinfeldenPass a :structure,
+                                :fishway;
+                                :isLocatedOn :GeographicZoneInstance_BadeWurtemberg ;
+                                :hasHeight "1.0"^^xsd:float ;
+                                :isImpassable false ;
+                                skos:prefLabel "Rheinfelden Fishway".
+
+:GeographicZoneInstance_BadeWurtemberg a :geographicZone ;
+                                      skos:prefLabel "Bade-Wurtemberg".
+
+:ProjectOwnerInstance_ElectricityCompany a :projectOwner ;
+                                        skos:prefLabel "Electricity Company of Germany".
+
+:MainContractorInstance_ConstructionCompany2003 a :mainContractor ;
+                                              skos:prefLabel "Construction Company 2003".
+
+:TechnicalElementInstance1 a :technicalElement,
+                            :artificialRiver;
+                            skos:prefLabel "Artificial River".
+
+:TechnicalElementInstance2 a :technicalElement,
+                            :fishway;
+                            skos:prefLabel "Fishway".

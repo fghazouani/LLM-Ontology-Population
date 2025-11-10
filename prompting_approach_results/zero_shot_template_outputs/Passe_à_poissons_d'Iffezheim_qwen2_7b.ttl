@@ -1,0 +1,45 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:<PasseApoissonsInstance> a :PasseAPoissons ; 
+            :associatedTo :Rhin ; 
+            :isManagedBy "NR" ; 
+            :hasMainContractor "NR" ;
+            :startsAt "1997-01-01T00:00:00"^^xsd:dateTime;
+            :endsAt "<EndDateTime>"^^xsd:dateTime ;
+            :includes :<add information with respect to the ontology description> ;
+            :numberOfPools <3> ;
+            :numberOfBasins <37> ;
+            :averageSlope <1m3/s> ;
+            :hasBiologicalMonitoring true ;
+            :hasHydromorphologicaMonitoring false ; 
+            skos:prefLabel "Passe à poissons d'Iffezheim".
+
+
+:<RhinInstance> a :waterBody ;
+                    :isLocatedOn "Allemagne" ;
+                    :hasMaxLowWaterFlow <theMaxLowWaterFlow>^^xsd:float ;
+                    :hasMinLowWaterFlow <theMinLowWaterFlow>^^xsd:float ;
+                    skos:prefLabel "Le Rhin".
+
+
+:<PasseAPoissonsClass> a :restorationMeasure ;
+
+
+:<NRInstance> a :projectOwner ;
+              skos:prefLabel "NR".
+
+
+:<EDFInstance> a :projectOwner ;
+               skos:prefLabel "EDF".
+
+
+:<EnBWInstance> a :projectOwner ;
+                skos:prefLabel "EnBW".
+
+
+:<PasseAPoissonsElementInstancet> a :TechnicalElement ;
+                               skos:prefLabel "<details about Technical Element>".
+                               <add information with respect to the ontology description>

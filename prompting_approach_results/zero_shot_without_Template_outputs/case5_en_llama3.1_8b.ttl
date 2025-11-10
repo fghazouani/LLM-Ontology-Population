@@ -1,0 +1,35 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<http://example.com/MadRiverFishway>
+  a :geographicZone ;
+  :containsTechnicalElement [
+    a :baffleBrush ;
+    :hasPoolWidth "15"^^xsd:decimal ;
+    :hasMaxLowWaterFlow "420"^^xsd:integer ;
+    :hasMinLowWaterFlow "11.9"^^xsd:decimal
+  ] .
+<http://example.com/MadRiverFishway>
+  a :projectOwner , :otherActor ;
+  :associatedTo [
+    a :dam ;
+    :hasHeight "4.6"^^xsd:decimal
+  ] .
+<http://example.com/MadRiverFishway>
+  :concerns :basinPasses ;
+  :relizedIn <http://example.com/MadRiverBasin> ;
+  :hasMainContractor [
+    a :mainContractor ;
+    :isManagedBy "Humboldt County"
+  ] .
+<http://example.com/MadRiverFishway>
+  :concerns :floodRetention ;
+  :hasCost "171000"^^xsd:integer ;
+  :startsAt "2002-11"^^xsd:gMonth .
+<http://example.com/MadRiverBasin>
+  a :geographicZone ;
+  ::hasPoolLength "70"^^xsd:integer .

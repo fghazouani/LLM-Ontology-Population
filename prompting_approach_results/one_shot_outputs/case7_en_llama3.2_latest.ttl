@@ -1,0 +1,31 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+PasseAPoissonsDeSantaYnez a :successivesBasinsPass .
+    :associatedTo CachumaConservationAndReleaseBoardEntrixIncAllenRobertLarsonCaliforniaCoastalConservancy ;
+    :isManagedBy SantaYnezRiverWatershed ;
+    :numberOfBasins "3"^^xsd:integer ;
+    :startsAt "2002-01-01"^^xsd:dateTime ;
+    :endsAt "2002-01-01"^^xsd:dateTime;
+    :hasCost "87000.0"^^xsd:decimal .
+
+SantaYnezRiverWatershed a :waterBody .
+    skos:prefLabel "Santa Ynez River Watershed, Central California, USA".
+
+CachumaConservationAndReleaseBoardEntrixIncAllenRobertLarsonCaliforniaCoastalConservancy a :projectOwner .
+    skos:prefLabel "Project of the restoration measure: Retrofit with step-pool fishway".
+
+Highway1Bridge a :geographicLocation .
+    skos:prefLabel "Highway 1 bridge".
+
+BasinCentralCaliforniaUSA a :geographicZone .
+    skos:prefLabel "Basin, Central California, USA".
+
+SantaYnezRiverWatershed a :geographicZone .
+    skos:prefLabel "Santa Ynez River Watershed" ;
+    rdfs:label "Basin, Central California, USA".
+
+ConcreteGradeControlApron a :barrier .
+    skos:prefLabel "Existing barrier: concrete and rock grade control apron".

@@ -1,0 +1,33 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The Restoration Project:
+:ContinuityRestorationProjectAtIffezheim a :restorationProject ;
+                                skos:prefLabel "Projet de Restauration Longitudinale du Rhin à Iffezheim" ;
+                                :isManagedBy :NR ;
+                                :hasMainContractor :NR ;
+                                :contributes :EDF, :BADENWERK ;
+                                :startsAt "2015-06"^^xsd:dateTime ;
+                                :endsAt "2017-04"^^xsd:dateTime ;
+                                :totalCost "9 000 000 €"^^xsd:string .
+
+# The Fish Passage:
+:FishPassageAtIffezheim a :fishPassage ;
+                          skos:prefLabel "Passe à Poissons à Iffezheim" ;
+                          :isLocatedIn :Rhin ;
+                          :associatedTo :ContinuityRestorationProjectAtIffezheim ;
+                          :facilitatesFishMigration "true"^^xsd:boolean ;
+                          :hasDirectionTowards :Ill (Bruche) Basin ;
+                          :includesThreeEntrancesOnTheLeftBankOneAdaptedForWeakerFishes ;
+                          :containsDistributingBassin ;
+                          :successiveThirtySevenBassinsForDifferentSpeciesPiscicoles ;
+                          :twoPassagesPreventedEffort ;
+                          :hasObservationLocalUsingWindowForMonitoringFishActivity ;
+                          :equippedWithSubmergedAquaticCameraAndTrappingSystem ;
+                          :followsBiologicalActivitiesThroughoutTheOperationButNotHydromorphologicalProcesses .
+
+# The Geographic Area:
+:HautRhin a :geographicArea ;
+         skos:prefLabel "Haut-Rhin" ;
+         :includesSiteOfContinuityRestorationProject .

@@ -1,0 +1,32 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+```
+:measure_rheinfelden_aquatic_restoration
+    a :reconnection ;
+    :relizedIn :rheinfelden_zone_geographic ;
+    :hasBiologicalMonitoring "false"^^xsd:boolean ;
+    :hasHydromorphologicaMonitoring "false"^^xsd:boolean ;
+    :associatedTo :fishing_pass_rheinfelden, :artificial_channel .
+
+:rheinfelden_zone_geographic
+    a :geographicZone ;
+    :isManagedBy :project_owner_rheinfelden ;
+    :includes :fishing_pass_rheinfelden, :artificial_channel .
+
+:fishing_pass_rheinfelden
+    a :baffleFishway ;
+    :isLocatedOn :rhin_waterbody .
+    
+:artificial_channel 
+    a :artificialRiver ;
+    :isLocatedOn :rhin_waterbody .
+
+:rhin_waterbody
+    a :river .
+
+:project_owner_rheinfelden
+    a :projectOwner .
+```

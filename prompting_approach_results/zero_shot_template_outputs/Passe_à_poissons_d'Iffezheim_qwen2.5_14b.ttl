@@ -1,0 +1,36 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:passeAPoissonsIffezheim a :reconnection ;
+    :associatedTo :structurePasseAPoissonsIffezheim ;
+    :isManagedBy :maîtreOuvrageNR, :autresActeursEDFEnBW ;
+    :hasMainContractor :maîtreOeuvreNR ;
+    :startsAt "1997-01-01T00:00:00"^^xsd:dateTime;
+    :endsAt "1997-12-31T23:59:59"^^xsd:dateTime ;
+    :hasMaxLowWaterFlow 1.0 ^^xsd:float ;
+    :hasMinLowWaterFlow 0.1 ^^xsd:float ;
+    :includes :structurePasseAPoissonsIffezheim, :bassinsSuccessifs ;
+    :numberOfPools 37 ;
+    :numberOfBasins 3 ;
+    :averageSlope 1.0 ;
+    skos:prefLabel "Passe à poissons d'Iffezheim".
+
+:structurePasseAPoissonsIffezheim a :fishway, :successivesBasinsPass ;
+                    :isLocatedOn :rheinGeographicZone ;
+                    :hasHeight 2.5 ;
+                    :isImpassable true ;
+                    skos:prefLabel "Structure Passe à Poissons Iffezheim".
+
+:rheinGeographicZone a :geographicZone ;
+                          skos:prefLabel "Rhin".
+
+:maîtreOuvrageNR a :projectOwner ;
+                        skos:prefLabel "Maître d'ouvrage NR".
+
+:maîtreOeuvreNR a :mainContractor ;
+                          skos:prefLabel "Maître d'oeuvre NR".
+
+:autresActeursEDFEnBW a :otherActor ;
+                              skos:prefLabel "EDF et BADENWERK devenu EnBW à travers le RKI, CIPR".

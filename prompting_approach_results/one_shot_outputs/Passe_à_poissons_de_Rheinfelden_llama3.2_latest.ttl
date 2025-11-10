@@ -1,0 +1,41 @@
+Here are the translated instances:
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# The restoration measure:
+:PasseAPoissonsDeRheinfelden a :successivesBasinsPass 
+    skos:prefLabel "Passe AP Poissons De Rheinfelden" ;
+    :associatedTo LaNouvelleCentraleDeRheinfelden ;
+    :isManagedBy AgenceEauRhinMeuse_DREALAlsace_ONEMA ;
+    :hasMainContractor CentreIngénierieHydrauliqueEDFandAgenceDELRéalisation ;
+    :numberOfBasins "1"^^xsd:integer ;
+    :startsAt "2003"^^xsd:dateTime ;
+    :endsAt "n/a"^^xsd:dateTime ;
+    :hasCost "n/a"^^xsd:decimal ;
+    :hasBiologicalMonitoring "false"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :concerns :LongitudinalContinuity .
+
+# The dam:
+:LanouvelleCentraleDeRheinfelden a :dam 
+    skos:prefLabel "La Nouvelle Centrale De Rheinfelden" ;
+    :isLocatedOn BadeWurtembergRheinfeldenGermany ;
+    :isLocatedOn LeRhin ;
+    :isImpassable "false"^^xsd:boolean .
+
+# The project owner:
+:CentreIngénierieHydrauliqueEDFandAgenceDELRéalisation a :projectOwner 
+    skos:prefLabel "Centre Ingénierie Hydraulique EDF, Agence DE LRéalisation" ;
+    :isLocatedOn DépartementduBadeWurtemberg .
+
+# The river:
+:LeRhin a :river 
+    skos:prefLabel "Le Rhin" ;
+    :isLocatedOn DépartementduBadeWurtemberg .
+    
+# The geographic zone:
+:BadeWurtembergRheinfeldenGermany a :geographicZone 
+    skos:prefLabel "Bade-Wurtemberg, Rheinfelden, Germany" .

@@ -1,0 +1,40 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+:EddyPassesKembs 
+    a :RestorationMeasure ;
+    :name "Passes de Kembs (poissons castors)" ;
+    :concerns :Continuité longitudinale ;
+    :location :Le Rhin ;
+    :country :France ;
+    :department :Haut-Rhin ;
+    :communes :Kembs ;
+    :maitreDeuvre :Centre d'Ingénierie Hydraulique d'EDF, EDF R&D ;
+    :maitreDoeuvre :Electricité De France (EDF) Unité de production est ;
+    :otherActors :Agence de l'eau Rhin-Meuse, Reserve Naturelle de la PCA, ONEMA ;
+    :startsAt "2011"^^xsd:gYear ;
+    :cost 750000.0 ;
+    :financier :Agence de l'eau Rhin-Meuse ;
+    :hydromorphologicaMonitoring false ;
+    :biologicalMonitoring false ;
+
+:BarrageDeKembs 
+    a :Structure, :Fishway ;
+    :name "Barrage de Kembs" ;
+    :type :Passe à poissons moderne ;
+    :isLocatedOn :Le Rhin .
+
+:PasseApoissonsDeKembs 
+    a :Fishway, :TechnicalElement ;
+    :name "Passe à poissons de Kembs" ;
+    :type :Passe à poissons moderne ;
+    :containsTechnicalElement true .
+
+:PasseACastorsDeKembs 
+    a :Fishway, :TechnicalElement ;
+    :name "Passe à castors de Kembs" ;
+    :type :Passe à castors ;
+    :containsTechnicalElement true .

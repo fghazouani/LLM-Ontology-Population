@@ -1,0 +1,37 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:poolAndWeirFishLadder1
+    a :restorationMeasure ;
+    :relizedIn :santaYnezRiverWatershed ;
+    :hasCost "87510"^^xsd:decimal ;
+    :startAt "2003-01-01T00:00:00Z"^^xsd:dateTime ;
+    :endssAt "2003-01-01T00:00:00Z"^^xsd:dateTime ;
+    :containsTechnicalElement :fishLadder1 ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicaMonitoring "true"^^xsd:boolean .
+
+:santaYnezRiverWatershed
+    a :geographicZone ;
+    rdfs:label "Santa Ynez River Watershed, Central California, USA" .
+
+:fishLadder1
+    a :technicalElement ;
+    rdfs:label "Pool-and-Weir Fish Ladder" .
+
+:cachumaConservationReleaseBoard
+    a :projectOwner .
+
+:entrIxInc
+    a :otherActor .
+
+:allenRobertLarson
+    a :mainContractor .
+
+:californiaDeptOfFishAndGame
+    a :projectOwner .
+
+:coastalConservancy
+    a :otherActor .

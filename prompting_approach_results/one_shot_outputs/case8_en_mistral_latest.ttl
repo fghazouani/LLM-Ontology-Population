@@ -1,0 +1,33 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Le projet de rétrofit :
+:PasseAPoissonsSantaYnez a :artificialRiver ;
+                      skos:prefLabel "passe à poissons Santa Ynez" ;
+                      :associatedTo :BassinVersantSantaYnez ;
+                      :isManagedBy :CachumaConservationReleaseBoard ;
+                      :hasMainContractor :EntrixInc ;
+                      :startsAt "2003-01"^^xsd:dateTime;
+                      :endssAt "2003-01"^^xsd:dateTime ;
+                      :hasCost "87 510 $"^^xsd:string .
+
+# Le bassin versant :
+:BassinVersantSantaYnez a :geographicZone;
+                          skos:prefLabel "bassin versant Santa Ynez" .
+
+# Les parties prenantes financières du projet :
+:CachumaConservationReleaseBoard a :financialStakeholder ;
+                                    skos:prefLabel "Commission de conservation des eaux de Cachuma" .
+
+:EntrixInc a :financialStakeholder;
+                                skos:prefLabel "Entrix, Inc." .
+
+:Allen et :RobertLarson a :financialStakeholder;
+                              skos:prefLabel "Allen et Robert Larson" .
+
+:CaliforniaDeptFishGame a :financialStakeholder;
+                                skos:prefLabel "Département de la pêche et de la faune de Californie - CDFG" .
+
+:CoastalConservancy a :financialStakeholder;
+                             skos:prefLabel "Coastal Conservancy" .

@@ -1,0 +1,49 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<:ConcretePoolAndVortexWeirFishway> a :<:RestorationMeasureInstance> ;
+			:associatedTo <:VortexWeirFishway> ;
+			:isManagedBy <:DelNorteCounty> , <:DelNorteCountyDeptOfFishAndGame>, <:CACoastalConservancy>;
+			:hasMainContractor <:ConcreteConstructionCompany> ;
+			::startsAt "2001-01-01"^^xsd:dateTime;
+			::endsAt "2003-11-01"^^xsd:dateTime ;
+			::hasMaxLowWaterFlow "1250"^^xsd:float ;
+			::hasMinLowWaterFlow "79"^^xsd:float> ;
+			:includes <:VortexWeirFishwayTechnicalElement>;
+			:numberOfPools 12;
+			:numberOfBasins 6;
+			:averageSlope "0.5"^^xsd:float;
+            skos:prefLabel "Concrete Pool and Vortex Weir Fishway".
+
+<:VortexWeirFishway> a :<:FishwayType>;
+                    :isLocatedOn <:SmithRiverBasin> ;
+                    :hasHeight "7"^^xsd:decimal;
+                    :isImpassable false;
+                    skos:prefLabel "Vortex Weir Fishway".
+
+<:SmithRiverBasin> a :<:geographicZone>;
+                          skos:prefLabel "Smith River Basin".
+
+<:DelNorteCounty> a :<:projectOwner>;
+                        :funding "474,000"^^xsd:decimal;
+                        skos:prefLabel "Del Norte County".
+
+<:DelNorteCountyDeptOfFishAndGame> a :<:projectOwner>;
+                          skos:prefLabel "Del Norte County Department of Fish and Game".
+
+<:CACoastalConservancy> a :<:projectOwner>;
+                          :funding "474,000"^^xsd:decimal;
+                        skos:prefLabel "CA Coastal Conservancy".
+
+<:ConcreteConstructionCompany> a :<:mainContractor>;
+                          :funding "474,000"^^xsd:decimal;
+                          skos:prefLabel "Concrete Construction Company".
+
+<:VortexWeirFishwayTechnicalElement> a :<:TechnicalElement>;
+                            :totalLength "120"^^xsd:float;
+                            :dropOverWeir "8"^^xsd:float;
+                            :vortexAngle "90"^^xsd:float;
+                            :vortexSideSlope "5:1";
+                            skos:prefLabel "Vortex Weir Fishway Technical Element".

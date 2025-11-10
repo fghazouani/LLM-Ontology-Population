@@ -1,0 +1,34 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# The project's analysis and synthesis
+:PasseAPoissons a :improvementProject ;
+                    skos:prefLabel "Passe AP Poissons improvement" ;
+
+                    # Contexte
+:PasseAPoissons rdfs:label "Context of the Passe AP Poissons improvement project"@fr;
+                    :context "Le projet vise à améliorer l'accès piscicole au sein de la Communauté de Communes du Canton de Villé, notamment en amenant les salmonidés dans les frayères." .
+
+# Choix du dispositif
+:PasseAPoissons rdfs:label "Choice of the Passe AP Poissons improvement project"@"fr ;
+                    :dispositif "Le choix du dispositif a été complexe, car il a fallu prendre en compte plusieurs contraintes : 
+                     * Structure hétérogène du seuil
+                     * Exigences biologiques multiples
+                     * Transport solide important
+                     * Étiage sévère" ;
+                    :dispositif "En concertation avec les partenaires, la solution d'une rampe en enrochement en rangées périodiques a été retenue." ;
+
+# Caractéristiques du dispositif
+:PasseAPoissons rdfs:label "Characteristics of the Passe AP Poissons improvement project"@"fr ;
+                    :caracteristiquesDispositif "Le dispositif présenté comprend :
+                     * 8 seuils en enrochement
+                     * Chute moyenne de 20 cm
+                     * Espacement inter-rangées de ~6 m de longueur
+                     * Dimensions des blocs : 0,5 m de large pour 0,5 m de hauteur utile
+                     * Largeur inter-blocs : 0,4 m
+                     * Hauteur d'eau dans les bassins : minimum 0,5 m
+                     * Plage de fonctionnement : étiage à 2 fois le module, soit un débit dans l'ouvrage compris entre 0,2 et 2,0 m3/s
+                     * Pente moyenne : ~4 %" ;
+                    :caracteristiquesDispositif skos:prefLabel "Characteristics of the improvement project"@fr ;

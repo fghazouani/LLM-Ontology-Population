@@ -1,0 +1,31 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# The project instance:
+:MadRiverBasinConcreteFishwayProject a :project ;
+                                   skos:prefLabel "Mad River Basin, Northern California - Concrete Fishway and Rock Grade Control Project" ;
+                                   :isLocatedOn :MadRiverBasinNorthernCalifornia ;
+                                   :hasProjectType :ConcreteFishwayChannel ;
+                                   :associatedTo :MadRiverBasinConcreteFishwayProjectInstance ;
+                                   :hasKeyCharacteristics ( :OneHundredYearFlow , :DrainageArea , :BankfullWidth ) ;
+                                   :isManagedBy ( :HumboldtCounty , :CaliforniaDepartmentOfFishAndGame ) ;
+                                   :endDate "2002-11"^^xsd:date ;
+                                   :totalCost "171 000 $"^^xsd:string .
+
+# The geographic zone:
+:MadRiverBasinNorthernCalifornia a :geographicZone ;
+                                skos:prefLabel "Mad River Basin, Northern California" .
+
+# The Funding Agencies instances:
+:HumboldtCounty a :fundingAgency ;
+                skos:prefLabel "Humboldt County" .
+:CaliforniaDepartmentOfFishAndGame a :fundingAgency ;
+                                      skos:prefLabel "California Department of Fish and Game" .
+
+
+# The instance for the project association with its associated data:
+:MadRiverBasinConcreteFishwayProjectInstance a :projectAssociation ;
+                                             skos:prefLabel "Mad River Basin Concrete Fishway Project Instance" ;
+                                             :hasFundingAgency :HumboldtCounty , :CaliforniaDepartmentOfFishAndGame .

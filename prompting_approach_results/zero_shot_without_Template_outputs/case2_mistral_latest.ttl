@@ -1,0 +1,37 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ Below is the Turtle format representation of instances extracted from the text based on the provided ontology:
+
+```turtle
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Communauté_de_Communes_du_Canton_de_Villé> a <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#projectOwner> ;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Communauté de Communes du Canton de Villé" .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#HYDRATEC> a <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#mainContractor> .
+
+<http://www.w3.org/2001/XMLSchema#gYearMonth>("2011-08") <http://purl.oclc.org/NET/rdf-calendar#startsAt> <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#project> ;
+  <http://www.w3.org/2001/XMLSchema#gYearMonth>("2011-09") <http://purl.oclc.org/NET/rdf-calendar#endssAt> <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#project> ;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Project on Giessen" .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#project> a <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#river_project> ;
+  <http://purl.org/dc/terms/budget> "Not Specified" ;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Budget Not Specified".
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Giessen> a <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#river> ;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Giessen River" .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Seuil_Sengler> a <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#barrier> ;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Seuil Sengler" .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Seuil_Sengler> a <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#dam> ;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Seuil Sengler Dam" .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Seuil_Sengler> a <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#weir> ;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Seuil Sengler Weir" .
+
+<http://purl.org/goodrelations/v1#ConstructionType>("Rampe en enrochement") <http://purl.org/dc/terms/hasPart> <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Seuil_Sengler> .
+
+<http://purl.org/goodrelations/v1#ConstructionType>("Rampe en enrochement") rdfs:subClassOf <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#river_improvement> .
+```

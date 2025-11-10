@@ -1,0 +1,37 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:reconnectionKaysersberg a :reconnection ;
+            :associatedTo :dsSmithWeirKaysersberg ;
+            :isManagedBy :conseilGeneralHautRhinProjectOwner ;
+            :hasMainContractor :conseilGeneralHautRhinMainContractor ;
+            :startsAt "2010-09-01T00:00:00"^^xsd:dateTime;
+            :endsAt "2010-11-30T23:59:59"^^xsd:dateTime ;
+            :hasMaxLowWaterFlow 1.60 ^^xsd:float ;
+            :hasMinLowWaterFlow 0.40 ^^xsd:float ;
+            :includes :artificialRiverKaysersberg ;
+            :numberOfPools "7" ;
+            :numberOfBasins "14" ;
+            :averageSlope "2.6" ;
+            skos:prefLabel "Réconnection Kaysersberg".
+
+:dsSmithWeirKaysersberg a :geographicZone ;
+                          skos:prefLabel "Seuil DS Smith Kaysersberg".
+
+:conseilGeneralHautRhinProjectOwner a :projectOwner ;
+                        skos:prefLabel "Conseil Général du Haut-Rhin".
+
+:conseilGeneralHautRhinMainContractor a :mainContractor ;
+                          skos:prefLabel "Conseil général du Haut-Rhin".
+
+:artificialRiverKaysersberg a :TechnicalElement ;
+                            skos:prefLabel "Passe à poissons type rivière de contournement" ;
+                            :length "70m"^^xsd:decimal ;
+                            :slope "2.6"^^xsd:decimal ;
+                            :number_of_steps "14" ;
+                            :step_height "0.11m"^^xsd:decimal ;
+                            :pond_length "5m"^^xsd:decimal ;
+                            :pond_width "0.75m"^^xsd:decimal ;
+                            :cutting_dimensions "60cm x 50cm"^^rdf:PlainLiteral.

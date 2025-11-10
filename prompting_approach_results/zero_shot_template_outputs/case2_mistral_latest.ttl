@@ -1,0 +1,40 @@
+4507
+ Based on the given text input, here are the instances extracted from it using the provided ontology description:
+
+RestorationMeasureInstance:
+- a: restorationMeasure
+- associatedTo: StructureInstance1 (see below)
+- isManagedBy: ProjectOwnerInstance1 (Communauté de Communes du Canton de Villé)
+- hasMainContractor: MainContractorInstance1 (HYDRATEC)
+- startsAt: "2011-08-01"^^xsd:dateTime;
+- endsAt: "2011-09-30"^^xsd:dateTime ;
+- hasMaxLowWaterFlow: theMaxLowWaterFlow (not provided in the text)
+- hasMinLowWaterFlow: theMinLowWaterFlow (not provided in the text)
+- includes: TechnicalElementInstance1 (see below)
+- numberOfPools: 0 (not provided in the text)
+- numberOfBasins: 0 (not provided in the text)
+- averageSlope: Not specified in the text
+- skos:prefLabel "Giessen fish passage amendment"
+
+StructureInstance1:
+- a: structure
+- isLocatedOn: GeographicZoneInstance1 (see below)
+- hasHeight: 1.7 m
+- isImpassable: true
+- skos:prefLabel "Seuil Sengler on Giessen"
+
+GeographicZoneInstance1:
+- a: geographicZone
+- skos:prefLabel "Canton de Villé"
+
+ProjectOwnerInstance1:
+- a: projectOwner
+- skos:prefLabel "Communauté de Communes du Canton de Villé"
+
+MainContractorInstance1:
+- a: mainContractor
+- skos:prefLabel "HYDRATEC"
+
+TechnicalElementInstance1:
+- a: TechnicalElement
+- skos:prefLabel "Ramp in periodic layered enrochement" (based on the chosen solution described in the text)

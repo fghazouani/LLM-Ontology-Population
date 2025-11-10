@@ -1,0 +1,29 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+StepPoolFishway a :reconnection ,
+                 :concerns :RetrofitWithStepPoolFishway ;
+           	skos:prefLabel "Step Pool Fishway" ;
+                   :isLocatedOn SantaYnezRiverWatershedCaliforniaUSA ;
+                   :associatedTo ExistingConcreteAndRockApron ;
+                   :includes ThreeSmallStepPools ;
+                   :hasCost "$87,000"^^xsd:decimal ;
+                   :hasMainContractor CachumaConservationAndReleaseBoardEntrixAllenRobertLarsonCaliforniaCoastalConservancy .
+
+ExistingConcreteAndRockApron a :dam ,
+                 :isLocatedOn SantaYnezRiverWatershedCaliforniaUSA ;
+           skos:prefLabel "Existing Concrete and Rock Apron" ;
+                   :isImpassable "true"^^xsd:boolean .
+
+CachumaConservationAndReleaseBoardEntrixAllenRobertLarsonCaliforniaCoastalConservancy a :projectOwner ,
+                 skos:prefLabel "Cachuma Conservation and Release Board, Entrix, Allen and Robert Larson, California Coastal Conservancy" .
+
+SantaYnezRiverWatershedCaliforniaUSA a :geographicZone ,
+                 skos:prefLabel "Santa Ynez River Watershed, Central California, USA" .
+
+RetrofitWithStepPoolFishway a :restorationMeasures ;
+           skos:prefLabel "Restoration measures with step pool fishways" ;
+
+ThreeSmallStepPools a :technicalElement ;
+           skos:prefLabel "Three small step pools" .

@@ -1,0 +1,32 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:concreteFishwayAndRockGradeControl a :reconnection ;
+			:associatedTo :newConcreteWeir ;
+			:isManagedBy :humboldtCounty ;
+			:hasMainContractor :californiaDeptFishAndGame ;
+			:startsAt "2002-11-01T00:00:00"^^xsd:dateTime;
+			:endsAt "2002-11-30T23:59:59"^^xsd:dateTime ;
+			:hasMaxLowWaterFlow 4.6 ;
+			:hasMinLowWaterFlow 2.1 ;
+			:numberOfPools 7 ;
+			:numberOfBasins 7 ;
+			:averageSlope 0.17 ;
+            skos:prefLabel "Concrete Fishway and Rock Grade Control".
+
+:newConcreteWeir a :weir, :basinPasses ;
+                    :isLocatedOn :madRiverBasin ;
+                    :hasHeight 2.1 ;
+                    :isImpassable true ;
+                    skos:prefLabel "New Concrete Weir".
+
+:madRiverBasin a :geographicZone ;
+                          skos:prefLabel "Mad River Basin".
+
+:humboldtCounty a :projectOwner ;
+                        skos:prefLabel "Humboldt County".
+
+:californiaDeptFishAndGame a :mainContractor ;
+                          skos:prefLabel "California Dept. Fish and Game".

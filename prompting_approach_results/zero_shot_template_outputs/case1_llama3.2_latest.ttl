@@ -1,0 +1,47 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Voici les instances créées à partir du texte d'entrée et du modèle fourni :
+
+**<RestorationMeasureInstance>**
+a :reconnection ;
+:associatedTo :dam ;
+:isManagedBy :CommunautéDeCommuheimDeMolsheimMutzig ;
+:hasMainContractor :SOGREAHConsultants ;
+:startsAt "août 2010"^^xsd:dateTime;
+:endsAt "décembre 2010"^^xsd:dateTime ;
+:hasMaxLowWaterFlow 2.0 ;
+:hasMinLowWaterFlow 0.4 ;
+:includes :blocDeSaul ;
+:numberOfPools "17" ;
+:numberOfBasins "18" ;
+:averageSlope 2.3 ;
+:skos:prefLabel "Réintroduction de la salamandre" .
+
+**<GeographicZoneInstance>**
+a :geographicZone ;
+:skos:prefLabel "Bruche, Bas-Rhin" .
+
+**<ProjectOwnerInstance>**
+a :projectOwner ;
+:skos:prefLabel "Communauté de Communes de la région de MOLSHEIM-MUTZIG" .
+
+**<MainContractorInstance>**
+a :mainContractor ;
+:skos:prefLabel "SOGREAH Consultants" .
+
+**<TechnicalElementInstance>**
+a :TechnicalElement ;
+:skos:prefLabel " Bloc de saules" ;
+
+**<GeographicZoneInstance> (supplémentaire)**
+a :geographicZone ;
+:skos:prefLabel "Bassin Bruche-Mossig" .
+
+Note : Les éléments suivants n'ont pas été utilisés pour créer une instance car ils ne correspondent pas à la structure du modèle fourni :
+
+* Montant des travaux (utilisé dans l'instance <RestorationMeasureInstance>)
+* Financement des travaux
+* Contexte général

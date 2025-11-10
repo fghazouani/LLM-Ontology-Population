@@ -1,0 +1,35 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:passeAPoissonsGerstheim a :reconnection ;
+    :associatedTo :structurePasseAPoissonsGerstheim ;
+    :isManagedBy :cergaSa ;
+    :hasMainContractor :mainContractorGerstheim ;
+    :startsAt "2023-01-01T08:00:00"^^xsd:dateTime;
+    :endsAt "2023-12-31T17:00:00"^^xsd:dateTime ;
+    :hasMaxLowWaterFlow 9.0 ;
+    :hasMinLowWaterFlow 1.2 ;
+    :includes :tronconBassinSuccessifs ;
+    :numberOfBasins 3 ;
+    :averageSlope "not specified in text" ;
+    skos:prefLabel "Passe à poissons de Gerstheim".
+
+:structurePasseAPoissonsGerstheim a :fishway, :successivesBasinsPass ;
+    :isLocatedOn :rheinGerstheim ;
+    :hasHeight 20.0 ;
+    :isImpassable true ;
+    skos:prefLabel "Structure Passe à poissons Gerstheim".
+
+:rheinGerstheim a :river ;
+                skos:prefLabel "Le Rhin (Gerstheim)".
+
+:cergaSa a :projectOwner ;
+         skos:prefLabel "CERGA SA".
+
+:mainContractorGerstheim a :mainContractor ;
+                         skos:prefLabel "Main Contractor Gerstheim".
+
+:tronconBassinSuccessifs a :successivesBasinsPass ;
+                          skos:prefLabel "Tronçon Bassin Successifs".

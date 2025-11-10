@@ -1,0 +1,37 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:passesDeKembs a :reconnection ;
+    :associatedTo :kembsDamStructure ;
+    :isManagedBy :electriciteDeFrance ;
+    :hasMainContractor :centreDIng ingenierieHydrauliqueEdf ;
+    :startsAt "2011-01-01T00:00:00"^^xsd:dateTime;
+    :endsAt "2013-01-01T00:00:00"^^xsd:dateTime ;
+    :hasMaxLowWaterFlow 50.0 ^^xsd:float ;
+    :hasMinLowWaterFlow 30.0 ^^xsd:float ;
+    :includes :kembsFishPass ;
+    :numberOfPools 2 ;
+    :numberOfBasins 1 ;
+    :averageSlope 0.004 ;
+    skos:prefLabel "Passes de Kembs".
+
+
+:kembsDamStructure a :dam, :basinPasses ;
+                    :isLocatedOn :rhineRiver ;
+                    :hasHeight 25.0 ;
+                    :isImpassable true ;
+                    skos:prefLabel "Kembs Dam Structure".
+
+:rhineRiver a :river ;
+            skos:prefLabel "Le Rhin".
+
+:electriciteDeFrance a :projectOwner ;
+                    skos:prefLabel "Electricité De France (EDF) Unité de production est".
+
+:centreDIng ingenierieHydrauliqueEdf a :mainContractor ;
+                          skos:prefLabel "Centre d'Ingénierie Hydraulique d'EDF, EDF R&D".
+
+:kembsFishPass a :TechnicalElement ;
+                skos:prefLabel "Passe à poissons de Kembs".

@@ -1,0 +1,27 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix TetraOnto: <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<TetraOnto:Brisach>
+    a TetraOnto:geographicZone ;
+</TetraOnto:Brisach>
+
+<CERGA-SA>
+    a TetraOnto:mainContractor ;
+</CERGA-SA>
+
+<TetraOnto:Passe-a-poissons-de-Brisach>
+    rdfs:label "Passe à poissons de Brisach" ;
+    TetraOnto:relizedIn TetraOnto:Brisach ;
+    TetraOnto:includes TetraOnto:bassinPasses ;
+    TetraOnto:associatedTo <http://example.com/microcentrale-hydroelectrique> ;
+    TetraOnto:isManagedBy CERGA-SA ;
+</TetraOnto:Passe-a-poissons-de-Brisach>
+
+<http://example.com/microcentrale-hydroelectrique>
+    a TetraOnto:StructureTypes ;
+    TetraOnto:isLocatedOn TetraOnto:floodRetention ;
+</http://example.com/microcentrale-hydroelectrique>

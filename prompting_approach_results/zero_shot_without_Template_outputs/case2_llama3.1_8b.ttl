@@ -1,0 +1,46 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix TetraOnto: <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<http://example.org/project>
+    a TetraOnto:project ;
+    TetraOnto:hasMainContractor "HYDRATEC" ;
+    TetraOnto:concerns TetraOnto:"restoration measure" ;
+    TetraOnto:isManagedBy "Communauté de Communes du Canton de Villé" , "FDAAPPMA Bas-Rhin" ;
+    TetraOnto:hasCost 65000 ;
+    TetraOnto:startsAt "Août - Septembre 2011" .
+
+<http://example.org/restorationMeasure>
+    a TetraOnto:restoration measure ;
+    TetraOnto:concerns TetraOnto:"reconnection" ;
+    TetraOnto:realizedIn <http://example.org/geographicZone> ;
+    TetraOnto:associatedTo <http://example.org/structure> ;
+    TetraOnto:isLocatedOn <http://example.org/waterBody> ;
+    TetraOnto:hasTechnicalElement "rampe en enrochement" .
+
+<http://example.org/geographicZone>
+    a TetraOnto:geographic zone ;
+    rdfs:label "Giessen" .
+
+<http://example.org/structure>
+    a TetraOnto:dam ;
+    TetraOnto:isLocatedOn <http://example.org/waterBody> ;
+    TetraOnto:hasHeight 1.7 ;
+    TetraOnto:hasMaxLowWaterFlow true .
+
+<http://example.org/waterBody>
+    a TetraOnto:river ;
+    TetraOnto:hasPoolLength 50 ;
+    TetraOnto:hasPoolWidth 3 ;
+    TetraOnto:hasNotchHight 0.5 ;
+    TetraOnto:hasNotchWidth 0.4 ;
+    TetraOnto:hasBiologicalMonitoring true .
+ 
+<http://example.org/communautéDeCommunesDuCantonDeVillé>
+    a TetraOnto:project owner .
+ 
+ <http://example.org/hydratec>
+     a TetraOnto:main contractor .

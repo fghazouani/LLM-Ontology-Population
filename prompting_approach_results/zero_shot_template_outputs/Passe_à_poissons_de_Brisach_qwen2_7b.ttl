@@ -1,0 +1,38 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:<RestorationMeasureInstance> a :reconnection;
+			:associatedTo :river ;
+			:isManagedBy :CERGA_SA;
+			:hasMainContractor :Maître_d'ouvrage ;
+			:startsAt "2008-01-01T00:00:00"^^xsd:dateTime;
+			:endssAt "2013-12-31T23:59:59"^^xsd:dateTime ;
+			:hasMaxLowWaterFlow 4.0^^xsd:float ;
+			:hasMinLowWaterFlow 1.5^^xsd:float> ;
+			:includes :passe_a_poissons ;
+			:numberOfPools null ;
+			:numberOfBasins null ;
+			:averageSlope null ;
+            hasBiologicalMonitoring true ;
+            hasHydromorphologicaMonitoring false ;
+            skos:prefLabel "Passe à poissons de Brisach". 
+
+:<StructureInstance> a :dam ;
+                    :isLocatedOn :Masse_d'eau ;
+                    :hasHeight 5.7 ;
+                    :isImpassable false ;
+                    skos:prefLabel "Barrage agricole". 
+
+:<GeographicZoneInstance> a :geographicZone ;
+                          skos:prefLabel "Comune(s) de Brisach". 
+
+:<ProjectOwnerInstance> a :projectOwner ;
+                        skos:prefLabel "CERGA SA".
+
+:<MainContractorInstance> a :mainContractor ;
+                          skos:prefLabel "Maître d'ouvrage".
+
+:<TechnicalElementInstancet> a :passe_a_poissons ;
+                            skos:prefLabel "Passe à poissons".

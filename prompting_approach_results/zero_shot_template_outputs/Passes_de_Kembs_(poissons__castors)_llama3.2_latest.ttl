@@ -1,0 +1,47 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Below is the representation of extracted instances from the provided text input according to the given ontology description template:
+
+:<RestorationMeasureInstance> a :basinPass ;
+            :associatedTo :<StructureInstance> ;
+            :isManagedBy :<ProjectOwnerInstance> ;
+            :hasMainContractor :<MainContractorInstance> ;
+            :startsAt <"2011">^^xsd:dateTime;
+            :endsAt <"nonSpecified">^^xsd:dateTime ;
+            :hasMaxLowWaterFlow <"12.0">^^xsd:float ;
+            :includes :<TechnicalElementInstance> ;
+            :numberOfPools "3" ;
+            :averageSlope <"1.5"> ;
+            skos:prefLabel "Passes de Kembs (poissons _castors)".
+
+
+:<StructureInstance> a :dam,
+                    :basinPass ;
+                    :isLocatedOn :<GeographicZoneInstance> ;
+                    :hasHeight <xsd:boolean> ;
+                    skos:prefLabel "Passes de Kembs".
+
+
+:<GeographicZoneInstance> a :geographicZone ;
+                          skos:prefLabel "Kembs".
+
+
+:<ProjectOwnerInstance> a :mainContractor, 
+                            :projectOwner ;
+                        skos:prefLabel "Centre d'Ingénierie Hydraulique d'EDF, EDF R&D".
+
+
+
+:<MainContractorInstance> a :mainContractor ;
+                          skos:prefLabel "Electricité De France (EDF)".
+
+
+:<TechnicalElementInstancet> a :fishLift,
+                            : TechnicalElement ;
+                            skos:prefLabel "Passes de Kembs".
+
+
+Note: The extracted instances do not include all the provided information, as it was not explicitly stated in the ontology description which pieces of data should be considered when creating an instance.

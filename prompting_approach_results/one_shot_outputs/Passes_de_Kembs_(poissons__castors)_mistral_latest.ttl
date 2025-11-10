@@ -1,0 +1,42 @@
+ @prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# The restoration measure:
+:PassesDeKembs a :artificialRiver ;
+                   skos:prefLabel "Passes de Kembs (Poissons et Castors)" ;
+                   :associatedTo :PassesDeKembsStructure1 , :PassesDeKembsStructure2 , :PassesDeKembsStructure3 ;
+                   :isManagedBy :CentreDIngénierieHydrauliqueEDF , :EDFRDS ;
+                   :hasMainContractor :CentreDIngénierieHydrauliqueEDF ;
+                   :startsAt "2011-01"^^xsd:dateTime;
+                   :endssAt "2011-12"^^xsd:dateDate ;
+                   :hasCost "7 500 000.0 € HT"^^xsd:string .
+
+# The structures:
+
+# Structure 1: Fish pass at the dam
+:PassesDeKembsStructure1 a :fishPass , :weir ;
+                            skos:prefLabel "Passage des Poissons à la retenue de Kembs" ;
+                            :isLocatedOn :TheRhine ;
+                            :associatedTo :PassesDeKembs ;
+                            :hasHeight "?"^^xsd:decimal ;
+                            :averageSlope "?"^^xsd:decimal ;
+                            :isImpassable "true"^^xsd:boolean .
+
+# The project owner:
+:CentreDIngénierieHydrauliqueEDF a :projectOwner , :mainContractor ;
+                                     skos:prefLabel "Centre d'Ingénierie Hydraulique d'EDF, EDF R&D" .
+
+# The client:
+:EDFRDS a :client ;
+                  skos:prefLabel "Electricité De France (EDF)" .
+
+# Other actors:
+:AgenceDeLaeauRhinMeuse a :otherActor ;
+                           skos:prefLabel "Agence de l'eau Rhin-Meuse" .
+
+# The small power station:
+:SmallPowerStation a :powerStation ;
+                     skos:prefLabel "Petite centrale hydroélectrique entre la Rhine et le Grand Canal" ;
+                     :associatedTo :PassesDeKembs .

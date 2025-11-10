@@ -1,0 +1,49 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<http://example.org/restorationMeasure1>
+    a :reconnection ;
+    :associatedTo <http://example.org/dam> ;
+    :isManagedBy [:projectOwner "Conseil Général du Haut-Rhin" ; :otherActor "Agence de l’Eau Rhin-Meuse" ] ;
+    :concerns :poolCreation .
+    
+<http://example.org/dam>
+    a :dam ;
+    :isLocatedOn <http://example.org/river> ;
+    :hasHeight "2.1 m"^^xsd:decimal .
+
+<http://example.org/riverepassage>
+    a :fishway ;
+    :type :riviérepassage ;
+    :associatedTo <http://example.org/dam> .
+    
+<http://example.org/fishladder>
+    a :eelLadder ;
+    :associatedTo <http://example.org/riverepassage> .
+
+<http://example.org/canal>
+    a :affluent ;
+    :isLocatedOn <http://example.org/river> ;
+    :hasPoolLength "1.5 km" .
+    
+<http://example.org/river>
+    a :river ;
+    :containsTechnicalElement <http://example.org/fishladder> ;
+    :hasMaxLowWaterFlow "10 m3/s" ;
+    :hasMinLowWaterFlow "5 m3/s" .
+    
+<http://example.org/projectOwner>
+    a :projectOwner ;
+    :name "Conseil Général du Haut-Rhin" .
+
+<http://example.org/otherActor>
+    a :otherActor ;
+    :name "Agence de l’Eau Rhin-Meuse" .
+    
+<http://example.org/mainContractor>
+    a :mainContractor ;
+    :name "DS Smith Kaysersberg" .

@@ -1,0 +1,45 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ :ConcretePoolAndVortexWeirFishway a :restorationMeasure ;
+			:associatedTo :SmithRiverBasinWeirInstance ;
+			:isManagedBy :DelNorteCountyProjectOwnerInstance ;
+			:hasMainContractor :MultiAgencyInstance ;
+			:startsAt "2003-11-01T00:00:00"^^xsd:dateTime;
+			:endsAt "2003-11-30T23:59:59"^^xsd:dateTime;
+			:includes :ConcretePoolInstance, :VortexWeirInstance ;
+			:numberOfPools 6 ;
+            skos:prefLabel "Concrete Pool and Vortex Weir Fishway".
+
+:SmithRiverBasinWeirInstance a :structure, :concreteFishway ;
+                    :isLocatedOn :SmithRiverGeographicZoneInstance ;
+                    :hasHeight 7 ;
+                    :isImpassable false ;
+                    skos:prefLabel "Smith River Basin Concrete Fishway".
+
+:SmithRiverGeographicZoneInstance a :geographicZone ;
+                          skos:prefLabel "Smith River Basin, Northern California".
+
+:DelNorteCountyProjectOwnerInstance a :projectOwner ;
+                        skos:prefLabel "Del Norte County Project Owner".
+
+:MultiAgencyInstance a :mainContractor ;
+                          skos:prefLabel "Multiple Agencies (Del Norte County, CA Dept. of Fish and Game, and CA Coastal Conservancy)".
+
+:ConcretePoolInstance a :technicalElement ;
+                    skos:prefLabel "Concrete Pool";
+					:characteristic :poolDepth 2.5;
+					:characteristic :poolSpacing 10.
+
+:VortexWeirInstance a :technicalElement ;
+                    skos:prefLabel "Vortex Weir";
+					:characteristic :totalLength 120;
+					:characteristic :dropOverWeir 8;
+					:characteristic :totalHeadloss 7;
+					:characteristic :weirSideSlope "5:1";
+					:characteristic :fishwayWidth 20;
+					:characteristic :vortexAngle 90;
+					:characteristic :poolDepth 2.5;
+					:characteristic :poolSpacing 10.

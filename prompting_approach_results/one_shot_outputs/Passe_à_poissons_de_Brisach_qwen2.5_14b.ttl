@@ -1,0 +1,27 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:PasseAPoissonsDeBrisach a :successivesBasinsPass ;
+                            skos:prefLabel "Passe à poissons de Brisach" ;
+                            :isManagedBy :CERGASA ;
+                            :concerns :LongitudinalContinuity ;
+                            :hasBiologicalMonitoring "true"^^xsd:boolean ;
+                            :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+                            :startsAt "2008-01-01"^^xsd:dateTime .
+
+:MicrocentraleHydroelectriqueDeBrisach a :dam ;
+                                        skos:prefLabel "Microcentrale Hydroélectrique de Brisach" ;
+                                        :isLocatedOn :LeRhin ;
+                                        :hasHeight "5.7"^^xsd:decimal ;
+                                        :isImpassable "true"^^xsd:boolean .
+
+:LeRhin a :river ;
+        skos:prefLabel "Le Rhin" ;
+        :isLocatedOn :HautRhinvBrisachFrance .
+
+:CERGASA a :mainContractor ;
+          skos:prefLabel "CERGA SA" .
+
+:HautRhinvBrisachFrance a :geographicZone ;
+                          skos:prefLabel "Haut-Rhin, Brisach, France" .

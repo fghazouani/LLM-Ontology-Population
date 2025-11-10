@@ -1,0 +1,49 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<http://example.org/restoration_measure_001>
+    a :RestorationMeasure ;
+    :concerns :ContinuityLongitudinal ;
+    :associatedTo <http://example.org/fishway_001> ;
+    :relizedIn <http://example.org/geographic_zone_001> ;
+    :isManagedBy <http://example.org/project_owner_001>, <http://example.org/other_actor_001> ;
+    :hasMainContractor <http://example.org/main_contractor_001>;
+    :startsAt "1997"^^xsd:gYear;
+    :endssAt null;
+    :hasCost 9000000.0^^xsd:decimal ;
+    :hasBiologicalMonitoring true ;
+    :isImpassable false ;
+    :containsTechnicalElement [
+        a :PasseAPoissons;
+        :name "Passe à poissons d'Iffezheim";
+        :associatedTo <http://example.org/fishway_001>;
+        :description "Création de la passe à poissons avec 3 entrées, un bassin de répartition, des bassins successifs et un local d'observation."
+    ].
+
+<http://example.org/geographic_zone_001>
+    a :GeographicZone ;
+    :name "Le Rhin" ;
+    :hasCountry <http://example.org/country_001> ;
+    :hasDepartment <http://example.org/department_001> ;
+    :hasCommune <http://example.org/commune_001>.
+
+<http://example.org/fishway_001>
+    a :Fishway;
+    :name "Passe à poissons d'Iffezheim";
+    :description "Création de la passe à poissons avec 3 entrées, un bassin de répartition, des bassins successifs et un local d'observation.".
+
+<http://example.org/project_owner_001>
+    a :ProjectOwner;
+    :name "NR".
+
+<http://example.org/other_actor_001>
+    a :OtherActor;
+    :name "EDF et BADENWERK devenu EnBW à travers le RKI, CIPR".
+
+<http://example.org/main_contractor_001>
+    a :MainContractor;
+    :name "NR".

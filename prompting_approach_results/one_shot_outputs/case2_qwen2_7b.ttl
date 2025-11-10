@@ -1,0 +1,47 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# Le projet d'aménagement ou suppression d'ouvrages hydrauliques sur le Giessen :
+:ProjetVillele a :projectInitiator, :CommunityOfCommunes;
+                    skos:prefLabel "Aménagement du Giessen par la Communauté de Communes du Canton de Villé";
+                    :startTime "2011-08"^^xsd:dateTime ;
+                    :endTime "2011-09"^^xsd:dateTime ;
+                    :totalCost "65 000 € HT"^^xsd:string ;
+                    :isPartOfInitiative "2007"^^xsd:integer ;
+                    :aimsToEnsureFishPassage true .
+
+# L'ouvrage hydraulique :
+:SeuilSengler a :waterwayHydraulicBarrier ;
+                    skos:prefLabel "Seuil Sengler" ;
+                    :isLocatedOn "Giessen"^^xsd:string ;
+                    :length "50 m"^^xsd:decimal ;
+                    :height "1.7 m"^^xsd:decimal ;
+                    :hasInaccessibleFalls true .
+
+# L'aménagement sur le Giessen :
+:AménagementGiessen a :communityInitiative ;
+                    skos:prefLabel "Aménagement du Giessen par la Communauté de Communes";
+                    :totalCost "65 000 € HT"^^xsd:string ;
+                    :isPartOfProgram "2007"^^xsd:integer ;
+                    :aimsToEnsureFishPassage true .
+
+# Le dispositif de rampe en enrochement :
+:DeviceVillele a :rampingDevice, :PeriodicRockFillBarrier ;
+                    skos:prefLabel "Dispositif rampant en enrochements périodiques sur le Giessen";
+                    :totalNumberOfSeals "8"^^xsd:integer ;
+                    :averageDropHeight "20 cm"^^xsd:decimal ;
+                    :interRampLength "~6 m"^^xsd:decimal ;
+                    :utilityBlockWidth "0.5 m"^^xsd:decimal ;
+                    :waterLevelInBasinMin "0.5 m"^^xsd:decimal ;
+                    :operationalRange "between 0.2 and 2.0 m³/s"^^xsd:string ;
+                    :averageSlope "~4 %". 
+
+# Les détails techniques :
+:TechnicalDetailsVillele a :projectData;
+                    skos:prefLabel "Détails techniques pour la réalisation écologique";
+                    :hasInitiativeDate "2011-08"^^xsd:dateTime ;
+                    :endsAt "2011-09"^^xsd:dateTime ;
+                    :totalCost "65 000 € HT"^^xsd:string ;
+                    :initiativeYear "2007"^^xsd:integer .

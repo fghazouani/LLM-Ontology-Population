@@ -1,0 +1,80 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+:<RestorationMeasureInstance> a :ConcretePoolAndVortexWeirFishway .
+            :associatedTo :ConcreteFishwayInstance ;
+            :isManagedBy :ProjectOwnerInstanceForDelNorteCountyCAdeptFishandGameAndCCACoastalConservancy ;
+            :hasMainContractor :CACoastalConservancy ;
+            :startsAt "2003-11"^^xsd:dateTime;
+            :endsAt ""^^xsd:date ;
+            :concerns :ConcretePoolAndVortexWeirFishwayType ;
+            :numberOfPools 10 ;
+            :numberOfBasins 1 ;
+            :averageSlope 0.5 ;
+            skos:prefLabel "Concrete Pool and Vortex Weir Fishway Restoration Measure Instance".
+
+
+:<StructureInstance> a :vortexWeir .
+            :isLocatedOn :SmithRiverBasinGeographicZone ;
+            :hasHeight 7 ;
+            :isImpassable true ;
+            skos:prefLabel "Vortex Weir Structure Instance".
+
+
+:<GeographicZoneInstance> a :smithRiverBasin .
+                            skos:prefLabel "Smith River Basin Geographic Zone Instance".
+
+
+:<ProjectOwnerInstance> a :delNorteCountyCAdeptFishandGameAndCCACoastalConservancy .
+                           skos:prefLabel "Del Norte County, CA Dept. of Fish and Game, and CA Coastal Conservancy Project Owner Instance".
+
+
+:<MainContractorInstance> a :ccacoastalconservancy .
+                            skos:prefLabel "CA Coastal Conservancy Main Contractor Instance".
+
+
+:<TechnicalElementInstance> a :concreteFishway .
+                             skos:prefLabel "Concrete Fishway Technical Element Instance".
+
+
+:<RestorationMeasureClass> a :ConcretePoolAndVortexWeirFishway .
+                              skos:prefLabel "Concrete Pool and Vortex Weir Fishway Restoration Measure Class".
+
+
+:<ConcretePoolAndVortexWeirFishwayInstanceType> a :ConcretePoolAndVortexWeirFishwayType .
+                                        skos:prefLabel "Concrete Pool and Vortex Weir Fishway Instance Type".
+
+
+:<DelNorteCountyCAdeptFishandGameAndCCACoastalConservancyProjectOwnerInstance> a :delNorteCountyCAdeptFishandGameAndCCACoastalConservancy .
+                                            skos:prefLabel "Del Norte County, CA Dept. of Fish and Game, and CA Coastal Conservancy Project Owner Instance".
+
+
+:<SmithRiverBasinGeographicZone> a :smithRiverBasin .
+                                     skos:prefLabel "Smith River Basin Geographic Zone Instance".
+
+
+:<CACoastalConservancyMainContractorInstance> a :ccacoastalconservancy .
+                                          skos:prefLabel "CA Coastal Conservancy Main Contractor Instance".
+
+
+:<ConcreteFishwayTechnicalElementInstance> a :concreteFishway .
+                                           skos:prefLabel "Concrete Fishway Technical Element Instance".
+
+
+:<DelNorteCountyCAdeptFishandGameAndCCACoastalConservancyProjectOwnerInstanceType> a :delNorteCountyCAdeptFishandGameAndCCACoastalConservancy .
+                                           skos:prefLabel "Del Norte County, CA Dept. of Fish and Game, and CA Coastal Conservancy Project Owner Instance Type".
+
+
+:<SmithRiverBasinGeographicZoneType> a :smithRiverBasin .
+                                         skos:prefLabel "Smith River Basin Geographic Zone Type".
+
+
+:<CACoastalConservancyMainContractorInstanceType> a :ccacoastalconservancy .
+                                            skos:prefLabel "CA Coastal Conservancy Main Contractor Instance Type".
+
+
+:<ConcreteFishwayTechnicalElementInstanceType> a :concreteFishway .
+                                                   skos:prefLabel "Concrete Fishway Technical Element Instance Type"

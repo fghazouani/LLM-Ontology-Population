@@ -1,0 +1,52 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ :MesureDeRestaurationBrisch a TetraOnto:restorationMeasure ;
+			:associatedTo :PasseAPoissonsDeBrisch a TetraOnto:structure, :<Barriagemunicipale> a TetraOnto:structure ;
+			:isManagedBy :CERGASA a TetraOnto:projectOwner ;
+			:hasMainContractor :EDF a TetraOnto:mainContractor, :EnBW a TetraOnto:mainContractor ;
+			:startsAt "20XX-XX-XXT00:00:00"^^xsd:dateTime;
+			:endsAt "20XX-XX-XXT00:00:00"^^xsd:dateTime ;
+			:hasMaxLowWaterFlow 5.7 ;
+            :includes :<PasseAPoissonsEnSurface> a TetraOnto:technicalElement, 
+                    :<PasseAPoissonsEnProfondeur> a TetraOnto:technicalElement, 
+                    :<DispositifDeDevalaison> a TetraOnto:technicalElement, 
+                    :<DispositifDePiégeage> a TetraOnto:technicalElement ;
+			:numberOfPools 0 ;
+			:numberOfBasins 0 ;
+			:averageSlope <averageSlopeValue if exists> ;
+            skos:prefLabel "Mesure de restauration Brisach" .
+
+:PasseAPoissonsDeBrisch a TetraOnto:structure, :<PasseContinentale> a TetraOnto:subClassOfStructureToBelong ;
+                    :isLocatedOn :HautRhin a TetraOnto:geographicZone ;
+                    :hasHeight 5.7 ;
+                    :isImpassable false ;
+                    skos:prefLabel "Passe à poissons de Brisach" .
+
+:<Barriagemunicipale> a TetraOnto:structure ;
+                    :isLocatedOn :HautRhin a TetraOnto:geographicZone ;
+                    :hasHeight <heightOfTheBarrier> ;
+                    skos:prefLabel "Barrage municipal" .
+
+:CERGASA a TetraOnto:projectOwner ;
+                        skos:prefLabel "CERGA SA" .
+
+:EDF a TetraOnto:mainContractor ;
+                          skos:prefLabel "EDF" .
+
+:EnBW a TetraOnto:mainContractor ;
+                          skos:prefLabel "EnBW" .
+
+:<PasseAPoissonsEnSurface> a TetraOnto:technicalElement, :TetraOnto:pasSurlimite ;
+                            skos:prefLabel "Passe à poissons en surface" .
+
+:<PasseAPoissonsEnProfondeur> a TetraOnto:technicalElement, :TetraOnto:pasEnProfondeur ;
+                            skos:prefLabel "Passe à poissons en profondeur" .
+
+:<DispositifDeDevalaison> a TetraOnto:technicalElement, :TetraOnto:dispositifDeDevalaison ;
+                            skos:prefLabel "Dispositif de dévalaison" .
+
+:<DispositifDePiégeage> a TetraOnto:technicalElement, :TetraOnto:dispositifDePiégeage ;
+                            skos:prefLabel "Dispositif de piégeage" .

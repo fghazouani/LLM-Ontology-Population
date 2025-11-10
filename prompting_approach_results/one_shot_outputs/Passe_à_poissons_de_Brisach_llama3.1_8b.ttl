@@ -1,0 +1,27 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:PasseAPoissonsDeBrisach a :successivesBasinsPass ;
+                    :associatedTo :MicrocentraleHydroelectriqueFrancoAllemande ;
+                    :isManagedBy :CERGASA ;
+                    :hasMainContractor :CERGA_SAMainContractor ;
+                    :numberOfEntrances "4"^^xsd:integer ;
+                    :hasCost 0.0^^xsd:decimal ;
+                    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+                    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+                    :concerns :LongitudinalContinuity .
+
+:MicrocentraleHydroelectriqueFrancoAllemande a :dam ;
+                    :isLocatedOn :RhinBrisachFrance ;
+                    :isImpassable "true"^^xsd:boolean ;
+                    skos:prefLabel "Micro-centrale Hydroélectrique Franco-allemande" .
+
+:CERGASA a :mainContractor ;
+                skos:prefLabel "CERGA SA" .
+
+:RhinBrisachFrance a :geographicZone ;
+                skos:prefLabel "Le Rhin, Brisach, France" .
+                    
+(:LongitudinalContinuity owl:sameAs :PasseAPoissonsDeBrisach)
+(RestorationMeasure owl:sameAs :successivesBasinsPass)

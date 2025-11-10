@@ -1,0 +1,43 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<http://example.com/concrete_pool_and_vortex_weir_fishway>
+  a :projectOwner ,
+     :mainContractor ;
+  :hasMainContractor "Del Norte County, CA Dept. of Fish and Game" , "CA Coastal Conservancy" ;
+  :concerns :reconnection ;
+  :startsAt "2003-11"^^xsd:gMonth ;
+  :endssAt "2003-11"^^xsd:gMonth ;
+  :hasCost "474000"^^xsd:integer ;
+  :isLocatedOn <http://example.com/smith_river_basin> .
+
+<http://example.com/concrete_pool_and_vortex_weir_fishway>
+  a :fishlistway ,
+     :fishLock ;
+  :hasPoolLength "120"^^xsd:integer ;
+  :hasPoolWidth "20"^^xsd:integer ;
+  :hasNotchHight "8"^^xsd:float ;
+  :hasBiologicalMonitoring true ;
+  :associatedTo <http://example.com/concrete_pool_and_vortex_weir_fishway_structures> .
+
+<http://example.com/smith_river_basin>
+  a :geographicZone ,
+     :rivert ;
+  :hasMixLowWaterFlow "1250"^^xsd:gMonth ;
+  :isLocatedOn <http://example.com/usa_california_del_norte_county> .
+
+<http://example.com/concrete_pool_and_vortex_weir_fishway_structures>
+  a :structure ,
+     :weir ;
+  :hasHeight "7"^^xsd:gMonth ;
+  :isLocatedOn <http://example.com/smith_river_basin> .
+
+<http://example.com/usa_california_del_norte_county>
+  a :geographicZone ,
+     :counterDrainageChannel ;
+  :hasPoolLength "100"^^xsd:gMonth ;
+  :isImpassable false .

@@ -1,0 +1,46 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:retrofitStepPoolFishway a :reconnection ;
+			:associatedTo :existingConcreteRockApron ;
+			:isManagedBy :cachumaConservationReleaseBoard, :entrIxInc, 
+                         :allenRobertLarson, :californiaCoastalConservancy ;
+			:hasMainContractor :entrIxInc ;
+			:startsAt "2001-01-01T00:00:00"^^xsd:dateTime;
+			:endsAt "2002-01-01T00:00:00"^^xsd:dateTime ;
+			:hasMaxLowWaterFlow 20.0 ;
+			:hasMinLowWaterFlow 0.57 ;
+			:includes :stepPoolCutIntoApron, :concreteSidewall ;
+			:numberOfPools 3 ;
+			:hasCost "87,000" ;
+			:averageSlope "not specified" ;
+            skos:prefLabel "Retrofit with Step-Pool Fishway".
+
+:existingConcreteRockApron a :weir, :nozzle ;
+                    :isLocatedOn :santaYnezRiverWatershed ;
+                    :hasHeight 12.2 ;
+                    :isImpassable true ;
+                    skos:prefLabel "Existing Concrete and Rock Grade Control Apron".
+
+:santaYnezRiverWatershed a :geographicZone ;
+                         skos:prefLabel "Santa Ynez River Watershed, Central California, USA".
+
+:cachumaConservationReleaseBoard a :projectOwner ;
+                        skos:prefLabel "Cachuma Conservation and Release Board".
+
+:entrIxInc a :mainContractor ;
+            skos:prefLabel "Entrix, Inc.".
+
+:allenRobertLarson a :otherActor ;
+                    skos:prefLabel "Allen and Robert Larson".
+
+:californiaCoastalConservancy a :projectOwner ;
+                              skos:prefLabel "California Coastal Conservancy".
+
+:stepPoolCutIntoApron a :basinPasses, :successivesBasinsPass ;
+                      skos:prefLabel "Step-Pool Cut Into Apron".
+
+:concreteSidewall a :nozzle ;
+                  skos:prefLabel "Concrete Sidewall".

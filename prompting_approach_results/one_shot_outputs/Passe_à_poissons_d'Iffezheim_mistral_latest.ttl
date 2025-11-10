@@ -1,0 +1,81 @@
+ @prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The restoration mesure:
+:IffezheimFishPassForTheRhine a :artificialWaterway ;
+                    skos:prefLabel "Iffezheim Fish Pass for the Rhine" ;
+                    :associatedTo :LongitudinalContinuity ;
+                    :isManagedBy :NAS ;
+                    :hasMainContractor :EDF_BADENWERK_through_RKI_CIPR ;
+                    :startsAt "1997-01-01"^^xsd:date ;
+                    :endssAt "NA" ;
+                    :hasCost "9 000 000.00 € HT"^^xsd:string .
+
+# The Structure:
+:IffezheimFishPassForTheRhine_Structure a :fishPass ,
+                                         :distributionBasin ,
+                                         :successiveBasins ,
+                                         :observationArea ,
+                                         :underwaterVideoSurveillanceSystem ,
+                                         :capturingSystem ;
+                        skos:prefLabel "Iffezheim Fish Pass for the Rhine Structure" ;
+                        :hasEntrance 1-3 ;
+                        :isLocatedOn :Rhine ;
+
+# The Entrances:
+:Entrance_1 a :entrance ;
+                    skos:prefLabel "Entrance 1" ;
+                    :belongsTo :IffezheimFishPassForTheRhine_Structure ;
+                    :isOnLeftBank true ;
+                    :forMigrationSpeciesAndRheophiles true .
+
+:Entrance_2 a :entrance ;
+                    skos:prefLabel "Entrance 2" ;
+                    :belongsTo :IffezheimFishPassForTheRhine_Structure ;
+                    :isOnMainRiverbank true .
+
+:Entrance_3 a :entrance ;
+                    skos:prefLabel "Entrance 3" ;
+                    :belongsTo :IffezheimFishPassForTheRhine_Structure ;
+                    :forLessPowerfulSwimmingFish true .
+
+
+# The Observation Area:
+:ObservationArea a :observationArea ;
+                    skos:prefLabel "Observation Area" ;
+                    :belongsTo :IffezheimFishPassForTheRhine_Structure ;
+                    :hasWindow true ;
+                    :withinCounterCurrentZone true .
+
+# The underwater Video Surveillance System and capturing system:
+:UnderwaterVideoSurveillanceSystem a :underwaterVideoSurveillanceSystem ;
+                    skos:prefLabel "Underwater Video Surveillance System" ;
+                    :belongsTo :IffezheimFishPassForTheRhine_Structure .
+
+:CapturingSystem a :capturingSystem ;
+                    skos:prefLabel "Capturing System" ;
+                    :belongsTo :IffezheimFishPassForTheRhine_Structure .
+
+# The Partners & Financiers:
+:EDF a :partnerFinancier ;
+                    skos:prefLabel "EDF" ;
+                    :hasPercentage 50% .
+
+
+# The Biological Monitoring, Hydromorphological Monitoring and Monitored Compartments:
+:BiologicalMonitoring a :monitoring ;
+                    skos:prefLabel "Biological Monitoring" ;
+                    :forIchthyology true .
+
+:HydromorphologicalMonitoring a :monitoring ;
+                    skos:prefLabel "Hydromorphological Monitoring" ;
+                    :hasResult "NA" .
+
+# The River:
+:Rhine a :waterway ;
+                    skos:prefLabel "Rhine" .
+
+# The Association of Natural Areas (NAS) as the manager:
+:NAS a :manager ;
+                    skos:prefLabel "Association of Natural Areas" .

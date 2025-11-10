@@ -1,0 +1,70 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ Here are the instances extracted from the text input in Turtle format based on the provided ontology description:
+
+```turtle
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Restoration Measure
+:Restoration_Measure_Kembs a :restorationMeasure ;
+    :concerns [ :continuityLongitudinale ] ;
+    :isManagedBy ( :EDF , :EDF_Production_Unit ) ;
+    :containsTechnicalElement ( :fishway_Kembs , :castorLadder_Kembs ) ;
+    :hasMainContractor :CIH_EDF ;
+    :relizedIn <http://www.w3.org/2001/XMLSchema#resource> "France"^^xsd:string ;
+    :startsAt "_2011-DATE"^^xsd:dateTime ;
+    :hasCost 750000.0 ;
+    :hasBiologicalMonitoring false ;
+    :hasHydromorphologicaMonitoring false .
+
+# Geographic Zone
+<http://www.w3.org/2001/XMLSchema#resource> "France"^^xsd:string a :geographicZone .
+
+# Main Contractor
+:CIH_EDF a :mainContractor ;
+    :concerns [ :infrastructureManagement ] .
+
+# Project Owner
+:EDF rdf:type :projectOwner ;
+    :concerns [ :electricityProduction ] .
+
+# Other Actor
+:EDF_Production_Unit a :otherActor ;
+    :concerns [ :electricityProduction ] .
+
+# Fishway
+:fishway_Kembs a :fishway ;
+    :isLocatedOn <http://www.w3.org/2001/XMLSchema#resource> "Le Rhin"^^xsd:string ;
+    :associatedTo [ :barrage_Kembs ] ;
+    :containsTechnicalElement :basseRiviereVersBalePass_Kembs ;
+    :hasDirection ( :Upstream , :Downstream ) .
+
+# Fishway for Castor
+:castorLadder_Kembs a :fishway ;
+    :isLocatedOn <http://www.w3.org/2001/XMLSchema#resource> "Le Rhin"^^xsd:string ;
+    :associatedTo [ :barrage_Kembs_RiveAllemande ] ;
+    :hasDirection ( :Upstream ) .
+
+# Barrier
+:barriere_Kembs a :barrier ;
+    :isLocatedOn <http://www.w3.org/2001/XMLSchema#resource> "Le Rhin"^^xsd:string ;
+    :associatedTo [ :fishway_Kembs , :castorLadder_Kembs ] .
+
+# Barrage
+:barrage_Kembs a :barrier ;
+    :isLocatedOn <http://www.w3.org/2001/XMLSchema#resource> "Le Rhin"^^xsd:string ;
+    :associatedTo [ :fishway_Kembs , :castorLadder_Kembs ] .
+
+# Barrage on the German side
+:barrage_Kembs_RiveAllemande a :barrier ;
+    :isLocatedOn <http://www.w3.org/2001/XMLSchema#resource> "Le Rhin"^^xsd:string ;
+    :associatedTo [ :castorLadder_Kembs ] .
+
+# Other Actor
+:Agence_de_l_eau_Rhin_Meuse a :otherActor ;
+    :concerns [ :waterManagement ] .
+```

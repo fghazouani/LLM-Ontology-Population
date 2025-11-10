@@ -1,0 +1,43 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# The restoration measure:
+:PasseAPoissons a :fishPassage ;
+               skos:prefLabel "Passe à poissons pour le seuil DS Smith Kaysersberg" ;
+               :associatedTo :SeuilDSSmithKaysersberg ;
+               :isManagedBy :ConseilDepartementalDuHautRhin ;
+               :hasMainContractor :EntrepriseMaitriseOeuvre ;
+               :startsAt "2019-05"^^xsd:dateTime;
+               :endssAt "2019-08"^^xsd:dateTime ;
+               :hasCost "60 000 € HT"^^xsd:string .
+
+# The Structure:
+:SeuilDSSmithKaysersberg a :weir ,
+                          :lowSlopeRockfillWeir ;
+                          skos:prefLabel "Seuil DS Smith Kaysersberg" ;
+                          :isLocatedOn :HautRhin ;
+                          :associatedTo :PasseAPoissons ;
+                          :hasHeight "0.11"^^xsd:decimal ;
+                          :averageSlope "2.6"^^xsd:decimal ;
+                          :hasWidth "75 cm"^^xsd:string ;
+                          :isImpassable "false"^^xsd:boolean .
+
+# The project owner:
+:ConseilDepartementalDuHautRhin a :projectOwner ;
+                               skos:prefLabel "Conseil Départemental du Haut-Rhin" .
+
+# The main contractor:
+:EntrepriseMaitriseOeuvre a :mainContractor ;
+                           skos:prefLabel "Entreprise de Maîtrise d'Oeuvre" .
+
+
+# The geographic zone:
+:HautRhin a :geographicZone;
+           skos:prefLabel "Haut-Rhin" .
+
+# Additional elements
+:Auvelas a :fishPassageType ;
+         skos:prefLabel "Passe à poissons type rivière de contournement en rive droite" .
+         

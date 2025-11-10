@@ -1,0 +1,58 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://example.org/geographicZone/MOLSHEIM-MUTZIG>
+    a TetraOnto:geographicZone ;
+    TetraOnto:hasName "MOLSHEIM-MUTZIG" .
+
+<http://example.org/mainContractor/SOGREAH_Consultants>
+    a TetraOnto:mainContractor;
+    TetraOnto:hasName "SOGREAH Consultants" .
+    
+<http://example.org/geographicZone/Avolsheim>
+    a TetraOnto:geographicZone ;
+    TetraOnto:isLocatedOn <http://example.org/waterBody/Bruche> .
+
+<http://example.org/mainContractor/Conseil_Général_du_Bas-Rhin>
+    a TetraOnto:mainContractor;
+    TetraOnto:hasName "Conseil Général du Bas-Rhin" .
+    
+<http://example.org/projectOwner/Communauté_de_Communes_de_la_région_de_MOLSHEIM-MUTZIG>
+    a TetraOnto:projectOwner;
+    TetraOnto:hasName "Communauté de Communes de la région de MOLSHEIM-MUTZIG" .
+
+<http://example.org/waterBody/Bruche>
+    a TetraOnto:waterBody;
+    TetraOnto:isLocatedOn <http://example.org/geographicZone/MOLSHEIM-MUTZIG> .
+    
+<http://example.org/restorationMeasure/Rivière_de_contournement>
+    a TetraOnto:restorationMeasure;
+    TetraOnto:concerns TetraOnto:poolCreation ;
+    TetraOnto:isLocatedOn <http://example.org/geographicZone/Avolsheim> .
+    
+<http://example.org/waterBody/Barrage_d_Avolsheim>
+    a TetraOnto:waterBody;
+    TetraOnto:hasPoolLength "135 m" ;
+    TetraOnto:isLocatedOn <http://example.org/geographicZone/Avolsheim> .
+    
+<http://example.org/fishway/Barrage_d_Avolsheim>
+    a TetraOnto:fishway;
+    TetraOnto:concerns TetraOnto:speedBumpsPass ;
+    TetraOnto:associatedTo <http://example.org/structure/Dispositif_de_franchissement> .
+    
+<http://example.org/structure/Dispositif_de_franchissement>
+    a TetraOnto:structure;
+    TetraOnto:associatedTo <http://example.org/fishway/Barrage_d_Avolsheim> ;
+    TetraOnto:hasName "Dispositif de franchissement" .
+    
+<http://example.org/geographicZone/MOLSHEIM-MUTZIG>
+    TetraOnto:hasBudget "10,000,000 €" .
+    
+<http://example.org/projectOwner/Communauté_de_Communes_de_la_région_de_MOLSHEIM-MUTZIG>
+    TetraOnto:hasProjectStartDate "2020-01-01" ;
+    TetraOnto:hasProjectEndDate "2022-12-31" .
+    
+<http://example.org/mainContractor/SOGREAH_Consultants>
+    TetraOnto:hasContractPrice "8,000,000 €" .

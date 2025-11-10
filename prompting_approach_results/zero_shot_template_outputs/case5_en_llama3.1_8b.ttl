@@ -1,0 +1,41 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<:RestorationMeasureInstance> a :ConcreteFishway ;
+        :associatedTo <:BoxCulvertInstance> ;
+        :isManagedBy <:HumboldtCountyInstance>, <:CaliforniaDeptFishAndGameInstance> ;
+        :hasMainContractor <:HumboldtCountyInstance> ;
+        :startsAt "2002-11"^^xsd:dateTime;
+        :endsAt "2002-11"^^xsd:dateTime ;
+        :hasMaxLowWaterFlow "420"^^xsd:float ;
+        :hasMinLowWaterFlow "11.9"^^xsd:float> ;
+        :includes <:FishwayInstance> ;
+        :numberOfPools <NumberOfPool if exists> ;
+        :numberOfBasins <NumberOfBasin if exists> ;
+        :averageSlope "0.92"^^xsd:float ;
+        skos:prefLabel "Concrete Fishway and Rock Grade Control".
+
+<:BoxCulvertInstance> a :BoxCulvert,
+                    :SubClassOfStructureToBelong ;
+                    :isLocatedOn <:MadRiverBasinInstance> ;
+                    :hasHeight "2.4"^^xsd:float ;
+                    :isImpassable "false"^^xsd:boolean ;
+                    skos:prefLabel "Box Culvert".
+
+<:MadRiverBasinInstance> a :geographicZone ;
+                          skos:prefLabel "Mad River Basin".
+
+<:HumboldtCountyInstance> a :projectOwner,
+                        skos:prefLabel "Humboldt County".
+
+<:CaliforniaDeptFishAndGameInstance> a :otherActor,
+                          skos:prefLabel "California Dept. Fish and Game".
+
+<:FishwayInstance> a :Fishway ;
+                            :hasDropOverWeir "0.6"^^xsd:float ;
+                            :hasPoolSpacing "10"^^xsd:float ;
+                            :hasTotalHeadloss "4"^^xsd:float ;
+                            :hasFishwayWidth "15"^^xsd:float ;
+                            :hasMinPoolDepth "2"^^xsd:float ;

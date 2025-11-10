@@ -1,0 +1,44 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:passeAPoissonsBrisach a :reconnection ;
+    :associatedTo :barrageAgricoleBrisach ;
+    :isManagedBy :cergaSA ;
+    :hasMainContractor :"EDF et EnBW" ;
+    :startsAt "2008-01-01T00:00:00Z"^^xsd:dateTime ;
+    :endsAt "2008-12-31T23:59:59Z"^^xsd:dateTime ;
+    :hasMaxLowWaterFlow 150.0 ;
+    :hasMinLowWaterFlow 50.0 ;
+    :includes :passeAPoissonsClassique, :systemeDeDevalaison, :dispositifPiegeage ;
+    numberOfPools 4 ;
+    averageSlope 2.5 ;
+    skos:prefLabel "Passe à poissons de Brisach".
+
+:barrageAgricoleBrisach a :dam, :weir ;
+    :isLocatedOn :leRhin ;
+    :hasHeight 5.7 ;
+    :isImpassable true ;
+    skos:prefLabel "Barrage agricole de Brisach".
+
+:geographicZoneBrisach a :geographicZone ;
+    skos:prefLabel "Zone géographique de Brisach".
+
+:cergaSA a :projectOwner ;
+    skos:prefLabel "CERGA SA".
+
+:edfEtEnbw a :mainContractor ;
+    skos:prefLabel "EDF et EnBW".
+
+:passeAPoissonsClassique a :basinPasses ;
+    skos:prefLabel "Passe à poissons classique de Brisach".
+
+:systemeDeDevalaison a :trapPass, :baffleFishway ;
+    skos:prefLabel "Système de dévalaison pour la turbine de Brisach".
+
+:dispositifPiegeage a :studSubstrate ;
+    skos:prefLabel "Dispositif de piégeage des poissons de Brisach".
+
+:leRhin a :river ;
+    skos:prefLabel "Le Rhin".

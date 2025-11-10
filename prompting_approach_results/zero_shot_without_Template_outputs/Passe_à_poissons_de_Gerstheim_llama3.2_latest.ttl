@@ -1,0 +1,170 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:GeographicZone rdf:ID="Gerstheim">
+  <tetraOnto:MainContractor rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#CERGA_SA" />
+  <tetraOnto:ProjectOwner rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#CERGA_SA" />
+  <tetraOnto:OtherActor rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#CERGA_SA" />
+  
+  <tetraOnto:Fishway rdf:ID="passe_a_poissons_Gerstheim">
+    <tetraOnto:Type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#speedBumpsPass" />
+    <tetraOnto:BaffleFishway rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#baffleFishway" />
+  </tetraOnto:Fishway>
+  
+  <tetraOnto:Structure rdf:ID="dam_Gerstheim">
+    <tetraOnto:Type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#dam" />
+    <tetraOnto:IsLocatedOn rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Rhin" />
+  </tetraOnto:Structure>
+  
+  <tetraOnto:WaterBody rdf:ID="Rhin">
+    <tetraOnto:Type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#river" />
+    <tetraOnto:IsImpassable rdf:true />
+  </tetraOnto:WaterBody>
+  
+  <tetraOnto:RestorationMeasure rdf:ID="meuse_restauration_Gerstheim">
+    <tetraOnto:Type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#poolCreation" />
+    <tetraOnto:IsLocatedOn rdf:resource="#Rhin" />
+    <tetraOnto:Concems rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Continuité_longitudinale" />
+    <tetraOnto:Affluent rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Rhin" />
+  </tetraOnto:RestorationMeasure>
+  
+  <tetraOnto:BiologicalMonitoring rdf:resource="#meuse_restauration_Gerstheim" />
+</tetraOnto:GeographicZone>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Fishway rdf:ID="passe_a_poissons_Gerstheim">
+  <tetraOnto:BaffleBrush rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#baffleBrush" />
+  <tetraOnto:Troncs rdf:member="2">
+    <tetraOnto:Type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#basinsSuccessive" />
+    <tetraOnto:Bassin rdf:resource="#bassin_successifs_Gerstheim" />
+  </tetraOnto:Troncs>
+</tetraOnto:Fishway>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Structure rdf:ID="dam_Gerstheim">
+  <tetraOnto:IsLocatedOn rdf:resource="#Rhin" />
+  <tetraOnto:Height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</tetraOnto:Height>
+</tetraOnto:Structure>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Bassin rdf:ID="bassin_successifs_Gerstheim">
+  <tetraOnto:Type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#basinsSuccessive" />
+</tetraOnto:Bassin>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Fishway rdf:ID="passe_a_poissons_Gerstheim">
+  <tetraOnto:IsLocatedOn rdf:resource="#Rhin" />
+  <tetraOnto:BaffleFishway rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#baffleFishway" />
+</tetraOnto:Fishway>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Bassin rdf:ID="bassin_repartition_Gerstheim">
+  <tetraOnto:Type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#basinOfRepartition" />
+</tetraOnto:Bassin>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Fishway rdf:ID="passe_a_poissons_Gerstheim">
+  <tetraOnto:IsLocatedOn rdf:resource="#Rhin" />
+  <tetraOnto:BaffleFishway rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#baffleFishway" />
+</tetraOnto:Fishway>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Bassin rdf:ID="bassin_transition_Gerstheim">
+  <tetraOnto:Type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#basinOfTransition" />
+</tetraOnto:Bassin>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:RestorationMeasure rdf:ID="meuse_restauration_Gerstheim">
+  <tetraOnto:IsLocatedOn rdf:resource="#Rhin" />
+  <tetraOnto:Affluent rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Rhin" />
+</tetraOnto:RestorationMeasure>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Fishway rdf:ID="passe_a_poissons_Gerstheim">
+  <tetraOnto:IsLocatedOn rdf:resource="#Rhin" />
+  <tetraOnto:BaffleFishway rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#baffleFishway" />
+</tetraOnto:Fishway>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Bassin rdf:ID="bassin_repartition_Gerstheim">
+  <tetraOnto:Type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#basinOfRepartition" />
+</tetraOnto:Bassin>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Fishway rdf:ID="passe_a_poissons_Gerstheim">
+  <tetraOnto:IsLocatedOn rdf:resource="#Rhin" />
+  <tetraOnto:BaffleFishway rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#baffleFishway" />
+</tetraOnto:Fishway>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Bassin rdf:ID="bassin_transition_Gerstheim">
+  <tetraOnto:Type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#basinOfTransition" />
+</tetraOnto:Bassin>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Fishway rdf:ID="passe_a_poissons_Gerstheim">
+  <tetraOnto:IsLocatedOn rdf:resource="#Rhin" />
+  <tetraOnto:BaffleFishway rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#baffleFishway" />
+</tetraOnto:Fishway>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Bassin rdf:ID="bassin_transition_Gerstheim">
+  <tetraOnto:Type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#basinOfTransition" />
+</tetraOnto:Bassin>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Fishway rdf:ID="passe_a_poissons_Gerstheim">
+  <tetraOnto:IsLocatedOn rdf:resource="#Rhin" />
+  <tetraOnto:BaffleFishway rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#baffleFishway" />
+</tetraOnto:Fishway>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Bassin rdf:ID="bassin_transition_Gerstheim">
+  <tetraOnto:Type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#basinOfTransition" />
+</tetraOnto:Bassin>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Fishway rdf:ID="passe_a_poissons_Gerstheim">
+  <tetraOnto:IsLocatedOn rdf:resource="#Rhin" />
+  <tetraOnto:BaffleFishway rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#baffleFishway" />
+</tetraOnto:Fishway>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Bassin rdf:ID="bassin_transition_Gerstheim">
+  <tetraOnto:Type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#basinOfTransition" />
+</tetraOnto:Bassin>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Fishway rdf:ID="passe_a_poissons_Gerstheim">
+  <tetraOnto:IsLocatedOn rdf:resource="#Rhin" />
+  <tetraOnto:BaffleFishway rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#baffleFishway" />
+</tetraOnto:Fishway>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Bassin rdf:ID="bassin_transition_Gerstheim">
+  <tetraOnto:Type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#basinOfTransition" />
+</tetraOnto:Bassin>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Fishway rdf:ID="passe_a_poissons_Gerstheim">
+  <tetraOnto:IsLocatedOn rdf:resource="#Rhin" />
+  <tetraOnto:BaffleFishway rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#baffleFishway" />
+</tetraOnto:Fishway>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Bassin rdf:ID="bassin_transition_Gerstheim">
+  <tetraOnto:Type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#basinOfTransition" />
+</tetraOnto:Bassin>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Fishway rdf:ID="passe_a_poissons_Gerstheim">
+  <tetraOnto:IsLocatedOn rdf:resource="#Rhin" />
+  <tetraOnto:BaffleFishway rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#baffleFishway" />
+</tetraOnto:Fishway>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraOnto:Bassin rdf:ID="basin...

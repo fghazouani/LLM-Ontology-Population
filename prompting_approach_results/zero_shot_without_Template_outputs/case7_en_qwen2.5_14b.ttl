@@ -1,0 +1,24 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+:RetrofitWithStepPoolFishwayProject 
+    :relizedIn _:b0 ;
+    :hasCost "87000"^^xsd:decimal ;
+    :hasMainContractor <EntrixInc> , <AllenAndRobertLarson> , 
+                       <CaliforniaCoastalConservancy> ;
+    :includes :ConcreteAndRockGradeControlApron ;
+    :startsAt "January 2002"^^xsd:dateTime ;
+    :endssAt "January 2002"^^<xsd:dateTime> .
+
+:SantaYnezRiverWatershed 
+    :isLocatedOn _:b0 .
+
+:ConcreteAndRockGradeControlApron 
+    :hasHeight "1.5"^^xsd:decimal ;
+    :isImpassable "true"^^xsd:boolean ;
+    :includes _:b0 .
+
+:StepPools :isLocatedOn :ConcreteAndRockGradeControlApron .

@@ -1,0 +1,57 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Here are the instances extracted from the text in Turtle format:
+
+```
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+
+_:g1231 a :geographicZone .
+_:g1231 :hasMainContractor "Humboldt County" .
+_:g1232 a :projectOwner .
+_:g1232 :isManagedBy "Humboldt County", "California Dept. Fish and Game".
+_:g1233 a :Migratory species .
+_:g1234 a :amphibioticMigrant .
+
+_:c1231 a :fishway .
+_:c1231 :isLocatedOn :MadRiverBasin .
+_:c1231 :hasMainContractor "Humboldt County" .
+_:c1232 a :fishLift .
+_:c1232 :isLocatedOn :MadRiverBasin .
+_:c1233 a :fishLock .
+_:c1233 :isLocatedOn :MadRiverBasin .
+
+_:w1231 a :waterBody .
+_:w1231 :hasCost "171,000" .
+_:w1231 :hasMaxLowWaterFlow 420 .
+_:w1232 a :affluent .
+_:w1232 :isImpassable false .
+_:w1233 a :arm .
+_:w1233 :hasMixLowWaterFlow 11.9 .
+
+_:d1231 a  dam .
+_:d1231 :isLocatedOn :MadRiverBasin .
+_:d1231 :hasHeight "2.4 -3.0 m" .
+_:d1231 :hasBiologicalMonitoring true .
+
+_:p1231 a :pool .
+_:p1231 :isLocatedOn :MadRiverBasin .
+_:p1231 :hasPoolLength 10 .
+_:p1232 a :basinPass .
+_:p1232 :isLocatedOn :MadRiverBasin .
+_:p1233 a :speedBumpsPass .
+_:p1233 :isLocatedOn :MadRiverBasin .
+
+_:r1231 a :restorationMeasure .
+_:r1231 :concerns :ConcreteFishway .
+_:r1231 :hasCost "171,000" .
+_:r1231 :startssAt "2002-11" .
+
+_:b1231 a :baffleBrush .
+_:b1231 :isLocatedOn :MadRiverBasin .
+_:b1232 a :baffleFishway .
+_:b1232 :isLocatedOn :MadRiverBasin .
+```
+

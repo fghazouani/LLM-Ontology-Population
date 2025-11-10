@@ -1,0 +1,55 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# La construction du passage pour les poissons :
+:PasseAPoissonsHybrid a :barrageAPoissons ,
+                       :poolAndWeirFishway ;
+                       skos:prefLabel "Passage à poissons hybride" ;
+                       :isLocatedOn :RiviereTrinityBasinCalifornieDuNord ;
+                       :associatedTo :ConstructionPasseAPoissonsLittleFrenchCreek ;
+                       :hasLength "29.6"^^xsd:decimal ;
+                       :totalHeadLoss "5.9"^^xsd:decimal ;
+                       :numberOfWeirs 20^^xsd:integer ;
+                       :weirDimension "2 ft"^^xsd:string , "3 ft"^^xsd:string , "1 ft"^^xsd:string .
+
+# La construction de passage pour les poissons : contributeurs :
+:Contributeur1 a owl:sameAs :CaliforniaDeptOfTransportation ;
+             skos:prefLabel "California Dept. of Transportation" .
+
+:Contributeur2 a owl:sameAs :CaliforniaDeptOfFishAndGame ;
+             skos:prefLabel "California Dept. of Fish and Game" .
+
+:Contributeur3 a owl:sameAs :ServiceNationalDesPechesMaritimes ;
+             skos:prefLabel "Service national des pêches maritimes" .
+
+:Contributeur4 a owl:sameAs :USDAForestService ;
+             skos:prefLabel "Service forestier de l'USDA" .
+             
+:Contributeur5 a owl:sameAs :CaliforniaConservationCorps ;
+             skos:prefLabel "California Conservation Corps" .
+
+# La construction de passage pour les poissons : financement :
+:Fonds a owl:sameAs :CaliforniaDeptOfTransportation ;
+    skos:prefLabel "California Dept. of Transportation" .
+
+# La construction de passage pour les poissons : date de complétion :
+:DateDeCompletion a xsd:dateTime ;
+             value="2001-11-xxTxx:xx:xx"^^xsd:dateTime .
+
+# Le coût de la construction de passage pour les poissons :
+:Cout a xsd:decimal ;
+          value="445000.00"^^xsd:decimal .
+
+# Les traitements aesthetiques ajoutés aux murs exposés :
+:TraitementAesthetique a owl:sameAs :cobble-like ;
+             skos:prefLabel "traitement cobble-like" .
+
+# La plantation adjacente :
+:PlantationAdjointe a owl:sameAs :projetDePlantation ;
+               skos:prefLabel "plante adjacente" .
+
+# Les bouchards bois removables utilisés dans le passage pour l'évacuation des débris :
+:BouchardWoodRemovable a owl:sameAs :bouchardWood ;
+               skos:prefLabel "bouchard en bois" .

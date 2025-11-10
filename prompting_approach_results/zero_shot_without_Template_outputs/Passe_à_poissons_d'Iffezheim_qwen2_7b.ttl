@@ -1,0 +1,60 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+:geographicZone Iffezheim ;
+          :isLocatedOn :river ;
+          
+:mainContractor NR ;
+         
+:projectOwner NR ;
+       
+:otherActor EDF, :BADENWERK ;
+
+:restorationMeasure Passe a poissons d'Iffezheim ;
+           
+:relizedIn Iffezheim ;
+        
+:associatedTo Passe a poissons d'Iffezheim ;
+    
+:isManagedBy EDF, :BADENWERK ;
+       
+:hasMainContractor NR ;
+
+:typeOfRestoration Continuité longitudinale ;
+        
+:startAt 1997 ;
+    
+:endssAt  ;
+    
+:hasCost 9000000.0 ;
+    
+:hasBiologicalMonitoring true ;
+
+:catfishwayType basinPasses ;
+        
+:containsTechnicalElement 3 ;
+        
+:numberOfBasins 37 ;
+        
+:averageSlope ;
+        
+:hasPoolLength ;
+    
+:hasPoolWidth ;
+        
+:hasNotchHight ;
+        
+:hasNotchWidth ;
+        
+:numberOfPools 3 ;
+    
+:hasMaxLowWaterFlow ;
+        
+:hasMixLowWaterFlow ;
+        
+:SuiviBiologique true ;
+        
+:SuiviHydromorphologique false ;

@@ -1,0 +1,32 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix :<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+:restorationMeasure1 
+    :hasCost "36700"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    :startsAt "2010-09-01T00:00:00Z";
+    :endssAt "2010-11-30T23:59:59Z" .
+
+:river1 
+    :hasAverageSlope "2.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+
+:structure1
+    a :nozzle;
+    :isLocatedOn :river1 ;
+    :hasHeight "2.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+
+:fishway1 
+    a :artificialRiver;
+    :containsTechnicalElement :structure1 ;
+    :numberOfBasins "14"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+:projectOwner1 
+    a :projectOwner;
+    :isManagedBy :restorationMeasure1 .
+
+:otherActor1
+    a :otherActor ;
+    :isManagedBy :restorationMeasure1 .

@@ -1,0 +1,39 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+poolAndWeirFiswayRestoration a reconnection ;
+	:associatedTo jalamaRoadBridgeStructure ;
+	:isManagedBy cachumaConservationReleaseBoard, entrIxInc, allenRobertLarsonProjectOwner ;
+	:hasMainContractor entrIxInc ;
+	:startsAt "2003-01-01T00:00:00"^^xsd:dateTime;
+	:endsAt "2003-01-01T00:00:00"^^xsd:dateTime ;
+	:hasMaxLowWaterFlow 5.0^^xsd:float ;
+	:hasMinLowWaterFlow 1.0^^xsd:float ;
+	:includes poolAndWeirFishLadder ;
+	:numberOfPools 2 ;
+	:numberOfBasins 3 ;
+	:averageSlope 0.1 ;
+	skos:prefLabel "Pool and Weir Fishway Restoration".
+
+jalamaRoadBridgeStructure a weir, fishLock ;
+	isLocatedOn santaYnezRiverWatershed ;
+	hasHeight "1.2"^^xsd:decimal ;
+	isImpassable true ;
+	skos:prefLabel "Jalama Road Bridge Structure".
+
+santaYnezRiverWatershed a geographicZone ;
+	skos:prefLabel "Santa Ynez River Watershed, Central California, USA".
+
+cachumaConservationReleaseBoard a projectOwner ;
+	skos:prefLabel "Cachuma Conservation Release Board".
+
+entrIxInc a mainContractor ;
+	skos:prefLabel "Entrix, Inc.".
+
+allenRobertLarsonProjectOwner a otherActor ;
+	skos:prefLabel "Allen and Robert Larson".
+
+poolAndWeirFishLadder a basinPasses ;
+	skos:prefLabel "Pool-and-Weir Fish Ladder".

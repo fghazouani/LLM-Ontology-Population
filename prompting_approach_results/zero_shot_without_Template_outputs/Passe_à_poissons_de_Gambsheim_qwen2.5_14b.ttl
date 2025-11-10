@@ -1,0 +1,30 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+<http://example.org/GambsheimFishwayMeasure> a :restorationMeasure ;
+    :relizedIn :GambsheimGeographicZone ;
+    :hasCost "10000000.0"^^xsd:decimal ;
+    :startsAt "38078" ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicaMonitoring "false"^^xsd:boolean ;
+    :containsTechnicalElement :GambsheimFishwayStructure ;
+    :isManagedBy :CERGAPrimaryContractor, :ONEMAOtherActor, :SalmonRhinOtherActor ;
+    :concerns :LongitudinalContinuityCategory .
+
+:GambsheimGeographicZone a :geographicZone .
+
+:GambsheimFishwayStructure a :structure ;
+    :isLocatedOn :RhineWaterBody ;
+    :hasHeight "1.2"^^xsd:decimal ;
+    :numberOfBasins "3"^^xsd:integer .
+
+:RhineWaterBody a :river .
+
+:CERGAPrimaryContractor a :mainContractor .
+
+:ONEMAOtherActor a :otherActor .
+
+:SalmonRhinOtherActor a :otherActor .

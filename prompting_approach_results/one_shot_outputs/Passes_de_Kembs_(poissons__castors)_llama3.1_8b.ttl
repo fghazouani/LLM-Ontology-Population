@@ -1,0 +1,25 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:PasseACastors a :artificialRiver ;
+                    skos:prefLabel "passe à castors" ;
+                    :associatedTo :SeuilDSCastorsKembs ;
+                    :isLocatedOn :HautRhin ;
+                    :hasCost "750 000 €"^^xsd:string .
+
+:SeuilDSCastorsKembs a :weir ,
+                        :lowSlopeRockfillWeir ;
+                        skos:prefLabel "seuil DS Castors Kembs" ;
+                        :associatedTo :PasseAPoissons, :PasseACastors ;
+                        :isLocatedOn :HautRhin .
+
+:AgenceDeLEauRhinMeuse a :partner;
+                          skos:prefLabel "Agence de l'eau Rhin-Meuse" .
+ 
+:ConseilGeneralDuHautRhin a :projectOwner;
+                         skos:prefLabel "Conseil General Du Haut-Rhin".
+
+:HautRhin a :geographicZone;
+           skos:prefLabel "Haut-Rhin".

@@ -1,0 +1,95 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<:ConcreteFishway>
+    a :Structure ;
+    :relizedIn "Mad River Basin"^^xsd:string ,
+        "Northern California"@en .
+    
+<:projectOwner>
+    a :ProjectOwner ;
+    :associatedTo <:ConcreteFishway> .
+
+<:HumboldtCounty>
+    a :ProjectOwner .
+
+<:CaliforniaDeptFishAndGame>
+    a :OtherActor .
+
+<:fishWayType>
+    a :FishwayTypes ;
+    :name "Concrete Fishway"@en .
+
+<:restorationMeasureType>
+    a :RestorationMeasureTypes ;
+    :name "Concrete Fishway"@en .
+
+<:affluent>
+    a :WaterBodyTypes ;
+    :name "river"@en .
+    
+<:fishWayDimensions>
+    a :Structure ;
+    :name ":ConcreteFishway"^^xsd:string ,
+    :relizedIn "Mad River Basin"^^xsd:string ,
+        "Northern California"@en ,
+    :isLocatedOn <:affluent> .
+    
+<:restorationMeasure>
+    a :RestorationMeasure ;
+    :name "Concrete Fishway"^^xsd:string ,
+    :relizedIn "Mad River Basin"^^xsd:string ,
+        "Northern California"@en ,
+    :isLocatedOn <:affluent> .
+    
+<:Culvert>
+    a :Structure ;
+    :name "Existing Culvert"^^xsd:string ,
+    :relizedIn "Mad River Basin"^^xsd:string ,
+        "Northern California"@en .
+
+<:dimensionsOfCulvert>
+    a :Structure ;
+    :name "Dimensions of Existing Culvert"^^xsd:string ,
+    :relizedIn "Mad River Basin"^^xsd:string ,
+        "Northern California"@en .
+    
+<:ConcreteFishwayFishWay>
+    a <:fishWayType> .
+    
+<:fundingSource1>
+    a :FundingSource ;
+    :name "Humboldt County"^^xsd:string .
+
+<:fundingSource2>
+    a :FundingSource ;
+    :name "California Dept. Fish and Game"@en .
+    
+<:projectDescription>
+    a <:restorationMeasureType> ;
+    :name "Existing Culvert"^^xsd:string ,
+    :description "The existing culvert was identified as a total barrier to all fish. It received a priority ranking of #9 in the Humboldt County Culvert Inventory and Fish Passage Evaluation." .
+
+<:fishwayDimensions>
+    a <:ConcreteFishway> ;
+    :length "70 ft"@en ,
+        "21.4 m"@en ,
+    :dropOverWeir "0.6 in"@en ,
+        "0.17 m"@en ,
+    :totalHeadLoss "4 ft"@en ,
+    :minPoolDepth "2 ft"@en ,
+        "0.6 m"@en .
+    
+<:fundingCost>
+    a <:projectDescription> ;
+    :name "Funding"^^xsd:string ,
+    :description "Funding from Humboldt County and California Dept. Fish and Game"@en .
+    
+<:restorationMeasureFundedBy>
+    a :Funding ;
+    :name <:fundingSource1> ,
+        <:fundingSource2> .

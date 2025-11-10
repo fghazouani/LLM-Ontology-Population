@@ -1,0 +1,30 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+:geographicZone SantaYnezRiverWatershed ;
+          :isLocatedOn :river .
+
+:mainContractor EntrixInc ;
+         :hasMainContractor "Project of the restoration measure: Pool and Weir Fisway"@en ;
+         :projectOwner CaliforniaDeptOfFishAndGame (CoastalConservancy) .
+
+:otherActor CachumaConservationReleaseBoard AllenRobertLarson .
+
+:restorationMeasure "PoolCreation"@en .
+:relizedIn SantaYnezRiverWatershed .
+
+:typeOfRestoration "Retrofit with Pool-and-Weir Fish Ladder"@en . 
+
+:hasCost 87510 .
+
+:startProject January2003 .
+
+:endsProject "NotSpecified"@en .
+
+:poolCreation .
+
+:isManagedBy CaliforniaDeptOfFishAndGame (CoastalConservancy) .

@@ -1,0 +1,37 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The restoration measure:
+:PasseAPoissonsDeBrisach a :successivesBasinsPass ;
+                    skos:prefLabel "Passage pour poissons de Brisach" ;
+                    :associatedTo :LeRhin ;
+                    :isManagedBy :CERGA_SA ;
+                    :containsTechnicalElement :Puce_Suivi_Scientifique_Poissons ;
+                    :concerns Continuite_longitudinale ;
+                    :startsAt "2008"^^xsd:dateTime ;
+                    :numberOfBasins "4"^^xsd:int ;
+                    :endsAt "In progress" ;
+                    :hasCost xsd:string ;
+                    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+                    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+                    :isManagedBy :CERGA_SA ;
+                    :concerns Continuite_longitudinale .
+
+# The river:
+:LeRhin a :river ;
+        skos:prefLabel "Le Rhin" ;
+        :isLocatedOn :Haut-RhinBrisachFrance ;
+        label : "Le Rhin" .
+
+# The project owner:
+:CERGA_SA a :projectOwner ;
+            skos:prefLabel "CERGA SA" .
+
+# The technical element:
+:Puce_Suivi_Scientifique_Poissons a :technicalElement ;
+             skos:prefLabel "Dispositif de piégeage pour le suivi scientifique des poissons" .
+
+# The geographic zone:
+:Haut-RhinBrisachFrance a :geographicZone ;
+                    skos:prefLabel "Haut-Rhin, Brisach, France" .

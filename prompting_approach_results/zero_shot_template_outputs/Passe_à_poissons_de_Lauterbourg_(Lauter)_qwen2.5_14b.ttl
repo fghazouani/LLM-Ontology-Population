@@ -1,0 +1,33 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:passeAPoissonsLauterbourg a :reconnection ;
+    :isManagedBy :projectOwnerFranceBasRhin ;
+    :hasMainContractor :jockgrim ;
+    :startsAt "2005-01-01T00:00:00"^^xsd:dateTime ;
+    :endsAt "2005-12-31T23:59:59"^^xsd:dateTime ;
+    :hasMaxLowWaterFlow 0.0^^xsd:float ;
+    :hasMinLowWaterFlow 0.0^^xsd:float ;
+    :includes :passeMixteBassinsSuccessifsLauterbourg ;
+    :numberOfPools 0 ;
+    :numberOfBasins 0 ;
+    :averageSlope 0.0 ;
+    skos:prefLabel "Passe à poissons de Lauterbourg (La Lauter)".
+
+:lauter a :river ;
+         skos:prefLabel "La Lauter".
+
+:projectOwnerFranceBasRhin a :projectOwner ;
+                           skos:prefLabel "Project Owner France Bas-Rhin".
+
+:jockgrim a :mainContractor ;
+          skos:prefLabel "Jockgrim".
+
+:passeMixteBassinsSuccessifsLauterbourg a :successivesBasinsPass ;
+                          skos:prefLabel "Passe mixte à bassins successifs Lauterbourg".
+
+
+:lauterbourgGeographicZone a :geographicZone ;
+                            skos:prefLabel "Passe à poissons de Lauterbourg (La Lauter)".

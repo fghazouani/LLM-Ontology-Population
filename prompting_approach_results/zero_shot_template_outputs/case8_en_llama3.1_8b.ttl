@@ -1,0 +1,32 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<:PoolAndWeirFishway> a ::RestorationMeasure ;
+			::associatedTo <:PoolAndWeirFishLadderStructure> ;
+			::isManagedBy <:CachumaConservationReleaseBoardProjectOwner>,
+                                 <:EntrixIncProjectOwner>;
+			:hasMainContractor <:AllenAndRobertLarsonMainContractor> ;
+			:startsAt "2003-01"^^xsd:dateTime;
+			:endsAt "2003-01"^^xsd:dateTime ;
+			:hasCost 87,510^^xsd:integer;
+			skos:prefLabel "Pool and Weir Fishway Restoration Measure".
+
+<:PoolAndWeirFishLadderStructure> a ::PondDyke,
+                                            ::Gate ;
+                                            ::isLocatedOn <:SantaYnezRiverWatershedGeographicZone> ;
+                                            :hasHeight 70^^xsd:integer;
+			skos:prefLabel "Pool and Weir Fish Ladder Structure".
+
+<:CachumaConservationReleaseBoardProjectOwner> a ::projectOwner,
+                                                        ::otherActor ;
+                                                        skos:prefLabel "Cachuma Conservation Release Board Project Owner".
+
+<:EntrixIncProjectOwner> a ::projectOwner,
+                                    ::otherActor ;
+                                    skos:prefLabel "Entrix, Inc. Project Owner".
+
+<:AllenAndRobertLarsonMainContractor> a ::mainContractor,
+                                                    ::otherActor ;
+                                                    skos:prefLabel "Allen and Robert Larson Main Contractor".

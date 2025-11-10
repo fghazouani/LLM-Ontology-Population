@@ -1,0 +1,49 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+```
+# The restoration measure:
+:PasseAPoissonsDeGerstheim a :successivesBasinsPass ;
+                    skos:prefLabel "Passe AP Poissons de Gerstheim" ;
+                    :associatedTo :CentraleHydroelectriqueDeGerstheim ;
+                    :isManagedBy :CERGASAMaîtreDeTravaux ;
+                    :hasMainContractor :CERGASATraducteursEtGestionSoutien ;
+                    :numberOfBasins "3"^^xsd:integer ;
+                    :startsAt "2012"^^xsd:dateTime ;
+                    :endsAt ""^^xsd:string ;
+                    :hasCost "0.0"^^xsd:decimal ;
+                    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+                    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+                    :concerns :LongitudinalContinuity .
+
+# The Dam:
+:CentraleHydroelectriqueDeGerstheim a :dam ;
+                        :isLocatedOn :BasRhinGerstheimFrance ;
+                        :isLocatedOn :LeRhin ;
+                        skos:prefLabel "Centrale Hydroélectrique de Gerstheim" ;
+                        :isImpassable "true"^^xsd:boolean .
+
+# The Project Owner:
+:CERGASAMaîtreDeTravaux a :projectOwner ;
+                                    skos:prefLabel "CERGA SA, Maître de travaux" .
+ 
+# The Main Contractor:
+:CERGASATraducteursEtGestionSoutien a :mainContractor ;
+                                        skos:prefLabel "CERGASATraducteurs et Gestion Soutien" .
+
+# The River:
+:LeRhin a :river ;
+            :isLocatedOn :DépartementduBasRhin ;
+            skos:prefLabel "Le Rhin" .
+            
+# The Geographic Zone:
+:BasRhinGerstheimFrance a :geographicZone ;
+                        label : "Bas-Rhin, Gerstheim, France" .
+
+# The Successive Basins Pass:
+:successivesBasinsPass a :type ;
+                                    skos:prefLabel "Successive Basins Pass" ;
+                                    rdfs:label "Successive Basins Pass" .
+```

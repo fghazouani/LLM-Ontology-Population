@@ -1,0 +1,28 @@
+@prefix : <http://www.semanticweb.org/user/ontologies/2023/1/RiverRestorationOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:RetrofitSantaYnezRiver a :riverRestorationProject ;
+                            skos:prefLabel "Retrofit with Step-Pool Fishway at Santa Ynez River Watershed, Central California" ;
+                            :associatedTo :BarrierAtHighway1Bridge ;
+                            :isManagedBy [ a :projectOwner ; skos:prefLabel "Cachuma Conservation and Release Board" ] ,
+                                        [ a :projectOwner ; skos:prefLabel "Entrix, Inc." ] ,
+                                        [ a :projectOwner ; skos:prefLabel "Allen and Robert Larson" ] ,
+                                        [ a :projectOwner ; skos:prefLabel "California Coastal Conservancy" ] ;
+                            :startsAt "2002-01"^^xsd:dateTime;
+                            :endssAt "2002-01-31"^^xsd:dateTime ;
+                            :hasCost "87 000 $"^^xsd:string .
+
+[ a :projectObjective ] , [ a :projectObjective ] , [ a :projectObjective ] .
+
+# The Barrier
+:BarrierAtHighway1Bridge a :barrier ;
+                             skos:prefLabel "Concrete and rock grade control apron located downstream of Highway 1 bridge" ;
+                             :associatedTo :RetrofitSantaYnezRiver ;
+                             :hasLength "40 ft"^^xsd:string ;
+                             :hasChangeInGrade "5 ft"^^xsd:decimal .
+
+# The geographic zone
+:SantaYnezRiverWatershed a :geographicZone;
+                          skos:prefLabel "Santa Ynez River Watershed, Central California" .

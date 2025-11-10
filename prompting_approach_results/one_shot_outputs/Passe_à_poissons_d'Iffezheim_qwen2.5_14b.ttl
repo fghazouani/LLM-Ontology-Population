@@ -1,0 +1,34 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The restoration measure:
+:PasseAPoissonsIffezheim a :fishPass ;
+                        skos:prefLabel "Passe à poissons d'Iffezheim" ;
+                        :associatedTo :BarrageHydroelectriqueIffezheim ;
+                        :isManagedBy :EDF , :EnBW ;
+                        :hasMainContractor :CIPR ;
+                        :startsAt "2018-03"^^xsd:dateTime;
+                        :endssAt "2019-06"^^xsd:dateTime ;
+                        :hasCost "9 000 000 €"^^xsd:string .
+
+# The structure:
+:BarrageHydroelectriqueIffezheim a :dam ;
+                                   skos:prefLabel "Barrage hydroélectrique d'Iffezheim" ;
+                                   :isLocatedOn :RhinEnAllemagne ;
+                                   :hasFishPass :PasseAPoissonsIffezheim .
+
+# The project owners:
+:EDF a :projectOwner ;
+      skos:prefLabel "Électricité de France" .
+  
+:EnBW a :projectOwner ;
+       skos:prefLabel "Ernergie Baden-Württemberg AG" . 
+
+# The main contractor:
+:CIPR a :mainContractor ;
+      skos:prefLabel "Centre International pour la Protection du Rhin" .
+
+# The geographic zone:
+:RhinEnAllemagne a :geographicZone;
+                  skos:prefLabel "Rhin en Allemagne" .

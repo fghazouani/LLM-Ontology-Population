@@ -1,0 +1,29 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The restoration measure:
+:StepPoolFishwaySantaynezRiverWatershedCentralCaliforniaUSA a :restorationMeasure ;
+                    skos:prefLabel "Mesure de restauration StepPoolPiscine Rivière SantaYnez, Californie centrale USA" ;
+                    :relizedIn :SantaYnezRiverWatershedCentralCaliforniaUSA ;
+                    :associatedTo :ConcreteAndRockGradeControlApron ;
+                    :isLocatedOn :Channel ;
+                    :isManagedBy :CachumaConservationandReleaseBoardEntrixIncAllenRobertLarsonCaliforniaCoastalConservancy ;
+                    :concerns :RetrofitWithStepPoolFishway ;
+                    :startsAt "2002-01"^^xsd:dateTime ;
+                    :hasCost "$87,000"^^xsd:decimal ;
+                    :hasLowFlowPassageConditionImprovementObjective "true"^^xsd:boolean ;
+                    :concerns :AdultAndJuvenileSteelhead .
+
+# The dam:
+:ConcreteAndRockGradeControlApron a :dam ;
+                    skos:prefLabel "Barrière existante" ;
+                    :isLocatedOn :ChannelSantaYnezRiverWatershedCentralCaliforniaUSA ;
+                    
+# The funder:
+:CachumaConservationandReleaseBoardEntrixIncAllenRobertLarsonCaliforniaCoastalConservancy a :fundingSource ;
+                     skos:prefLabel "Fonds de subvention" ;
+                     
+# The geographic zone:
+:SantaYnezRiverWatershedCentralCaliforniaUSA a :geographicZone ;
+                    skos:prefLabel "Rivière Santa Ynez, Californie centrale USA" .

@@ -1,0 +1,31 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The restoration measure:
+:StepPoolFishwaySantaYnezRiver a :successivesBasinsPass ;
+                                skos:prefLabel "Step pool fishway, Santa Ynez River" ;
+                                :associatedTo :ConcreteAndRockGradeControlApron ;
+                                :isManagedBy :CachumaConservationReleaseBoardEntrixIncAllen ;
+                                :hasMainContractor :EntrixInc ;
+                                :startsAt "2002-01"^^xsd:dateTime ;
+                                :endsAt "2002-01"^^xsd:dateTime ;
+                                :hasCost "87000.0"^^xsd:decimal .
+
+# The structure:
+:ConcreteAndRockGradeControlApron a :dam ;
+                                   skos:prefLabel "Concrete and Rock Grade Control Apron" ;
+                                   :isLocatedOn :SantaYnezRiverWatershedCaliforniaUSA ;
+                                   :associatedTo :StepPoolFishwaySantaYnezRiver ;
+                                   :concerns :RetrofitWithStepPoolFishway .
+
+# The main contractor:
+:CachumaConservationReleaseBoardEntrixIncAllen a :projectOwner ;
+                        skos:prefLabel "Cachuma Conservation and Release Board, Entrix Inc., Allen and Robert Larson, California Coastal Conservancy" .
+
+:EntrixInc a :mainContractor ;
+            skos:prefLabel "Entrix Inc." .
+
+# The geographic zone:
+:SantaYnezRiverWatershedCaliforniaUSA a :geographicZone ;
+                                        skos:prefLabel "Santa Ynez River Watershed, Central California, USA" .

@@ -1,0 +1,37 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ :MesureDeRestaurationInstance a :reconnection ;
+        :associatedTo :BarrageGambsheimInstance ;
+        :isManagedBy :CERGASAInstance ;
+        :hasMainContractor :AssociationPassage309Instance ;
+        :startsAt "1970-01-01T00:00:00"^^xsd:dateTime;
+        :endsAt "38078"^^xsd:dateTime ;
+        :hasMaxLowWaterFlow 1.2 ;
+        :hasMinLowWaterFlow 0.15 ;
+        :includes PasseAPoissonsGambsheimInstance ;
+        :numberOfPools 3 ;
+        :numberOfBasins 1 ;
+        :averageSlope NaN ;
+        skos:prefLabel "Passe à Poissons de Gambsheim" .
+
+:BarrageGambsheimInstance a :barrage, :SubClassOfStructureToBelong ;
+                        :isLocatedOn :BasRhinGeographicZoneInstance ;
+                        :hasHeight 100 ;
+                        :isImpassable false ;
+                        skos:prefLabel "Barrage de Gambsheim" .
+
+:BasRhinGeographicZoneInstance a :geographicZone ;
+                          skos:prefLabel "Le Rhin" .
+
+:CERGASAInstance a :projectOwner ;
+                    skos:prefLabel "CERGA SA" .
+
+:AssociationPassage309Instance a :mainContractor ;
+                              skos:prefLabel "Association Passage 309" .
+
+:PasseAPoissonsGambsheimInstance a :TechnicalElement, :SubClassOfTechnicalElementToBelong ;
+                                skos:prefLabel "Passe à Poissons de Gambsheim";
+                                rdfs:comment "3 entrées avec bassin de répartition." .

@@ -1,0 +1,46 @@
+ @prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+# The project details:
+:ProjetSengler a :riverRestorationProject ;
+                    skos:prefLabel "Projet Sengler" ;
+                    :isManagedBy :CommunauteDeCommunesDuCantonDeVille , :HYDRATEC ;
+                    :hasAssociatedEntity :AgenceDEleauRhinMeuse , :ConseilGeneralDuBasRhin ,
+                                        :CommunauteDeCommunesDuCantonDeVille , FDAAPPMABasRhin ;
+                    :isLocatedOn :Giessen ;
+                    :hasStartDate "2011-08-01"^^xsd:date ;
+                    :hasEndDate "2011-09-30"^^xsd:date ;
+                    :hasTotalCost "65 000 €"^^xsd:string .
+
+# The Project Owner:
+:CommunauteDeCommunesDuCantonDeVille a :projectOwner ;
+                              skos:prefLabel "Communauté de Communes du Canton de Villé" .
+
+# The Project Manager:
+:HYDRATEC a :projectManager ;
+                  skos:prefLabel "HYDRATEC" .
+
+# The upgraded structure:
+:SenglerWeir a :weir ,
+                   :longGrooveWeir ;
+                   skos:prefLabel "Sengler Weir" ;
+                   :isLocatedOn :Giessen ;
+                   :associatedTo :ProjetSengler ;
+                   :hasHeightSum "1.7"^^xsd:decimal ;
+                   :averageDropHeight "0.2"^^xsd:decimal ;
+                   :numberOfDrops "3"^^xsd:integer ;
+                   :isImpassable "true"^^xsd:boolean .
+
+# The program for fish passage improvement on Giessen River:
+:ProgrammePassagePoissonsGiessen a :fishPassageImprovementProgram ;
+                                      skos:prefLabel "Programme de passage de poissons sur la rivière Giessen" ;
+                                      :hasStartDate "2007"^^xsd:date .
+
+# The upgraded weirs on the Giessen River:
+:WeirsGiessen a owl:Collection ;
+                  :member :Weir1 , :Weir2 , :Weir3 , :Weir4 , :Weir5 , :Weir6 .
+
+This project is part of a larger program by the Communauté de Communes du Canton de Villé to improve or remove hydraulic structures on the Giessen River to ensure fish passage since 2007. Six weirs have already been upgraded to make the gravel beds accessible to salmonids, namely :Weir1, :Weir2, :Weir3, :Weir4, :Weir5, and :Weir6.

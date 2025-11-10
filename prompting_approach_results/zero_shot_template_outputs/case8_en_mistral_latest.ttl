@@ -1,0 +1,37 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ :PoolAndWeirFishway a :restorationMeasure, :reconnection ;
+        :associatedTo :SantaYnezRiverStructure ;
+        :isManagedBy :CachumaConservationReleaseBoard, :EntrixInc, :AllenAndRobertLarson ;
+        :startsAt "2003-01-01T00:00:00"^^xsd:dateTime;
+        :endsAt "2003-01-31T23:59:59"^^xsd:dateTime ;
+        :containsTechnicalElement :PoolAndWeirFishLadder ;
+        :numberOfPools 1 ;
+        :numberOfBasins 1 ;
+        :averageSlope <not specified> ;
+        skos:prefLabel "Pool and Weir Fishway Restoration Measure".
+
+:SantaYnezRiverStructure a :structure, :dam ;
+                        :isLocatedOn :SantaYnezGeographicZone ;
+                        :hasHeight <70ft> ;
+                        :isImpassable true ;
+                        skos:prefLabel "Santa Ynez River Structure".
+
+:SantaYnezGeographicZone a :geographicZone ;
+                          skos:prefLabel "Santa Ynez River Watershed".
+
+:CachumaConservationReleaseBoard a :projectOwner ;
+                                skos:prefLabel "Cachuma Conservation Release Board".
+
+:EntrixInc a :mainContractor ;
+                          skos:prefLabel "Entrix, Inc.".
+
+:AllenAndRobertLarson a :mainContractor ;
+                          skos:prefLabel "Allen and Robert Larson".
+
+:PoolAndWeirFishLadder a :technicalElement ;
+                        :subClassOfStructureToBelong :pool, :weir ;
+                        skos:prefLabel "Pool-and-Weir Fish Ladder".

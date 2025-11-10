@@ -1,0 +1,27 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# The Fishway:
+:ConcretePoolAndVortexWeirFishway a :fishway ;
+    skos:prefLabel "Concrete Pool and Vortex Weir Fishway" ;
+    :relizedIn :SmithRiverBasinNorthernCalifornia ;
+    :isManagedBy :DelNorteCountyCADeptOfFishandGame_and_CA_CoastalConservancy ;
+    :concerns :ChannelCharacteristics ;
+    :hasHeight "7 ft"^^xsd:float ;
+    :startsAt "November, 2003"^^xsd:date ;
+    :hasCost "474,000"^^xsd:integer .
+
+# The geographic zone:
+:SmithRiverBasinNorthernCalifornia a :geographicZone ;
+    skos:prefLabel "Smith River Basin, Northern California" .
+
+# The project owner:
+:DelNorteCountyCADeptOfFishandGame_and_CA_CoastalConservancy a :projectOwner ;
+    skos:prefLabel "Del Norte County, CA Dept. of Fish and Game, and CA Coastal Conservancy" .
+
+# The weir type:
+\VortexWeir a :weir ;
+    :contributesToTotalHeadloss "7 ft"^^xsd:float ;
+    :hasSideSlopeRatio 5:1(H:V) .

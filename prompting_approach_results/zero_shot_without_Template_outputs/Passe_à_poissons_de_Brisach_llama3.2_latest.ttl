@@ -1,0 +1,92 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraonto:GeographicZone xmlns:tetraonto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#">
+  <tetraonto:name>France</tetraonto:name>
+  <tetraonto:id>france</tetraonto:id>
+</tetraonto:GeographicZone>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraonto:MigratorySpecies xmlns:tetraonto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#">
+  <tetraonto:name>amphibioticMigrant</tetraonto:name>
+  <tetraonto:id>amphibioticMigrant_0</tetraonto:id>
+</tetraonto:MigratorySpecies>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraonto:Fishway xmlns:tetraonto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#">
+  <tetraonto:name>basinPass</tetraonto:name>
+  <tetraonto:id>basinPass_0</tetraonto:id>
+</tetraonto:Fishway>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraonto:Structure xmlns:tetraonto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#">
+  <tetraonto:name>dam</tetraonto:name>
+  <tetraonto:id>dam_0</tetraonto:id>
+</tetraonto:Structure>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraonto:WaterBody xmlns:tetraonto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#">
+  <tetraonto:name>Le Rhin</tetraonto:name>
+  <tetraonto:id>leRhin_0</tetraonto:id>
+</tetraonto:WaterBody>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<tetraonto:RestorationMeasure xmlns:tetraonto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#">
+  <tetraonto:name>Passe à poissons de Brisach</tetraonto:name>
+  <tetraonto:id>passeAPoissonsDeBrisach_0</tetraonto:id>
+  <tetraonto:concerns>TcontinuitéLongitudinale</tetraonto:concerns>
+  <tetraonto:startAt>2008</tetraonto:startAt>
+  <tetraonto:endAt></tetraonto:endAt>
+  <tetraonto:hasMainContractor>CERGA SA</tetraonto:hasMainContractor>
+  <tetraonto:hasCost>TRUE</tetraonto:hasCost>
+  <tetraonto:isImpassable>FALSE</tetraonto:isImpassable>
+  <tetraonto:hasBiologicalMonitoring>TRUE</tetraonto:hasBiologicalMonitoring>
+</tetraonto:RestorationMeasure>
+
+<tetraonto:Fishway xmlns:tetraonto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#">
+  <tetraonto:name>fishLift</tetraonto:name>
+  <tetraonto:id>fishLift_0</tetraonto:id>
+</tetraonto:Fishway>
+
+<tetraonto:Fishway xmlns:tetraonto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#">
+  <tetraonto:name>fishLock</tetraonto:name>
+  <tetraonto:id>fishLock_0</tetraonto:id>
+</tetraonto:Fishway>
+
+<tetraonto:Structure xmlns:tetraonto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#">
+  <tetraonto:name>passeAPoissonsDeBrisach</tetraonto:name>
+  <tetraonto:id>passeAPoissonsDeBrisach_1</tetraonto:id>
+  <tetraonto:isLocatedOn>leRhin_0</tetraonto:isLocatedOn>
+  <tetraonto:hasMainContractor>CERGA SA</tetraonto:hasMainContractor>
+  <tetraonto:hasCost>TRUE</tetraonto:hasCost>
+  <tetraonto:isImpassable>FALSE</tetraonto:isImpassable>
+  <tetraonto:hasBiologicalMonitoring>TRUE</tetraonto:hasBiologicalMonitoring>
+</tetraonto:Structure>
+
+<tetraonto:Fishway xmlns:tetraonto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#">
+  <tetraonto:name>basinPass</tetraonto:name>
+  <tetraonto:id>basinPass_1</tetraonto:id>
+</tetraonto:Fishway>
+
+<tetraonto:RestorationMeasure xmlns:tetraonto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#">
+  <tetraonto:name>Passe à poissons de Brisach</tetraonto:name>
+  <tetraonto:id>passeAPoissonsDeBrisach_2</tetraonto:id>
+  <tetraonto:concerns>TcontinuitéLongitudinale</tetraonto:concerns>
+  <tetraonto:startAt>2008</tetraonto:startAt>
+  <tetraonto:endAt></tetraonto:endAt>
+  <tetraonto:hasMainContractor>CERGA SA</tetraonto:hasMainContractor>
+  <tetraonto:hasCost>TRUE</tetraonto:hasCost>
+  <tetraonto:isImpassable>FALSE</tetraonto:isImpassable>
+  <tetraonto:hasBiologicalMonitoring>TRUE</tetraonto:hasBiologicalMonitoring>
+  <tetraonto:hasFishway>basinPass_1</tetraonto:hasFishway>
+</tetraonto:RestorationMeasure>
+
+<tetraonto:Compartiment xmlns:tetraonto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#">
+  <tetraonto:name>Ichtyologie</tetraonto:name>
+  <tetraonto:id>ichtyologie_0</tetraonto:id>
+</tetraonto:Compartiment>
+```

@@ -1,0 +1,45 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ ```turtle
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Mesure_de_restauration_Passe_à_poissons_de_Gerstheim>
+  a :geographicZone ;
+  :concerns "Continuité longitudinale" ;
+  :isLocatedOn <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Le_Rhin> ;
+  :associatedTo [ a :structure ;
+                :hasHeight "?" ;
+                :isImpassable false ] ;
+  :hasMainContractor <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#CERGA_SA> ;
+  :containsTechnicalElement [ a :fishway ;
+                             :basinPasses true ;
+                             :speedBumpsPass true ;
+                             :preBarrage false ;
+                             :fishLift false ;
+                             :fishLock false ;
+                             :artificialRiver false ;
+                             :verticalSlotPassage false ;
+                             :baffleFishway false ;
+                             :eelLadder false ;
+                             :trapPass false ;
+                             :studSubstrate false ;
+                             :baffleBrush false ] ;
+  :hasCost "?" ;
+  :startsAt "?" ;
+  :endssAt "?" ;
+  :hasBiologicalMonitoring true ;
+  :hasHydromorphologicaMonitoring false .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Le_Rhin>
+  a :waterBody ;
+  :hasMaxLowWaterFlow "?" ;
+  :hasMixLowWaterFlow "?" ;
+  :hasPoolLength "?" ;
+  :hasPoolWidth "?" ;
+  :numberOfPools "?" ;
+  :numberOfBasins "?" ;
+  :averageSlope "?" .
+```

@@ -1,0 +1,40 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+**RestorationMeasureInstance** a :basinPass ;
+    :associatedTo :AssociationPassage309 ;
+    :isManagedBy :CERGASAO ;
+    :hasMainContractor :AssociationPassage309 ;
+    :startsAt "2020-01-01"^^xsd:dateTime ;
+    :endsAt "2020-12-31"^^xsd:dateTime ;
+    :hasMaxLowWaterFlow 1.2^^xsd:float ;
+    :hasMinLowWaterFlow 15^^xsd:float ;
+    :includes :none ;
+    :numberOfPools 3 ;
+    :numberOfBasins none ;
+    :averageSlope none ;
+    :skos:prefLabel "Passe à poissons de Gambsheim".
+
+
+:**StructureInstance** a :dam ;
+    :isLocatedOn :Rhin ;
+    :hasHeight 2.0^^xsd:decimal ;
+    :isImpassable true ;
+    :skos:prefLabel "Barrage de la centrale hydroélectrique".
+
+
+:**GeographicZoneInstance** a :geographicZone ;
+    :skos:prefLabel "Gambhsheim".
+
+
+:**ProjectOwnerInstance** a :projectOwner ;
+    :skos:prefLabel "Association Passage 309".
+
+
+:**MainContractorInstance** a :mainContractor ;
+    :skos:prefLabel "CERGA SA".
+
+
+Note: Les éléments avec un nombre sans valeur (none, none) n'ont pas de sens dans le contexte de l'ontology.

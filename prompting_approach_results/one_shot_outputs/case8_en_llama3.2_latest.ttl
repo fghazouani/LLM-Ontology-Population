@@ -1,0 +1,31 @@
+Here are the extracted instances with their corresponding classes and relationships:
+
+
+:LeJalamaRoadBridge a :dam ;
+                    skos:prefLabel "Le Jalama Road Bridge" ;
+                    :isLocatedOn :SantaYnezRiverWatershedCentralCaliforniaUSA ;
+                    :isImpassable "true"^^xsd:boolean .
+                    
+:SantaYnezRiverWatershedCentralCaliforniaUSA a :geographicZone ;
+                     skos:prefLabel "Santa Ynez River Watershed, Central California, USA" ;
+                     :isLocatedOn :CentralCaliforniaUSA ;
+                     :isPartOf :HautRhin .
+
+:CentralCaliforniaUSA a :geographicRegion ;
+                      skos:prefLabel "Central California, USA" ;
+
+:EntrixIncandAllenRobertLarson a :projectOwner ;
+                                  skos:prefLabel "Entrix, Inc. and Allen and Robert Larson" ;
+                                  :hasMainContractor :EntrixIncandAllenRobertLarson ;
+                                  :isAssociatedTo :PasseAPoissonsDeSantaYnez .
+
+:EntrixIncandAllenRobertLarson a :otherActor ;
+                                        skos:prefLabel "California Dept. of Fish and Game (CDFG)" ;
+
+:CentralCaliforniaUSA a :geographicRegion ;
+                      skos:prefLabel "Central California, USA" ;
+                     :isPartOf :NorthAmerica .
+ 
+:SantaYnezRiverWatershedCentralCaliforniaUSA a :otherActor ;
+                            skos:prefLabel "Coastal Conservancy" ;
+                            :hasAssociatedActor :EntrixIncandAllenRobertLarson ;

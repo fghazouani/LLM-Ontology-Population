@@ -1,0 +1,30 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+# Details about the pass through for fish (Passe APoissons)
+:PasseAPoissons a :artificialRiver ;
+                skos:prefLabel "Artificial River Passage" ;
+                :associatedTo :SeuilDSSmithKaysersberg ;
+                :startsAt "2010-09"^^xsd:dateTime ;
+                :endetta "2010-11"^^xsd:dateTime ;
+                :hasCost "36 700 € HT"^^xsd:string ;
+
+# The geographic zone Haut-Rhin
+:HautRhin a :geographicZone ;
+           skos:prefLabel "Haut-Rhin" .
+
+# Description of the weir at Seuil DSSmith Kaysersberg
+:SeuilDSSmithKaysersberg a :weir , :lowSlopeRockfillWeir ;
+                        skos:prefLabel "DS Smith Kaysersberg Weir" ;
+                        :isLocatedOn :HautRhin ;
+                        :hasHeight "2.1"^^xsd:decimal ;
+                        :averageSlope "0.2"^^xsd:decimal ;
+                        :isImpassable "true"^^xsd:boolean .
+
+# Project goals
+ProjectGoals a owl:ObjectProperty ;
+               rdfs:label "Project Goals" ;
+               skos:note "The objectives of the project aimed at improving aquatic ecosystems and facilitating fish mobility in their natural habitat." .

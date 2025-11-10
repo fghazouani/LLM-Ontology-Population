@@ -1,0 +1,30 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:ConcreteFishwayMadRiverBasin a :successiveBasinsPass ;
+    skos:prefLabel "Concrete Fishway Mad River Basin" ;
+    :associatedTo :CulvertExisting ;
+    :isManagedBy :HumboldtCountyandCaliforniaDeptFishAndGame ;
+    :hasMainContractor :Unspecified ;
+    :startsAt "2002-11"^^xsd:dateTime;
+    :endsAt ""^^xsd:dateTime ; 
+    :hasCost "171,000 $ HT"^^xsd:string .
+    :totalLength "70"^^xsd:integer.
+    :dropOverWeir "0.6 in"^^xsd:string .
+    :totalHeadloss "4 ft"^^xsd:string .
+    :poolSpacing "10 ft"^^xsd:string .
+    :fishwayWidth "15 ft"^^xsd:string .
+    :minPoolDepth "2 ft"^^xsd:string .
+    :concerns :LongitudinalContinuity ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean .
+
+:CulvertExisting a :dam ;
+    skos:prefLabel "Culvert Existing" ;
+    :isLocatedOn :MadRiverBasin ;
+    :associatedTo :ConcreteFishwayMadRiverBasin .
+    
+:HumboldtCountyandCaliforniaDeptFishAndGame a :projectOwner ;
+    skos:prefLabel "Humboldt County and California Dept. Fish and Game" .

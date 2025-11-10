@@ -1,0 +1,40 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Here is the extracted information based on the provided ontology description and text input:
+
+:<RestorationMeasureInstance> a :<RestorationMeasureClass> ;
+			:associatedTo :<StructureInstance> ;
+			:isManagedBy :<ProjectOwnerInstance> ;
+			:hasMainContractor :<MainContractorInstance> ;
+			:startsAt "2010-09-01"^^xsd:dateTime;
+			:endsAt "2010-11-30"^^xsd:dateTime ;
+			:hasMaxLowWaterFlow "3.6e7"^^xsd:float ;
+			:hasMinLowWaterFlow "1.8e7"^^xsd:float> ;
+			:includes :<TechnicalElementInstance> ;
+			:numberOfPools "14"^^xsd:integer ;
+			:numberOfBasins "70"^^xsd:integer ;
+			:averageSlope "2.6"^^xsd:float;
+            skos:prefLabel "Passe à poissons sur la rivière du Conseil Général du Haut-Rhin".
+
+:<StructureInstance> a :<StructureClass> ;
+                          skos:prefLabel "Seuil DS Smith Kaysersberg";
+                            <add information with respect to the ontology description>
+                           :heightOfChute "2.1"^^xsd:float;
+                           :slopeInclined "20"^^xsd:integer.
+
+:<ProjectOwnerInstance> a :<ProjectOwnerClass>;
+                          skos:prefLabel "Conseil Général du Haut-Rhin".
+
+:<MainContractorInstance> a :<MainContractorClass>;
+                          skos:prefLabel "Agence de l’Eau Rhin-Meuse";
+                            <add information with respect to the ontology description>
+                           :percentOfFinancing "60"^^xsd:integer.
+
+:<TechnicalElementInstancet> a :<TechnicalElementClass> ;
+                            skos:prefLabel "Rivière de contournement".
+                           <add information with respect to the ontology description>
+                           :dimensionsOfBassins "~5 m de longueur pour ~3/4 m de largeur";
+                           :dimensionsOfEchancrures "60 cm de large pour 50 cm de haut";

@@ -1,0 +1,29 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+:ConcretePoolAndVortexWeirFishway a :restorationMeasure ;
+    :relizedIn :SmithRiverBasinNorthernCalifornia ;
+    :hasCost "474000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+    :startsAt "2001-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :endssAt "2003-11-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :containsTechnicalElement :VortexWeirFishway .
+
+:SmithRiverBasinNorthernCalifornia a :geographicZone .
+
+:VortexWeirFishway a :technicalElement, :structure ;
+    :isLocatedOn :PeacockCreek ;
+    :hasHeight "2.1"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+    :isImpassable "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    :hasMaxLowWaterFlow "56.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+
+:PeacockCreek a :waterBody, :river ;
+    :hasDrainageArea "6.2"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+    :upstreamChannelWidth "5.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+
+:DelNorteCounty a :projectOwner ;
+    :hasCost "474000"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+
+:CADeptOfFishAndGame, :CACC a :otherActor .

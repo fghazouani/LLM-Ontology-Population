@@ -1,0 +1,55 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Here are the instances extracted from the text based on the provided ontology description:
+
+:<RestorationMeasureInstance> a :RestorationMeasure ;
+:associatedTo :StructureInstance ;
+:isManagedBy :ProjectOwnerInstance ;
+:hasMainContractor :MainContractorInstance ;
+:startsAt "2001-11"^^xsd:dateTime ;
+:endsAt "2001-11"^^xsd:dateTime ;
+:hasMaxLowWaterFlow 3.0 ;
+:hasMixLowWaterFlow 3.0 ;
+:includes TechnicalElementInstance ;
+:numberOfPools NumberOfTechnicalElements if exists ;
+:numberOfBasins NumberOfTechnicalElements if exists ;
+:averageSlope 5.9 ;
+:skos:prefLabel "Hybrid Pool and Weir Fishway Restoration Measure Instance".
+
+
+:<StructureInstance> a :Weir ;
+:isLocatedOn :GeographicZoneInstance ;
+:hasHeight 1.0 ;
+:isImpassable false ;
+:skos:prefLabel "Trinity River Basin Weir Instance".
+
+
+:<GeographicZoneInstance> a :geographicZone ;
+:skos:prefLabel "Trinity River Basin Geographic Zone Instance".
+
+
+:<ProjectOwnerInstance> a :projectOwner ;
+:skos:prefLabel "California Dept. of Transportation Project Owner Instance".
+
+
+:<MainContractorInstance> a :mainContractor ;
+:skos:prefLabel "California Conservation Corps Main Contractor Instance".
+
+
+:<TechnicalElementInstance> a :TechnicalElement ;
+:skos:prefLabel "Removable Wood Baffle Technical Element Instance".
+
+
+:<RestorationMeasureClass> a :HybridPoolAndWeirFishway ;
+:skos:prefLabel "Hybrid Pool and Weir Fishway Restoration Measure Class".
+
+
+:<SubClassOfStructureToBelong> a :BasinPass ;
+:skos:prefLabel "Trinity River Basin Weir Instance Subclass of Structure".
+
+
+:<NumberOfTechnicalElements> a :Number ;
+:skos:prefLabel "20" ;

@@ -1,0 +1,24 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+:passe_a_poissons_lauterbourg a :restorationMeasure .
+    :jockgrim :hasMainContractor :passe_a_poissons_lauterbourg .
+    :relizedIn :lauterberg_geographic_zone .
+    :startsAt "2005"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+    :endssAt "2005"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+    :hasCost "171682.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+    :hasBiologicalMonitoring "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+    :hasHydromorphologicaMonitoring "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+
+:lauterberg_geographic_zone a :geographicZone .
+
+:lauter :aRiver .
+    :isLocatedOn :passe_a_poissons_lauterbourg .
+
+:jockgrim a :mainContractor .
+
+:lauterberg_geographic_zone :containsTechnicalElement :passe_a_poissons_lauterbourg .

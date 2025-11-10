@@ -1,0 +1,32 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:reconnectionSengler a :reconnection ;
+    :associatedTo :basinPassesSengler ;
+    :isManagedBy :CommunauteDeCommunesDuCantonDeVillé ;
+    :hasMainContractor :HYDRATEC ;
+    :startsAt "2011-08-01T00:00:00"^^xsd:dateTime;
+    :endsAt "2011-09-30T00:00:00"^^xsd:dateTime ;
+    :hasMaxLowWaterFlow 2.0^^xsd:float ;
+    :hasMinLowWaterFlow 0.2^^xsd:float ;
+    :includes :basinPassesSenglerTechnicalElements ;
+    numberOfPools 8 ;
+    averageSlope "4"^^xsd:decimal ;
+    skos:prefLabel "Réconnection du Seuillage Sengler".
+
+:basinPassesSengler a :basinPasses, :structure ;
+                    :isLocatedOn :GiessenRiver ;
+                    :hasHeight 1.7^^xsd:float ;
+                    :isImpassable true ;
+                    skos:prefLabel "Basin Passes Seuillage Sengler".
+
+:GiessenRiver a :river ;
+              skos:prefLabel "Rivière Giessen".
+
+:CommunauteDeCommunesDuCantonDeVillé a :projectOwner ;
+                                       skos:prefLabel "Communauté de Communes du Canton de Villé".
+
+:HYDRATEC a :mainContractor ;
+          skos:prefLabel "Hydratec".

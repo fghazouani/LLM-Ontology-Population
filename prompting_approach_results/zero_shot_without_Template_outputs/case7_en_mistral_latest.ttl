@@ -1,0 +1,23 @@
+Based on the provided ontology description, we can create instances from the text input as follows:
+
+Individuals:
+- "geographicZone": Santa Ynez River Watershed, Central California, USA
+- "restorationMeasure": Retrofit with step-pool fishway
+- "structure": existing barrier (concrete and rock grade control apron)
+- "waterBody": not specified in the text but could be the Santa Ynez River
+
+Properties:
+- "relizedIn": Santa Ynez River Watershed, Central California, USA
+- "associatedTo": existing barrier (concrete and rock grade control apron)
+- "isLocatedOn": Santa Ynez River (implied from geographicZone but not specified in the text)
+- "isManagedBy": Cachuma Conservation and Release Board, Entrix, Inc., Allen and Robert Larson, California Coastal Conservancy
+- "concerns": Retrofit with step-pool fishway
+- "hasMainContractor": not specified in the text but could be any of the project funding entities
+- "includes": three small step-pools, a 30 ft (9.1 m) long concrete sidewall
+- "startsAt": January 2002 (implied from Completion Date)
+- "endssAt": not specified in the text
+- "hasCost": $87,000
+- "hasHeight": not specified in the text
+- "isImpassable": possibly true if the height of the barrier is greater than 1.0 m (not specified in the text)
+- "hasPoolLength": pool lengths range from 4 ft to 10 ft (1.2 m to 3 m)
+- "numberOfPools": 3

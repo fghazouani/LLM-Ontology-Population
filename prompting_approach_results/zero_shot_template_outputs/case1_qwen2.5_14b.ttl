@@ -1,0 +1,38 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:avolsheimRestoration a :reconnection ;
+	:associatedTo :avolsheimBarrage ;
+	:isManagedBy :communauteDeCommunesMolsheimMutzig ;
+	:hasMainContractor :sogreahConsultants ;
+	:startsAt "2010-08-01T00:00:00"^^xsd:dateTime;
+	:endsAt "2010-12-31T23:59:59"^^xsd:dateTime ;
+	:hasMaxLowWaterFlow 2.0 ^^xsd:float ;
+	:hasMinLowWaterFlow 0.4 ^^xsd:float ;
+	:numberOfPools 17 ;
+	:numberOfBasins 17 ;
+	:averageSlope 2.3 ;
+	skos:prefLabel "Restauration du barrage d'Avolsheim" .
+
+:avolsheimBarrage a :geographicZone ;
+	:hasTechnicalElement :verticalSlitRiver ;
+	:height 0.2 ;
+	skos:prefLabel "Barrage d'Avolsheim" .
+
+:communauteDeCommunesMolsheimMutzig a :projectOwner ;
+	skos:prefLabel "Communauté de Communes de la région de MOLSHEIM-MUTZIG" .
+
+:sogreahConsultants a :mainContractor ;
+	skos:prefLabel "SOGREAH Consultants" .
+
+:verticalSlitRiver a :riverContouringDevice ;
+	:numberOfSteps 17 ;
+	:stepHeightAverage 0.18 ;
+	:channelWidthAverage 4.0 ;
+	:channelLengthAverage 6.0 ;
+	:minimumWaterDepth 0.8 ;
+	:slitWidth 0.4 ;
+	:slitHeight 0.8 ;
+	skos:prefLabel "Dispositif de contournement vertical avec échancrures" .

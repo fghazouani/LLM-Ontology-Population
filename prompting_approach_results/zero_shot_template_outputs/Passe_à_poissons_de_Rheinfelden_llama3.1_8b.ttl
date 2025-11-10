@@ -1,0 +1,32 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<Reconnection> a :RestorationMeasureInstance ;
+    :associatedTo <Dam> ;
+    :isManagedBy <CompanyX> ;
+    :hasMainContractor <ConstructionCompanyY> ;
+    :startsAt "2003-01-01"^^xsd:dateTime;
+    :endsAt "2024-06-15"^^xsd:dateTime ;
+    :concerns <ContinuityLongitudinalRestorationMeasureType> ;
+    skos:prefLabel "Passe à poissons de Rheinfelden".
+
+<Dam> a :Dam, 
+          :<StructureToBelong> ;
+          :isLocatedOn <RiverRhine> ;
+          :hasHeight 20.0 ;
+          :isImpassable true ;
+          skos:prefLabel "Rheinfelden Dam".
+
+<RiverRhine> a :River,
+                :WaterBodyType ; 
+                :hasMaxLowWaterFlow 500.0^^xsd:float;
+                :hasMinLowWaterFlow 200.0^^xsd:float;
+                skos:prefLabel "The Rhin River".
+
+<CompanyX> a :ProjectOwner ;
+              skos:prefLabel "Rheinfelden Power Company".
+
+<ConstructionCompanyY> a :MainContractor ;
+                          skos:prefLabel "River Construction Company".

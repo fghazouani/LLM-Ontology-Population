@@ -1,0 +1,45 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:hybridPoolWeirFishway a :reconnection ;
+			:associatedTo :littleFrenchCreekWeir ;
+			:isManagedBy :californiaDeptOfTransportation, :nationalMarineFisheriesService, :usdaForestService ;
+			:hasMainContractor :californiaConservationCorps ;
+			:startsAt "2001-11-01T00:00:00"^^xsd:dateTime;
+			:endsAt "2001-11-30T23:59:59"^^xsd:dateTime ;
+			:hasMaxLowWaterFlow 12.0 ;
+			:hasMinLowWaterFlow 4.5 ;
+			:includes :poolWeirDesign, :denilFishLadder ;
+			:numberOfPools 20 ;
+			:numberOfBasins 19 ;
+			:averageSlope 5.0 ;
+            skos:prefLabel "Hybrid Pool and Weir Fishway".
+
+:littleFrenchCreekWeir a :weir, :successivesBasinsPass ;
+                    :isLocatedOn :trinityRiverBasin ;
+                    :hasHeight 1.2 ;
+                    :isImpassable false ;
+                    skos:prefLabel "Little French Creek Weir".
+
+:trinityRiverBasin a geographicZone ;
+                          skos:prefLabel "Trinity River Basin".
+
+:californiaDeptOfTransportation a projectOwner ;
+                        skos:prefLabel "California Department of Transportation".
+
+:nationalMarineFisheriesService a otherActor ;
+                        skos:prefLabel "National Marine Fisheries Service".
+
+:usdaForestService a otherActor ;
+                        skos:prefLabel "USDA Forest Service".
+
+:californiaConservationCorps a mainContractor ;
+                          skos:prefLabel "California Conservation Corps".
+
+:poolWeirDesign a TechnicalElement ;
+                            skos:prefLabel "Pool and Weir Design".
+                            
+:denilFishLadder a TechnicalElement ;
+                            skos:prefLabel "Denil Fish Ladder".

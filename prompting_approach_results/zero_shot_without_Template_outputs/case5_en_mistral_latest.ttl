@@ -1,0 +1,55 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ Based on the provided ontology and text input, here are the individuals in Turtle format:
+
+```turtle
+# Project of the restoration measure
+Project: _:projectID ;
+    rdf:type :restorationMeasure ;
+    :concerns "Concrete Fishway"^^xsd:string ;
+    :isLocatedOn [ a :waterBody ;
+                           rdf:type :river ;
+                           :hasName "Mad River Basin"^^xsd:string ] ;
+    :associatedTo [ a :structure ;
+                             rdf:type :fishway ;
+                             :hasName "Concrete Fishway"^^xsd:string ] .
+
+# Project Location
+GeographicZone: _:locationID ;
+               rdf:type :geographicZone ;
+               :hasName "Mad River Basin, Northern California"^^xsd:string .
+
+# Project Funding
+ProjectFunder: _:fund1 ;
+             rdf:type :projectOwner ;
+             :hasName "Humboldt County"^^xsd:string .
+ProjectFunder: _:fund2 ;
+             rdf:type :otherActor ;
+             :hasName "California Dept. Fish and Game"^^xsd:string .
+
+# Channel Characteristics
+WaterBody: _:waterbodyID ;
+          rdf:type :river ;
+          :hasMaxLowWaterFlow xsd:decimal "420"^^xsd:decimal ;
+          :hasMixLowWaterFlow xsd:decimal "11.9"^^xsd:decimal ;
+          :numberOfBasins xsd:decimal "0.92"^^xsd:decimal ;
+          :averageSlope xsd:decimal "8 - 10 ft (2.4 -3.0 m)"^^xsd:string .
+
+# Project Description
+RestorationMeasureType: _:typeID ;
+                         rdf:type :restorationMeasureType ;
+                         :hasName "Culvert Inventory and Fish Passage Evaluation"^^xsd:string .
+
+# Dimensions of the new fishway and box culvert
+Fishway: _:fishwayID ;
+       rdf:type :fishway ;
+       :totalLength xsd:decimal "70 ft (21.4 m)"^^xsd:string ;
+       :dropOverWeir xsd:decimal "0.6 in (0.17 m)"^^xsd:string ;
+       :totalHeadloss xsd:decimal "4 ft (2.1 m)"^^xsd:string ;
+       :poolSpacing xsd:decimal "10 ft (3.0 m)"^^xsd:string ;
+       :fishwayWidth xsd:decimal "15 ft (4.6 m)"^^xsd:string ;
+       :minPoolDepth xsd:decimal "2 ft (0.6 m)"^^xsd:string .
+```

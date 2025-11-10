@@ -1,0 +1,40 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<:Migratory species classes:amphibioticMigrant> ;
+        rdfs:label "amphibioticMigrant"@en .
+    
+<TetraOnt:Fishway types:basinPasses> ;
+        rdfs:label "basinPasses"@en .
+        
+<TetraOnt:Structure types:dam> ;
+        rdfs:label "dam"@en .
+        
+<TetraOnt:Water body types:river> ;
+        rdfs:label "river"@en .
+        
+<TetraOnt:Restoration measure types:reconnection> ;
+        rdfs:label "reconnection"@en .
+
+<http://www.semanticweb.org/fethi/resource/1/restoration-measure-001> ;
+        TetraOnt:relizedIn <http://www.semanticweb.org/fethi/resource/2/geographicZone-001> ;
+        TetraOnt:containsTechnicalElement "successive basins pass"@en ;
+        TetraOnt:isLocatedOn <http://www.semanticweb.org/fethi/resource/3/waterBody-001> ;
+        TetraOnt:associatedTo <http://www.semanticweb.org/fethi/resource/4/structure-001> ;
+        TetraOnt:concerns "reconnection"@en ;
+        rdfs:label "restoration measure 001"@en ;
+        dcterms:title "fishway restoration measure"@en .
+
+<http://www.semanticweb.org/fethi/resource/2/geographicZone-001> ;
+        rdfs:label "geographicZone-001"@en .
+        
+<http://www.semanticweb.org/fethi/resource/4/structure-001> ;
+        TetraOnt:isManagedBy <http://www.semanticweb.org/fethi/resource/5/projectOwner-001>, <http://www.semanticweb.org/fethi/resource/6/otherActor-001> ;
+        rdfs:label "structure 001"@en .
+
+<http://www.semanticweb.org/fethi/resource/3/waterBody-001> ;
+        rdfs:label "river-001"@en .

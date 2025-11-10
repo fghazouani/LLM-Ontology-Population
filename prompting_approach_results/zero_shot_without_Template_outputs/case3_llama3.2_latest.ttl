@@ -1,0 +1,68 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Voici les individus extraites du texte et représentés en turtle format :
+
+```turtle
+# Geographic Zone
+geographicZone "Passe à poissons sur rive droite"
+
+# Main Contractor / Project Owner
+mainContractor "Conseil Général du Haut-Rhin"
+projectOwner "Conseil Général du Haut-Rhin"
+
+# Restoration Measure
+restorationMeasure "Passe à poissons sur rive droite"
+restorationMeasure "Contournement de poissons"
+
+# Migratory Species
+amphibioticMigrant "Poisson migrateur"
+
+# Fishway Type
+fishwayType "Rivière de contournement" # SuccessivesBasinsPass
+
+# Structure Type
+structureType "Seuil en enrochements maçonnés"
+structureType "Déversoir"
+structureType "Vannage"
+
+# Water Body Type
+waterBodyType "Canal usinier"
+waterBodyType "Rive droite"
+
+# Restoration Measure Properties
+restorationMeasure:relizedIn geographicZone "Passe à poissons sur rive droite"
+restorationMeasure:associatedTo structureType "Seuil en enrochements maçonnés"
+restorationMeasure:isLocatedOn waterBodyType "Canal usinier"
+restorationMeasure:isManagedBy mainContractor "Conseil Général du Haut-Rhin" and projectOwner "Conseil Général du Haut-Rhin"
+
+# Restoration Measure Data Properties
+restorationMeasure:hasCost 36700
+restorationMeasure:startsAt September 2010
+restorationMeasure:endssAt November 2010
+restorationMeasure:hasHeight 20
+restorationMeasure:isImpassable True
+restorationMeasure:hasMaxLowWaterFlow Not available
+restorationMeasure:hasMixLowWaterFlow Not available
+restorationMeasure:hasPoolLength Not available
+restorationMeasure:hasPoolWidth Not available
+restorationMeasure:hasNotchHight Not available
+restorationMeasure:hasNotchWidth Not available
+restorationMeasure:numberOfPools 14
+restorationMeasure:numberOfBasins Not available
+restorationMeasure:averageSlope Not available
+restorationMeasure:hasBiologicalMonitoring True
+restorationMeasure:hasHydromorphologicaMonitoring True
+
+# Structure Properties
+structureType "Seuil en enrochements maçonnés":isLocatedOn waterBodyType "Canal usinier"
+structureType "Déversoir":isLocatedOn waterBodyType "Canal usinier"
+structureType "Vannage":isLocatedOn waterBodyType "Rive droite"
+
+# Structure Data Properties
+structureType "Seuil en enrochements maçonnés":hasHeight 2.1
+structureType "Déversoir":hasHeight Not available
+structureType "Vannage":hasHeight Not available
+```

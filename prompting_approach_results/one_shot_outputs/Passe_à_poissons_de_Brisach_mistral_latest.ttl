@@ -1,0 +1,52 @@
+ @prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+# Fish Pass Restoration Measure: Brisach Fish Ladder on the Rhine River, France
+:PasseAPoissonsBrisach a :artificialRiver ;
+                     skos:prefLabel "Passe à poissons de Brisach sur la Rhin" ;
+                     :associatedTo :SeuilDSSmithKaysersbergBrisach ;
+                     :isManagedBy :CERGASA ;
+                     :hasMainContractor :MaitriseOeuvreCERGASA ;
+                     :startsAt "20XX-YY"^^xsd:dateTime;
+                     :endssAt "20XX-ZZ"^^xsd:dateTime ;
+                     :hasCost "X € HT"^^xsd:string .
+
+# The Structure:
+:SeuilDSSmithKaysersbergBrisach a :weir ,
+                                :lowSlopeRockfillWeir ;
+                                skos:prefLabel "Seuil DS Smith Kaysersberg (Brisach)" ;
+                                :isLocatedOn :HautRhin ;
+                                :associatedTo :PasseAPoissonsBrisach ;
+                                :hasHeight "X"^^xsd:decimal ;
+                                :averageSlope "Y"^^xsd:decimal ;
+                                :isImpassable "true"^^xsd:boolean .
+
+# The project owner:
+:CERGASA a :projectOwner ;
+                        skos:prefLabel "CERGA SA" .
+
+# The main contractor:
+:MaitriseOeuvreCERGASA a :mainContractor ;
+                             skos:prefLabel "CERGA SA" .
+
+# The geographic zone:
+:HautRhin a :geographicZone;
+            skos:prefLabel "Haut-Rhin" .
+
+# Longitudinal Continuity
+:LongitudinalContinuity a :category ;
+                      skos:prefLabel "Continuité longitudinale" ;
+                      :hasInstance :PasseAPoissonsBrisach .
+
+# France
+:France a :country ;
+        skos:prefLabel "France" .
+
+# Department/Land: Haut-Rhin
+:HautRhin a :land , :departement ;
+          skos:prefLabel "Haut-Rhin" .
+
+# Commune(s): Brisach
+:Brisach a :commune ;
+        skos:prefLabel "Brisach" ;
+        :locatedIn :HautRhin .

@@ -1,0 +1,53 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+# @class restorationMeasure
+:PasseaPoissonsGambshiem a :restorationMeasure;
+
+# @property relizesIn
+:Pays "France" ;
+:CommuneS "Gambsheim" ;
+:isLocatedOn "Le Rhin" ;
+
+# @class structure
+# properties of structure
+:hasHeight ?1.0m ;
+:isImpassable false ;
+:hasMaxLowWaterFlow ?4.2m3/s ;
+:hasMixLowWaterFlow ?2.6m3/s ;
+:averageSlope ?2.0 ; 
+
+# @class waterBody
+# properties of water body 
+:hasPoolLength 500m ;
+:hasPoolWidth 20m ; 
+
+# @dataProperty hasBiologicalMonitoring true ;
+# @dataProperty hasHydromorphologicaMonitoring false ;
+
+# @class technicalElement
+:numerOfPools "3" ;
+:numberOfBasins "4";
+
+
+
+# @class projectOwner, otherActor, mainContractor
+:CERGA-SA a :projectOwner;
+:AssociationPassage309 a :mainContractor;
+
+# @class FishwayType
+:PasseaPoissonsGambshiem a :bascinPasses; 
+
+# @class StructureType
+:dam "barrage de la centrale hydroélectrique" ;
+
+# @property costs 10000000.0 ;
+# @property startsAt 38078 ;
+# @property endsAt ? ; # missing end time in input
+
+# @class MigratorySpecies
+:Ichtyologie a :Migratory species ;
+# @property concerns Continuité longitudinale ;

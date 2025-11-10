@@ -1,0 +1,40 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The restoration measure:
+:Sengler a :rockRamp ;
+          skos:prefLabel "Rampe en enrochement en rangées périodiques" ;
+          :associatedTo :SeuilSenglerGiessen ;
+          :isManagedBy :CommunauteDeCommunesDuCantonDeVille ;
+          :hasMainContractor :MaitriseOuverteCommunauteDeCommunesDuCantonDeVille ;
+          :startsAt "2007"^^xsd:dateTime ;
+          :endssAt "2010-09"^^xsd:dateTime ;
+          :hasCost "65 000 € HT"^^xsd:string .
+
+# The Structure:
+:SeuilSenglerGiessen a :weir ,
+                      :rockWeir ;
+                      skos:prefLabel "Seuil Sengler Giessen" ;
+                      :isLocatedOn :RiviereGiessen ;
+                      :associatedTo :Sengler ;
+                      :hasTotalLength "50 m"^^xsd:decimal ;
+                      :hasNumberOfInfranchissableChutes "3"^^xsd:integer ;
+                      :hasHeight "1.7"^^xsd:decimal .
+
+# The project owner:
+:CommunauteDeCommunesDuCantonDeVille a :projectOwner ;
+                                      skos:prefLabel "Communauté de Communes du Canton de Villé" .
+
+# The main contractor:
+:MaitriseOuverteCommunauteDeCommunesDuCantonDeVille a :mainContractor ;
+                                                     skos:prefLabel "Communauté de Communes du Canton de Villé" .
+
+# Financing details:
+:Sengler :hasFundingSource :AgenceDeLEauRhinMeuse ;
+         :hasFundingSource :ConseilGeneralDuBasRhin ;
+         :hasFundingSource :CommunauteDeCommunesDuCantonDeVille .
+
+# Geographical zone:
+:RiviereGiessen a :geographicZone ;
+                skos:prefLabel "Rivière Giessen" .

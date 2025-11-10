@@ -1,0 +1,54 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Here are the instances extracted from the text based on the ontology description:
+
+:<RestorationMeasureInstance> a :RetrofitWithStepPoolFishway ;
+            :associatedTo :<StructureInstance> ;
+            :isManagedBy :<ProjectOwnerInstance> ;
+            :hasMainContractor :<MainContractorInstance> ;
+            :startsAt "2002-01-01"^^{xsd:dateTime ;
+            :endsAt "2002-12-31"^^xsd:dateTime ;
+            :hasMaxLowWaterFlow <"20 cfs">^^xsd:float ;
+            :hasMinLowWaterFlow <"0.57 cms">^^xsd:float> ;
+            :includes :<TechnicalElementInstance> ;
+            :numberOfBasins "1" ;
+            :averageSlope "2.50" ;
+            skos:prefLabel "Retrofit with Step-Pool Fishway Restoration Measure Instance"@en.
+
+
+:<StructureInstance> a :dam,
+                    :isLocatedOn :<GeographicZoneInstance> ;
+                    :hasHeight <12.2 m> ;
+                    :isImpassable <false> ;
+                    skos:prefLabel "Santa Ynez River Watershed Dam"@en.
+
+
+:<GeographicZoneInstance> a :geographicZone ;
+                          skos:prefLabel "Santa Ynez River Watershed"@en.
+
+
+:<ProjectOwnerInstance> a :projectOwner,
+                        skos:prefLabel "Cachuma Conservation and Release Board"@en.
+
+
+:<MainContractorInstance> a :mainContractor,
+                          skos:prefLabel "Entrix, Inc."@en.
+
+
+:<TechnicalElementInstance> a :StepPoolFishway,
+                            skos:prefLabel "step-pool fishway"@en.
+                            :hasHeight <4 ft to 10 ft> ;
+                            :isImpassable false .
+                            :hasMaxLowWaterFlow <20 cfs> ;
+                            :hasMinLowWaterFlow <0.57 cms> ;
+                            :hasPoolLength <30 ft> ;
+                            :hasPoolWidth <12.2 m> 
+                            :hasNotchHight <1.5 m> ;
+                            :hasNotchWidth <5 ft> ;
+                            :numberOfPools <"3"> ;
+                            :averageSlope <"unknown"> ;
+                            :hasBiologicalMonitoring true ;
+                            :hasHydromorphologicaMonitoring true.

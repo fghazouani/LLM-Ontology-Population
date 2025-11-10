@@ -1,0 +1,25 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+:PasseAPoissonsDeGerstheim a :RestorationMeasure ;
+    :concerns :ContinuityLongitudinal ;
+    :isLocatedOn :LeRhin ;
+    :hasMainContractor :CERGA_Sa .
+:PasseAPoissonsDeGerstheim rdfs:comment "Passe à poissons de Gerstheim"@fr .
+
+:LeRhin a :waterBodyType , :hasPoolLength , :hasPoolWidth ;
+    :name "Le Rhin"@fr ;
+    :isLocatedIn :BAlsace ;
+    :hasNotchHight 40 , :hasNotchWidth 3 .
+
+:CERGA_Sa a :maitreDoeuvre .
+:CERGA_Sa rdfs:comment "CERGA SA"@fr . 
+
+:BAlsace a :geographicZone , :hasBiologicalMonitoring ;
+    :name "B Alsace"@fr .
+ 
+:ContinuousPasseAPoissonsDeGerstheim a :PasseAPoissonsDeGerstheim ;
+    :isLocatedOn :LeRhin .

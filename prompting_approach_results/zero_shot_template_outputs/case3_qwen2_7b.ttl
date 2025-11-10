@@ -1,0 +1,35 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:<RestorationMeasureInstance> a :reconnection;
+			:associatedTo :dam ;
+			:isManagedBy :Conseil Général du Haut-Rhin ;
+			:hasMainContractor :Conseil Général du Haut-Rhin ;
+			:startsAt "2010-09";
+			:endsAt "2010-11" ;
+			:hasMaxLowWaterFlow 5.8;
+			:hasMinLowWaterFlow 2.6;
+			:numberOfBasins 70;
+			:averageSlope 2.6 ;
+            :includes :baffleBrush;
+            skos:prefLabel "Passe à poissons DS Smith Kaysersberg";
+
+:<StructureInstance> a :dam ;
+                    :isLocatedOn :affluent ;
+                    :hasHeight 5.8 ;
+                    :isImpassable false ;
+                    skos:prefLabel "Seuil DS Smith Kaysersberg";
+
+:<GeographicZoneInstance> a geographicZone ;
+                          skos:prefLabel "Contexte général";
+
+:<ProjectOwnerInstance> a projectOwner ;
+                        skos:prefLabel "Conseil Général du Haut-Rhin";
+
+:<MainContractorInstance> a mainContractor ;
+                          skos:prefLabel "Conseil Général du Haut-Rhin";
+
+:<TechnicalElementInstancet> a baffleBrush ;
+                            skos:prefLabel "baffle Brush";

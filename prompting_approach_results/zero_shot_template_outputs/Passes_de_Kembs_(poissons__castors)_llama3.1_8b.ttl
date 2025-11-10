@@ -1,0 +1,38 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<RestorationMeasureInstance> a :<RestorationMeasureClass> "Fishway creation" ;
+			:associatedTo <StructureInstance1> "Passe à poissons très moderne" ;
+			:isManagedBy <ProjectOwnerInstance1> "EDF Unité de production est" ;
+			:hasMainContractor <MainContractorInstance1> "Centre d'Ingénierie Hydraulique d'EDF, EDF R&D" ;
+			:startsAt <"2010-12-15">^^xsd:dateTime;
+			:endsAt <"2035-12-31">^^xsd:dateTime ;
+			:hasMaxLowWaterFlow "2.3"^^xsd:float ;
+			:hasMinLowWaterFlow "1.9"^^xsd:float> ;
+			:includes <TechnicalElementInstance1> "Passe à poissons très moderne" ;
+			:numberOfPools 1 ;
+			:numberOfBasins 1 ;
+			:averageSlope "0.05"^^xsd:float ;
+            skos:prefLabel "Passes de Kembs".
+
+<StructureInstance1> a :<StructureClass> "Fishway" ;
+                    :isLocatedOn <GeographicZoneInstance1> "Le Rhin" ;
+                    :hasHeight "8"^^xsd:decimal ;
+                    :isImpassable false ;
+                    skos:prefLabel "Passe à poissons très moderne".
+
+<GeographicZoneInstance1> a :geographicZone ;
+                          skos:prefLabel "Le Rhin".
+
+
+<MainContractorInstance1> a :mainContractor ;
+                          skos:prefLabel "Centre d'Ingénierie Hydraulique d'EDF, EDF R&D".
+
+<ProjectOwnerInstance2> a :projectOwner ;
+                        skos:prefLabel "EDF Unité de production est".
+
+<TechnicalElementInstance1> a :TechnicalElement ;
+                            skos:prefLabel "Passe à poissons très moderne".
+                           

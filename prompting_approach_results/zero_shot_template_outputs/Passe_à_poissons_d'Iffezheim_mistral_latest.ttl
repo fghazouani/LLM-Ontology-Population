@@ -1,0 +1,53 @@
+4507
+ Based on the provided text and ontology description, here are the instances that can be created using the given template:
+
+Restoration Measure Instance:
+```
+:Passe_a_poissons_dIffezheim a :restorationMeasure ;
+        :associatedTo :Barrage_dIffezheim ;
+        :isManagedBy :NR ;
+        :hasMainContractor :NR ;
+        :startsAt "1997-01-01T00:00:00"^^xsd:dateTime;
+        :endsAt "1997-12-31T23:59:59"^^xsd:dateTime ;
+        :hasMaxLowWaterFlow 1.0 ;
+        :hasMinLowWaterFlow 0.1 ;
+        :includes :Passe_a_poissons ;
+        :numberOfPools 3 ;
+        :numberOfBasins 1 ;
+        :averageSlope 0 ;
+        skos:prefLabel "Iffezheim Fish Passage Measure".
+```
+
+Structure Instance:
+```
+:Barrage_dIffezheim a :structure, :dam ;
+        :isLocatedOn :Ill_Basin ;
+        :hasHeight 50.0 ;
+        :isImpassable false ;
+        skos:prefLabel "Iffezheim Dam".
+```
+
+Geographic Zone Instance:
+```
+:Ill_Basin a :geographicZone ;
+        skos:prefLabel "Ill Basin".
+```
+
+Project Owner Instance:
+```
+:NR a :projectOwner ;
+        skos:prefLabel "No Contractor".
+```
+
+Main Contractor Instance:
+```
+:NR a :mainContractor ;
+        skos:prefLabel "No Contractor".
+```
+
+Technical Element Instance:
+```
+:Passe_a_poissons a :technicalElement, :fish_passage ;
+        skos:prefLabel "Iffezheim Fish Passage";
+        rdfs:comment "Consists of three entrances and a bassin de répartition.".
+```

@@ -1,0 +1,36 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:PasseAPoissons a :restorationMeasure,
+               :locatedOn :Gambsheim ;
+                   skos:prefLabel "Passe à poissons" ;
+                   :associatedWith :AssociationPassage309 ;
+                   :implementedBy :CergaSA ;
+                   :costs "10 000 000 €"^^xsd:string ;
+                   :hasPartnership [:EtatFrancais, :EtatAllemand] .
+
+:Gambsheim a :geographicLocation,
+              :department :BasRhin ;
+              skos:prefLabel "Gambsheim, France" .
+
+:AssociationPassage309 a :projectOwner,
+                        :maîtreDoeuvre ;
+                        skos:prefLabel "Association Passage 309" .
+
+:CergaSA a :company,
+            :mainImplementer ;
+            skos:prefLabel "CERGA SA" .
+
+:EtatFrancais a :country,
+                :partner ;
+                skos:prefLabel "État français" .
+
+:EtatAllemand a :country,
+               :partner ;
+               skos:prefLabel "État allemand" .
+
+:BasRhin a :department,
+          :geographicZone ;
+          skos:prefLabel "Bas-Rhin" .

@@ -1,0 +1,43 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:PasseAPoissons a :franchisingDevice ;
+                   skos:prefLabel "Passe AP Poissons" ;
+                   :associatedTo :CommunauteDeCommunesMolsheimMutzig ;
+                   :managedBy :SogreahConsultants ;
+                   :hasTotalCost "231 000 € HT"^^xsd:string ;
+                   :hasFinancialPartners [ :financialPartner , a :ConseilGeneralDuBasRhin ; skos:prefLabel "Conseil General du Bas-Rhin" ] ,
+                                          [ :financialPartner , a :AgenceDeLEauRhinMeuse;  skos:prefLabel "Agence de l'Eau Rhin-Meuse" ],
+                                          [ :financialPartner , a :FDAAPPMABasRhin ;  skos:prefLabel "FDAAPPMA Bas-Rhin" ] ,
+                                          [ :financialPartner , a :AssociationSaumonRhin;  skos:prefLabel "Association Saumon Rhin" ] ,
+                                          [ :financialPartner , a :ComiteGestionDuBassinBrucheMossig ;  skos:prefLabel "Comité Gestion du bassin Bruche-Mossig" ];
+                   :hasTotalLength "135 m"^^xsd:string ;
+                   :isDesignedFor [ :deviceFor, a :salmonidFish;  skos:prefLabel "Salmo-nidés" ] ,
+                                  [ :deviceFor , a :smallCypripidaeFish ; skos:prefLabel "Petits cyprinidés" ].
+                                 
+:CommunauteDeCommunesMolsheimMutzig a :constructionProjectOwner ;
+                            skos:prefLabel "Communauté de Communes MOLSHEIM-MUTZIG" .
+
+:SogreahConsultants a :mainContractor ;
+                  skos:prefLabel "SOGREAH Consultants" .
+
+
+:ConseilGeneralDuBasRhin a :financialPartner ;
+                          skos:prefLabel "Conseil General du Bas-Rhin" .
+
+
+:AgenceDeLEauRhinMeuse a :financialPartner ;
+                       skos:prefLabel "Agence de l'Eau Rhin-Meuse" .
+
+:FDAAPPMABasRhin a :financialPartner ;
+                 skos:prefLabel "FDAAPPMA Bas-Rhin" .
+
+
+:AssociationSaumonRhin a :financialPartner ;
+                      skos:prefLabel "Association Saumon Rhin".
+
+
+:ComiteGestionDuBassinBrucheMossig a :financialPartner ;
+                                    skos:prefLabel "Comité Gestion du bassin Bruche-Mossig" .

@@ -1,0 +1,31 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ Based on the given ontology description and the provided text input, here are the Turtle format instances extracted from the text:
+
+```turtle
+# Restoration Measure
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#MesureDeRestauration_Iffezheim> a :MesureDeRestauration ;
+    :concerns "Continuité longitudinale" ;
+    :relizedIn <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#GeographicZone_Allemagne> ;
+    :isManagedBy [ <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#projectOwner_NR> , 
+			   <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#otherActor_EDF> , 
+			   <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#otherActor_BADENWERK> , 
+			   <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#otherActor_CIPR> 
+			  ] ;
+    :startsAt "1997"^^xsd:date ;
+    :hasCost "9000000.0"^^xsd:decimal ;
+    :hasBiologicalMonitoring true ;
+    :compartiment [ <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Ichtyologie> ] .
+
+# Water Body (River)
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#WaterBody_Rhine> a :WaterBody ;
+    :partDe <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#GeographicZone_Allemagne> .
+
+# Barrier (Dam)
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Barrier_RhineBarrage> a :Barrier ;
+    :partDe <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#WaterBody_Rhine> ;
+    :obstacleTo [ <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#MesureDeRestauration_Iffezheim> ] .
+```

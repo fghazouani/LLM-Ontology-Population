@@ -1,0 +1,30 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# The restoration measure:
+:PasseAPoissonsDeGerstheim a :successivesBasinsPass ;
+                       skos:prefLabel "successive basins passage" ;
+                       :associatedTo CentraleHydroelectriqueGerstheim ;
+                       :isManagedBy CERGA_SASA ;
+                       :startsAt "Not specified"^^xsd:dateTime;
+                       :endsAt "Not specified"^^xsd:dateTime ;
+                       :hasBiologicalMonitoring true ;
+                       :hasHydromorphologicalMonitoring false ;
+                       :concerns ContinuityLongitudinal .
+
+# The structure:
+:CentraleHydroelectriqueGerstheim a :dam ;
+                          skos:prefLabel "Centrale Hydroélectrique Gerstheim" ;
+                          label : "Centrale Hydroélectrique Gerstheim" .
+
+# The project owner:
+:CERGA_SASA a :projectOwner ;
+                   skos:prefLabel "CERGA SASA" ;
+                   label : "CERGA SASA" .
+
+# The geographic zone:
+:BasRhinFrance a :geographicZone ;
+                    skos:prefLabel "Bas-Rhin, France" ;
+                    label : "Bas-Rhin, France" .

@@ -1,0 +1,38 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:<RestorationMeasureInstance> a :restorationMeasure ;
+			:associatedTo :weirFisway ;
+			:isManagedBy :CaliforniaDeptOfFishAndGame, :EntrixInc, :AllenAndRobertLarson ;
+			:hasMainContractor :Unspecified ;
+			:startsAt "2003-01-01T00:00:00"^^xsd:dateTime ;
+			:endssAt "2003-01-01T00:00:00"^^xsd:dateTime ;
+			hasMaxLowWaterFlow 5.8 ;
+			hasMinLowWaterFlow 1.9 ;
+			includes :poolAndWeirFishLadder ;
+			numberOfPools "1" ;
+			numberOfBasins "2" ;
+			averageSlope 3.4 ;
+            hasBiologicalMonitoring true ;
+			hasHydromorphologicaMonitoring true ;
+			skos:prefLabel "Pool and Weir Fishway Restoration Measure";
+
+:<StructureInstance> a :weirFisway ;
+                    :isLocatedOn :santaYnezRiverWatershed ;
+                    :hasHeight 7.0 ;
+                    :isImpassable false ;
+                    skos:prefLabel "Weir Fisway";
+
+:<GeographicZoneInstance> a :geographicZone ;
+                          skos:prefLabel "Santa Ynez River Watershed";
+
+:<ProjectOwnerInstance> a :projectOwner ;
+                        skos:prefLabel "California Dept. of Fish and Game";
+
+:<MainContractorInstance> a :mainContractor ;
+                          skos:prefLabel "Unspecified";
+
+:<TechnicalElementInstancet> a :poolAndWeirFishLadder ;
+                            skos:prefLabel "Pool-and-Weir Fish Ladder";

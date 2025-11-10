@@ -1,0 +1,35 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The restoration measure:
+:HybridPoolAndWeirFishway a :restorationMeasure ;
+                            skos:prefLabel "Hybrid Pool and Weir Fishway" ;
+                            :relizedIn :TrinityRiverBasinNorthernCaliforniaUSA ;
+                            :associatedTo :TrinityRiverDam ;
+                            :isManagedBy :CaliforniaDeptOfTransportationandOthers ;
+                            :hasMainContractor :CaliforniaDeptOfFishAndGameNationalMarineFisheriesServiceUSDA_Forest_Service_CaliforniaConservationCorps ;
+                            :startsAt "2001-11"^^xsd:dateTime;
+                            :endsAt "2001-11"^^xsd:dateTime ;
+                            :hasCost "445000.0"^^xsd:decimal .
+
+# The structure:
+:TrinityRiverDam a :dam ;
+                 skos:prefLabel "Trinity River Dam" ;
+                 :isLocatedOn :TrinityRiverNorthernCaliforniaUSA .
+
+# The geographic zone:
+:TrinityRiverBasinNorthernCaliforniaUSA a :geographicZone ;
+                                         skos:prefLabel "Trinity River Basin, Northern California, USA" .
+
+# The river:
+:TrinityRiverNorthernCaliforniaUSA a :river ;
+                                    skos:prefLabel "Trinity River" .
+
+# The main contractor:
+:CaliforniaDeptOfTransportationandOthers a :mainContractor ;
+                                          skos:prefLabel "California Dept. of Transportation and Others" .
+
+# The project owner:
+:CaliforniaDeptOfFishAndGameNationalMarineFisheriesServiceUSDA_Forest_Service_CaliforniaConservationCorps a :projectOwner ;
+                                                                                                            skos:prefLabel "California Dept. of Fish and Game, National Marine Fisheries Service, USDA Forest Service, California Conservation Corps" .

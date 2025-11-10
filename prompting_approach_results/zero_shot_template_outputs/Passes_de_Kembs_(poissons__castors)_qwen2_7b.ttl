@@ -1,0 +1,40 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:<PassesDeKembsInstance> a :Reconnection;
+			:associatedTo :Rhin;
+			:isManagedBy :Electricité De France (EDF) Unité de production est, Centre d'Ingénierie Hydraulique d'EDF, EDF R&D;
+			:hasMainContractor :Centre d'Ingénierie Hydraulique d'EDF, EDF R&D ;
+			:startsAt "2011"^^xsd:dateTime;
+			:endsAt "";
+			:includes :;
+			numberOfPools "";
+			numberOfBasins "";
+			averageSlope "";
+            hasBiologicalMonitoring false;
+            hasHydromorphologicaMonitoring false;
+            :hasCost 750000.0 ;
+			skos:prefLabel "Passes de Kembs";
+
+:<RhinInstance> a :river ;
+                    skos:prefLabel "Le Rhin";
+
+:<CentreDIngénierieHydrauliqueDEDFInstance> a :mainContractor ;
+                          skos:prefLabel "Centre d'Ingénierie Hydraulique d'EDF";
+:<ElectricitéDeFranceEDFUnitéDeProductionEstInstance> a :projectOwner ;
+                        skos:prefLabel "Electricité De France (EDF) Unité de production est";
+
+:<AgenceDeL'eauRhinMeuseInstance> a :funder ;
+                          skos:prefLabel "Agence de l'eau Rhin-Meuse";
+
+:KembsInstance a :Commune;
+                skos:prefLabel "Kembs";
+:<GrandCanalDAlsaceInstance> a :PseudoNaturalRiver;
+                skos:prefLabel "Grand Canal d’Alsace";
+:<ReserveNaturelleDeLaPCAInstance> a :pseudoNaturalRiver;
+                skos:prefLabel "Réserve Naturelle de la PCA";
+
+:SuiviBiologique false ;
+:SuiviHydromorphologique false ;

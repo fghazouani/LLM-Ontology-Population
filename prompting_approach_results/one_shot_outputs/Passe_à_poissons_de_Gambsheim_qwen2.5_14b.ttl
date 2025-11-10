@@ -1,0 +1,35 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The restoration measure:
+:PasseAPoissonsDeGambsheim a :fishPass ;
+                           skos:prefLabel "Passe à poissons de Gambsheim" ;
+                           :isLocatedOn :Rhin ;
+                           :associatedTo :BarrageHydroelectriqueDeGambsheim ;
+                           :hasCost "10 000 000 €"^^xsd:string ;
+                           :startssAt "2023-09"^^xsd:dateTime ;
+                           :endssAt "2024-06"^^xsd:dateTime ;
+                           :isManagedBy :France ;
+                           :mainContractor :CERGA ;
+                           :hasBiologicalMonitoring true ;
+                           :hasHydromorphologicalMonitoring false .
+
+# The structure:
+:BarrageHydroelectriqueDeGambsheim a :dam ,
+                                    :hydroelectricDam ;
+                                    skos:prefLabel "Barrage hydroélectrique de Gambsheim" ;
+                                    :isLocatedOn :Rhin ;
+                                    :hasHeight "25.0"^^xsd:decimal ;
+                                    :associatedTo :PasseAPoissonsDeGambsheim .
+
+# The project owner:
+:France a :projectOwner ;
+        skos:prefLabel "République française" .
+        
+:CERGA a :mainContractor ;
+       skos:prefLabel "Centre Européen de Recherche et d'Expertise sur les Grands Lacs Alpins" .
+
+# The geographic zone:
+:Rhin a :geographicZone;
+        skos:prefLabel "Rhin" .

@@ -1,0 +1,55 @@
+Here are the instances extracted from the text based on the provided ontology:
+
+1. 
+    - Type: "geographicZone"
+    - Name: "Santa Ynez River Watershed"
+2. 
+    - Type: "projectOwner"
+    - Name: "Cachuma Conservation and Release Board"
+3. 
+    - Type: "mainContractor"
+    - Name: "Entrix, Inc."
+4. 
+    - Type: "otherActor"
+    - Name: "Allen and Robert Larson"
+5. 
+    - Type: "projectOwner"
+    - Name: "California Coastal Conservancy"
+6. 
+    - Type: "otherActor"
+    - Name: "California Coastal Conservancy"
+7. 
+    - Type: "restorationMeasure"
+    - Description: "Retrofit with step-pool fishway"
+    - Start Date: January 2002
+    - End Date: (no end date specified)
+    - Cost: $87,000
+8. 
+    - Type: "structure"
+    - Name: "grade control apron"
+    - Location: "Highway 1 bridge downstream channel"
+9. 
+    - Type: "waterBody"
+    - Name: "Santa Ynez River Watershed"
+10. 
+    - Type: "restorationMeasure"
+    - Description: "Retrofit with step-pool fishway"
+    - Concerns: "low-flow passage conditions for adult steelhead"
+11. 
+    - Type: "structure"
+    - Name: "step-pools"
+    - Location: "grade control apron"
+    - Height: 1.2 m to 3 m
+    - Width: (no specified)
+12. 
+    - Type: "structure"
+    - Name: "concrete sidewall"
+    - Location: "channel"
+    - Length: 30 ft
+13. 
+    - Type: "restorationMeasure"
+    - Description: "Retrofit with step-pool fishway"
+    - Concerns: "low-flow passage conditions for adult steelhead"
+    - Start Date: January 2002
+    - End Date: (no end date specified)
+    - Cost: $87,000

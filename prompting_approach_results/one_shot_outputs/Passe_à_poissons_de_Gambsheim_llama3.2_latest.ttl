@@ -1,0 +1,36 @@
+
+```rdf
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:PasseAPoissons a :artificialRiver ;
+                  skos:prefLabel "Passe à poissons de Gambsheim" ;
+                  :associatedTo :SeuilDSSmithKaysersberg ;
+                  :isManagedBy :ConseilGeneralDuHautRhin ;
+                  :hasMainContractor :MaitriseOeuvreConseilGeneralDuHautRhin ;
+                  :startsAt "1970-01"^^xsd:dateTime;
+                  :endssAt "n/a"^^xsd:string ;
+                  :hasCost "10 000 000 €"^^xsd:string .
+
+:SeuilDSSmithKaysersberg a :weir ,
+                        :lowSlopeRockfillWeir ;
+                        skos:prefLabel "Seuil DS Smith Kaysersberg" ;
+                        :isLocatedOn :HautRhin ;
+                        :associatedTo :PasseAPoissons ;
+                        :hasHeight "2.1"^^xsd:decimal ;
+                        :averageSlope "0.2"^^xsd:decimal ;
+                        :isImpassable "true"^^xsd:boolean .
+
+:ConseilGeneralDuHautRhin a :projectOwner ;
+                          skos:prefLabel "Conseil General Du Haut-Rhin" .
+
+
+:HautRhin a :geographicZone;
+            skos:prefLabel "Haut-Rhin" .
+
+
+
+:MaitriseOeuvreConseilGeneralDuHautRhin a :mainContractor ;
+                                        skos:prefLabel "Conseil General Du Haut-Rhin" .
+```

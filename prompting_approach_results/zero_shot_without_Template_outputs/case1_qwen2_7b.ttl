@@ -1,0 +1,50 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix TetraOnto: <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<TetraOnto:geographicZone_2869> ;
+    TetraOnto:relizedIn "Maîtrise d’ouvrage : Communauté de Communes de la région de MOLSHEIM-MUTZIG" ;
+.
+
+<TetraOnto:mainContractor_3451> ;
+    TetraOnto:hasMainContractor "Maîtrise d’oeuvre : SOGREAH Consultants" ;
+.
+
+<TetraOnto:projectOwner_7298> ;
+    TetraOnto:isManagedBy "Financement des travaux : 40 % Conseil Général du Bas-Rhin, 40 % Agence de l’Eau Rhin-Meuse, 20 % (FDAAPPMA Bas-Rhin, Association Saumon Rhin, Comité Gestion du bassin Bruche-Mossig)" ;
+.
+
+<TetraOnto:otherActor_8175> ;
+    TetraOnto:isManagedBy "Financement des travaux : 40 % Conseil Général du Bas-Rhin, 40 % Agence de l’Eau Rhin-Meuse, 20 % (FDAAPPMA Bas-Rhin, Association Saumon Rhin, Comité Gestion du bassin Bruche-Mossig)" ;
+.
+
+<TetraOnto:Migratory species_9851> ;
+    TetraOnto:concerns "Le barrage d’Avolsheim" ;
+.
+
+<TetraOnto:Fishway types_basinPasses_3246> ;
+    TetraOnto:containsTechnicalElement "rivière de contournement" ;
+.
+
+<TetraOnto:Structure_types_dam_7015> ;
+    TetraOnto:isLocatedOn "Bruche", 
+    TetraOnto:hasHeight 0.2 ;
+.
+
+<TetraOnto:Water body types_river_4634> ;
+    TetraOnto:concerns "Le barrage d’Avolsheim" ;
+.
+
+<TetraOnto:Restoration measure types_reconnection_7690> ;
+    TetraOnto:startAt "Août à Décembre 2010",
+    TetraOnto:endssAt "",
+    TetraOnto:hasCost 231 000 € HT,
+    TetraOnto:isImpassable false ;
+.
+
+<TetraOnto:Migratory species_salmonid_4857> ;
+    TetraOnto:concerns "rivière de contournement" ;
+.

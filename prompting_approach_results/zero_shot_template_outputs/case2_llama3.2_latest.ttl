@@ -1,0 +1,52 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Voici les instances créées à partir du texte et du préfixe TetraOnto :
+
+:<RestorationMeasureInstance> a :reconnection ;
+            :associatedTo :dam ;
+            :isManagedBy :HYDRATEC ;
+            :hasMainContractor :HYDRATEC ;
+            :startsAt "2011-08"^^xsd:dateTime ;
+            :endsAt "2011-09"^^xsd:dateTime ;
+            :hasMaxLowWaterFlow 0.2 ;
+            :hasMinLowWaterFlow 2.0 ;
+            :includes [ TechnicalElementInstance ] ;
+            :numberOfPools 8 ;
+            :numberOfBasins 6 ;
+            :averageSlope 4 ;
+            skos:prefLabel "Rampe en enrochement".
+
+
+:<StructureInstance> a :dam ;
+             :isLocatedOn :Giessen ;
+             :hasHeight 1.7 ;
+             :isImpassable true ;
+             skos:prefLabel "Seuil Sengler".
+
+
+:<GeographicZoneInstance> a :geographicZone ;
+                           skos:prefLabel "Canton de Villé".
+
+
+:<ProjectOwnerInstance> a :projectOwner ;
+                            skos:prefLabel "Communauté de Communes du Canton de Villé".
+
+
+:<MainContractorInstance> a :mainContractor ;
+                              skos:prefLabel "HYDRATEC".
+
+
+:<TechnicalElementInstance> a :TechnicalElement ;
+                                    skos:prefLabel "Rampe en enrochement" ;
+                                    description « Rampe en enrochement avec 8 seuils en enrochements, espacés à environ 6 mètres et hauteurs variant de 0.5 mètres ».
+
+
+:<ProjectFinancingInstance> a :financement ;
+                                :associatedTo [ CommuneDeCommunesDuCantonduVillé ] ;
+                                :financedAmount 65000 ;
+                                :financer "Agence de l'Eau Rhin-Meuse" ;
+                                :financer "Conseil Général du Bas-Rhin" ;
+                                :financer "Communauté de Communes du Canton de Villé" ;

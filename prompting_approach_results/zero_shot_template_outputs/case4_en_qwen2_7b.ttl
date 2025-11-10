@@ -1,0 +1,39 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:<HybridPoolAndWeirFishwayInstance> a :restoration measure ;
+	:relizedIn "Trinity River Basin, Northern California, USA" ;
+	:associatedTo "hybridPoolAndWeirFishway";
+	:isManagedBy "California Dept. of Transportation", "California Dept. of Fish and Game", "National Marine Fisheries Service", "USDA Forest Service", "California Conservation Corps" ;
+	:hasMainContractor;
+	:startsAt 2001-11-01T00:00:00Z;
+	:endsAt null^^xsd:dateTime ;
+	:hasMaxLowWaterFlow null^^xsd:float ;
+	:hasMinLowWaterFlow null^^xsd:float> ;
+	:includes "removable wood baffles" ;
+	:numberOfPools null ;
+	:numberOfBasins null ;
+	:averageSlope null ;
+	:hasBiologicalMonitoring true;
+	:hasHydromorphologicaMonitoring true;
+	:skos:prefLabel "Hybrid Pool and Weir Fishway".
+
+:<StructureInstance> a :structure ;
+					:isLocatedOn "Trinity River" ;
+					:hasHeight null ;
+					:isImpassable false ;
+					skos:prefLabel "Fishway Structure".
+
+:<GeographicZoneInstance> a :geographicZone ;
+                          skos:prefLabel "Trinity River Basin, Northern California, USA".
+
+:<ProjectOwnerInstance> a :projectOwner ;
+                        skos:prefLabel "California Dept. of Transportation", "California Dept. of Fish and Game", "National Marine Fisheries Service", "USDA Forest Service", "California Conservation Corps".
+
+:<MainContractorInstance> a :mainContractor ;
+                          skos:prefLabel.
+
+:<TechnicalElementInstancet> a :technical element ;
+                            skos:prefLabel "removable wood baffles".

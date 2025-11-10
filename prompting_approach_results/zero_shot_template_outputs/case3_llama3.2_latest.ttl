@@ -1,0 +1,34 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Voici les instances créées en fonction du texte donné :
+
+<:RestorationMeasureInstance> a ::RestorationMeasureClass ;
+            :associatedTo :<:StructureInstance> ;
+            :isManagedBy :<:ProjectOwnerInstance> ;
+            :hasMainContractor :<:MainContractorInstance> ;
+            :startsAt <"2010-09-01">^^xsd:dateTime;
+            :endsAt <"2010-11-30">^^xsd:dateTime ;
+            :hasMaxLowWaterFlow <3.5>^^xsd:float ;
+            :hasMinLowWaterFlow <1.6>^^xsd:float> ;
+            :includes :<:TechnicalElementInstance> ;
+            :numberOfPools <14> ;
+            :numberOfBasins <1> ;
+            :skos:prefLabel "Passe à poissons de la rivière de contournement"..
+
+
+<:StructureInstance> a :geographicZone ;
+                          :skos:prefLabel "Passe à poissons de la rivière de contournement".
+
+<:ProjectOwnerInstance> a :projectOwner ;
+                        :skos:prefLabel "Conseil Général du Haut-Rhin".
+
+<:MainContractorInstance> a :mainContractor ;
+                          :skos:prefLabel "DS Smith Kaysersberg".
+
+
+
+<:TechnicalElementInstance> a :TechnicalElement ;
+                            :skos:prefLabel "Dispositif de franchissement".

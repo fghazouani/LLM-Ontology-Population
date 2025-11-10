@@ -1,0 +1,46 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ Based on the provided text input and ontology description, here are the instances to be created:
+
+1. RestorationMeasureInstance:
+    - :PasseAPoisonsDeLauterbourg a :restorationMeasureClass ;
+            :associatedTo :PasseAPoisonsDeLauterbourgInstance ;
+            :isManagedBy :ProjectOwnerInstance ;
+            :hasMainContractor :MainContractorInstance ;
+            :startsAt "2005-01-01T00:00:00"^^xsd:dateTime;
+            :endsAt "2005-12-31T23:59:59"^^xsd:dateTime ;
+            :hasMaxLowWaterFlow <theMaxLowWaterFlowOfLauter> ;
+            :hasMinLowWaterFlow <theMinLowWaterFlowOfLauter> ;
+            :includes :PasseMixteABassinsSuccessifsInstance ;
+            :numberOfPools 1 ;
+            :numberOfBasins 1 ;
+            :averageSlope <AverageSlopeOfLauter> ;
+            skos:prefLabel "Passe à Poissons de Lauterbourg" .
+
+2. StructureInstance:
+    - :PasseAPoisonsDeLauterbourgInstance a :structure,
+                                        :subClassOfStructureToBelong :fishwayTypes/passequesuccessifs ;
+                                        :isLocatedOn :GeographicZoneInstance ;
+                                        :hasHeight <heightOfThePasseAPoisonsDeLauterbourg> ;
+                                        :isImpassable false ;
+                                        skos:prefLabel "Passe à Poissons de Lauterbourg" .
+
+3. GeographicZoneInstance:
+    - :GeographicZoneInstance a :geographicZone ;
+                              skos:prefLabel "Restoration Measure Instance name" .
+
+4. ProjectOwnerInstance:
+    - :ProjectOwnerInstance a :projectOwner ;
+                            skos:prefLabel "ProjectOwner Instance name" .
+
+5. MainContractorInstance:
+    - :MainContractorInstance a :mainContractor ;
+                              skos:prefLabel "Main Contractor Instance name" .
+
+6. TechnicalElementInstancet:
+    - :PasseMixteABassinsSuccessifsInstance a :technicalElement ;
+                                          skos:prefLabel "Passe mixte à bassins successifs" ;
+                                          <add information with respect to the ontology description> .

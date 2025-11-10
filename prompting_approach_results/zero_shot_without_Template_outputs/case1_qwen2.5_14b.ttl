@@ -1,0 +1,50 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+:restorationMeasure1 a :reconnection, :restorationMeasure ;
+    :relizedIn :geographicZone1 ;
+    :associatedTo :structure1 ;
+    :hasCost "231000"^^xsd:decimal ;
+    :startsAt "2010-08-01T00:00:00Z"^^xsd:dateTime ;
+    :endsAt "2010-12-31T23:59:59Z"^^xsd:dateTime ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicaMonitoring "true"^^xsd:boolean ;
+    :containsTechnicalElement :fishwayType1 ;
+    :isManagedBy :projectOwner1, :otherActor1 .
+
+:structure1 a :artificialRiver ;
+    :hasHeight "3.2"^^xsd:decimal ;
+    :hasMaxLowWaterFlow "0.4"^^xsd:decimal ;
+    :hasMixLowWaterFlow "2.0"^^xsd:decimal ;
+    :hasPoolLength "6"^^xsd:decimal ;
+    :hasPoolWidth "4"^^xsd:decimal ;
+    :hasNotchHight "80"^^xsd:decimal ;
+    :hasNotchWidth "40"^^xsd:decimal ;
+    :numberOfPools "17"^^xsd:integer ;
+    :averageSlope "2.3"^^xsd:decimal .
+
+:geographicZone1 a :river, :geographicZone ;
+    :isImpassable "false"^^xsd:boolean ;
+    :hasHeight "0.2"^^xsd:decimal .
+
+:projectOwner1 a :projectOwner ;
+    :hasCost "92400"^^xsd:decimal ; # 231000 * 0.4
+    :hasMainContractor :mainContractor1 .
+
+:otherActor1 a :otherActor ;
+    :hasCost "46200"^^xsd:decimal . # 231000 * 0.2
+
+:fishwayType1 a :artificialRiver, :technicalElement ;
+    :numberOfBasins "17"^^xsd:integer .
+
+:mainContractor1 a :mainContractor ;
+    :hasCost "92400"^^xsd:decimal . # 231000 * 0.4
+
+:river1 a :river, :waterBody ;
+    :isImpassable "false"^^xsd:boolean ;
+    :hasHeight "0.2"^^xsd:decimal .
+
+:fishwayType1 :relizedIn :geographicZone1 .

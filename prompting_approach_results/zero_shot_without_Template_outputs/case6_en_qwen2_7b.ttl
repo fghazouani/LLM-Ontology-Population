@@ -1,0 +1,63 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<:ConcretePoolAndVortexWeirFishway>
+	a :restorationMeasure ;
+	:concerns :fishwayType ;
+	:relizedIn <http://www.semanticweb.org/fethi/resources/SmithRiverBasin> ;
+	:isManagedBy [
+		:hasName "Del Norte County, CA Dept. of Fish and Game" ;
+		:hasName "CA Coastal Conservancy"
+	] ;
+	:containsTechnicalElement [
+		:hasType :vortexShapeWeir ;
+		:hasHeight 7.0
+	] ;
+	:associatedTo <http://www.semanticweb.org/fethi/resources/channelCharacteristics> ;
+	:hasNotchWidth "0.2 m"^^xsd:decimal ;
+	:numberOfBasins 1 ;
+	:averageSlope "Unspecified" ;
+	:hasBiologicalMonitoring true ;
+	:hasHydromorphologicaMonitoring true ;
+	rdfs:comment "Concrete pool and vortex weir fishway restoration measure in Smith River Basin, Northern California." .
+<http://www.semanticweb.org/fethi/resources/SmithRiverBasin>
+	a :geographicZone ;
+	rdfs:label "Smith River Basin" .
+<http://www.semanticweb.org/fethi/resources/channelCharacteristics>
+	a :channelCharacteristics ;
+	:10YearFlow 1250.0 cfs ;
+	:drainageArea 2.2 mi2 ;
+	:upstreamChannelWidth 18 ft ;
+	:maxFishPassageFlowAdults 79.0 cfs ;
+	:totalHeadloss 7 ft ;
+	rdfs:label "Channel Characteristics" .
+<http://www.semanticweb.org/fethi/resources/ConcreteFishway>
+	a :fishwayType ;
+	:name "Concrete Fishway" ;
+	rdfs:label "Concrete fishway" .
+<:vortexShapeWeir>
+	a :weirType ;
+	:name "Vortex shape weir" ;
+	:dropOverWeir 8 inches ;
+	:totalHeadloss 7 ft ;
+	:weirSideSlope "5:1 (H:V)" ;
+	rdfs:label "Vortex weirs" .
+<http://www.semanticweb.org/fethi/resources/ConcretePoolAndVortexWeirFishway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <:ConcretePoolAndVortexWeirFishway> ;
+	<:fundedBy> [
+		:hasName "Del Norte County" ;
+		:hasName "CA Dept. of Fish and Game" ;
+		:hasName "CA Coastal Conservancy"
+	] ;
+	:completionDate "November, 2003" ;
+	rdfs:comment "Concrete pool and vortex weir fishway restoration measure in Smith River Basin, Northern California." .
+<:channelCharacteristics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <:channelCharacteristics> ;
+	rdfs:label "Channel Characteristics" ;
+	rdfs:comment "Details about the channel characteristics in Smith River Basin." .
+<:vortexShapeWeir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <:vortexShapeWeir> ;
+	rdfs:label "Vortex weirs" ;
+	rdfs:comment "Details about the vortex shape weirs." .

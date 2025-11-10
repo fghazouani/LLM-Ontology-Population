@@ -1,0 +1,37 @@
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The restoration mesure:
+:PasseAPoissons a :artificialRiver ;
+                    skos:prefLabel "rivière artifcielle" ;
+                    :associatedTo :SeuilDSSmithKaysersberg ;
+                    :isManagedBy :ConseilGeneralDuHautRhin ;
+                    :hasMainContractor :MaitriseOuuvreConseilGeneralDuHautRhin ;
+                    :startsAt "2010-09"^^xsd:dateTime;
+                    :endssAt "2010-11"^^xsd:dateTime ;
+                    :hasCost "36 700 € HT"^^xsd:string .
+
+# The Structure:
+:SeuilDSSmithKaysersberg a :weir ,
+                        :lowSlopeRockfillWeir ;
+                        skos:prefLabel "Seuil DS Smith Kaysersberg" ;
+                        :isLocatedOn :HautRhin ;
+                        :associatedTo :PasseAPoissons ;
+                        :hasHeight "2.1"^^xsd:decimal ;
+                        :averageSlope "0.2"^^xsd:decimal ;
+                        :isImpassable "true"^^xsd:boolean .
+                    
+# The project owner:
+:ConseilGeneralDuHautRhin a :projectOwner ;
+                          skos:prefLabel "Conseil General Du Haut-Rhin" .
+
+# The main contractor:
+:MaitriseOeuvreConseilGeneralDuHautRhin a :mainContractor ;
+                                        skos:prefLabel "Conseil General Du Haut-Rhin" .
+
+
+# The geographic zone:
+:HautRhin a :geographicZone;
+            skos:prefLabel "Haut-Rhin" .

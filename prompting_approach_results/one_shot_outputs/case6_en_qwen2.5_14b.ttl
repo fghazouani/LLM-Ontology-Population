@@ -1,0 +1,28 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The restoration measure:
+:ConcretePoolAndVortexWeirFishway a :successivesBasinsPass ;
+                    skos:prefLabel "Concrete Pool and Vortex Weir Fishway" ;
+                    :associatedTo :PeacockCreekWeir ;
+                    :isManagedBy :DelNorteCountyCA_DeptOfFishAndGame_CoastalConservancy ;
+                    :hasMainContractor :CountyDelNorteMaintainedRoadReplacementProject ;
+                    :startsAt "2003-11"^^xsd:dateTime;
+                    :endssAt "2003-11"^^xsd:dateTime ;
+                    :hasCost "474000.0"^^xsd:decimal ;
+                    :concerns :LongitudinalContinuity .
+
+# The structure:
+:PeacockCreekWeir a :dam ;
+                        skos:prefLabel "Peacock Creek Weir" ;
+                        :isLocatedOn :SmithRiverBasinNorthernCalifornia ;
+                        :isImpassable "true"^^xsd:boolean .
+
+# The project owner:
+:DelNorteCountyCA_DeptOfFishAndGame_CoastalConservancy a :projectOwner ;
+                          skos:prefLabel "Del Norte County, CA Dept. of Fish and Game, and CA Coastal Conservancy" .
+
+# The geographic zone:
+:SmithRiverBasinNorthernCalifornia a :geographicZone;
+            skos:prefLabel "Smith River Basin, Northern California" .

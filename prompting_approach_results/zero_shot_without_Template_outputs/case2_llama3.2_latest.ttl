@@ -1,0 +1,45 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Voici les individus extraits du texte en format Turtle :
+
+```
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e00>
+  a TetraOnto:geographicZone ;
+  TetraOnto:mainContractor <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#HYDRATEC> .
+  TetraOnto:projectOwner <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Communauté_de_Commesdu_Canton_de_Villé> ;
+  TetraOnto:otherActor <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#FDAAPPMA_Bas-Rhin>.
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e01>
+  a TetraOnto:MigratorySpecies ;
+  TetraOnto:amphibioticMigrant true .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e02>
+  a TetraOnto:Fishway ;
+  TetraOnto:basinPass <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e00> ;
+  TetraOnto:speedBumpsPass <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e00> ;
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e03>
+  a TetraOnto:Structure ;
+  TetraOnto:dam <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e02> ;
+  TetraOnto:weir <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e00> ;
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e04>
+  a TetraOnto:WaterBody ;
+  TetraOnto:river <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e02> .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e05>
+  a TetraOnto:RestorationMeasure ;
+  TetraOnto:reconnection <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e02> ;
+  TetraOnto:poolCreation <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e02> .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e06>
+  a TetraOnto:RestorationMeasure ;
+  TetraOnto:rampeEnEnrochement <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e04> .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e07>
+  a TetraOnto:RestorationMeasure ;
+  TetraOnto:choixDeL'Ouvrage <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#e05> .
+```

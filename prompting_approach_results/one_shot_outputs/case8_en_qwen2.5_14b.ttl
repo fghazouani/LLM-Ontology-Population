@@ -1,0 +1,40 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The restoration measure:
+:PoolAndWeirFiswaySantaYnez a :reconnection ;
+                             skos:prefLabel "Pool and Weir Fishway at Santa Ynez" ;
+                             :relizedIn :SantaYnezRiverWatershedCentralCaliforniaUSA ;
+                             :includes :PoolAndWeirFishLadderJalamaRoadBridgeSite ;
+                             :associatedTo :ConcreteGradeControlStructureJalamaRoadBridge ;
+                             :hasMainContractor :EntrixIncandAllenRobertLarson ;
+                             :concerns :RetrofitWithPoolAndWeirFishLadderProjectType ;
+                             :startsAt "2003-01"^^xsd:dateTime ;
+                             :endsAt "2003-01"^^xsd:dateTime ;
+                             :hasCost "87510.0"^^xsd:decimal .
+
+# The structure:
+:ConcreteGradeControlStructureJalamaRoadBridge a :structure ;
+                                                skos:prefLabel "Concrete Grade Control Structure at Jalama Road Bridge" ;
+                                                :isLocatedOn :SantaYnezRiver ;
+                                                :hasHeight "4.0"^^xsd:decimal ;
+                                                :isImpassable "true"^^xsd:boolean .
+
+# The successives basins pass:
+:PoolAndWeirFishLadderJalamaRoadBridgeSite a :successivesBasinsPass ;
+                                            skos:prefLabel "Pool and Weir Fish Ladder Site at Jalama Road Bridge" ;
+                                            :includes :WeirsAndPools ;
+                                            :associatedTo :ConcreteGradeControlStructureJalamaRoadBridge .
+
+# The geographic zone:
+:SantaYnezRiverWatershedCentralCaliforniaUSA a :geographicZone ;
+                                              skos:prefLabel "Santa Ynez River Watershed, Central California, USA" .
+
+# The main contractor:
+:EntrixIncandAllenRobertLarson a :mainContractor ;
+                                skos:prefLabel "Entrix, Inc., Allen and Robert Larson" .
+
+# The project owner:
+:ConcreteGradeControlStructureJalamaRoadBridgeSite a :projectOwner ;
+                                                   skos:prefLabel "Concrete Grade Control Structure Site at Jalama Road Bridge" .

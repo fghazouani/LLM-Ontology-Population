@@ -1,0 +1,47 @@
+ @prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The fish passage restoration project at Gambsheim on the Rhine River, France
+:ProjetDeRestaurationDuPassageDesPoissonsGambsheimSurLeFleuveLeRhinFrance a :fishPassageRestorationProject ;
+                            skos:prefLabel "Projet de restauration du passage des poissons à Gambsheim sur le Rhin, France" ;
+                            :isCategory :LongitudinalContinuity ;
+                            :belongsToCountry :France ;
+                            :pertainsToDepartmentLand :Bas-Rhin ;
+                            :affectsCommune :Gambsheim ;
+                            :isOwnedBy :AssociationPassage309 ;
+                            :hasClient :CERGASA ;
+                            :involvesStakeholders :ONEMA ,:SaumonRhin ;
+                            :commencedOn "38078"^^xsd:date ;
+                            :hasPressure "La centrale hydroélectrique est l'un des obstacles dans une série. Elle empêche le déplacement vers l'amont du Rhin vers des zones favorables pour la vie et la reproduction des poissons, en particulier vers le Kinzing et son affluent Schutter, les tributaires allemands du Rhine. La centrale hydroélectrique a été mise en service en 1970 et est exploitée par EDF." ;
+                            :hasWorks "
+                            :hasMonitoring :True ;
+                            :monitoredCompartment :Ichtyology ;
+                            :totalCost "10,000,000.00 €"^^xsd:string .
+
+# The geographic zone:
+:LeRhin a :geographicZone;
+            skos:prefLabel "Le Rhin" .
+
+# The commune of Gambsheim
+:Gambsheim a :commune ;
+             skos:prefLabel "Gambsheim" .
+
+# The department/land of Bas-Rhin
+:Bas-Rhin a :departement ;
+            skos:prefLabel "Bas-Rhin" .
+
+# The project owner: Association Passage 309
+:AssociationPassage309 a :association ;
+                           skos:prefLabel "Association Passage 309" .
+
+# The client: CERGA SA
+:CERGASA a :entreprise ;
+            skos:prefLabel "CERGA SA" .
+
+# Involved stakeholders: ONEMA and Saumon Rhin
+:ONEMA a :organisation ;
+         skos:prefLabel "ONEMA" .
+
+:SaumonRhin a :organisation ;
+              skos:prefLabel "Saumon Rhin" .

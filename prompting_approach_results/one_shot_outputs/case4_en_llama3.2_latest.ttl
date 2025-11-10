@@ -1,0 +1,66 @@
+Here are the extracted instances with their corresponding classes, object properties, data properties, and relationships:
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# The project
+:PasseAPoissonsDeStrasbourg a :project 
+    skos:prefLabel "Passe AP Poisson" ;
+    :associatedTo :AgenceEauRhinMeuseDREALAlsaconeMA;
+    :isManagedBy :CentreIngHenHydrauliqueEDFandEDFRD;
+    :hasMainContractor :CaliforniaDeptOfTransportation;
+    :numberOfBasins "20"^^xsd:integer ;
+    :startsAt "2001"^^xsd:dateTime ;
+    :endsAt "2001"^^xsd:dateTime ;
+    :hasCost "445000.0"^^xsd:decimal ;
+    :concerns :HybridPoolAndWeirFishway .
+
+# The fishway
+:PasseAPoissonsDeStrasbourg a :fishway 
+    skos:prefLabel "Passe AP Poisson" ;
+    :isLocatedOn :TrinityRiverBasinNorthernCaliforniaUSA;
+    :numberOfBasins "18"^^xsd:integer ;
+    :startsAt "2001"^^xsd:dateTime ;
+    :endsAt "2001"^^xsd:dateTime ;
+    :hasCost "15000000.0"^^xsd:decimal ;
+    :concerns :HybridPoolAndWeirFishway .
+
+# The geographic zone
+:TrinityRiverBasinNorthernCaliforniaUSA a :geographicZone 
+    skos:prefLabel "Trinity River Basin, Northern California, USA";
+    label : "Trinity River Basin, Northern California, USA".
+
+# The project owner
+:CentreIngHenHydrauliqueEDFandEDFRD a :projectOwner 
+    skos:prefLabel "Centre Ingénierie Hydraulique EDF, EDF R&D";
+
+# The other actor
+:CaliforniaDeptOfTransportation a :otherActor 
+    skos:prefLabel "California Dept. of Transportation";
+
+:AgenceEauRhinMeuseDREALAlsaconeMA a :projectFundingSource 
+    skos:prefLabel "Agence de l'eau Rhin-Meuse, DREAL Alsace, ONEMA";
+
+:CaliforniaDeptOfFishAndGame a :otherActor 
+    skos:prefLabel "California Dept. of Fish and Game";
+
+:NationalMarineFisheriesService a :otherActor 
+    skos:prefLabel "National Marine Fisheries Service";
+
+:USDAForestService a :otherActor 
+    skos:prefLabel "USDA Forest Service";
+
+:CaliforniaConservationCorps a :projectFundingSource 
+    skos:prefLabel "California Conservation Corps".
+
+# The river
+:TrinityRiver a :river 
+    skos:prefLabel "Trinity River";
+    :isLocatedOn :TrinityRiverBasinNorthernCaliforniaUSA;
+    :isImpassable "true"^^xsd:boolean .
+
+:LittleFrenchCreek a :river 
+    skos:prefLabel "Little French Creek";
+    :isLocatedOn :TrinityRiverBasinNorthernCaliforniaUSA.

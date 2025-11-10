@@ -1,0 +1,58 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:PasseAPoissonsDiffezheim a :PasseAPoissons ;
+                                        skos:prefLabel "Passe à poissons d'Iffezheim" ;
+                    :isLocatedOn :Rhin;
+                    :associatedTo :BarrageDeLaCentraleHydroelectrique ;
+                    :mainContractor :EDF,EnBW ;
+                    :hasCost "36 700 € HT"^^xsd:string .
+                    
+:SeuilDSSmithKaysersberg a :weir ,
+                        :lowSlopeRockfillWeir ;
+                        skos:prefLabel "Seuil DS Smith Kaysersberg" ;
+                        :isLocatedOn :Rhin ;
+                        :associatedTo :PasseAPoissonsDiffezheim ;
+                        :hasHeight "2.1"^^xsd:decimal ;
+                        :averageSlope "0.2"^^xsd:decimal ;
+                        :isImpassable "true"^^xsd:boolean .
+
+:BassinDeLaCentraleHydroelectrique a :barrage ,
+                                skos:prefLabel "Barrage de la centrale hydroélectrique sur le Rhin";
+                                :isLocatedOn :Rhin ;
+
+:ConseilGeneralDuHautRhin a :projectOwner ;
+                          skos:prefLabel "Conseil General Du Haut-Rhin" .
+
+
+:MaitriseOeuvreEDF,EnBW a :mainContractor ;
+                                        skos:prefLabel "Maitrise Oeuvre EDF, EnBW";
+                                        :isAssociatedTo :PasseAPoissonsDiffezheim .
+                    
+:HautRhin a :geographicZone;
+            skos:prefLabel "Haut-Rhin" .
+
+
+
+# The objective of the project
+:PasseAPoissonsDiffezheim a 
+    :hasObjective  ( owl:None ) ;
+    :hasExpectedOutcome (owl:SameAs ( :SeuilDSSmithKaysersberg  )).
+
+
+# The associated structure
+:BassinDeLaCentraleHydroelectrique a 
+    :isAssociatedWith ( owl:SameAs (:PasseAPoissonsDiffezheim) ),
+    :isPartOf (:Rhin ).
+
+# The project owner
+:ConseilGeneralDuHautRhin a 
+    :hasProjectOwner ( owl:SameAs (:MaitriseOeuvreEDF,EnBW)),
+    :isAssociatedWith (:PasseAPoissonsDiffezheim).
+
+
+# The main contractor
+:MaitriseOeuvreEDF,EnBW a 
+    :isMainContractor ( owl:SameAs (:ConseilGeneralDuHautRhin))
+,  :hasProjectOwner (:BassinDeLaCentraleHydroelectrique).

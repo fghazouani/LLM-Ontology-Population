@@ -1,0 +1,91 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Here are the extracted instances (individuals) from the text based on the provided ontology description in turtle format:
+
+```turtle
+@prefix tetra: <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+
+?projectOfTetraOnto a tetra:restorationMeasure .
+?projectOfTetraOnto tetra:hasProjectType "Hybrid Pool and Weir Fishway with Concrete Pools and Removable Wood Baffles" .
+
+?trinityRiverBasin a tetra:geographicZone .
+?trinityRiverBasin tetra:isLocatedOn tetra:Trinity River .
+
+?caltrans a tetra:projectOwner .
+?caltrans tetra:hasMainContractor "California Dept. of Transportation" .
+
+?usdaForestService a tetra:otherActor .
+?usdaForestService tetra:isManagedBy tetra:trinityRiverBasin .
+
+?nationalMarineFisheriesService a tetra:otherActor .
+?nationalMarineFisheriesService tetra:isManagedBy tetra:trinityRiverBasin .
+
+?californiaconservationcorps a tetra:otherActor .
+?californiaconservationcorps tetra:isManagedBy tetra:trinityRiverBasin .
+
+?usdaForestService tetra:hasProjectType "USDA Forest Service" .
+
+?caltrans tetra:hasProjectCost 445000 .
+
+?projectOfTetraOnto tetra:concerns tetra:poolAndWeirFishway .
+?projectOfTetraOnto tetra:relizedIn tetra:trinityRiverBasin .
+
+?projectOfTetraOnto tetra:hasMainContractor "California Dept. of Transportation" .
+
+?projectOfTetraOnto tetra:hasBiologicalMonitoring true .
+
+?projectOfTetraOnto tetra:startssAt 2001-11 .
+?projectOfTetraOnto tetra:endssAt 2001-11 .
+
+?trinityRiver a tetra:waterBody .
+?trinityRiver tetra:hasMixLowWaterFlow "Trinity River" .
+
+?trinityRiver tetra:hasMaxLowWaterFlow "Trinity River" .
+
+?projectOfTetraOnto tetra:hasTechnicalElement ( fishway .
+
+?projectOfTetraOnto tetra:isImpassable false .
+
+?littleFrenchCreek a tetra:waterBody .
+?littleFrenchCreek tetra:hasMixLowWaterFlow "Little French Creek" .
+
+?fishway a tetra:FishwayType .
+?fishway tetra:isLocatedOn tetra:trinityRiverBasin .
+
+?pool a tetra:StructureType .
+?pool tetra:isLocatedOn tetra:fishway .
+
+?weir a tetra:StructureType .
+?weir tetra:isLocatedOn tetra:fishway .
+
+?baffle a tetra:BaffleType .
+?baffle tetra:hasBaffleBrush true .
+
+?culvertPost a tetra:CulvertPostType .
+?culvertPost tetra:isLocatedOn tetra:littleFrenchCreek .
+
+?archCulvert a tetra:CulvertType .
+?archCulvert tetra:hasPoolLength 3.0 .
+
+?archCulvert tetra:hasPoolWidth 10 .
+
+?baffleMasonry a tetra:BaffleMaterial .
+?baffleMasonry tetra:hasNotchHight 1 .
+
+?baffleMasonry tetra:hasNotchWidth 2 .
+
+?caltrans a tetra:projectOwner .
+?caltrans tetra:isManagedBy tetra:fishway .
+
+?denilFishLadder a tetra:DenilFishLadderType .
+?denilFishLadder tetra:isLocatedOn tetra:littleFrenchCreek .
+
+?cobbles a tetra:AestheticTreatment .
+?cobbles tetra:hasAestheticTreatment true .
+
+```
+
+Please note that the instance creation might not be exhaustive, as there are multiple occurrences of some entities mentioned in the text.

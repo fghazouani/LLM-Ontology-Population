@@ -1,0 +1,38 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:concretePoolVortexWeir a :reconnection ;
+			:associatedTo :vortexWeirStructure ;
+			:isManagedBy :delNorteCountyProjectOwner, :caDeptFishAndGameOtherActor, :caCoastalConservancyOtherActor ;
+			:hasMainContractor :mainContractorInstance ;
+			:startsAt "2001-01-01T00:00:00"^^xsd:dateTime;
+			:endsAt "2003-11-01T00:00:00"^^xsd:dateTime ;
+			:hasMaxLowWaterFlow 56.6 ;
+			:hasMinLowWaterFlow 79 ;
+			:numberOfPools 40 ;
+			:numberOfBasins 4 ;
+			:averageSlope 2.1/37 ;
+            skos:prefLabel "Concrete Pool and Vortex Weir Fishway".
+
+:vortexWeirStructure a :weir, :successivesBasinsPass ;
+                    :isLocatedOn :smithRiverGeographicZone ;
+                    :hasHeight 7 ;
+                    :isImpassable true ;
+                    skos:prefLabel "Vortex Weir Structure".
+
+:smithRiverGeographicZone a :geographicZone ;
+                          skos:prefLabel "Smith River Basin, Northern California".
+
+:delNorteCountyProjectOwner a :projectOwner ;
+                        skos:prefLabel "Del Norte County Project Owner".
+
+:caDeptFishAndGameOtherActor a :otherActor ;
+                        skos:prefLabel "CA Dept. of Fish and Game Other Actor".
+
+:caCoastalConservancyOtherActor a :otherActor ;
+                        skos:prefLabel "CA Coastal Conservancy Other Actor".
+
+:mainContractorInstance a :mainContractor ;
+                          skos:prefLabel "Main Contractor Instance".

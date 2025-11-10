@@ -1,0 +1,24 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# The restoration measure:
+:ConcreteFishWayProject a :restorationmeasure ;
+                    skos:prefLabel "Concrete Fishway Project" ;
+                    :relizedIn :MadRiverBasinNorthernCalifornia ;
+                    :isManagedBy :HumboldtCountyCaliforniaDeptOfFishAndGame ;
+                    label "Concerns Fish Passage Improvement" .
+
+# The geographic zone:
+:MadRiverBasinNorthernCalifornia a :geographiczone ;
+                       skos:prefLabel "Mad River Basin, Northern California" .
+   
+# The project owner:
+:HumboldtCountyCaliforniaDeptOfFishAndGame a :projectowner ;
+                              skos:prefLabel "Humboldt County - California Dept. of Fish and Game" .
+
+# The geographic zone again:
+:HumboldtCountyCalifornia a :geographiczone ;
+                        skos:prefLabel "Humboldt County, California" .
+    

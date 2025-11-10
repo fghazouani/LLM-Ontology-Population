@@ -1,0 +1,45 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The Basins:
+:PasseAPoissonsDeMadRiver a :successivesBasinsPass 
+    rdfs:label "PasseAPoissonsDeMadRiver" ;
+    :associatedTo MadRivervalley ;
+    :isManagedBy HumboldtCountyCaliforniaFishandGame ;
+    :hasMainContractor MAPProjectType ;
+    :numberOfBasins "0.92"^^xsd:decimal ;
+    :startsAt "2002-11"^^xsd:dateTime ;
+    :endsAt ""^^xsd:dateTime ;
+    :hasCost "171000.0"^^xsd:decimal ;
+    skos:prefLabel "PasseAPoissonsDeMadRiver" ;
+    :concerns :Fish Passage Evaluation .
+
+# The Basins (again, but this time for better linking)
+MadRivervalley a :geographicZone 
+    rdfs:label "Mad River Basin, Northern California" ;
+    :isLocatedOn MadRiverBasin .
+
+MadRiverBasin a :geographicZone 
+    rdfs:label "Northern California" ;
+
+# The Project Types:
+:successivesBasinsPass a owl:Class 
+    skos:prefLabel "Successive Basins Pass" ;
+    rdfs:label "Successive Basins Pass" ;
+    :rdfs:subClassOf MAPProjectType .
+
+# The Projects:
+:MAPProjectType a :project
+    skos:prefLabel "MAP Project Type" ;
+    :hasMainContractor HumboldtCounty ;
+
+# The Actors:
+:HumboldtCountyCaliforniaFishandGame a :otherActor 
+    rdfs:label "Humboldt County, California Department of Fish and Game" ;
+    :isManagedBy MAPProjectType ;
+    skos:prefLabel "Humboldt County, California Department of Fish and Game" ;
+
+# The Projects (again, but this time for better linking)
+:HumboldtCounty a :actor 
+    rdfs:label "Humboldt County" ;

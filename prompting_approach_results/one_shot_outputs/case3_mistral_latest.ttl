@@ -1,0 +1,42 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# The fish pass project at DS Smith Kaysersberg Weir:
+:FishPassImplementationProjectAtDSmithKaysersberg a :project ;
+                             skos:prefLabel "Fish Pass Implementation Project at DS Smith Kaysersberg Weir" ;
+                             :isManagedBy :ConseilGeneralDuHautRhin ;
+                             :hasMainContractor :MaitriseOeuvreConseilGeneralDuHautRhin ;
+                             :associatedTo [a :weir, :lowSlopeRockfillWeir] ;
+                             :isLocatedOn :HautRhin ;
+                             :startsAt "2021-12"^^xsd:dateTime;
+                             :endssAt "2023-12"^^xsd:dateTime ;
+                             :hasCost "7 568 000 € HT"^^xsd:string .
+
+# The fish pass system:
+[a :FishPassSystem] a :riverBypass ;
+                       skos:prefLabel "DS Smith Kaysersberg Fish Pass System" ;
+                       :numberOfWeirs 14 ;
+                       :interBasinDrop "11 cm"^^xsd:string;
+                       :basinDimensions "[5 meters, 3/4 meter]"^^xsd:string;
+                       :chuteDimensions "[60 cm, 50 cm]"^^xsd:string;
+                       :functioningRange "[0.4 m³/s, 1.6 m³/s]"^^xsd:string;
+                       :averageSlope "2.6%"^^xsd:decimal;
+                       :otherFeatures [a :adjustableWaterLevelWithGate] .
+
+# The adjustable water level at the entrance of the passage with a gate:
+:AdjustableWaterLevelAtEntranceOfThePassageWithAGate a owl:DatatypeProperty ;
+                                                      rdfs:label "Adjustable water level at the entrance of the passage with a gate" .
+
+# The river where the project is located:
+:HautRhin a :River ;
+              skos:prefLabel "Haut-Rhin River" .
+
+# The General Council responsible for managing the project:
+:ConseilGeneralDuHautRhin a :Organization ;
+                            skos:prefLabel "Haut-Rhin General Council" .
+
+# The main contractor of the project:
+:MaitriseOeuvreConseilGeneralDuHautRhin a :Organization ;
+                                              skos:prefLabel "Masterwork Council of Haut-Rhin" .

@@ -1,0 +1,47 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Here is the instance created based on the provided text and ontology description:
+
+:<RestorationMeasureInstance> a :<RestorationMeasureClass> ;
+			:associatedTo :<StructureInstance> ;
+			:isManagedBy :<ProjectOwnerInstance> ;
+			:hasMainContractor :<MainContractorInstance> ;
+			:startsAt "2010-01-01"^^xsd:dateTime;
+			:endsAt "2020-12-31"^^xsd:dateTime ;
+			:concerns <continuityLongitudinal> ;
+			:hasMaxLowWaterFlow 1.2^^xsd:float ;
+			:hasMinLowWaterFlow 15.0^^xsd:float ;
+			:includes :<TechnicalElementInstance> ;
+			:numberOfPools 3;
+			skos:prefLabel "Passe à poissons de Gambsheim".
+
+:<StructureInstance> a :passageToFish, 
+                    :isLocatedOn <GeographicZoneInstance> ;
+                    :hasHeight <heightOfTheStructure>;
+					:hasPoolLength 10.0^^xsd:float;
+					:hasPoolWidth 5.0^^xsd:float;  
+					skos:prefLabel "Passe à poissons de Gambsheim".
+
+:<GeographicZoneInstance> a :geographicZone ;
+                          skos:prefLabel "Gambsheim";
+
+:<ProjectOwnerInstance> a :projectOwner, 
+                        :isManagedBy <OtherActorInstance>;
+                        :hasBiologicalMonitoring true;
+			skos:prefLabel "CERGA SA". 
+
+:<MainContractorInstance> a :mainContractor ;
+                          skos:prefLabel "Association Passage 309".
+
+:<TechnicalElementInstancet> a :fishPond,
+                            skos:prefLabel "Fish pond in Gambsheim".
+							:hasNotchHight 10.0^^xsd:float; 
+							:hasNotchWidth 5.0^^xsd:float;  
+							:numberOfBassin 3;
+							 
+
+:<OtherActorInstance> a :otherActor ;
+                        skos:prefLabel "ONEMA, Saumon-Rhin".

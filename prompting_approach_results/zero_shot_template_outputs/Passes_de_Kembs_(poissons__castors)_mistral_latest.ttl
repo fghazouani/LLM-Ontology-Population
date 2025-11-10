@@ -1,0 +1,44 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ Based on the provided text and ontology, here are the instances extracted:
+
+1. RestorationMeasureInstance:
+    - :PassesDeKembs (a :RestorationMeasureClass) ;
+            :associatedWith :KembsPassesForFishAndBeavers (a :TechnicalElement) ;
+            :relatedTo :RhinWaterBody (a :SubClassOfMasseDEau, a :GeographicZone) ;
+            :category :ContinuiteLongitudinale (a :Continuity);
+            :country :France (a :Country) ;
+            :department :Haut-Rhin (a :Department) ;
+            :city :Kembs (a :City) ;
+            :contractor :CentreDInginerieHydrauliquedEDF_EDFRDE (a :MainContractorInstance) ;
+            :owner :ElectriciteDeFrance_EDF (a :ProjectOwnerInstance) ;
+            :otherActors :AgenceDeLaEauRhinMeuse_ARM (a :OtherActor), :ReserveNaturelleDeLaPCA_RNPCA (a :OtherActor), :ONEMA_ONEMA ;
+            :startDate "2011" ;
+            :numberOfPools 3 ;
+            :averageSlope "Not specified" ;
+            skos:prefLabel <"Kembs Fish and Beaver Passes Restoration Measure">.
+
+2. TechnicalElementInstance:
+    - :KembsPassesForFishAndBeavers (a :TechnicalElement) ;
+            :description "Remplacement de l'ancienne passe à poissons du barrage par une passe à poissons très moderne s’inspirant de celle de Gambsheim construite près de la nouvelle centrale de turbinage du débit réservé permettant le passage dans les 2 sens (Rhin vers mer et Vieux Rhin vers Bâle) (localisée sur la carte). Mise en place d'une passe à poissons située à l’aval de l’usine de Kembs, mettant en communication le Grand Canal d'Alsace et la Reserve Naturelle de la PCA (rivière pseudo-naturelle) (mise en eau en 2013). Mise en place d'une passe à castors permettant le franchissement du barrage de Kembs en rive allemande par les mammifères aquatiques." ;
+            skos:prefLabel <"Kembs Fish and Beavers Passes">.
+
+3. GeographicZoneInstance:
+    - :LeRhin (a :GeographicZone) ;
+            skos:prefLabel <"The Rhine">.
+
+4. SubClassOfMasseDEau:
+    - :GrandCanalDAlsace (a :SubClassOfMasseDEau) ;
+    - :ReserveNaturelleDeLaPCA (a :SubClassOfMasseDEau) ;
+            skos:prefLabel <"Grand Canal of Alsace, Reserve Naturelle de la PCA">.
+
+5. OtherActor:
+    - :AgenceDeLaEauRhinMeuse_ARM (a :OtherActor) ;
+            skos:prefLabel <"Agency for the Rhine-Meuse Water">.
+    - :ReserveNaturelleDeLaPCA_RNPCA (a :OtherActor) ;
+            skos:prefLabel <"Reserve Naturelle de la PCA">.
+    - :ONEMA_ONEMA (a :OtherActor) ;
+            skos:prefLabel <"ONEMA">.

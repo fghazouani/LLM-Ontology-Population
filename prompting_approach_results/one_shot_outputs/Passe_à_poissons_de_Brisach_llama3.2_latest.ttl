@@ -1,0 +1,30 @@
+Here are the translated instances:
+
+* <http://example.org/instance1> is a :successivesBasinsPass 
+    :associatedTo <http://example.org/barrageAgricole1> ;
+    skos:prefLabel "Passe APoissons de Brisach" ;
+    :isManagedBy <http://example.org/cergasa1> ;
+    :hasMainContractor <http://example.org/edfenbw1> ;
+    :numberOfBasins "4"^^xsd:integer 
+    :startsAt "2008"^^xsd:dateTime 
+    :concerns :LongitudinalContinuity .
+
+* <http://example.org/barrageAgricole1> is a :basinPass 
+    :isLocatedOn <http://example.org/hautrhinBrisachFrance1> ;
+    skos:prefLabel "Barrage Agricole" ;
+    :isImpassable "true"^^xsd:boolean .
+
+* <http://example.org/cergasa1> is a :mainContractor 
+    skos:prefLabel "CERGA SA" ;
+    label : "CERGASA".
+
+* <http://example.org/edfenbw1> is a :projectOwner 
+    skos:prefLabel "EDF EnBW" ;
+    label : "EDF EnBW".
+
+* <http://example.org/hautrhinBrisachFrance1> is a :geographicZone 
+    skos:prefLabel "Haut-Rhin, Brisach, France" .
+    
+* <http://example.org/edfenbw2> is a :projectOwner 
+    skos:prefLabel "EDF EnBW" ;
+    label : "EDF EnBW".

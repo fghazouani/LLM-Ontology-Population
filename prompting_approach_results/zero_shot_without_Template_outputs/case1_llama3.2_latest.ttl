@@ -1,0 +1,58 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Voici les instances (individus) extraits du texte et représentées dans le format Turtle :
+
+```turtle
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:geographicZone="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#"
+         xmlns:TetraOnto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+    <rdf:Description rdf:about="#barrage_d_Avolsheim">
+        <geographicZone:TetraOnto>Avolsheim</geographicZone:TetraOnto>
+        <geographicZone:hasMainContractor rdf:resource="#Communauté_de_Commonsuheim_de_Molsheim-Mutzig"/>
+        <geographicZone:associatedTo rdf:resource="#bassin_d_Avolsheim">
+            <geographicZone:TetraOnto>basinPass</geographicZone:TetraOnto>
+            <geographicZone:TetraOnto>successivesBasinsPass</geographicZone:TetraOnto>
+        </geographicZone:associatedTo>
+        <geographicZone:hasTechnicalElement rdf:resource="#passe_d_Avolsheim">
+            <geographicZone:TetraOnto>fishLift</geographicZone:TetraOnto>
+            <geographicZone:TetraOnto>baffleFishway</geographicZone:TetraOnto>
+        </geographicZone:hasTechnicalElement>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#bassin_d_Avolsheim">
+        <geographicZone:TetraOnto>Avolsheim</geographicZone:TetraOnto>
+        <geographicZone:hasMainContractor rdf:resource="#SOGREAH_Consultants"/>
+        <geographicZone:hasTechnicalElement rdf:resource="#passe_d_Avolsheim">
+            <geographicZone:TetraOnto>basinPass</geographicZone:TetraOnto>
+            <geographicZone:TetraOnto>successivesBasinsPass</geographicZone:TetraOnto>
+        </geographicZone:hasTechnicalElement>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#passe_d_Avolsheim">
+        <geographicZone:TetraOnto>Avolsheim</geographicZone:TetraOnto>
+        <geographicZone:hasMainContractor rdf:resource="#Communauté_de_Commonsuheim_de_Mutzig"/>
+        <geographicZone:associatedTo rdf:resource="#bassin_d_Avolsheim">
+            <geographicZone:TetraOnto>basinPass</geographicZone:TetraOnto>
+            <geographicZone:TetraOnto>successivesBasinsPass</geographicZone:TetraOnto>
+        </geographicZone:associatedTo>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#Communauté_de_Commonsuheim_de_Mutzig">
+        <geographicZone:TetraOnto>Molsheim-Mutzig</geographicZone:TetraOnto>
+        <geographicZone:hasMainContractor rdf:resource="#Communauté_de_Commonsuheim_de_Molsheim-Mutzig"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#SOGREAH_Consultants">
+        <geographicZone:TetraOnto>SOGREAH_Consultants</geographicZone:TetraOnto>
+        <geographicZone:hasMainContractor rdf:resource="#Communauté_de_Commonsuheim_de_Mutzig"/>
+    </rdf:Description>
+
+</rdf:RDF>
+```

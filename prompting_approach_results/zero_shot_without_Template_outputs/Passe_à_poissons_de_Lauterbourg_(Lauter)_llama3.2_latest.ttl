@@ -1,0 +1,41 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<:Individual xmlns:TetraOnto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#">
+
+  <:hasMainContractor>
+    <rdf:type rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#ProjectOwner"/>
+    <rdf:value>Jockgrim</rdf:value>
+  </:hasMainContractor>
+
+  <:isLocatedOn rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Pool"/>
+  <:hasCost rdf:value="171682.0"/>
+  <:startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2005</rdf:datatype>
+  <:endssAt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2005</rdf:datatype>
+
+  <:containsTechnicalElement rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#PasseAPoissonsLauterbourg"/>
+  <:concerns rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#ContinuitéLongitudinale"/>
+
+</:Individual>
+
+<:Individual xmlns:TetraOnto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#">
+
+  <:hasMainContractor rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#ProjectOwner"/>
+  <rdf:value>Jockgrim</rdf:value>
+  <:isLocatedOn rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#BasinPass"/>
+
+  <:hasTechnicalElement rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#PasseAPoissonsLauterbourg"/>
+  <:concerns rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#SuccessivesBasinsPass"/>
+
+</:Individual>
+
+<tetra-ontology xmlns:tetra-onto="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#">
+  <geographicZone rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#BasinPass"/>
+  <mainContractor rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#ProjectOwner"/>
+  <projectOwner rdf:resource="http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Jockgrim"/>
+</tetra-ontology>
+```

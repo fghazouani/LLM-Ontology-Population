@@ -1,0 +1,32 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# Contexte et objectifs:
+:PasseAPoissons a :franchissementAvolsheim ;
+                    skos:prefLabel "Passe AP Poisson à Avolsheim" ;
+                    :associatedTo :CommunautéDeCommunesMolsheimMutzig ;
+                    :isManagedBy :ConseilGeneralDuHautRhin ;
+                    :hasMainContractor :MaitriseOeuvreConseilGeneralDuHautRhin ;
+
+# Choix technique:
+:FranchissementAvolsheim a :rivièreDeContournement ;
+                        skos:prefLabel "Rivière de contournement à Avolsheim" ;
+                        :associatedTo :PasseAPoissons ;
+                        :isLocatedOn :CommunautéDeCommunesMolsheimMutzig ;
+
+# Caractéristiques du dispositif:
+:DispositifAvolsheim a :franchissement ;
+                      skos:prefLabel "Dispositif de franchissement à Avolsheim" ;
+                      :associatedTo :PasseAPoissons ;
+                      :hasNumberOfBasses 17 ;
+                      :hasMeanChuteBetweenBasses 18 cm ;
+                      :hasDimensionsLongueur ~6 m ;
+                      :hasDimensionsLargeur ~4 m ;
+                      :hasDimensionsMinProfondeureEau 80 cm ;
+                      :hasDimensionsMaxLargeurÉchancrures 40 cm ;
+                      :hasDimensionsMaxHauteurÉchancrures 80 cm ;
+                      :hasPenteMoyenne 2.3 % ;
+                      :hasPresenceDeBlocs  true ;
+                      :hasPresenceDePieuxSaules true ;

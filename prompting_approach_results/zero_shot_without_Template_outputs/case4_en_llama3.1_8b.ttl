@@ -1,0 +1,58 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<#HybridPoolAndWeirFishway>
+    a :restorationMeasure ;
+    :concerns :fishwayType ;
+    :associatedTo <#ConcretePoolsAndRemovableWoodBaffles> ;
+    :isManagedBy <#Caltrans> , <#CaliforniaDeptOfFishAndGame> , <#NationalMarineFisheriesService> ;
+    :containsTechnicalElement <#DenilFishLadder> ;
+    :hasMainContractor <#CaliforniaConservationCorps> ;
+    :relizedIn <#TrinityRiverBasin> ;
+    :startsAt "2001"^^xsd:gYear ;
+    :endssAt "November"^^xsd:month ;
+    :hasCost 445000^^xsd:integer .
+
+<#TrinityRiverBasin>
+    a :geographicZone ;
+    :isLocatedOn <#TrinityRiver> , <#LittleFrenchCreek> .
+
+<#TrinityRiver>
+    a :waterBodyType ;
+    :hasPoolLength 97^^xsd:integer ;
+    :hasPoolWidth 29.6^^xsd:decimal ;
+    :isImpassable "true"^^xsd:boolean .
+
+<#LittleFrenchCreek>
+    a :waterBodyType ;
+    :hasPoolLength 10^^xsd:integer ;
+    :hasPoolWidth 3.0^^xsd:decimal ;
+    :isImpassable "true"^^xsd:boolean .
+
+<#ConcretePoolsAndRemovableWoodBaffles>
+    a :structureType ;
+    :isLocatedOn <#TrinityRiver> , <#LittleFrenchCreek> .
+
+<#DenilFishLadder>
+    a :fishwayType ;
+    :associatedTo <#ConcretePoolsAndRemovableWoodBaffles> .
+
+<#Caltrans>
+    a :projectOwner ;
+    :hasMainContractor <#CaliforniaConservationCorps> .
+
+<#CaliforniaDeptOfFishAndGame>
+    a :projectOwner ;
+    :isManagedBy <#HybridPoolAndWeirFishway> .
+
+<#NationalMarineFisheriesService>
+    a :otherActor ;
+    :isManagedBy <#HybridPoolAndWeirFishway> .
+
+<#CaliforniaConservationCorps>
+    a :otherActor ;
+    :hasMainContractor <#Caltrans> .

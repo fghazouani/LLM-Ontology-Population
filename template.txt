@@ -1,0 +1,34 @@
+:<RestorationMeasureInstance> a :<RestorationMeasureClass> ;
+			:associatedTo :<StructureInstance> ;
+			:isManagedBy :<ProjectOwnerInstance> ;
+			:hasMainContractor :<MainContractorInstance> ;
+			:startsAt <"StartDateTime">^^xsd:dateTime;
+			:endsAt <"EndDateTime">^^xsd:dateTime ;
+			:hasMaxLowWaterFlow <"theMaxLowWaterFlow">^^xsd:float ;
+			:hasMinLowWaterFlow <"theMinLowWaterFlow">^^xsd:float> ;
+			:includes :<TechnicalElementInstance> ;
+			:numberOfPools <NumberOfTechnicalElements if exists> ;
+			:numberOfBasins <NumberOfTechnicalElements if exists> ;
+			:averageSlope <AverageSlope> ;
+            skos:prefLabel <"Restoration Measure Instance name">.
+
+
+:<StructureInstance> a :<Structure>,
+                    :<SubClassOfStructureToBelong> ;
+                    :isLocatedOn :<GeographicZoneInstance> ;
+                    :hasHeight <heightOfTheStructure> ;
+                    :isImpassable <xsd:boolean> ;
+                    skos:prefLabel <"Structure Instance name">.
+
+:<GeographicZoneInstance> a :geographicZone ;
+                          skos:prefLabel <"Geographic zone Instance name">.
+
+:<ProjectOwnerInstance> a :projectOwner ;
+                        skos:prefLabel <"ProjectOwner Instance name">.
+
+:<MainContractorInstance> a :mainContractor ;
+                          skos:prefLabel <"Main Contractor Instance name">.
+
+:<TechnicalElementInstancet> a :TechnicalElement ;
+                            skos:prefLabel <"Technical Element name">.
+                           <add information with respect to the ontology description> .

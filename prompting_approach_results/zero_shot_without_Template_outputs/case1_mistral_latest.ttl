@@ -1,0 +1,30 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ Based on the given ontology and text input, here are some instances that can be extracted:
+
+```turtle
+@prefix TetraOnto: <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<#Communauté_de_Commsuheim_de_Molsheim-Mutzig> a TetraOnto:projectOwner .
+<#SOGREAH_Consultants> a TetraOnto:mainContractor .
+<http://Date_des_travaux> <TetraOnto:startsAt> "Août à Décembre 2010"^^xsd:dateTime .
+<http://Montant_des_travaux> a TetraOnto:hasCost ;
+                            TetraOnto:hasHeight "0.2"^^xsd:decimal .
+
+<#barrage_d’Avolsheim> a TetraOnto:structure ;
+                      TetraOnto:isLocatedOn <#Bruche> ;
+                      TetraOnto:containsTechnicalElement [
+                        a TetraOnto:fishway ;
+                        TetraOnto:concerns "successivesBasinsPass" ;
+                        TetraOnto:isImpassable false ;
+                        TetraOnto:numberOfPools 17 ;
+                        TetraOnto:averageSlope "2.3"^^xsd:decimal ;
+                        TetraOnto:chuteInterBassins "18cm" ;
+                        TetraOnto:dimensionsEchancrures "[40cm, 80cm]"^^xsd:decimal ;
+                        TetraOnto:dimensionsBassins "[6m, 4m, 80cm]"^^xsd:decimal ;
+                        TetraOnto:plageDeFonctionnement "[0.4, 2.0]"^^xsd:decimal .
+                      ] .
+```

@@ -1,0 +1,46 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Here are the instances extracted from the text based on the ontology description:
+
+:<RestorationMeasureInstance> a :basinPass ;
+            :associatedTo :dam ;
+            :isManagedBy :projectOwnerInstance1 ,
+                             otherActorInstance1 ;
+            :hasMainContractor :mainContractorInstance1 ;
+            :startsAt "2003-01-01"^^xsd:dateTime ;
+            :endsAt "2010-12-31"^^xsd:dateTime ;
+            :hasMaxLowWaterFlow 8.5^^xsd:float ;
+            :includes technicalElementInstance1 ;
+            :numberOfBasins 1 ;
+            :averageSlope 0.5 ;
+            skos:prefLabel "Passe à poissons de Rheinfelden".
+
+
+:<StructureInstance> a :dam ,
+                        basinPass ;
+                    :isLocatedOn :geographicZoneInstance1 ;
+                    :hasHeight 4.2^^xsd:decimal ;
+                    :isImpassable false ;
+                    skos:prefLabel "Centrale de Rheinfelden".
+
+
+:<GeographicZoneInstance> a geographicZone ;
+                          skos:prefLabel "Rheinflussgebiet Bade-Wurtemberg".
+
+
+:<ProjectOwnerInstance> a projectOwner ;
+                        skos:prefLabel "Administration régionale du Rhin".
+
+
+:<MainContractorInstance> a mainContractor ;
+                          skos:prefLabel "Allemagne, Administration régionale du Rhin".
+
+
+:<TechnicalElementInstance> a :nozzle ;
+                            skos:prefLabel "Nozze de la centrale".
+
+
+Note: The instances are generated based on the provided text input and the ontology description. However, please note that some information (e.g., the start and end dates) is inferred from the text, while other information (e.g., the exact coordinates of the dam) is not explicitly mentioned in the text.

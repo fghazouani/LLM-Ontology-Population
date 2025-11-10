@@ -1,0 +1,43 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+:MadRiverBasin a :geographicZone ;
+    rdfs:label "Mad River Basin" .
+
+:HumboldtCounty a :projectOwner ;
+    rdfs:label "Humboldt County" .
+
+:CaliforniaDeptFishandGame a :otherActor ;
+    rdfs:label "California Dept. Fish and Game" .
+
+:ConcreteFishwayAndRockGradeControlProject a :restorationMeasure ;
+    rdfs:label "Concrete Fishway and Rock Grade Control Project" ;
+    :relizedIn :MadRiverBasin ;
+    :hasCost "171000"^^xsd:decimal ;
+    :startssAt "2002-11-01T00:00:00Z"^^xsd:dateTime .
+
+:NewFishway a :technicalElement, :fishLift ;
+    rdfs:label "New Fishway" ;
+    :containsTechnicalElement :ConcreteFishwayAndRockGradeControlProject ;
+    :hasHeight "4.0"^^xsd:decimal ;
+    :hasMaxLowWaterFlow "11.9"^^xsd:decimal .
+
+:ExistingCulvert a :structure, :nozzle ;
+    rdfs:label "Existing Culvert" ;
+    :isLocatedOn :MadRiverBasin ;
+    :hasHeight "1.0"^^xsd:decimal .
+
+:HumboldtCounty a :projectOwner ;
+    rdfs:label "Humboldt County" .
+
+:CaliforniaDeptFishandGame a :otherActor ;
+    rdfs:label "California Dept. Fish and Game" .
+
+:MadRiver a :river ;
+    rdfs:label "Mad River" ;
+    :hasMaxLowWaterFlow "11.9"^^xsd:decimal ;
+    :hasMixLowWaterFlow "420"^^xsd:decimal .

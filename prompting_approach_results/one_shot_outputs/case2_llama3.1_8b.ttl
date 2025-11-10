@@ -1,0 +1,28 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:PasseAPoissons a :restorationMeasure ;
+                    skos:prefLabel "Projet d'aménagement hydraulique sur le Giessen" ;
+                    :associatedTo :SeuilSenglerGiessen ;
+                    :isManagedBy :CommunauteDeCommunesDuCantonDeVille ;
+                    :hasMainContractor :AgenceDeLEauRhinMeuse, ConseilGeneralDuBasRhin ;
+                    :startsAt ""^^xsd:dateTime;
+                    :endsAt ""^^xsd:dateTime;
+                    :hasCost ""^^xsd:string .
+
+:SeuilSenglerGiessen a :weir ,
+                        :periodicStepWeir ;
+                        skos:prefLabel "Seuil Sengler sur le Giessen" ;
+                        :isLocatedOn :Giessen ;
+                        :associatedTo :PasseAPoissons ;
+                        :hasHeight ""^^xsd:decimal ;
+                        :averageSlope ~4%^^xsd:decimal ;
+                        :isImpassable "false"^^xsd:boolean .
+
+:CommunauteDeCommunesDuCantonDeVille a :projectOwner ;
+                          skos:prefLabel "Communaute de Communes du Canton de Villé" .
+
+:AgenceDeLEauRhinMeuse, ConseilGeneralDuBasRhin a :mainContractor ;
+                                        skos:prefLabel "Agence de l'Eau Rhin-Meuse et Conseil Général du Bas-Rhin" .

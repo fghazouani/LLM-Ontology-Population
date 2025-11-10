@@ -1,0 +1,42 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ Here is the Turtle format for the instances extracted from the text based on the provided ontology:
+
+```turtle
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#PasseAPoissonsDeBrisach> a <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#restorationMeasure>;
+    <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#concerns> "Continuité longitudinale";
+    <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#isManagedBy> <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#CERGASA>;
+    <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#associatedTo> [
+        <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#passeAPoissonsDeBrisach_structure1>,
+        <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#passeAPoissonsDeBrisach_structure2>
+    ];
+    <http://purl.org/dc/terms/created> "20XX-XX-XX";
+    <http://www.w3.org/2006/vcard/ns#location> [
+        a <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#geographicZone>;
+        <http://www.w3.org/2006/vcard/ns#locality> "Brisach";
+        <http://www.w3.org/2006/vcard/ns#region> "Haut-Rhin"^^<http://xmlns.com/foaf/0.1/country>;
+    ];
+    <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#relizedIn> <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#geographicZone>;
+    <http://purl.org/goodrelations/v1#hasCost> "Cost of the project";
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#passeAPoissonsDeBrisach_structure1> a <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#structure>;
+    <http://www.w3.org/2006/vcard/ns#location> [
+        a <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#geographicZone>;
+        <http://www.w3.org/2006/vcard/ns#locality> "Brisach";
+        <http://www.w3.org/2006/vcard/ns#region> "Haut-Rhin"^^<http://xmlns.com/foaf/0.1/country>;
+    ];
+    <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#associatedTo> <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#PasseAPoissonsDeBrisach>;
+    <http://www.w3.org/2006/vcard/ns#role> "Structure associated with the fish passage";
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#passeAPoissonsDeBrisach_structure2> a <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#structure>;
+    <http://www.w3.org/2006/vcard/ns#location> [
+        a <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#geographicZone>;
+        <http://www.w3.org/2006/vcard/ns#locality> "Brisach";
+        <http://www.w3.org/2006/vcard/ns#region> "Haut-Rhin"^^<http://xmlns.com/foaf/0.1/country>;
+    ];
+    <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#associatedTo> <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#PasseAPoissonsDeBrisach>;
+    <http://www.w3.org/2006/vcard/ns#role> "Structure associated with the fish passage";
+```

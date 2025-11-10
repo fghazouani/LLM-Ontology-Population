@@ -1,0 +1,38 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Here are the instances extracted from the text based on the ontology description and the provided template:
+
+```
+:PasseAPoissonsIffezheim a :reconnection ;
+    :associatedTo :PasseAPoissonsStructure ;
+    :isManagedBy :NRProjectOwner ;
+    :hasMainContractor :NRMainContractor ;
+    :startsAt "1997-01-01"^^xsd:dateTime;
+    :endsAt "1997-12-31"^^xsd:dateTime ;
+    :hasMaxLowWaterFlow 1.0^^xsd:float ;
+    :hasMinLowWaterFlow 0.5^^xsd:float ;
+    :includes :PasseAPoissonsTechnicalElement ;
+    :numberOfBasins 37 ;
+    skos:prefLabel "Passe à poissons d'Iffezheim".
+
+:PasseAPoissonsStructure a :fishLift , :successivesBasinsPass ;
+                    :isLocatedOn :LeRhinGeographicZone ;
+                    :hasHeight 3.0^^xsd:float ;
+                    :isImpassable false^^xsd:boolean ;
+    skos:prefLabel "Passe à poissons structure".
+
+:LeRhinGeographicZone a :river ;
+                          skos:prefLabel "Le Rhin".
+
+:NRProjectOwner a :projectOwner , :mainContractor ;
+                        skos:prefLabel "NR Project Owner".
+
+:NRMainContractor a :mainContractor ;
+                          skos:prefLabel "NR Main Contractor".
+
+:PasseAPoissonsTechnicalElement a :TechnicalElement ;
+                            skos:prefLabel "Passe à poissons technical element".
+```

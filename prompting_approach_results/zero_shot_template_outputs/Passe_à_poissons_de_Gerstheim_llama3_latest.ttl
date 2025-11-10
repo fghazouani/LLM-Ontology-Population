@@ -1,0 +1,38 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Here are the instances extracted from the text based on the provided ontology description and template:
+
+:<PasseAPoissonsDeGerstheim> a :RestorationMeasure ;
+         :associatedTo <StructureInstance>;
+         :isManagedBy <ProjectOwnerInstance>;
+         :hasMainContractor <MainContractorInstance>;
+         :startsAt ""^^xsd:dateTime;
+         :endsAt ""^^xsd:dateTime;
+         :hasMaxLowWaterFlow "1.2"^^xsd:float;
+         :hasMinLowWaterFlow ""^^xsd:float;
+         :includes <TechnicalElementInstance>;
+         :numberOfPools "";
+         :numberOfBasins "";
+         :averageSlope "";
+         skos:prefLabel "Passe à poissons de Gerstheim".
+
+:<StructureInstance> a :Fishway ;
+                  :isLocatedOn <GeographicZoneInstance>;
+                  :hasHeight "";
+                  :isImpassable FALSE;
+                  skos:prefLabel "Passe à poissons de Gerstheim".
+
+:<GeographicZoneInstance> a :geographicZone ;
+                          skos:prefLabel "Le Rhin".
+
+:<ProjectOwnerInstance> a :projectOwner ;
+                        skos:prefLabel "CERGA SA".
+
+:<MainContractorInstance> a :mainContractor ;
+                          skos:prefLabel "CERGA SA".
+
+:<TechnicalElementInstance> a :TechnicalElement ;
+                            skos:prefLabel "Counting device with video monitoring".

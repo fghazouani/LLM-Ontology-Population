@@ -1,0 +1,42 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ Here is the Turtle format representation of the instances extracted from the text based on the given ontology:
+
+```turtle
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#RestorationMeasure1>
+    rdf:type :RestorationMeasure ;
+    :concerns "Continuité longitudinale" ;
+    :isLocatedOn <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#WaterBody_Lauter> ;
+    :associatedTo <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Structure_PasseAPoisonsDeLauterbourg> ;
+    :relizedIn <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#geographicZone_France> ;
+    :hasCost "171682.0"^^xsd:decimal ;
+    :startsAt "2005"^^xsd:dateTime ;
+    :endssAt "2005"^^xsd:dateTime ;
+    :containsTechnicalElement <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Fishway_PasseMixteABassinsSuccessifs> ;
+    :hasBiologicalMonitoring true ;
+    :hasHydromorphologicaMonitoring false ;
+    :hasMainContractor <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#OtherActor_Jockgrim> .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#WaterBody_Lauter>
+    rdf:type :WaterBody ;
+    :hasName "La Lauter" .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Structure_PasseAPoisonsDeLauterbourg>
+    rdf:type :Structure ;
+    :isLocatedOn <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#WaterBody_Lauter> ;
+    :hasHeight "NaN"^^xsd:decimal ;
+    :isImpassable false .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Fishway_PasseMixteABassinsSuccessifs>
+    rdf:type :Fishway ;
+    :hasHeight "NaN"^^xsd:decimal .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#OtherActor_Jockgrim>
+    rdf:type :OtherActor ;
+    :hasName "Jockgrim" .
+```

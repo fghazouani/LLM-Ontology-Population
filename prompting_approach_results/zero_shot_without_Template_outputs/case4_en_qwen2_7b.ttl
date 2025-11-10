@@ -1,0 +1,44 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+:hybridPoolAndWeirFishway a :restorationMeasure ;
+        :relizedIn "Trinity River Basin"^^<http://www.w3.org/2001/XMLSchema#string>, 
+                    :NorthernCalifornia, :USA ;
+        :concerns :HybridPoolAndWeirFishway .
+
+:fishWay a :restorationMeasure ;
+        :relizedIn "Trinity River Basin"^^<http://www.w3.org/2001/XMLSchema#string>, 
+                    :NorthernCalifornia, :USA ;
+        :concerns :HybridPoolAndWeirFishway .
+
+:trinityRiver a :waterBody ;
+
+:littleFrenchCreek a :waterBody ;
+
+:californiaDeptOfTransportation a :projectOwner ;
+        :hasMainContractor true .
+
+:californiaDeptOfFishAndGame a :otherActor ;
+        :isManagedBy :californiaDeptOfTransportation, :californiaConservationCorps, 
+                     :nationalMarineFisheriesService, :farmServiceAgency .
+
+:nationalMarineFisheriesService a :otherActor ;
+        :isManagedBy :californiaDeptOfTransportation, :californiaConservationCorps, 
+                     :nationalMarineFisheriesService, :farmServiceAgency .
+
+:farmServiceAgency a :otherActor ;
+        :isManagedBy :californiaDeptOfTransportation, :californiaConservationCorps, 
+                     :nationalMarineFisheriesService, :farmServiceAgency .
+
+:californiaConservationCorps a :otherActor ;
+        :isManagedBy :californiaDeptOfTransportation, :californiaConservationCorps, 
+                     :nationalMarineFisheriesService, :farmServiceAgency .
+
+:denil a :migratorySpeciesClass ;
+        :amphibioticMigrant false .
+
+:baffleCulvert a :technicalElement ;

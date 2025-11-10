@@ -1,0 +1,43 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Here is the output in Turtle format:
+
+```turtle
+@prefix vocab: <http://vocab.org/core#> .
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>
+
+<http://example.org/concretePoolAndVortexWeirFishway> a :geographicZone ;
+    :isManagedBy [ a vocab:ProjectOwner ;
+                            vocab:hasMainContractor <http://example.org/delNorteCounty DeptOfFishAndGame> ] .
+<http://example.org/concretePoolAndVortexWeirFishway> :concerns :ConcreteFishway ;
+    :isImpassable "true"^^xsd:boolean .
+
+<http://example.org/concretePoolAndVortexWeirFishway> :hasMainContractor <http://example.org/delNorteCounty DeptOfFishAndGame> ;
+    :isLocatedOn <http://example.org/smithRiverBasin> .
+<http://example.org/concretePoolAndVortexWeirFishway> vocab:hasCost "474000"^^xsd:integer .
+
+<http://example.org/concretePoolAndVortexWeirFishway> :startsAt "2003-11"^^xsd:date ;
+    :endssAt "2003-11"^^xsd:date .
+
+<http://example.org/concretePoolAndVortexWeirFishway> :hasTechnicalElement <http://example.org/concretePoolAndVortexWeirFishway> .
+<http://example.org/concretePoolAndVortexWeirFishway> vocab:hasBiologicalMonitoring "true"^^xsd:boolean ;
+    vocab:hasHydromorphologicaMonitoring "true"^^xsd:boolean .
+
+<http://example.org/concretePoolAndVortexWeirFishway> :containsTechnicalElement <http://example.org/concretePoolAndVortexWeirFishway> .
+<http://example.org/concretePoolAndVortexWeirFishway> :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    vocab:hasHydromorphologicaMonitoring "true"^^xsd:boolean .
+
+<http://example.org/concretePoolAndVortexWeirFishway> :isManagedBy [ a vocab:ProjectOwner ;
+                            vocab:hasMainContractor <http://example.org/delNorteCounty DeptOfFishAndGame> ] .
+<http://example.org/concretePoolAndVortexWeirFishway> :concerns :ConcreteFishway ;
+    :isImpassable "true"^^xsd:boolean .
+
+<http://example.org/smithRiverBasin> :hasMaxLowWaterFlow 1250.00 ;
+    :hasMixLowWaterFlow 1250.00 ;
+    :isLocatedOn <http://example.org/concretePoolAndVortexWeirFishway> .
+
+<http://example.org/delNorteCounty DeptOfFishAndGame> vocab:hasMainContractor <http://example.org/concretePoolAndVortexWeirFishway> .
+```

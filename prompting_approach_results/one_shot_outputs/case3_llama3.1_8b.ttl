@@ -1,0 +1,30 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:PasseAPoissons a :restorationMeasure ,
+                :hasMultipleFinancers ;
+                  skos:prefLabel "Passe à poissons" ;
+                  :associatedTo :SeuilDSSmithKaysersberg ;
+                  :isManagedBy :AgenceDeL'EauRhinMeuse,
+                           :ConseilGeneralDuHautRhin,
+                           :DSmithKaysersberg,
+                           :SyndicatMixteDeLaWeissAval ;
+                  :hasObjectives "Restaurer un passage pour les poissons tout en maintenant l'utilisation de la rivière"^^xsd:string .
+                    
+:SeuilDSSmithKaysersberg a :weir ,
+                        :existingWeir,
+                        :associatedTo :PasseAPoissons ;
+                  skos:prefLabel "Seuil DS Smith Kaysersberg" .
+
+:AgenceDeL'EauRhinMeuse a :financerOf :PasseAPoissons ;
+                 skos:prefLabel "Agence de l'Eau Rhin-Meuse" .
+ 
+:ConseilGeneralDuHautRhin a :financerOf :PasseAPoissons ;
+                skos:prefLabel "Conseil Général du Haut-Rhin" .
+
+:DSmithKaysersberg a :financerOf :PasseAPoissons ;
+                 skos:prefLabel "DS Smith Kaysersberg" .
+
+:SyndicatMixteDeLaWeissAval a :financerOf :PasseAPoissons ;
+                skos:prefLabel "Syndicat Mixte de la Weiss Aval" .

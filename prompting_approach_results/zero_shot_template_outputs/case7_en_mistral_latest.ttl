@@ -1,0 +1,52 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ :RestorationMeasureInstance a TetraOnto:restorationMeasure ;
+			:associatedTo :StructureInstance_1 ;
+			:isManagedBy :ProjectOwnerInstance_1, :ProjectOwnerInstance_2, :ProjectOwnerInstance_3, :ProjectOwnerInstance_4 ;
+			:hasMainContractor :MainContractorInstance_1 ;
+			:startsAt "2002-01-01T00:00:00"^^xsd:dateTime;
+			:endsAt "2002-01-31T23:59:59"^^xsd:dateTime ;
+			:hasMaxLowWaterFlow 20.0 ;
+			:hasMinLowWaterFlow 0.57 ;
+			:containsTechnicalElement TechnicalElementInstance_1, TechnicalElementInstance_2, TechnicalElementInstance_3 ;
+			:numberOfPools 3 ;
+            skos:prefLabel "Retrofit with step-pool fishway".
+
+:StructureInstance_1 a TetraOnto:structure, TetraOnto:gradeControlApron ;
+                    :isLocatedOn :GeographicZoneInstance_1 ;
+                    :hasHeight 40.0 ;
+                    :isImpassable false ;
+                    skos:prefLabel "Concrete and rock grade control apron".
+
+:GeographicZoneInstance_1 a TetraOnto:geographicZone ;
+                          skos:prefLabel "Santa Ynez River Watershed, Central California, USA".
+
+:ProjectOwnerInstance_1 a TetraOnto:projectOwner ;
+                        skos:prefLabel "Cachuma Conservation and Release Board".
+
+:ProjectOwnerInstance_2 a TetraOnto:projectOwner ;
+                        skos:prefLabel "Entrix, Inc.".
+
+:ProjectOwnerInstance_3 a TetraOnto:projectOwner ;
+                        skos:prefLabel "Allen and Robert Larson".
+
+:ProjectOwnerInstance_4 a TetraOnto:projectOwner ;
+                        skos:prefLabel "California Coastal Conservancy".
+
+:MainContractorInstance_1 a TetraOnto:mainContractor ;
+                          skos:prefLabel "Not specified in text input".
+
+:TechnicalElementInstancet_1 a TetraOnto:technicalElement ;
+                            skos:prefLabel "Reinforced concrete sidewall" ;
+                            :description "A 30 ft (9.1 m) long concrete sidewall was constructed to direct low-flows into the step pools."
+
+:TechnicalElementInstancet_2 a TetraOnto:technicalElement ;
+                            skos:prefLabel "Pools" ;
+                            :description "Three small step-pools cut into the existing apron. Pools ranged in length from 4 ft to 10 ft (1.2 m to 3 m)."
+
+:TechnicalElementInstancet_3 a TetraOnto:technicalElement ;
+                            skos:prefLabel "Concrete in lower portion of apron" ;
+                            :description "Reinforced concrete was used to build the pools in the lower portion of the apron."

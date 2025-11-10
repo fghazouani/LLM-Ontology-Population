@@ -1,0 +1,35 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ Based on the provided ontology and text input, here are some instances in Turtle format:
+
+```turtle
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<http://example.org/RheinfeldenFishway> a :fishway ;
+	:isLocatedOn <http://example.org/Rhine> ;
+	:associatedTo [
+    	a :restorationMeasure ;
+    	:concerns :continuityLongitudinale ;
+    	:hasCost "cost_value"^^xsd:decimal ;
+    	:startsAt "start_dateTime"^^xsd:dateTime ;
+    	:endssAt "end_dateTime"^^xsd:dateTime ;
+    	:isManagedBy <http://example.org/projectOwner> ;
+    ] .
+
+<http://example.org/Rhine> a :waterBody , :river ;
+	:hasMaxLowWaterFlow "max_low_value"^^xsd:decimal ;
+	:hasMixLowWaterFlow "min_low_value"^^xsd:decimal .
+
+<http://example.org/projectOwner> a :projectOwner , :otherActor .
+
+<http://example.org/Rheinfelden> a :city , :geographicZone ;
+	:isManagedBy <http://example.org/projectOwner> ;
+	:relizedIn <http://example.org/Bade-Wurtemberg> .
+
+<http://example.org/Bade-Wurtemberg> a :department , :geographicZone ;
+	:isManagedBy <http://example.org/projectOwner> ;
+	:relizedIn <http://example.org/Germany> .
+```

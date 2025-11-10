@@ -1,0 +1,32 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ Here is the Turtle representation of the extracted individuals from the text input based on the provided ontology description:
+
+```turtle
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<"Passe à poissons de Gambsheim"> rdf:type :restorationMeasure ;
+    :isLocatedOn <Le Rhin> ;
+    :concerns :ContinuitéLongitudinale ;
+    :hasCost "10000000.0"^^xsd:decimal ;
+    :startsAt "38078"^^xsd:dateTime ;
+    :containsTechnicalElement [ a :fishway ; :type :bassinPasses ] ;
+    :containsTechnicalElement [ a :fishway ; :type :successivesBasinsPass ] ;
+    :hasMainContractor <Association Passage 309> ;
+    :isManagedBy <CERGA SA> , <ONEMA> , <Saumon-Rhin> ;
+    :associatedTo [ a :structure ; :type :dam ; :hasHeight "decimal" ] ;
+    :associatedTo [ a :structure ; :type :barrage ] ;
+    :concernedWith :Ichtyologie ;
+    :hasBiologicalMonitoring true ;
+    :hasHydromorphologicaMonitoring false .
+
+<Le Rhin> rdf:type :waterBody ;
+    :numberOfPools "decimal" ;
+    :hasMaxLowWaterFlow "decimal" ;
+    :hasMixLowWaterFlow "decimal" ;
+    :averageSlope "decimal" .
+```

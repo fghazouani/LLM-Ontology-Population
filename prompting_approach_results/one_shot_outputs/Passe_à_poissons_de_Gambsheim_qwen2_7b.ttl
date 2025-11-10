@@ -1,0 +1,36 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The restoration measure:
+:PasseAPoissons2 a :restorationMeasure ;
+                    skos:prefLabel "Mesure de restauration pour passerelles à poissons" ;
+                    :associatedTo :ContinuityEnhancementRhoneGambsheim ;
+                    :isManagedBy :FrenchState ;
+                    :hasFinancing :FrenchState (32.5% of total cost) , :GermanState (32.5% of total cost) , :CERGA (35%) ;
+                    :startsAt "38078 event"^^xsd:dateTime ;
+                    :endlessAt ;
+                    :hasBiologicalMonitoring ;
+                    :isImplementedBy :PassageAssociation309 ;
+                    :involves :ONEMA , :Salmon-Rhin .
+
+# The geographic zone:
+:ContinuityEnhancementRhoneGambsheim a :geographicZone ;
+                                        skos:prefLabel "Amélioration de la continuité du Rhône à Gambsheim" ;
+                                        :isLocatedOn :Bas-Rhin .
+
+# The implementing entity:
+:PassageAssociation309 a :implementingEntity ;
+                          skos:prefLabel "Association Passage 309" .
+
+# The involved entities for activities:
+:ONEMA a :involvedInActivity ;
+        skos:prefLabel "ONEMA" .
+
+# The camera system and trap setup:
+:VideoCameraSystemUnderwater a :cameraSystem ;
+                              skos:prefLabel "Système de caméras sous-marines vidéo" .
+  
+:CaptureSystemTrap a :trapSetup ;
+                skos:prefLabel "Système de piège" .
+

@@ -1,0 +1,35 @@
+ @prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# The restoration measure:
+:MesureDeRestaurationPasseAPoissonsDeRheinfelden a :artificialRiver ;
+                    skos:prefLabel "Passe de Restoration à Rheinfelden" ;
+                    :associatedTo :NouvelleCentraleRheinfelden ;
+                    :isManagedBy :UniteProductionAllemagne ;
+                    :includes :PasseDenviron300mLongueur ;
+                    :includes :ChenalArtificiel800mLongueur ;
+                    :numberOfBasins "0"^^xsd:integer ;  # Since no number of basins is provided, assuming there are none for this case
+                    :startsAt "2003"^^xsd:dateTime ;  # Assuming the new power plant was in service since 2003
+                    :endsAt "N/A"^^xsd:dateTime ;  # Since no end date is provided, assuming N/A for this case
+                    :hasCost "N/A"^^xsd:decimal ;  # Since no cost is provided, assuming N/A for this case
+                    :hasBiologicalMonitoring "false"^^xsd:boolean ;
+                    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+                    :concerns :LongitudinalContinuity .
+
+# The structure (assuming the new power plant):
+:NouvelleCentraleRheinfelden a :dam , :reservoir ;
+                        skos:prefLabel "Nouvelle Centrale Rheinfelden" ;
+                        :isLocatedOn :BadeWurtembergAllemagne ;
+                        :isLocatedOn :LeRhin ;
+                        :isImpassable "true"^^xsd:boolean .
+
+# The main contractor:
+:UniteProductionAllemagne a :mainContractor ;
+                                    skos:prefLabel "Unité de production Allemagne" .
+
+# The geographic zone:
+:LeRhin a :river;
+            skos:prefLabel "Le Rhin" ;
+            :isLocatedOn :DépartementduBadeWurtemberg .

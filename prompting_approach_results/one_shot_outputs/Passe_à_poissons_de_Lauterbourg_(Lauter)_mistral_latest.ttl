@@ -1,0 +1,37 @@
+ @prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# The successive basins passage:
+:PasseAPoissonsDeLauterbourg a :successivesBasinsPass ;
+                        skos:prefLabel "Passe à poissons de Lauterbourg" ;
+                        :associatedTo :BarrageLauterbourg ;
+                        :isManagedBy :Jockgrim ;
+                        :numberOfBasins "1"^^xsd:integer ;
+                        :startsAt "2005"^^xsd:dateTime ;
+                        :endsAt "2005"^^xsd:dateTime ;
+                        :hasCost "171682.0"^^xsd:decimal ;
+                        :hasBiologicalMonitoring "true"^^xsd:boolean ;
+                        :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+                        :concerns :LongitudinalContinuity .
+
+# The dam:
+:BarrageLauterbourg a :dam , :structure ;
+                    skos:prefLabel "Barrage Lauterbourg" ;
+                    :isLocatedOn :BasRhinLauterbourgFrance ;
+                    :isLocatedOn :LaLauter ;
+                    :isImpassable "true"^^xsd:boolean .
+
+# The main contractor:
+:Jockgrim a :mainContractor ;
+                        skos:prefLabel "Jockgrim" .
+
+# The river:
+:LaLauter a :river ;
+                skos:prefLabel "La Lauter" ;
+                :isLocatedOn :DépartementduBasRhin .
+
+# The geographic zone:
+:BasRhinLauterbourgFrance is a :geographicZone;
+                            skos:prefLabel "Bas-Rhin, Lauterbourg, France" .

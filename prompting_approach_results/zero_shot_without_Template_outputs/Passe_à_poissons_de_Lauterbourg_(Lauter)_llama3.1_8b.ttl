@@ -1,0 +1,29 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+:PasseAMixteABassinSuccessif  a :restorationMeasure ;
+        :concerns :continuityLongitudinal ;
+        :isLocatedOn :Lauterberg ;
+        :hasMainContractor :Jockgrim ;
+        :startsAt "2005"^^xsd:gYear ;
+        :endssAt "2005"^^xsd:gYear ;
+        :containsTechnicalElement :mixteABassinSuccessif ;
+        :hasCost 171682.0 ;
+        :associatedTo :passeamixteabassinsuccessif ;
+        :isImpassable "false"^^xsd:boolean ;
+        :concerns :fishwaytype ;
+        :hasBiologicalMonitoring "true"^^xsd:boolean .
+
+:Lauterberg  a :river ;
+        :isLocatedOn :affluent ;
+        :containsPools 1 ;
+        :hasPoolLength 100.0 ;
+        :hasPoolWidth 10.0 .
+
+:Lauterbourg a :commune ;
+        :locatedIn :BasRhin ;
+        :country France .

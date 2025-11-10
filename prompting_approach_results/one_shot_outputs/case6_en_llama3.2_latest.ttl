@@ -1,0 +1,41 @@
+Here are the instances translated from the input chunk:
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# PasseAPoissonsDeSmithRiver is a :fishway
+:PasseAPoissonsDeSmithRiver 
+    a :fishway ;
+    skos:prefLabel "Passe AP Poissons De Smith River" ;
+    :associatedTo :PuitsConcretEtTourbillonDePeacockCreek ;
+    :isManagedBy :DelNorteCountyDepartementDeFishAndGameandCAcoastalConservancy ;
+    :numberOfBasins "1"^^xsd:integer ;
+    :startsAt "2003-11"^^xsd:dateTime ;
+    :endsAt ""^^xsd:nil ;
+    :hasCost "474000.0"^^xsd:decimal ;
+    skos:broader :FishPassage .
+
+# PuitsConcretEtTourbillonDePeacockCreek is a :project
+:PuitsConcretEtTourbillonDePeacockCreek 
+    a :project ;
+    skos:prefLabel "Puits Concret Et Tourbillon De Peacock Creek" ;
+    :isAssociatedWith :PasseAPoissonsDeSmithRiver ;
+    :hasMainContractor :DelNorteCountyDepartementDeFishAndGameandCAcoastalConservancy ;
+    :projectType ConcreteFishwayChannel ;
+    :projectFunding "Del Norte County, CA Dept. of Fish and Game, and CA Coastal Conservancy" ;
+    :completionDate "2003-11"^^xsd:dateTime ;
+    :totalProjectCost "474000.0"^^xsd:decimal ;
+    skos:broader :FishPassage .
+
+# SmithRiverBasin is a :geographicZone
+:SmithRiverBasin 
+    a :geographicZone ;
+    skos:prefLabel "Smith River Basin, Northern California" ;
+    :isLocatedOn :NorthernCaliforniaUSA ;
+
+# NorthernCaliforniaUSA is a :place
+:NorthernCaliforniaUSA 
+    a :place ;
+    skos:prefLabel "Northern California, USA" ;

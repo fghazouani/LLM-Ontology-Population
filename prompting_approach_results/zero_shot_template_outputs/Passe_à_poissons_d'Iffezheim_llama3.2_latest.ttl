@@ -1,0 +1,47 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Below are the created instances extracted from the text based on the provided ontology description:
+
+
+:<RestorationMeasureInstance> a :PasseAPoissonD'Iffezheim ;
+            :associatedTo :<StructureInstance> ;
+            :isManagedBy :<ProjectOwnerInstanceNROrEDF> ;
+            :hasMainContractor :<MainContractorInstanceNR> ;
+            :startsAt "1997"^^xsd:dateTime ;
+            :endsAt ""^^xsd:dateTime ;
+            :hasMaxLowWaterFlow 0.12 ;
+            :hasMinLowWaterFlow 1.0 ;
+            :includes <TechniqueElement> ;
+            :numberOfPools 37 ;
+            :numberOfBasins 3 ;
+            :averageSlope -0.5 ;
+            :skos:prefLabel "Passe à poissons d'Iffezheim".
+
+
+:<StructureInstance> a :bassinDeRepartition ;
+                    :isLocatedOn :<GeographicZoneInstanceRhin> ;
+                    :hasHeight 1.2 ;
+                    :isImpassable false ;
+                    :skos:prefLabel "Bassin de répartition".
+
+
+:<GeographicZoneInstance> a :geographicZone ;
+                          :skos:prefLabel "Restoration Measure Instance name">.
+
+
+:<ProjectOwnerInstanceNROrEDF> a :projectOwner ;
+                            :skos:prefLabel "NR ou EDF">.
+
+
+:<MainContractorInstanceNR> a :mainContractor ;
+                              :skos:prefLabel "NR">.
+
+
+:<TechniqueElement> a :TechniqueElement ;
+                            :skos:prefLabel "Technique Element name">.
+
+
+Note that I've excluded information such as 'Compartiment(s) suivi(s)', 'Partenaire(s) financier(s) et financement', 'Suivi biologique' and 'Suivi hydromorphologique' for each instance, but these could be added if required based on the provided ontology description

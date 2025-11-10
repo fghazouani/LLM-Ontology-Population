@@ -1,0 +1,40 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ Based on the provided text input and ontology description, here are the instances created using the given template:
+
+RestorationMeasureInstance: Concrete Fishway_and_Rock_Grade_Control a restorationMeasure;
+                              associatedTo Mad_River_Basin_Structure;
+                              isManagedBy Humboldt_County_ProjectOwner;
+                              hasMainContractor Main_Contractor_Instance_1;
+                              startsAt "2002-11-01T00:00:00"^^xsd:dateTime;
+                              endsAt "2002-11-30T23:59:59"^^xsd:dateTime ;
+                              hasMaxLowWaterFlow 420.0;
+                              hasMinLowWaterFlow 0.0;
+                              includes Concrete_Fishway_and_Rock_Grade_Control_TE1;
+                              numberOfPools 7;
+                              numberOfBasins 1;
+                              averageSlope 4.0;
+                              skos:prefLabel "Concrete Fishway and Rock Grade Control Restoration Measure".
+
+StructureInstance: Mad_River_Basin a Structure, SubClassOfGeographicZoneToBelong;
+                   isLocatedOn Mad_River_Basin_GeographicZone;
+                   hasHeight <height_of_the_structure>;
+                   isImpassable false;
+                   skos:prefLabel "Mad River Basin Structure".
+
+GeographicZoneInstance: Mad_River_Basin_GeographicZone a geographicZone;
+                          skos:prefLabel "Mad River Basin Geographic Zone".
+
+ProjectOwnerInstance: Humboldt_County a projectOwner;
+                       skos:prefLabel "Humboldt County Project Owner".
+
+MainContractorInstance: Main_Contractor_Instance_1 a mainContractor;
+                          skos:prefLabel "Main Contractor Instance 1".
+
+TechnicalElementInstancet: Concrete_Fishway_and_Rock_Grade_Control_TE1 a TechnicalElement;
+                             skos:prefLabel "Concrete Fishway and Rock Grade Control Technical Element";
+                             characteristics Channel_Width: 8.0, Ordinary_High_Water: 3.0, Drop_over_Weir: 0.17, Total_Length: 21.4, Min_Pool_Depth: 0.6, Pool_Spacing: 3.0, Fishway_Width: 4.6, Total_Headloss: 2.1;
+                             type Concrete_Fishway.

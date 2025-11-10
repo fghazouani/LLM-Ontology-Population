@@ -1,0 +1,39 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:<ConcreteFishwayInstance> a :ConcreteFishway ;
+			:associatedTo :MadRiverBasin ;
+			:isManagedBy :HumboldtCounty,CaliforniaDeptOfFishAndGame ;
+			:hasMainContractor :N/A ;
+			:startsAt <"2002-11">^^xsd:dateTime;
+			:endsAt <"2002-11">^^xsd:dateTime ;
+			:includes :BoxCulvert,Weir ;
+			numberofPools <3> ;
+			numberofBasins <N/A> ;
+			averageSlope 0.6 ;
+            hasBiologicalMonitoring true ;
+			hasHydromorphologicaMonitoring true ;
+			skos:prefLabel "Concrete Fishway and Rock Grade Control".
+
+:<MadRiverBasinInstance> a :geographicZone ;
+                          skos:prefLabel "Mad River Basin".
+
+:<HumboldtCountyInstance> a :projectOwner ;
+                        skos:prefLabel "Humboldt County".
+
+:<CaliforniaDeptOfFishAndGameInstance> a :projectOwner ;
+                         skos:prefLabel "California Dept. Fish and Game".
+
+:<BoxCulvertInstance> a :Structure ;
+                    :<SubClassOfStructureToBelong>dam ;
+                    :isLocatedOn :MadRiverBasin ;
+                    :hasHeight <N/A> ;
+                    :isImpassable false ;
+                    skos:prefLabel "Box Culvert".
+                
+:<WeirInstance> a :TechnicalElement ;
+                            skos:prefLabel "Weir".
+
+Note: The main contractor information is not provided in the text.

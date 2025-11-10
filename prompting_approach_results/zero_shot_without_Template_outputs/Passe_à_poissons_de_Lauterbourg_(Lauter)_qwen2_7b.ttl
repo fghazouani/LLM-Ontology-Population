@@ -1,0 +1,22 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+# Individual instances
+
+:PassePoissonsLauterbourg :
+    a :passePoissons ;
+    :relizedIn "France"^^xsd:string ;
+    :isLocatedOn "La Lauter"^^xsd:string ;
+    :concerns "Continuité longitudinale"@fr ;
+    :startsWith "2005-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :endsWith "2005-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isManagedBy "Jockgrim"@fr ;
+    :containsTechnicalElement "passe à poissons de type « passe mixte à bassins successifs »"@fr ;
+    :hasCost "171682.0"^^xsd:double .
+
+:MeteLauter :
+    a :marteauDyke ;
+    :isLocatedOn "La Lauter"^^xsd:string .

@@ -1,0 +1,36 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# The restoration measure:
+:PasseAPoissonsAvolsheim a :artificialRiver ;
+                          skos:prefLabel "rivière artificielle" ;
+                          :associatedTo :BarrageAvolsheim ;
+                          :isManagedBy :ConseilGeneralDuBasRhin ;
+                          :hasMainContractor :MaitriseOeuvreConseilGeneralDuBasRhin ;
+                          :startsAt "2019-05"^^xsd:dateTime;
+                          :endssAt "2021-12"^^xsd:dateTime ;
+                          :hasCost "467 800 € HT"^^xsd:string .
+
+# The structure:
+:BarrageAvolsheim a :weir ,
+                   :lowSlopeRockfillWeir ;
+                   skos:prefLabel "Barrage d'Avolsheim" ;
+                   :isLocatedOn :BrucheBasRhin ;
+                   :associatedTo :PasseAPoissonsAvolsheim ;
+                   :hasHeight "3.2"^^xsd:decimal ;
+                   :averageSlope "0.023"^^xsd:decimal ;
+                   :isImpassable "true"^^xsd:boolean .
+
+# The project owner:
+:ConseilGeneralDuBasRhin a :projectOwner ;
+                          skos:prefLabel "Conseil Général du Bas-Rhin" .
+
+# The main contractor:
+:MaitriseOeuvreConseilGeneralDuBasRhin a :mainContractor ;
+                                        skos:prefLabel "Maitrise d'Oeuvre du Conseil Général du Bas-Rhin" .
+
+# The geographic zone:
+:BrucheBasRhin a :geographicZone;
+                skos:prefLabel "La Bruche (Bas-Rhin)" .

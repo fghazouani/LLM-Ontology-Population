@@ -1,0 +1,35 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:<RestorationMeasureInstance> a :restorationMeasure ;
+			:associatedTo :dam ;
+			:isManagedBy "Jockgrim"@projectOwner ;
+			:hasMainContractor "Maître d'oeuvre"@mainContractor ;
+			:startsAt "2005-01-01T00:00:00"^^xsd:dateTime ;
+			:endsAt "2005-12-31T23:59:59"^^xsd:dateTime ;
+			:hasMaxLowWaterFlow 0.8^^xsd:float ;
+			:hasMinLowWaterFlow 0.4^^xsd:float ;
+			:includes :basinPasses ;
+			numberofPools "1"@NumberOfTechnicalElements if exists ;
+			numberofBasins "2"@NumberOfTechnicalElements if exists ;
+			averageSlope "3"@AverageSlope ;
+            hasBiologicalMonitoring "yes"@bool ;
+            hasHydromorphologicaMonitoring "no"@bool ;
+            skos:prefLabel "Passe à poissons de Lauterbourg"@RestorationMeasureInstance name.
+
+:<StructureInstance> a :dam ;
+                    skos:prefLabel "Lauter"@Structure name.
+
+:<GeographicZoneInstance> a geographicZone ;
+                          skos:prefLabel "France"@GeographicZone name.
+
+:<ProjectOwnerInstance> a projectOwner ;
+                        skos:prefLabel "Jockgrim"@ProjectOwnerInstance name.
+
+:<MainContractorInstance> a mainContractor ;
+                          skos:prefLabel "Maître d'oeuvre"@MainContractorInstance name.
+
+:<TechnicalElementInstancet> a :basinPasses ;
+                            skos:prefLabel "passe à poissons de type « passe mixte à bassins successifs »"@TechnicalElement name.

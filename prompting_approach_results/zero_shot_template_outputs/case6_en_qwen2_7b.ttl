@@ -1,0 +1,50 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:<ConcretePoolAndVortexWeirFishway> a :restorationMeasure ;
+	:associatedTo :ConcreteFishway ;
+	:isManagedBy :DelNorteCounty, CADeptOfFishAndGame, CACoastalConservancy ;
+	:hasMainContractor :NA ;
+	:startsAt "2003-11"^^xsd:dateTime ;
+	:endsAt "2003-11"^^xsd:dateTime ;
+	:hasMaxLowWaterFlow 56.6^^xsd:float ;
+	:containsTechnicalElement :ConcreteFishway, VortexShapeWeir ;
+	:numberOfPools NA ;
+	:numberOfBasins NA ;
+	:averageSlope NA ;
+    skos:prefLabel "Concrete pool and vortex weir fishway".
+
+:<ConcreteFishway> a :structure ;
+                    :<SubClassOfStructureToBelong> Concrete ;
+                    :isLocatedOn :SmithRiverBasin, NorthernCalifornia ;
+                    :hasHeight 2.1^^xsd:float ;
+                    :isImpassable false ;
+                    skos:prefLabel "Concrete fishway".
+
+:<SmithRiverBasinNorthernCalifornia> a :geographicZone ;
+                          skos:prefLabel "Smith River Basin, Northern California".
+
+:<DelNorteCounty > a :projectOwner ;
+                        skos:prefLabel "Del Norte County".
+
+:<CAYDeptOfFishAndGame> a :projectOwner ;
+                        skos:prefLabel "CA Dept. of Fish and Game".
+
+:<CACoastalConservancy> a :otherActor ;
+                        skos:prefLabel "CA Coastal Conservancy".
+
+:<ConcreteFishway> a :structure ;
+                    :hasHeight 2.1^^xsd:float ;
+                    :isImpassable false ;
+                    skos:prefLabel "Concrete fishway".
+                    
+:<VortexShapeWeir> a :TechnicalElement ;
+                            skos:prefLabel "Vortex shape weir".
+
+:<BiologicalMonitoring> a :hasInformation ;
+                        :information "NA"^^xsd:string .
+
+:<FishPassageAssessment> a :hasInformation ;
+                        :information "2001"^^xsd:date .

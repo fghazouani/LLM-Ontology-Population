@@ -1,0 +1,41 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:<RestorationMeasureInstance> a :Retrofit;
+			:associatedTo :SantaYnezRiver;
+			:isManagedBy :CachumaConservationAndReleaseBoard, EntrixInc., AllenAndRobertLarson, CaliforniaCoastalConservancy ;
+			:hasMainContractor :N/A;
+			:startsAt "2002-01";
+			:endsAt "2002-01";
+			:hasMaxLowWaterFlow 2.0;
+			:hasMinLowWaterFlow N/A;   
+			:containsTechnicalElement :ReinforcedConcreteStepPoolFishway ;
+			numberofPools 3 ;
+			:numberOfBasins 3 ;
+			:averageSlope N/A ;
+            hasBiologicalMonitoring Yes;
+			hasHydromorphologicaMonitoring Yes;
+			skos:prefLabel "Retrofit with step-pool fishway in Santa Ynez River Watershed, Central California";
+
+:<StructureInstance> a :Apron ;
+                    :isLocatedOn :SantaYnezRiver;
+                    :hasHeight 12.2m ;
+                    :isImpassable false ;
+                    skos:prefLabel "Grade control apron downstream of Highway 1 bridge";
+                    
+:<GeographicZoneInstance> a :geographicZone ;
+                          skos:prefLabel "Santa Ynez River Watershed, Central California";
+
+:<ProjectOwnerInstance> a :projectOwner ;
+                        skos:prefLabel "Cachuma Conservation and Release Board";
+
+:<MainContractorInstance> a :mainContractor ;
+                          skos:prefLabel "Entrix Inc.";
+
+:<TechnicalElementInstancet> a :ReinforcedConcreteStepPoolFishway ;
+                            hasHeight 9.1m ;
+                            numberOfPools 3 ;
+                            numberOfBasins 3 ;  
+                            skos:prefLabel "Step-pool fishway";

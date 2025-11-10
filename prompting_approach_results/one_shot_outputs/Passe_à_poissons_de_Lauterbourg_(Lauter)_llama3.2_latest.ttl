@@ -1,0 +1,31 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# The restoration mesure:
+:PasseAPoissonsDeLauterbourg a :successivesBasinsPass 
+    skos:prefLabel "Passe AP Poissons De Lauterbourg" ;
+    :associatedTo PasseAMixteABassinsSuccessifs ;
+    :isManagedBy Jockgrim ;
+    :hasMainContractor "Jockgrim" ;
+    :numberOfBasins "20"^^xsd:integer ;
+    :startsAt "2005"^^xsd:dateTime ;
+    :endsAt "2005"^^xsd:dateTime ;
+    :hasCost "171682.0"^^xsd:decimal ;
+    :hasBiologicalMonitoring "true"^^xsd:boolean ;
+    :hasHydromorphologicalMonitoring "false"^^xsd:boolean ;
+    :concerns :LongitudinalContinuity .
+
+# The Structure:
+:PasseAMixteABassinsSuccessifs a :fishLift 
+    skos:prefLabel "Passe AM Mixte Bassins Successifs" ;
+    :isLocatedOn LauterbourgBasRhinFrance .
+
+# The individual:
+Jockgrim a :mainContractor 
+    skos:prefLabel "Jockgrim" ;
+
+# The geographic zone:
+LauterbourgBasRhinFrance a :geographicZone 
+    skos:prefLabel "Lauterbourg, Bas-Rhin, France" ;

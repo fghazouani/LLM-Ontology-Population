@@ -1,0 +1,39 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+```
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#>.
+
+<http://example.org/pool_and_weir_fisway> :restorationMeasure .
+<http://example.org/pool_and_weir_fisway> :projectType "retrofit with Pool-and-Weir Fish Ladder" .
+
+<http://example.org/geographic_zone_1> :geographicZone "Santa Ynez River Watershed, Central California, USA" .
+<http://example.org/pool_and_weir_fisway> :relizedIn <http://example.org/geographic_zone_1> .
+
+<http://example.org/structure_1> :structure "dam" .
+<http://example.org/structure_2> :structure "weir" .
+<http://example.org/pool_and_weir_fisway> :associatedTo <http://example.org/structure_1> ; <http://example.org/structure_2> .
+
+<http://example.org/water_body_1> :waterBody "river" .
+<http://example.org/pool_and_weir_fisway> :isLocatedOn <http://example.org/water_body_1> .
+
+<http://example.org/project_owner_1> :projectOwner "Cachuma Conservation Release Board".
+<http://example.org/project_owner_2> :otherActor "Entrix, Inc.".
+<http://example.org/project_owner_3> :projectOwner "Allen and Robert Larson" .
+<http://example.org/pool_and_weir_fisway> :isManagedBy <http://example.org/project_owner_1> ; <http://example.org/project_owner_2> ; <http://example.org/project_owner_3> .
+
+<http://example.org/technical_element_1> :technicalElement "pool-and-weir fish ladder".
+<http://example.org/pool_and_weir_fisway> :containsTechnicalElement <http://example.org/technical_element_1> .
+
+<http://example.org/project_start_1> :startsAt "2003-01" .
+<http://example.org/pool_and_weir_fisway> :endssAt "2003-01" .
+
+<http://example.org/structure_height_1> :hasHeight "21.0 m".
+<http://example.org/structure_1> :isImpassable true .
+<http://example.org/pool_and_weir_fisway> :hasMainContractor <http://example.org/project_owner_1> ; <http://example.org/project_owner_2> ; <http://example.org/project_owner_3> .
+
+<http://example.org/river_info_1> :hasMaxLowWaterFlow "1000 m3/s" .
+<http://example.org/pool_and_weir_fisway> :hasBiologicalMonitoring true .
+```

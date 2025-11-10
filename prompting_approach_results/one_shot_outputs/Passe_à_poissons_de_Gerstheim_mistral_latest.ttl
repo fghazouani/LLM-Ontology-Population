@@ -1,0 +1,44 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# The fish passage structure:
+:FishPassageAtSeuilDSmithKaysersberg a :artificialStructure ,
+                                        :fishPassage ;
+                                     skos:prefLabel "Structures de passage des poissons à Seuil DS Smith Kaysersberg" ;
+                                     :isLocatedOn :HautRhin ;
+                                     :associatedTo :PasseAPoissonsGerstheim ;
+                                     :hasMainContractor :CERGA ;
+                                     :startsAt "20XX-XX"^^xsd:dateTime;
+                                     :endssAt "20XX-XX"^^xsd:dateTime ;
+                                     :hasCost "XXX € HT"^^xsd:string .
+
+# The project owner:
+:CERGA a :projectOwner ;
+                  skos:prefLabel "CERGA SA" .
+
+# The geographic zone:
+:HautRhin a :geographicZone;
+            skos:prefLabel "Haut-Rhin" .
+
+# The Fish Passage Measure at Gerstheim on Rhine River:
+:PasseAPoissonsGerstheim a :fishPassageMeasure ;
+                             skos:prefLabel "Passe aux poissons à Gerstheim sur la rivière Rhin, France" ;
+                             :associatedTo :FishPassageAtSeuilDSmithKaysersberg ;
+                             :hasLongitudinalContinuityCategory :LongitudinalContinuity .
+
+# The Department/Land:
+:Bas-Rhin a :departement ,
+              :land;
+             skos:prefLabel "Bas-Rhin" .
+
+# The Commune(s):
+:Gerstheim a :commune ;
+            skos:prefLabel "Gerstheim" .
+
+# The counting station with video follow-up:
+:CountingStationWithVideoFollowUp a :countingStation ,
+                                     :fishPassageStructurePart ;
+                                   skos:prefLabel "Station de comptage avec suivi vidéo" ;
+                                   :associatedTo :WorksAndAmenitiesAtFishPassageAtSeuilDSmithKaysersberg .

@@ -1,0 +1,55 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix TetraOnto: <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<TetraOnto:geographicZone> ;   
+   a TetraOnto:geographicZone ;
+   .
+    
+<TetraOnto:mainContractor> ;
+    a TetraOnto:mainContractor ;
+    name "HYDRATEC" ;
+    .
+    
+<TetraOnto:projectOwner> ;
+    a TetraOnto:projectOwner ;
+    name "Communauté de Communes du Canton de Villé" ;
+    .
+    
+<TetraOnto:otherActor> ;  
+   a TetraOnto:otherActor ;
+   name "Agence de l’Eau Rhin-Meuse", "Conseil Général du Bas-Rhin" ;
+   .
+    
+<TetraOnto:Migratory species> ;
+    a TetraOnto:Migratory species ;
+    .
+  
+<TetraOnto:fishway> ;
+   a TetraOnto:fishway ;
+   name "rampe en enrochement en rangées périodiques" ;
+   .
+   
+<TetraOnto:structure> ;  
+   a TetraOnto:structure ;
+   name "seuil" ;
+   height 1.7 ;
+   isImpassable true ;
+   numberOfSeuils 8 ;
+   .
+
+<TetraOnto:water_body_type> ;
+    a TetraOnto:water_body_type ;
+    name "ouvrages hydrauliques" ; 
+    
+<TetraOnto:restoration_measure> ;  
+   a TetraOnto:restoration_measure ;
+   name "aménagement ou suppression d’ouvrages hydrauliques" ;
+   startsAt "Août - Septembre 2011" ;
+   endssAt ;
+   hasCost "65 000 € HT" ;
+   financedBy "Agence de l’Eau Rhin-Meuse", "Conseil Général du Bas-Rhin", "Communauté de Communes du Canton de Villé, FDAAPPMA Bas-Rhin" ;   
+   .

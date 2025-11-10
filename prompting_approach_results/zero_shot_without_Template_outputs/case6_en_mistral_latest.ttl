@@ -1,0 +1,49 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ Based on the provided ontology and text input, here are the individuals (instances) in Turtle format:
+
+```turtle
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<Project_Concrete_pool_and_vortex_weir_fishway> a :restorationMeasure ;
+    :isLocatedOn <Smith_River_Basin> ;
+    :concerning "Concrete Fishway" ;
+    :associatedTo (<Concrete_Pool>) (<Vortex_Weir>) ;
+    :hasMainContractor ?mainContractor ;
+    :startsAt "November, 2003"^^xsd:date ;
+    :endssAt "November, 2003"^^xsd:date ;
+    :hasCost 474000 ;
+    :relizedIn <Smith_River_Basin> ;
+    :containsTechnicalElement (<Concrete_Pool>) (<Vortex_Weir>) .
+
+<Concrete_Pool> a :structure , :waterBody ;
+    :isLocatedOn <Pool> ;
+    :hasHeight "decimal" ;
+    :isImpassable false ;
+    :hasMaxLowWaterFlow "decimal" ;
+    :hasMixLowWaterFlow "decimal" ;
+    :hasPoolLength "decimal" ;
+    :hasPoolWidth "decimal" .
+
+<Vortex_Weir> a :structure , :fishway ;
+    :isLocatedOn <Pool> ;
+    :hasHeight "decimal" ;
+    :isImpassable false ;
+    :hasMaxLowWaterFlow "decimal" ;
+    :hasMixLowWaterFlow "decimal" ;
+    :hasNotchHight "decimal" ;
+    :hasNotchWidth "decimal" ;
+    :numberOfPools 1 ;
+    :averageSlope "decimal" ;
+    :totalLength "37 m"^^xsd:decimal ;
+    :dropOverWeir 0.2 m ;
+    :totalHeadloss 2.1 m ;
+    :weirSideSlope "5:1"^^xsd:decimal ;
+    :fishwayWidth "6.1 m"^^xsd:decimal ;
+    :vortexAngle 90 degrees ;
+    :poolSpacing 3.0 m ;
+    :poolDepth 0.8 m .
+```

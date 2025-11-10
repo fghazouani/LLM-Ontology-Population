@@ -1,0 +1,33 @@
+Here are the instances created based on the given template and the provided text input:
+
+RestorationMeasureInstance: "Passe à poissons pour le seuil DS Smith Kaysersberg" a :restorationMeasure ;
+            :associatedTo :"seuilDSSmithKaysersberg" ;
+            :isManagedBy :"ConseilGénéralduHaut-Rhin" ;
+            :hasMainContractor :"NonSpecified" ;
+            :startsAt "2010-09-01^^xsd:dateTime" ;
+            :endsAt "2010-11-30^^xsd:dateTime" ;
+            :hasMaxLowWaterFlow "N/A"^^xsd:double ;
+            :numberOfPools 14 ;
+            :numberOfBasins N/A ;
+            :averageSlope "2.6%" ;
+            skos:prefLabel "Passe à poissons pour le seuil DS Smith Kaysersberg".
+
+StructureInstance: "seuilDSSmithKaysersberg" a :structure, :dam ;
+                    :isLocatedOn :"GeographicZoneInstance_name" ;
+                    :hasHeight 2.1 ;
+                    :isImpassable true ;
+                    skos:prefLabel "seuilDSSmithKaysersberg".
+
+GeographicZoneInstance: "GeographicZoneInstance_name" a :geographicZone ;
+                          skos:prefLabel "N/A".
+
+ProjectOwnerInstance: "ConseilGénéralduHaut-Rhin" a :projectOwner ;
+                        skos:prefLabel "Conseil Général du Haut-Rhin".
+
+TechnicalElementInstancet: "Passe de type rivière de contournement" a :technicalElement, :fish_pass ;
+                            skos:prefLabel "Passe de type rivière de contournement";
+                            rdfs:comment "succession de petits seuils en enrochements maçonnés avec un déversoir à crête épaisse".
+
+
+
+

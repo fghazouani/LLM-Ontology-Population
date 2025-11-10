@@ -1,0 +1,55 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:<PasseAPoissonsGambsheim> a :reconnection ;
+	:associatedTo :passeApoissons ;
+	:isManagedBy :CERGA-SA, :ONEMA, :AssociationPassage309 ;
+	:hasMainContractor :AssociationPassage309 ;
+	:startsAt "38078"^^xsd:dateTime;
+	:endssAt <noEndDateTime>^^xsd:dateTime ;
+	:hasMaxLowWaterFlow <maxFlowOfRhinIfAvailable>^^xsd:float ;
+	:hasMinLowWaterFlow <minFlowOfRhinIfAvailable>^^xsd:float ;
+	:includes :<passEntrees1>, :<passEntrees2>, :<passEntrees3>, :bassinRepartition ;
+	:numberOfPools <ifPoolNumberExists> ;
+	:numberOfBasins <ifBasinNumberExists> ;
+	:averageSlope <ifAverageSlopeAvailable> ;
+    hasBiologicalMonitoring "yes" ;
+    hasHydromorphologicaMonitoring "no" ;
+    :numberOfPools 3 ;
+    :numberOfBasins 1 ;
+    skos:prefLabel "Passe à poissons de Gambsheim".
+
+
+:<passeApoissons> a :structure ;
+                :<SubClassOfStructureToBelong> ;
+                :isLocatedOn :Rhin ;
+                :hasHeight <heightOfTheStructureIfAvailable> ;
+                :isImpassable <xsd:booleanIfStructurePassableOrNot> ;
+                skos:prefLabel "Passe à poissons".
+
+
+:<geographicZone> a :geographicZone ;
+                  skos:prefLabel "Gambsheim, Bas-Rhin, France".
+
+
+:<CERGA-SA> a :projectOwner ;
+              skos:prefLabel "CERGA SA".
+
+
+:<AssociationPassage309> a :mainContractor ;
+                       skos:prefLabel "Association Passage 309".
+
+
+:<passEntrees1>, :<passEntrees2>, :<passEntrees3> a :TechnicalElement ;
+                  skos:prefLabel "Entrée 1", "Entrée 2", "Entrée 3" .
+                 <add information with respect to the ontology description if available> .
+
+:SuiviBiologique "yes" .
+:SuiviHydromorphologique "no" .
+
+:CompartimentSuivi Ichtyologie . 
+
+:CoûtTotalLopération 10000000.0 .
+:PartenairesFinanciersEtFinancement Etat français (VNF et Agence de l'eau): 32.5%, Etat allemand (Ministère Fédéral du transport et Land du BW): 32.5%, CERGA: 35% .

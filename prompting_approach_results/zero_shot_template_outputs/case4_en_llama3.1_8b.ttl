@@ -1,0 +1,44 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<:RestorationMeasureInstance> a :Reconnection ;
+            :associatedTo <:StructureInstance> ;
+            :isManagedBy <:ProjectOwnerInstance1>, <:ProjectOwnerInstance2>, <:OtherActorInstance1>, <:OtherActorInstance2>, <TetroOnto:OtherActorInstance3> ;
+            :hasMainContractor <:MainContractorInstance> ;
+            :startsAt "2001-01-01"^^xsd:dateTime;
+            :endsAt "2001-11-01"^^xsd:dateTime ;
+            :hasCost 445000$ ;
+            :concerns :FloodRetention ;
+            skos:prefLabel "Hybrid Pool and Weir Fishway".
+
+<:StructureInstance> a :Dyke ;
+                    :isLocatedOn <:GeographicZoneInstance> ;
+                    :hasHeight 19.3ft ;
+                    :isImpassable false ;
+                    skos:prefLabel "Concrete Pool and Removable Wood Baffle".
+
+<:GeographicZoneInstance> a :geographicZone ;
+                          skos:prefLabel "Trinity River Basin, Northern California, USA".
+
+<:ProjectOwnerInstance1> a :projectOwner ;
+                        skos:prefLabel "California Dept. of Transportation".
+
+<:ProjectOwnerInstance2> a :projectOwner ;
+                        skos:prefLabel "California Dept. of Fish and Game".
+
+<:OtherActorInstance1> a :otherActor ;
+                          skos:prefLabel "National Marine Fisheries Service".
+
+<:OtherActorInstance2> a :otherActor ;
+                          skos:prefLabel "USDA Forest Service".
+
+<:OtherActorInstance3> a :otherActor ;
+                          skos:prefLabel "California Conservation Corps".
+
+<:MainContractorInstance> a :mainContractor ;
+                          skos:prefLabel "California Dept. of Transportation".
+
+<:TechnicalElementInstance> a :TechnicalElement ;
+                            skos:prefLabel "Removable Wood Baffle".

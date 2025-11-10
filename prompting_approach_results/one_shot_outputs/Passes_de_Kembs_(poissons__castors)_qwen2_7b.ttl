@@ -1,0 +1,44 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# The restoration measure:
+:RestorationMeasureKembs a :waterRestorationProject ;
+                     skos:prefLabel "Restauration des Passes à Kembs" ;
+                     :initiatedBy :HydraulicEngineeringCentreEDFAndEDFRD ,
+                                  ElectricitéDeFrance ;
+                     :mainContractorElectricityDeFrance ;
+                     :projectOwnerElectricityDeFrance ;
+                     :cost "750 000 €"^^xsd:double ;
+                     :fundedBy :RhinMeuseWaterAgency ;
+                     :startTime "1932-06"^^xsd:dateTime ;
+                     :nationalizationDate "2010-12"^^xsd:dateTime ;
+                     :durationUntil "2035-12"^^xsd:dateTime ;
+                     :includesMinorHydropowerPlant "true"^^xsd:boolean ;
+                     :aimToPreserveRhineMeadows "true"^^xsd:boolean ;
+
+# The geographical area:
+:HautRhinDepartment a :geographicalArea ;
+                    skos:prefLabel "Haut-Rhin" ;
+                    :containsSite :KembsLocation ;
+
+# The specific projects and pass constructions:
+:PassModernPiscineKembs a :fishPass ,
+                        :modernFishPass ;
+                        :replacementOldBridgePassage ;
+                        :allowsBidirectionalTraffic ;
+                        :connectsMainCanalAlsaceToReserveNaturellePCA ;
+                        
+# The waterworks center:
+:HydraulicEngineeringCentreEDFAndEDFRD a :waterWorksCenter ;
+                                       skos:prefLabel "Centre d'Ingénierie Hydraulique EDF et EDF R&D" ;
+
+# The main contractor of the project and owner:
+:ElectricityDeFrance a :projectOwner , 
+                     :mainContractor ;
+                     skos:prefLabel "Electricité De France" ;
+
+# The water agency financing the project:
+:RhinMeuseWaterAgency a :waterAgency ,
+                      :financesWaterRestorationProject ;
+                      skos:prefLabel "Agence de l'eau Rhin-Meuse" ;

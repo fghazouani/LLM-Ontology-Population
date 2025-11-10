@@ -1,0 +1,24 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:PasseAPoissonsDeRheinfelden a :successivesBasinsPass ;
+    :associatedTo :CentraleDeRheinfelden;
+    :isManagedBy :EDFUnitéDeProductionEst ;
+    skos:prefLabel "Passe à poissons de Rheinfelden" .
+
+:CentraleDeRheinfelden a :dam ;
+    :isLocatedOn :RheinfeldenBadeWurtembergAllemagne ;
+    :isImpassable "true"^^xsd:boolean ;
+    skos:prefLabel "La centrale de Rheinfelden" .
+
+:EDFUnitéDeProductionEst a :mainContractor;
+    skos:prefLabel "EDF Unité de production est".
+
+:LeRhin a :river ;
+        :hasMaxLowWaterFlow "someValue";
+        :hasMinLowWaterFlow "someValue";
+        skos:prefLabel "Le Rhin" .
+
+:RheinfeldenBadeWurtembergAllemagne a :geographicZone;
+    skos:prefLabel "Rheinfelden, Bade-Wurtemberg, Allemagne".

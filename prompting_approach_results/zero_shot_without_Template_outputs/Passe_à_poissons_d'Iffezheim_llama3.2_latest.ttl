@@ -1,0 +1,41 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Voici les individus extraits du texte en turtle format :
+
+```turtle
+# GeographicZone
+geographicZone Iffezheim
+  # Structure
+  dam Barrage de la centrale hydroélectrique
+    isLocatedOn river Rhin
+    isImpassable true
+    hasHeight 10.0
+  # WaterBody
+  river Rhin
+    hasMaxLowWaterFlow 12.0
+    hasMixLowWaterFlow 1.0
+    numberOfBasins 2
+    averageSlope 0.5
+  # Migratory species
+  amphibioticMigrant Poisson de capacité motrice plus réduite
+    isLocatedOn river Rhin
+    associatedTo fishLift Passe à poissons d'Iffezheim
+  # Fishway
+  fishLift Passe à poissons d'Iffezheim
+    containsTechnicalElement camera de vidéo-surveillance subaquatique
+    numberOfBasins 3
+    averageSlope 0.5
+  # Restoration measure
+  restorationMeasure Passe à poissons d'Iffezheim
+    relizedIn geographicZone Iffezheim
+    associatedTo dam Barrage de la centrale hydroélectrique
+    concerns Continuité longitudinale
+    hasMainContractor NR
+    numberOfPools 15
+    numberOfBasins 37
+    hasBiologicalMonitoring oui
+    coûtTotal 9000000.0
+```

@@ -1,0 +1,46 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Based on the provided ontology description and text input, here are the instances extracted:
+
+**RestorationMeasureInstance**
+```
+:rheinPoissonGerstheim a :restorationMeasure ;
+  :associatedTo :gerstheimPassage;
+  :isManagedBy :CERGA SA;
+  :hasMainContractor :CERGA SA;
+  :startsAt "2024-01-01"^^xsd:dateTime;
+  :endsAt "2024-12-31"^^xsd:dateTime ;
+  :hasMaxLowWaterFlow 1.2;
+  :hasMinLowWaterFlow 9;
+  :includes :localComptage;
+  :numberOfPools 3;
+  :numberOfBasins 2;
+  :averageSlope 0.5;
+  skos:prefLabel "Passe à poissons de Gerstheim" ;
+```
+
+**StructureInstance**
+```
+:gerstheimPassage a :basinPass ;
+  :isLocatedOn :rheinGeographicZone;
+  :hasHeight 1.5;
+  :isImpassable true;
+  skos:prefLabel "Passe à poissons de Gerstheim" ;
+```
+
+**GeographicZoneInstance**
+```
+:rheinGeographicZone a :geographicZone ;
+  skos:prefLabel "Rhin" ;
+```
+
+**ProjectOwnerInstance**
+```
+:CERGA SA a :projectOwner;
+  skos:prefLabel "CERGA SA" ;
+```
+
+Note that I've used the `^^xsd:dateTime` syntax to represent the date and time values in RDF. Also, I've assumed some default values for the properties (e.g., `numberOfPools`, `numberOfBasins`, etc.) based on the text input. If you need to adjust these values or add more information, please let me know!

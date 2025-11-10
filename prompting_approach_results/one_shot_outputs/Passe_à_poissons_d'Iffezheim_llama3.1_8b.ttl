@@ -1,0 +1,72 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:PasseAPoissonsDeIffezheim a :restorationMeasure,
+                         :fishPassageProject ;
+                    skos:prefLabel "Restauration du passe à poissons d'Iffezheim" ;
+                    :country "Allemagne"^^xsd:string;
+                    :stateOrLand "Bade-Wurtemberg"^^xsd:string ;
+                    :municipality "Iffezheim"^^xsd:string .
+
+:CentraleHydroelectrique a :hydroelectricPowerPlant,
+                          :dam ;
+                    skos:prefLabel "Centrale hydroélectrique" .
+
+:Barrage a :damStructure,
+          :waterBarrier ;
+                  skos:prefLabel "Barrage" .
+:DroiteBanque a :waterBank,
+              :rightRiverbank ;
+                   skos:prefLabel "Droite banque" .
+
+
+:ConseilDeGestionDeLaZone a :zoneManagementBody ,
+                              :projectOwner ;
+                    skos:prefLabel "Conseil de gestion de la zone" .
+
+:BassinDeRpartition a :distributionTrough,
+                     :flowDistributionSystem ;
+                   skos:prefLabel "Bassin de répartition".
+
+:ReproductionArea a :reproductionZone,
+                   :favorableBiomassLocation ;
+                skos:prefLabel "Zone favorable à la reproduction" .
+:MigratingFish a :migratoryFish,
+               :greatMigrator ;
+          skos:prefLabel "Poissons migrants" .
+
+:BassinDeLIll a :IllRiverBasin,
+              :favorableBiomassLocation;
+           skos:prefLabel "Bassin de l'Ill" .
+:PasseAPoisson a :fishPassageWay ,
+               :passageForFish ;
+         skos:prefLabel "Passe à poissons".
+:BassinSuccessif a :subsequentBasin,
+                  :successiveRiverBasin ;
+              skos:prefLabel "Bassin successif".
+
+:NiveauBiologique a :biologicalLevel,
+                   :monitoringAndControl  ;
+           skos:prefLabel "Niveau biologique".
+:FournisseurFinancier a :financialProvider,
+                       :partner ;
+         skos:prefLabel "Fournisseur financier" .
+:EDF a :ElectriciteDeFrance ,
+     :financialPartner;
+    skos:prefLabel "Électricité de France".
+
+:BADENWERK a :financialPartner,
+            :Badenwerk ;
+       skos:prefLabel "Badenwerk".
+:PartFinancier a :financialPartner,
+               :partner  ;
+        skos:prefLabel "Part financier" .
+
+:CoutTotal a :totalCost,
+           :fullPrice;
+    skos:prefLabel "Coût total".
+
+:SuiviBiologique a :biologicalMonitoringAndControl ,
+                  :monitoringLevel;
+      skos:prefLabel "Suivi biologique".

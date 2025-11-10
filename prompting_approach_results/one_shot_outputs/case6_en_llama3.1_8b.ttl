@@ -1,0 +1,29 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:PasseAPoissons a :successivesBasinsPass ;
+                    skos:prefLabel "Smith River Basin Fishway" ;
+                    :associatedTo :ConcretePoolAndVortexWeirFishway ;
+                    :isManagedBy :DelNorteCountyCAandCDFGandCCC ;
+                    :hasMainContractor :CA_Dpt_of_Fish_and_Game,_CA_Coastal_Conservancy ;
+                    :numberOfPools "1"^^xsd:integer;
+                    :startsAt "November 2003"^^xsd:date;
+                    :endsAt ""^^xsd:date;
+                    :hasCost "474000.0"^^xsd:decimal;
+                    :concerns :LongitudinalContinuity .
+
+:ConcretePoolAndVortexWeirFishway a :fishway ;
+                    :isLocatedOn :SmithRiverBasin ;
+                    :isLocatedOn :NorthernCalifornia ;
+                    skos:prefLabel "Smith River Basin, Northern California" .
+
+:SmithRiverBasin a :geographicZone ;
+                    skos:prefLabel "Smith River Basin" .
+
+:NorthernCalifornia a :geographicZone ;
+                    skos:prefLabel "Northern California" .
+
+:DelNorteCountyCAandCDFGandCCC a :mainContractor ;
+                    skos:prefLabel "Del Norte County, CA Dept. of Fish and Game, and CA Coastal Conservancy" .

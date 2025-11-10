@@ -1,0 +1,32 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<:restorationMeasure>
+    <:relizedIn> <http://example.com/geographicZone/Rheinfelden>; </:relizedIn>
+    <:isLocatedOn> <http://example.com/waterBody/Rhin>; </:isLocatedOn>
+    <:concerns> <http://example.com/typeOfRestoration/continuityLongitudinal>; </:concerns>
+</:restorationMeasure>
+
+<:structure>
+    <:name>Passe à poissons de Rheinfelden</:name>
+    <:containsTechnicalElement> <http://example.com/technicalElement/passeAPoisson>; </:containsTechnicalElement>
+    <:numberOfBasins>300</:numberOfBasins>
+</:structure>
+
+<:structure>
+    <:name>Chenal artificiel de 800 m</:name>
+    <:containsTechnicalElement> <http://example.com/technicalElement/chenalArtificiel>; </:containsTechnicalElement>
+    <:numberOfBasins>800</:numberOfBasins>
+</:structure>
+
+<:projectOwner>
+    <:name>Nouvelle centrale de Rheinfelden</:name>
+</:projectOwner>
+
+<:otherActor>
+    <:name>Pays allemand - Bade-Wurtemberg</:name>
+</:otherActor>

@@ -1,0 +1,55 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/FishPassageOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# The Project:
+:AvolsheimBypass a :WaterwayBypass ;
+                skos:prefLabel "Boucle Hydrographique d'Avolsheim" ;
+                :isForRestoration "true"^^xsd:boolean ;
+                :addressesSpecies "<FishTypes>" ;
+                :influencesMovement "<SalmonidFishMovement>" ;
+                :heightOfDam "0.2m"^^xsd:decimal .
+
+# The Collaborators:
+:MaîtriseD'ouvrage a :ProjectOwner ;
+                   skos:prefLabel "Community of Communes" ;
+                   :budgetAllocationFor <BudgetAllocation1> ,<BudgetAllocation2>,<BudgetAllocation3> ;
+                   :participatingIn <BasRhinGeneralCouncil> , <RhineMeuseWaterAgency> , <FDAAPPMABasRhin> , <AssociationSaumonRhin> , <BrucheMossigRiverBasinManagementCommittee> .
+
+# The MainContractor:
+:MaîtriseD'oeuvre a :MainContractor ;
+                skos:prefLabel "SOGREAH Consultants" .
+                
+# The HydraulicStabilization:
+:HydraulicStabilization a :LandscapeIntegration ;
+                    :usesIsolatedBlocks "true"^^xsd:boolean ;
+                    :providesUpstreamProtection "<WillowTreePiles>" .
+
+# The FishPassageSystem:
+:FishPassageSystem a :ReservoirSystem ;
+                :hasReservoirs <NumberOfReservoirs> ;
+                :averageWaterfallHeight "18cm"^^xsd:decimal ;
+                :reservoirDimensions "<LengthXWidthXDepth>" ;
+                :accommodatesFlows "from 0.4m³/s to 2.0m³/s" .
+
+# The GeographicalContext:
+:HautRhin a :GeographicZone ;
+            skos:prefLabel "Haut-Rhin" ;
+            :isForProject ":AvolsheimBypass" .
+            
+# TechnicalCriteria:
+:TechnicalCriteria a :IntegrationPriorities ;
+                :forHistoricalMonuments "true"^^xsd:boolean ;
+                :involvesIntegratedSystemOfSmallDams "<Reeflets>" , <DeepCuts> ;
+                :requiresHeightCompensationUpTo "3.2m"^^xsd:decimal ;
+                :linearLengthForCompensation "135m"^^xsd:decimal .
+
+# EnvironmentalSustainability:
+:EnvironmentalSustainability a :ModernEngineeringWithEnvironment ;
+                    :integratesNature "<WillowTreePiles>" , "<IsolatedBlocks>" ;
+                    :focusesOnNaturalFishPassage "true"^^xsd:boolean .
+                    
+# ProjectAim:
+:ProjectAim a :RestorationAndIntegration ;
+                :aimingAt "<NaturalFishPassageRestoration>" , "<EnvironmentalSustainabilityInHistoricLandscapes>" .

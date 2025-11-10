@@ -1,0 +1,35 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# The restoration mesure:
+:PasseAPoissonsDeRheinfelden a :baffleFishway ;
+                           skos:prefLabel "passage pour les poissons de Rheinfelden" ;
+                           :associatedTo :RheinfeldenCentraleHydroelectrique ;
+                           :isManagedBy :ElectriciteDeAllemagne ;
+                           :concerns :ContinuityLongitudinal ;
+                           :startsAt "2003-01-01"^^xsd:dateTime ;
+                           :endsAt "Non applicable"^^xsd:dateTime ;
+                           :hasBiologicalMonitoring false ;
+                           :hasHydromorphologicalMonitoring false .
+
+# The structure:
+:RheinfeldenCentraleHydroelectrique a :dam ;
+                                skos:prefLabel "Nouvelle centrale de Rheinfelden" ;
+                                :isLocatedOn :Bade-WurtembergGermany ;
+                                :label "Nouvelle centrale de Rheinfelden" .
+
+# The project owner:
+:ElectriciteDeAllemagne a :projectOwner ;
+                        skos:prefLabel "Electricité de l'Allemagne" .
+
+# The geographic zone:
+:Bade-WurtembergGermany a :geographicZone ;
+                     skos:prefLabel "Bade-Wurtemberg, Allemagne" .
+
+# The river:
+:LeRhin a :river ;
+        skos:prefLabel "Le Rhin" ;
+        :isLocatedOn :Bade-WurtembergGermany ;
+        :label "Le Rhin".

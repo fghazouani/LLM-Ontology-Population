@@ -1,0 +1,31 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ Based on the provided ontology description and text input, here are some instances extracted from the text in Turtle format:
+
+```turtle
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<Project_Hybrid_Pool_and_Weir_Fishway> a :RestorationMeasure ;
+    :relizedIn <Trinity_River_Basin> ;
+    :associatedTo [ a :Structure ;
+                      :isLocatedOn <Trinity_River> ;
+                        :hasHeight "x" ;
+                        :isImpassable false ] ;
+    :containsTechnicalElement [ a :fishway ;
+                                :hasMaxLowWaterFlow "29.6 m" ;
+                                :numberOfBasins "20" ;
+                                :averageSlope "x" ] ;
+    :concerns <Hybrid_Pool_and_Weir_Fishway> ;
+    :hasMainContractor [ a :projectOwner ; a :otherActor ([a :California_Dept_of_Transportation] [a :California_Dept_of_Fish_and_Game]
+                                                              [a :National_Marine_Fisheries_Service]
+                                                              [a :USDA_Forest_Service]
+                                                              [a :California_Conservation_Corps]) ] ;
+    :hasCost "445000 $" ;
+    :startsAt "November 2001"^^xsd:dateTime ;
+    :endssAt "November 2001"^^xsd:dateTime .
+```
+
+This instance represents the Project of the restoration measure, specifically the Hybrid Pool and Weir Fishway. The project is located in the Trinity River Basin, Northern California, USA. It is associated with a structure that is a fishway, with 20 weirs and dimensions of 97 ft (29.6 m) long with 19.3 ft (5.9 m) total head loss, and 20 weirs with dimensions: 2 ft (0.6 m) long x 3 ft (0.9 m) high x 1 ft (0.39 m) drop. The project is managed by the California Dept. of Transportation, California Dept. of Fish and Game, National Marine Fisheries Service, USDA Forest Service, and California Conservation Corps, and was funded by the California Dept. of Transportation. The project cost was 445,000 $. The completion date is November 2001.

@@ -1,0 +1,25 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:PoolsAndWeirs a :poolCreation ;
+                 skos:prefLabel "Pool and Weir Fishway" ;
+                 :associatedTo :JalamaRoadBridge ;
+                 :isManagedBy :CachumaConservationReleaseBoardandEntrixInc ;
+                 :hasMainContractor :AllenLarsonRobertLarson ;
+                 :concerns :RetrofitWithPool-And-WeirFishLadder ;
+                 :hasCost "87510.0"^^xsd:decimal .
+
+:JalamaRoadBridge a :bridge ;
+                    skos:prefLabel "Jalama Road Bridge" ;
+                    :isLocatedOn :SantaYnezRiverWatershedCentralCaliforniaUSA ;
+                    :concerns :gradecontrolstructure .
+
+:CachumaConservationReleaseBoardandEntrixInc a :projectOwner ;
+                                            skos:prefLabel "Cachuma Conservation Release Board, Entrix Inc." .
+
+:AllenLarsonRobertLarson a :mainContractor ;
+                          skos:prefLabel "Allen and Robert Larson" .
+
+:CaliforniaDeptOfFishAndGameCoastalConservancy a :otherActor ;
+                                               skos:prefLabel "California Dept. of Fish and Game (CDFG), Coastal Conservancy" .

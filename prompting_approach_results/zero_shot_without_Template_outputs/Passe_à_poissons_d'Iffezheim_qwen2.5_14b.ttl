@@ -1,0 +1,40 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:RestorationMeasure_Iffezheim_PassageFish_I:
+    a :reconnection;
+    :relizedIn :GeographicZone_Iffezheim_Rhine;
+    :startsAt "1997-01-01T00:00:00"^^xsd:dateTime;
+    :endssAt "1999-01-01T00:00:00"^^xsd:dateTime; # End date is not provided in the text, this is an assumption
+    :hasCost "9000000.0"^^xsd:decimal;
+    :containsTechnicalElement :BaffleFishway_Iffezheim_PassageFish; 
+    :associatedTo :Dam_Iffezheim_Rhine;
+    :hasBiologicalMonitoring "true"^^xsd:boolean;
+    :hasHydromorphologicaMonitoring "false"^^xsd:boolean.
+
+:GeographicZone_Iffezheim_Rhine:
+    a :geographicZone.
+
+:Dam_Iffezheim_Rhine:
+    a :dam;
+    :isLocatedOn :River_Rhin;
+    :hasHeight "1.0"^^xsd:decimal; # Example value
+    :isImpassable "true"^^xsd:boolean.
+
+:BaffleFishway_Iffezheim_PassageFish:
+    a :baffleFishway;
+    :numberOfBasins "37"^^xsd:nonNegativeInteger; 
+    :hasMaxLowWaterFlow "1.0"^^xsd:decimal; # Example value
+    :hasMixLowWaterFlow "0.12"^^xsd:decimal; # Example value
+
+:River_Rhin:
+    a :river.
+
+:ProjectOwner_Iffezheim:
+    a :projectOwner;
+    :hasMainContractor :OtherActor_EDF_Badenwerk.
+
+:OtherActor_EDF_Badenwerk:
+    a :otherActor.

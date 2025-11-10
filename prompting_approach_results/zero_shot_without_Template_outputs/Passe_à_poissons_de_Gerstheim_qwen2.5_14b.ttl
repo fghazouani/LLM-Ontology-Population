@@ -1,0 +1,32 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+```
+:TG_PasseAPoissonsGerstheim :relizedIn :TG_GerstheimGeographicZone ;
+                                    :containsTechnicalElement :TG_BasinsSuccessifs, 
+                                    :TG_IntermediairePassage, :TG_VideoCountingLocal ;
+                                    :hasMainContractor :noValue ;
+                                    :isManagedBy :CERGASA .
+                                    
+:RG_Rhin :hasMaxLowWaterFlow "to be defined"^^xsd:decimal ;
+          :hasMixLowWaterFlow "to be defined"^^xsd:decimal .
+
+:TG_GerstheimGeographicZone :containsRestorationMeasure :TG_PasseAPoissonsGerstheim .
+                                    
+:CERGASA a :projectOwner .
+                                    
+:TG_BasinsSuccessifs a :successivesBasinsPass ;
+                     :isLocatedOn :RG_Rhin .
+
+:TG_IntermediairePassage a :trapPass ;
+                          :isLocatedOn :RG_Rhin .
+
+:TG_VideoCountingLocal a :videoCountingLocal .
+                                    
+TG_PasseAPoissonsGerstheim :hasBiologicalMonitoring "oui"^^xsd:boolean ;
+                           :hasHydromorphologicaMonitoring "non"^^xsd:boolean .
+
+:TG_GerstheimGeographicZone a :geographicZone .
+```

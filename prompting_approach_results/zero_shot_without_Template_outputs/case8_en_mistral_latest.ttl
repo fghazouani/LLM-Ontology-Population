@@ -1,0 +1,34 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ Based on the provided ontology description and the text input, here are the instances in Turtle format:
+
+```turtle
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Project_of_the_restoration_measure> "Pool and Weir Fisway" ;
+				       :concerns "poolCreation" , "structure" .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#geographicZone> "Santa Ynez River Watershed, Central California, USA" ;
+								 :relizedIn ?project .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#water_body> "Santa Ynez River" ;
+								 :isLocatedOn ?structure .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#structure> "concrete grade control structure" ;
+                      :hasHeight "70 ft (21 m)" ;
+				     :isImpassable false ;
+				     :associatedTo ?restoration_measure ;
+				     :isLocatedOn "Santa Ynez River" .
+
+<http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#restoration_measure> ?restoration_measure ;
+				       :isManagedBy ( <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Cachuma_Conservation_Release_Board> ,
+				                              <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Entrix_Inc._> ,
+				                              <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Allen_and_Robert_Larson> ) ;
+				       :startsAt "January 2003"^^xsd:dateTime ;
+				       :endssAt "January 2003"^^xsd:dateTime ;
+				       :hasCost "87,510"^^xsd:decimal ;
+				       :projectDescription "A concrete grade control structure across a bedrock channel 70 ft (21 m) downstream of the Jalama Road Bridge created a 4 ft (1.2 m) drop and leap barrier to adult and juvenile steelhead/rainbow trout. The structure protects the bridge from scour and served as the control for a long-term streamflow gage. To improve fish passage, a pool-and-weir fish ladder recessed approximately 3 ft (0.9 m) into the existing mudstone bedrock was constructed." ;
+				       :projectFunding ( <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#California_Dept._of_Fish_and_Game_CDFG> ,
+				                                <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#Coastal_Conservancy> ) .
+```

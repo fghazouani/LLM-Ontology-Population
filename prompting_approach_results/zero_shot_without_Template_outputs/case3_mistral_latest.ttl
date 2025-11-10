@@ -1,0 +1,42 @@
+@prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ @prefix : <http://www.semanticweb.org/fethi/ontologies/2024/1/TetraOnto.owl#> .
+
+<Project> a :project ;
+    :managedBy <Council_General_of_the_Haut-Rhin> ;
+    :startsAt "Septembre à Novembre 2010"^^xsd:dateTime ;
+    :endssAt "Septembre à Novembre 2010"^^xsd:dateTime ;
+    :hasCost "36700"^^xsd:decimal ;
+    :isAssociatedTo <DSSmith_Kaysersberg_Weir> ;
+    :concerns <riverside_diversion> .
+
+<Council_General_of_the_Haut-Rhin> a :projectOwner .
+
+<DSSmith_Kaysersberg_Weir> a :structure ;
+    :hasHeight "2.1"^^xsd:decimal ;
+    :isImpassable true ;
+    :isLocatedOn <artificial_river> ;
+    :containsTechnicalElement <riverside_diversion> .
+
+<artificial_river> a :waterBody ;
+    :hasMaxLowWaterFlow ?max_low_flow ;
+    :hasMixLowWaterFlow ?min_low_flow ;
+    :numberOfPools 0 ;
+    :numberOfBasins 0 ;
+    :averageSlope "2.6"^^xsd:decimal .
+
+<riverside_diversion> a :restorationMeasure ;
+    :concerns <fish_pass> ;
+    :relizedIn <geographicZone> ;
+    :hasHeight ?seuil_height ;
+    :hasMaxLowWaterFlow ?max_low_flow ;
+    :hasMixLowWaterFlow ?min_low_flow ;
+    :numberOfPools 0 ;
+    :numberOfBasins 14 ;
+    :averageSlope "2.6"^^xsd:decimal ;
+    :hasMaintenanceVane <vannage_entrance> .
+
+<vannage_entrance> a :technicalElement .
